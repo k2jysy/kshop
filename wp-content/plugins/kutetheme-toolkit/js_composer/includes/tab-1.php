@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <nav class="navbar nav-menu nav-menu-red show-brand">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-brand">
+            <div class="navbar-brand" style="background-color:#ccb48e">
                 <a href="<?php echo  $term_link ? esc_url( $term_link ) : ''; ?>">
                     <?php echo wp_get_attachment_image( $icon,'full'); ?>
                     <?php  echo ( isset( $title ) && $title ) ? esc_html( $title ) : __( 'Tabs Name', 'kutetheme' );  ?>

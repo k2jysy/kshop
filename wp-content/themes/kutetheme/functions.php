@@ -581,3 +581,8 @@ if( ! function_exists( 'kt_list_cats' ) ){
         echo wp_kses( $cat_string, $allowed_html );
     }
 }
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
