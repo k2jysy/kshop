@@ -3,7 +3,7 @@
 Plugin Name: WPBakery Visual Composer
 Plugin URI: http://vc.wpbakery.com
 Description: Drag and drop page builder for WordPress. Take full control over your WordPress site, build any layout you can imagine – no programming knowledge required.
-Version: 4.8.0.1
+Version: 4.8.1
 Author: Michael M - WPBakery.com
 Author URI: http://wpbakery.com
 */
@@ -19,7 +19,7 @@ if ( ! defined( 'WPB_VC_VERSION' ) ) {
 	/**
 	 *
 	 */
-	define( 'WPB_VC_VERSION', '4.8.0.1' );
+	define( 'WPB_VC_VERSION', '4.8.1' );
 }
 
 /**
@@ -182,7 +182,7 @@ class Vc_Manager {
 		// Add hooks
 		add_action( 'plugins_loaded', array( &$this, 'pluginsLoaded' ), 9 );
 		add_action( 'init', array( &$this, 'init' ), 9 );
-
+		$this->setPluginName( $this->path( 'APP_DIR', 'js_composer.php' ) );
 		register_activation_hook( __FILE__, array( $this, 'activationHook' ) );
 	}
 
@@ -621,8 +621,8 @@ class Vc_Manager {
 	public function isNetworkPlugin() {
 		if ( is_null( $this->is_network_plugin ) ) {
 			// Check is VC as network plugin
-			if ( is_multisite() && ( is_plugin_active_for_network( 'js_composer/js_composer.php' )
-			                         || is_network_only_plugin( 'js_composer/js_composer.php' ) )
+			if ( is_multisite() && ( is_plugin_active_for_network( $this->pluginName() )
+			                         || is_network_only_plugin( $this->pluginName() ) )
 			) {
 				$this->setAsNetworkPlugin( true );
 			}
@@ -858,7 +858,7 @@ class Vc_Manager {
 			require_once $this->path( 'UPDATERS_DIR', 'class-vc-updater.php' );
 			$updater = new Vc_Updater();
 			require_once vc_path_dir( 'UPDATERS_DIR', 'class-vc-updating-manager.php' );
-			$updater->setUpdateManager( new Vc_Updating_Manager( WPB_VC_VERSION, $updater->versionUrl(), vc_plugin_name() ) );
+			$updater->setUpdateManager( new Vc_Updating_Manager( WPB_VC_VERSION, $updater->versionUrl(), $this->pluginName() ) );
 			$this->factory['updater'] = $updater;
 			do_action( 'vc_after_init_updater' );
 		}
@@ -874,6 +874,14 @@ class Vc_Manager {
 	 */
 	public function pluginName() {
 		return $this->plugin_name;
+	}
+
+	/**
+	 * @since 4.8.1
+	 *
+	 */
+	public function setPluginName( $name ) {
+		$this->plugin_name = $name;
 	}
 
 	/**

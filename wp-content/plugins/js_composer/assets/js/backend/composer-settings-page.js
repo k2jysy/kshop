@@ -42,13 +42,6 @@ jQuery( document ).ready( function ( $ ) {
 		$helper.toggle( 100 );
 	} );
 
-	$( '#vc_settings-custom-css-reset-data' ).click( function ( e ) {
-		e.preventDefault();
-		if ( confirm( window.i18nLocaleSettings.are_you_sure_reset_css_classes ) ) {
-			$( '#vc_settings-element_css-action' ).val( 'remove_all_css_classes' );
-			$( '#vc_settings-element_css' ).attr( 'action', window.location.href ).trigger( 'submit' );
-		}
-	} );
 	$( '.color-control' ).wpColorPicker();
 	$( '#vc_settings-color-restore-default' ).click( function ( e ) {
 		e.preventDefault();

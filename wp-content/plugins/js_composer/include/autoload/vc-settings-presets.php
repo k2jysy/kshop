@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 add_action( 'wp_ajax_vc_action_save_settings_preset', 'vc_action_save_settings_preset' );
 add_action( 'wp_ajax_vc_action_set_as_default_settings_preset', 'vc_action_set_as_default_settings_preset' );

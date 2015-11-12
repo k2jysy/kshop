@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div id="vc_post-settings-panel" class="vc_panel" style="display: none;">
 	<div class="vc_panel-heading">
 		<a title="<?php _e( 'Close panel', 'js_composer' ); ?>" href="#" class="vc_close" data-dismiss="panel"

@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 global $vc_params_preset_form_field_js_appended;
 $vc_params_preset_form_field_js_appended = false;

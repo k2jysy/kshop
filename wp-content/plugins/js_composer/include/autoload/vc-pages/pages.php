@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 
 /**
@@ -62,7 +65,7 @@ function vc_network_menu_page_build() {
 	if ( vc_user_access()->wpAny( 'manage_options' )
 	                     ->part( 'settings' )
 	                     ->can( 'vc-general-tab' )
-	                     ->get()
+	                     ->get() && ! is_main_site()
 	) {
 		define( 'VC_PAGE_MAIN_SLUG', 'vc-general' );
 	} else {

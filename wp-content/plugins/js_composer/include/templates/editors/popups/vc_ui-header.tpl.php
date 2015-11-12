@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <!-- param window header-->
 <div
 	class="<?php echo esc_attr( $header_css_class ) ?> vc_ui-panel-header-container <?php echo ( isset( $stacked_bottom ) && $stacked_bottom ) || ! isset( $stacked_bottom ) ? 'vc_ui-panel-header-o-stacked-bottom' : ''; ?>"

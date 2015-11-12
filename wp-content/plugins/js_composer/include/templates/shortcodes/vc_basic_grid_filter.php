@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 /**
  * Shortcode attributes
  * @var $atts
@@ -41,9 +44,7 @@ if ( 'yes' === $atts['show_filter'] && ! empty( $filter_terms ) ) :
 
 	?>
 	<!-- for responsive vc_responsive !-->
-	<div
-		class="<?php echo 'dropdown' === $atts['filter_style'] ? 'vc_grid-filter-dropdown' : 'vc_grid-filter-select'; ?> vc_grid-filter-<?php echo esc_attr( $atts['filter_align'] ); ?> vc_grid-filter-color-<?php echo esc_attr( $atts['filter_color'] ); ?>"
-		data-vc-grid-filter-select="<?php echo esc_attr( $atts['filter_source'] ) ?>">
+	<div class="<?php echo 'dropdown' === $atts['filter_style'] ? 'vc_grid-filter-dropdown' : 'vc_grid-filter-select'; ?> vc_grid-filter-<?php echo esc_attr( $atts['filter_align'] ); ?> vc_grid-filter-color-<?php echo esc_attr( $atts['filter_color'] ); ?>" data-vc-grid-filter-select="<?php echo esc_attr( $atts['filter_source'] ) ?>">
 		<div class="vc_grid-styled-select"><select data-filter="<?php echo esc_attr( $atts['filter_source'] ) ?>">
 				<option class="vc_active" value="*"><?php _e( 'All', 'js_composer' ) ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 				<?php foreach ( $terms as $term ) :

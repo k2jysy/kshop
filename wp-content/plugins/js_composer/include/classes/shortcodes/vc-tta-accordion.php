@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 class WPBakeryShortCode_VC_Tta_Accordion extends WPBakeryShortCodesContainer {
 	protected $controls_css_settings = 'out-tc vc_controls-content-widget';

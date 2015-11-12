@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 global $current_user;
 get_currentuserinfo();
 require_once vc_path_dir( 'AUTOLOAD_DIR', 'class-vc-settings-presets.php' );

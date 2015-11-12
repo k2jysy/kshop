@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 $masonry_media_grid_params = $media_grid_params;
 $masonry_media_grid_params[15]['value'] = 'masonryMedia_Default';

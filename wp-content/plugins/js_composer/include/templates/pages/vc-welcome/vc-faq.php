@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div class="vc_faq-tab changelog">
 	<h3><?php _e( 'New to Visual Composer or Looking for More Information?', 'js_composer' ); ?></h3>
 

@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 $media_grid_params = array_merge( array(
 	array(
 		'type' => 'attach_images',

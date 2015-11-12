@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 $tab = preg_replace( '/^vc\-/', '', $page->getSlug() );
 $use_custom = get_option( vc_settings()->getFieldPrefix() . 'use_custom' );
 $css = ( ( 'color' === $tab ) && $use_custom ) ? ' color_enabled' : '';

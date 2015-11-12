@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div class="vc_welcome-tab changelog">
 	<div class="vc_feature-section-teaser">
 		<div>

@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 function vc_page_settings_render() {
 	$page = vc_get_param( 'page' );

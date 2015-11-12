@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 global $vc_grid_item_editor;
 /**
  * Creates new post type for grid_editor.

@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 class WPBakeryShortCode_VC_Posts_Grid extends WPBakeryShortCode {
 	public $pretty_rel_random;

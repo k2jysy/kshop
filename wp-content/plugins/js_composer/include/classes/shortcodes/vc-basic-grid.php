@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 require_once vc_path_dir( 'SHORTCODES_DIR', 'paginator/class-vc-pageable.php' );
 require_once vc_path_dir( 'SHORTCODES_DIR', 'vc-btn.php' );
 
@@ -346,11 +349,10 @@ class WPBakeryShortCode_VC_Basic_Grid extends WPBakeryShortCode_Vc_Pageable {
 		for ( $i = 0; $i < count( $atts ); $i ++ ) {
 			$atts[ $arr_keys[ $i ] ] = html_entity_decode( $atts[ $arr_keys[ $i ] ], ENT_QUOTES, 'utf-8' );
 		}
-		if ( ! isset( $atts['grid_id'] ) || empty( $atts['grid_id'] ) ) {
-			$hash = $this->getHash( $atts, $content );
-
-		} else {
+		if ( isset( $atts['grid_id'] ) && ! empty( $atts['grid_id'] ) ) {
 			$id_to_save = $this->getId( $atts, $content );
+		} else {
+			$hash = $this->getHash( $atts, $content );
 		}
 
 		$atts = $this->convertButton2ToButton3( $atts );

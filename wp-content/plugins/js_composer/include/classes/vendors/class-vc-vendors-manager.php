@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 _deprecated_file( 'class-vc-vendors-manager.php', '4.4', 'autoload logic', ' will be removed in 4.9' );
 
 /**

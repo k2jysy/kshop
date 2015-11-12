@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 class WPBakeryShortCode_Vc_Pie extends WPBakeryShortCode {
 	public function __construct( $settings ) {

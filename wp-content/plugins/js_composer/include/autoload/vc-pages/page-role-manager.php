@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 function vc_settings_tabs_vc_roles( $tabs ) {
 	//inster after vc-general tab
 	if ( array_key_exists( 'vc-general', $tabs ) ) {

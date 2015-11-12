@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 /**
  * Class Vc_Grid_Item to build grid item.
@@ -321,6 +324,7 @@ class Vc_Grid_Item {
 	 * @return mixed|void
 	 */
 	public function attribute( $name, $post, $data = '' ) {
+		$data = html_entity_decode( $data );
 		return apply_filters( 'vc_gitem_template_attribute_' . trim( $name ),
 			( isset( $post->$name ) ? $post->$name : '' ), array(
 				'post' => $post,

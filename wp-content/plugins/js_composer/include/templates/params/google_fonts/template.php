@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div class="vc_row-fluid vc_column">
 	<div class="wpb_element_label"><?php _e( 'Font Family', 'js_composer' ); ?></div>
 	<div class="vc_google_fonts_form_field-font_family-container">

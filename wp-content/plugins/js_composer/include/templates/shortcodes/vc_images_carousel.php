@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 /**
  * Shortcode attributes
  * @var $atts
@@ -64,16 +67,10 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $class_to_filter
 $carousel_id = 'vc_images-carousel-' . WPBakeryShortCode_VC_images_carousel::getCarouselIndex();
 $slider_width = $this->getSliderWidth( $img_size );
 ?>
-<div
-	class="<?php echo esc_attr( apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $css_class, $this->settings['base'], $atts ) ); ?>">
+<div class="<?php echo esc_attr( apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $css_class, $this->settings['base'], $atts ) ); ?>">
 	<div class="wpb_wrapper">
 		<?php echo wpb_widget_title( array( 'title' => $title, 'extraclass' => 'wpb_gallery_heading' ) ) ?>
-		<div id="<?php echo $carousel_id ?>" data-ride="vc_carousel"
-		     data-wrap="<?php echo 'yes' === $wrap ? 'true' : 'false' ?>" style="width: <?php echo $slider_width ?>;"
-		     data-interval="<?php echo 'yes' === $autoplay ? $speed : 0 ?>" data-auto-height="yes"
-		     data-mode="<?php echo $mode ?>" data-partial="<?php echo 'yes' === $partial_view ? 'true' : 'false' ?>"
-		     data-per-view="<?php echo $slides_per_view ?>"
-		     data-hide-on-end="<?php echo 'yes' === $autoplay ? 'false' : 'true' ?>" class="vc_slide vc_images_carousel">
+		<div id="<?php echo $carousel_id ?>" data-ride="vc_carousel" data-wrap="<?php echo 'yes' === $wrap ? 'true' : 'false' ?>" style="width: <?php echo $slider_width ?>;" data-interval="<?php echo 'yes' === $autoplay ? $speed : 0 ?>" data-auto-height="yes" data-mode="<?php echo $mode ?>" data-partial="<?php echo 'yes' === $partial_view ? 'true' : 'false' ?>" data-per-view="<?php echo $slides_per_view ?>" data-hide-on-end="<?php echo 'yes' === $autoplay ? 'false' : 'true' ?>" class="vc_slide vc_images_carousel">
 			<?php if ( 'yes' !== $hide_pagination_control ) :  ?>
 				<!-- Indicators -->
 				<ol class="vc_carousel-indicators">
@@ -105,13 +102,11 @@ $slider_width = $this->getSliderWidth( $img_size );
 								<div class="vc_inner">
 									<?php if ( 'link_image' === $onclick ) :  ?>
 										<?php $p_img_large = $post_thumbnail['p_img_large']; ?>
-										<a class="prettyphoto"
-										   href="<?php echo $p_img_large[0] ?>" <?php echo $pretty_rand; ?>>
+										<a class="prettyphoto" href="<?php echo $p_img_large[0] ?>" <?php echo $pretty_rand; ?>>
 											<?php echo $thumbnail ?>
 										</a>
 									<?php elseif ( 'custom_link' === $onclick && isset( $custom_links[ $i ] ) && '' !== $custom_links[ $i ] ) :  ?>
-										<a
-											href="<?php echo $custom_links[ $i ] ?>"<?php echo( ! empty( $custom_links_target ) ? ' target="' . $custom_links_target . '"' : '' ) ?>>
+										<a href="<?php echo $custom_links[ $i ] ?>"<?php echo( ! empty( $custom_links_target ) ? ' target="' . $custom_links_target . '"' : '' ) ?>>
 											<?php echo $thumbnail ?>
 										</a>
 									<?php else : ?>

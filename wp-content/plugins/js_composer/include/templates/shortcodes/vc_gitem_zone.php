@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 /**
  * Shortcode attributes
  * @var $atts
@@ -94,9 +97,7 @@ echo( empty( $css_style ) ? '' : ' style="' . esc_attr( $css_style ) . '"' )
 ?>>
 	<?php echo $image_block ?>
 	<?php echo $image ?>
-	<div class="<?php echo esc_attr( $css_class_mini ) ?>"<?php
-	echo( empty( $css_style_mini ) ? '' : ' style="' . esc_attr( $css_style_mini ) . '"' )
-	?>>
+	<div class="<?php echo esc_attr( $css_class_mini ) ?>"<?php echo( empty( $css_style_mini ) ? '' : ' style="' . esc_attr( $css_style_mini ) . '"' ) ?>>
 		<?php echo do_shortcode( $content ) ?>
 	</div>
 </div>

@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 $tab = esc_attr( preg_replace( '/^vc\-/', '', $page->getSlug() ) );
 $editable_roles = get_editable_roles();
 require_once vc_path_dir( 'SETTINGS_DIR', 'class-vc-roles.php' );

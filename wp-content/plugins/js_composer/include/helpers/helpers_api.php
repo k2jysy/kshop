@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 /**
  * @param $attributes
@@ -609,4 +612,16 @@ function vc_map_get_defaults( $tag ) {
  */
 function vc_map_get_attributes( $tag, $atts = array() ) {
 	return shortcode_atts( vc_map_get_defaults( $tag ), $atts, $tag );
+}
+
+/**
+ * New Vc now called Frontend editor
+ * @deprecated 4.7
+ * @return Vc_Frontend_Editor
+ * @since 4.3
+ */
+function new_vc() {
+	_deprecated_function( 'new_vc', '4.7', 'vc_frontend_editor' );
+
+	return vc_frontend_editor();
 }

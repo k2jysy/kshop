@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 vc_map( array(
 	'name' => __( 'Tabs', 'js_composer' ),

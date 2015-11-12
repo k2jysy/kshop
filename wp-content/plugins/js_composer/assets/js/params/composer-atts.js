@@ -62,7 +62,7 @@ window.vc.addTemplateFilter = function ( callback ) {
 				window.tinyMCEPreInit.mceInit[ textfield_id ].wp_autoresize_on = false;
 			}
 			if ( vc.edit_element_block_view && vc.edit_element_block_view.currentModelParams ) {
-				$element.val( vc.edit_element_block_view.currentModelParams[ $content_holder.attr( 'name' ) ] || '' );
+				$element.val( vc_wpautop( vc.edit_element_block_view.currentModelParams[ $content_holder.attr( 'name' ) ] || '' ) );
 			} else {
 				$element.val( $content_holder.val() );
 			}

@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div class="<?php echo isset( $css_class ) && ! empty( $css_class ) ? esc_attr( $css_class ) : 'vc_navbar' ?>"
      role="navigation"
      id="vc_navbar">

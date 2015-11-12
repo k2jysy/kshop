@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 $masonry_grid_params = $grid_params;
 unset( $masonry_grid_params[5]['value'][ __( 'Pagination', 'js_composer' ) ] );

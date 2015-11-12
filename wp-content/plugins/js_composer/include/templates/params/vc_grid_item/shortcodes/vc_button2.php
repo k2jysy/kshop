@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 $wrapper_css_class = 'vc_button-2-wrapper';
 /** @var $this WPBakeryShortCode_VC_Button2 */
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );

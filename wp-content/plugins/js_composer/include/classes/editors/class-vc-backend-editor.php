@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 /**
  * WPBakery Visual Composer admin editor
@@ -181,7 +184,7 @@ class Vc_Backend_Editor implements Vc_Editor_Interface {
 		wp_enqueue_style( 'font-awesome' );
 		wp_enqueue_style( 'js_composer' );
 		wp_enqueue_style( 'wpb_jscomposer_autosuggest' );
-		wp_enqueue_style( 'js_composer_settings', vc_asset_url( 'css/js_composer_settings.min.css' ), array(), WPB_VC_VERSION, false );
+		//wp_enqueue_style( 'js_composer_settings', vc_asset_url( 'css/js_composer_settings.min.css' ), array(), WPB_VC_VERSION, false );
 		WPBakeryShortCodeFishBones::enqueueCss();
 
 		wp_enqueue_script( 'jquery-ui-tabs' );

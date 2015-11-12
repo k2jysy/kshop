@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <script type="text/javascript" id="vc_role_access_manager_script">
 	(function ( $ ) {
 		var _localCapabilities, _check, _groupAccessRules, _shortcodesPartSet, _mergedCaps;

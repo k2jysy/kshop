@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 require_once vc_path_dir( 'PARAMS_DIR', 'vc_grid_item/editor/popups/class-vc-add-element-box-grid-item.php' );
 $add_element_box = new Vc_Add_Element_Box_Grid_Item();
 $add_element_box->render();

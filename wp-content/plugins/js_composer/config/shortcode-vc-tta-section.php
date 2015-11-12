@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 $parent_tag = vc_post_param( 'parent_tag', '' );
 $include_icon_params = ( 'vc_tta_pageable' !== $parent_tag );

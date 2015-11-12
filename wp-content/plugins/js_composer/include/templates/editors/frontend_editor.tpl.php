@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 /** @var $editor Vc_Frontend_Editor */
 global $menu, $submenu, $parent_file, $post_ID, $post, $post_type;
 $post_ID = $editor->post_id;

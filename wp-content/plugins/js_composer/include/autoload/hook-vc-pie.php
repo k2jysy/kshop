@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 VcShortcodeAutoloader::getInstance()->includeClass( 'WPBakeryShortCode_Vc_Pie' );
 

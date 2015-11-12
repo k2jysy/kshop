@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 /**
  * WPBakery Visual Composer helpers functions
@@ -743,9 +746,18 @@ function vc_colorCreator( $colour, $per = 10 ) {
 	require_once 'class-vc-color-helper.php';
 	$color = $colour;
 	if ( stripos( $colour, 'rgba(' ) !== false ) {
-		$rgb = str_replace( array( 'rgba', 'rgb', '(', ')' ), '', $colour );
+		$rgb = str_replace( array(
+			'rgba',
+			'rgb',
+			'(',
+			')',
+		), '', $colour );
 		$rgb = explode( ',', $rgb );
-		$rgb_array = array( 'R' => $rgb[0], 'G' => $rgb[1], 'B' => $rgb[2] );
+		$rgb_array = array(
+			'R' => $rgb[0],
+			'G' => $rgb[1],
+			'B' => $rgb[2],
+		);
 		$alpha = $rgb[3];
 		try {
 			$color = Vc_Color_Helper::rgbToHex( $rgb_array );
@@ -765,9 +777,18 @@ function vc_colorCreator( $colour, $per = 10 ) {
 			return $colour;
 		}
 	} else if ( stripos( $colour, 'rgb(' ) !== false ) {
-		$rgb = str_replace( array( 'rgba', 'rgb', '(', ')' ), '', $colour );
+		$rgb = str_replace( array(
+			'rgba',
+			'rgb',
+			'(',
+			')',
+		), '', $colour );
 		$rgb = explode( ',', $rgb );
-		$rgb_array = array( 'R' => $rgb[0], 'G' => $rgb[1], 'B' => $rgb[2] );
+		$rgb_array = array(
+			'R' => $rgb[0],
+			'G' => $rgb[1],
+			'B' => $rgb[2],
+		);
 		try {
 			$color = Vc_Color_Helper::rgbToHex( $rgb_array );
 		} catch ( Exception $e ) {
@@ -821,7 +842,11 @@ function vc_hex2rgb( $color ) {
 	$g = hexdec( $g );
 	$b = hexdec( $b );
 
-	return array( $r, $g, $b );
+	return array(
+		$r,
+		$g,
+		$b,
+	);
 }
 
 /**
@@ -1054,7 +1079,10 @@ if ( ! function_exists( 'lcfirst' ) ) {
  * @return string
  */
 function vc_studly( $value ) {
-	$value = ucwords( str_replace( array( '-', '_' ), ' ', $value ) );
+	$value = ucwords( str_replace( array(
+		'-',
+		'_',
+	), ' ', $value ) );
 
 	return str_replace( ' ', '', $value );
 }
@@ -1130,35 +1158,23 @@ function vc_get_shortcode_regex( $tagregexp = '' ) {
 		return get_shortcode_regex();
 	}
 
-	return
-		'\\['                              // Opening bracket
-		. '(\\[?)'                           // 1: Optional second opening bracket for escaping shortcodes: [[tag]]
-		. "($tagregexp)"                     // 2: Shortcode name
-		. '(?![\\w-])'                       // Not followed by word character or hyphen
-		. '('                                // 3: Unroll the loop: Inside the opening shortcode tag
-		. '[^\\]\\/]*'                   // Not a closing bracket or forward slash
-		. '(?:'
-		. '\\/(?!\\])'               // A forward slash not followed by a closing bracket
-		. '[^\\]\\/]*'               // Not a closing bracket or forward slash
-		. ')*?'
-		. ')'
-		. '(?:'
-		. '(\\/)'                        // 4: Self closing tag ...
-		. '\\]'                          // ... and closing bracket
-		. '|'
-		. '\\]'                          // Closing bracket
-		. '(?:'
-		. '('                        // 5: Unroll the loop: Optionally, anything between the opening and closing shortcode tags
-		. '[^\\[]*+'             // Not an opening bracket
-		. '(?:'
-		. '\\[(?!\\/\\2\\])' // An opening bracket not followed by the closing shortcode tag
-		. '[^\\[]*+'         // Not an opening bracket
-		. ')*+'
-		. ')'
-		. '\\[\\/\\2\\]'             // Closing shortcode tag
-		. ')?'
-		. ')'
-		. '(\\]?)';
+	return '\\['                              // Opening bracket
+	. '(\\[?)'                           // 1: Optional second opening bracket for escaping shortcodes: [[tag]]
+	. "($tagregexp)"                     // 2: Shortcode name
+	. '(?![\\w-])'                       // Not followed by word character or hyphen
+	. '('                                // 3: Unroll the loop: Inside the opening shortcode tag
+	. '[^\\]\\/]*'                   // Not a closing bracket or forward slash
+	. '(?:' . '\\/(?!\\])'               // A forward slash not followed by a closing bracket
+	. '[^\\]\\/]*'               // Not a closing bracket or forward slash
+	. ')*?' . ')' . '(?:' . '(\\/)'                        // 4: Self closing tag ...
+	. '\\]'                          // ... and closing bracket
+	. '|' . '\\]'                          // Closing bracket
+	. '(?:' . '('                        // 5: Unroll the loop: Optionally, anything between the opening and closing shortcode tags
+	. '[^\\[]*+'             // Not an opening bracket
+	. '(?:' . '\\[(?!\\/\\2\\])' // An opening bracket not followed by the closing shortcode tag
+	. '[^\\[]*+'         // Not an opening bracket
+	. ')*+' . ')' . '\\[\\/\\2\\]'             // Closing shortcode tag
+	. ')?' . ')' . '(\\]?)';
 }
 
 /**
@@ -1219,10 +1235,7 @@ function vc_get_term_object( $term ) {
 		'label' => $term->name,
 		'value' => $term->term_id,
 		'group_id' => $term->taxonomy,
-		'group' =>
-			isset( $vc_taxonomies_types[ $term->taxonomy ], $vc_taxonomies_types[ $term->taxonomy ]->labels, $vc_taxonomies_types[ $term->taxonomy ]->labels->name )
-				? $vc_taxonomies_types[ $term->taxonomy ]->labels->name
-				: __( 'Taxonomies', 'js_composer' ),
+		'group' => isset( $vc_taxonomies_types[ $term->taxonomy ], $vc_taxonomies_types[ $term->taxonomy ]->labels, $vc_taxonomies_types[ $term->taxonomy ]->labels->name ) ? $vc_taxonomies_types[ $term->taxonomy ]->labels->name : __( 'Taxonomies', 'js_composer' ),
 	);
 }
 
@@ -1240,7 +1253,10 @@ function vcExtractDimensions( $dimensions ) {
 	$matches = null;
 
 	if ( preg_match( '/(\d+)x(\d+)/', $dimensions, $matches ) ) {
-		return array( $matches[1], $matches[2] );
+		return array(
+			$matches[1],
+			$matches[2],
+		);
 	}
 
 	return false;
@@ -1317,5 +1333,29 @@ function vc_is_responsive_disabled() {
 function get_row_css_class() {
 	_deprecated_function( 'get_row_css_class', '4.2' );
 	$custom = vc_settings()->get( 'row_css_class' );
+
 	return ! empty( $custom ) ? $custom : 'vc_row-fluid';
 }
+
+/**
+ * @deprecated and will be removed
+ * @since 4.2
+ * @return int
+ */
+function vc_get_interface_version() {
+	_deprecated_function( 'vc_get_interface_version', '4.2' );
+
+	return 2;
+}
+
+/**
+ * @deprecated and will be removed.
+ * @since 4.2
+ * @return int
+ */
+function vc_get_initerface_version() {
+	_deprecated_function( 'vc_get_initerface_version', '4.2' );
+
+	return vc_get_interface_version();
+}
+

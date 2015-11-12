@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div class="wrap vc-page-welcome about-wrap">
 	<h1><?php echo sprintf( __( 'Welcome to Visual Composer %s', 'js_composer' ), preg_replace( '/^(\d+)(\.\d+)?(\.\d)?/', '$1$2', WPB_VC_VERSION ) ) ?></h1>
 
@@ -12,7 +17,7 @@
 			->wpAny( 'manage_options' )
 			->part( 'settings' )
 			->can( 'vc-general-tab' )
-			->get() ) : ?><a href="<?php echo esc_attr( admin_url( 'admin.php?page=vc-general' ) ) ?>"
+			->get() && ! is_main_site() ) : ?><a href="<?php echo esc_attr( admin_url( 'admin.php?page=vc-general' ) ) ?>"
 		   class="button button-primary"><?php _e( 'Settings', 'js_composer' ) ?></a><?php endif; ?>
 		<a href="https://twitter.com/share" class="twitter-share-button"
 		   data-text="Take full control over your WordPress site with Visual Composer page builder by @WPBakery"

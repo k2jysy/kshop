@@ -594,20 +594,26 @@ if ( 'function' !== typeof(window[ 'vc_rowBehaviour' ]) ) {
 					$( this ).css( 'min-height', fullHeight + 'vh' );
 				}
 			} );
+		}
 
-			$( '.vc_row-o-full-height.vc_row-o-content-middle' ).each( function () {
-				var elHeight = $( this ).height();
-				$( '<div><!-- IE flexbox min height vertical align fixer --></div>' )
-					.addClass( 'vc_row-full-height-fixer' )
-					.height( elHeight )
-					.prependTo( $( this ) );
-			} );
+		function fixIeFlexbox() {
+			var ua = window.navigator.userAgent;
+			var msie = ua.indexOf("MSIE ");
+
+			if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)){
+				$( '.vc_row-o-full-height' ).each( function () {
+					if ($( this ).css( 'display') === 'flex') {
+						$( this ).wrap('<div class="vc_ie-flexbox-fixer"></div>')
+					}
+				} );
+			}
 		}
 
 		$( window ).unbind( 'resize.vcRowBehaviour' ).bind( 'resize.vcRowBehaviour', localFunction );
 		$( window ).bind( 'resize.vcRowBehaviour', fullHeightRow );
 		localFunction();
 		fullHeightRow();
+		fixIeFlexbox();
 		initVideoBackgrounds(); // must be called before parallax
 		parallaxRow();
 	}

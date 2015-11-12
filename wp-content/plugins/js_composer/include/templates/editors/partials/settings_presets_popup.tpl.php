@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div class="vc_ui-list-bar-group">
 
 	<?php foreach ( $list_presets as $presets ) :  ?>

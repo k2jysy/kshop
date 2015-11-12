@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <form class="vc_ui-prompt">
 	<div class="vc_ui-prompt-controls">
 		<button type="button" class="vc_general vc_ui-control-button vc_ui-prompt-close"><i

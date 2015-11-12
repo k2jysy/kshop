@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 vc_grid_item_map_shortcodes();
 do_action( 'vc-render-templates-preview-template' );
 /** @var $vc_grid_item_editor Vc_Grid_Item_Editor */

@@ -236,6 +236,9 @@
 .vc_non_responsive .vc_row .vc_hidden-sm {
   display: none !important;
 }
+.vc_column_container {
+  width: 100%;
+}
 .vc_row {
   margin-left: -7.5px;
   margin-right: -7.5px;
@@ -3881,6 +3884,7 @@ ul.wpb_thumbnails-fluid > li,
   min-height: 100vh;
 }
 .vc_row.vc_row-o-content-middle {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3889,13 +3893,24 @@ ul.wpb_thumbnails-fluid > li,
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  box-sizing: border-box;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
-.vc_row .vc_row-full-height-fixer {
-  content: '';
-  width: 0;
-  visibility: hidden;
-  float: left;
+.vc_ie-flexbox-fixer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.vc_ie-flexbox-fixer > .vc_row {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 /* Facebook
 ---------------------------------------------------------- */
@@ -11735,9 +11750,9 @@ body .wpb_gallery_slides ul li,
   outline: none;
 }
 .wpb_single_image img {
-  vertical-align: top;
   height: auto;
   max-width: 100%;
+  vertical-align: top;
 }
 .wpb_single_image img.vc_img-placeholder {
   width: 100%;
@@ -11894,6 +11909,7 @@ body .wpb_gallery_slides ul li,
   display: inline-block;
   vertical-align: top;
   margin: 0;
+  max-width: 100%;
 }
 .wpb_single_image .vc_figure-caption {
   margin-top: .2em;

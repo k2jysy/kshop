@@ -39,7 +39,7 @@ msgstr "订单"
 msgid "Before you can add a variation you need to add some variation attributes on the <strong>Attributes</strong> tab."
 msgstr "在您可以添加一个变量之前您需要先在<strong>属性</strong>选项卡添加一些变量属性。"
 
-#: includes/admin/class-wc-admin-post-types.php:2120
+#: includes/admin/class-wc-admin-post-types.php:2118
 msgid "Choose where this product should be displayed in your catalog. The product will always be accessible directly."
 msgstr "请选择此产品应显示在您的哪个目录下。它将可被直接访问。"
 
@@ -1172,7 +1172,7 @@ msgstr "您好 <strong>%1$s</strong> (不是 %1$s 吗? <a href=\"%2$s\">退出</
 msgid "My Address"
 msgstr "我的地址"
 
-#: includes/wc-product-functions.php:230
+#: includes/wc-product-functions.php:234
 msgctxt "slug"
 msgid "uncategorized"
 msgstr "未分类"
@@ -1187,12 +1187,12 @@ msgctxt "Order date parsed by strftime"
 msgid "%b %d, %Y @ %I:%M %p"
 msgstr "%b %d, %Y @ %I:%M %p"
 
-#: includes/wc-page-functions.php:112
+#: includes/wc-page-functions.php:116
 msgctxt "edit-address-slug"
 msgid "billing"
 msgstr "账单"
 
-#: includes/wc-page-functions.php:113
+#: includes/wc-page-functions.php:117
 msgctxt "edit-address-slug"
 msgid "shipping"
 msgstr "配送"
@@ -1600,7 +1600,7 @@ msgid "Pay for Order"
 msgstr "支付订单"
 
 #: includes/class-wc-query.php:116
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:411
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:405
 #: templates/emails/admin-new-order.php:22
 #: templates/emails/customer-completed-order.php:22
 #: templates/emails/customer-invoice.php:26
@@ -2061,7 +2061,7 @@ msgid "Sorry, the minimum allowed order total is 0.50 to use this payment method
 msgstr "抱歉,该支付网关的最小支付金额是 0.50."
 
 #: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:297
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:439
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:433
 #: includes/gateways/simplify-commerce-deprecated/class-wc-addons-gateway-simplify-commerce-deprecated.php:70
 msgid "Customer not found"
 msgstr "没有找到该客户"
@@ -2071,46 +2071,46 @@ msgstr "没有找到该客户"
 msgid "%s - Order #%s"
 msgstr "%s - 订单 #%s"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:327
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:321
 #: includes/gateways/simplify-commerce-deprecated/class-wc-addons-gateway-simplify-commerce-deprecated.php:100
 msgid "Simplify payment error: %s"
 msgstr "Simplify 支付错误"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:337
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:462
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:485
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:331
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:450
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:484
 #: includes/gateways/simplify-commerce-deprecated/class-wc-addons-gateway-simplify-commerce-deprecated.php:110
 msgid "Simplify payment approved (ID: %s, Auth Code: %s)"
 msgstr "Simplify 支付通过 (ID: %s, 授权码: %s)"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:341
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:348
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:335
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:342
 #: includes/gateways/simplify-commerce-deprecated/class-wc-addons-gateway-simplify-commerce-deprecated.php:114
 msgid "Simplify payment declined"
 msgstr "Simplify 支付被拒"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:343
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:350
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:337
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:344
 #: includes/gateways/simplify-commerce-deprecated/class-wc-addons-gateway-simplify-commerce-deprecated.php:116
 msgid "Payment was declined - please try another card."
 msgstr "支付被拒绝 - 请使用另外的卡片。"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:357
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:467
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:351
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:455
 msgid "Simplify Transaction Failed (%s)"
 msgstr "Simplify 交易失败 (%s)"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:434
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:428
 #: includes/gateways/simplify-commerce-deprecated/class-wc-addons-gateway-simplify-commerce-deprecated.php:65
 msgid "(Order #%s)"
 msgstr "(订单 #%s)"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:464
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:452
 msgid "Payment was declined - the customer need to try another card."
 msgstr "付款被拒绝 - 客户需要尝试另一张卡。"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:511
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:457
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:499
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:456
 msgid "Payment was declined by Simplify Commerce."
 msgstr "支付被Simplify Commerce拒绝。"
 
@@ -2197,19 +2197,19 @@ msgstr "到期年份"
 msgid "is invalid"
 msgstr "无效"
 
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:428
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:427
 msgid "Thank you for your order, please click the button below to pay with credit card using Simplify Commerce by MasterCard."
 msgstr "谢谢您的订单，请点击下面的按钮来使用信用卡支付。本支付方式是由万事达信用卡旗下“Simplify Commerce”提供。"
 
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:437
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:436
 msgid "Pay Now"
 msgstr "立即支付"
 
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:437
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:436
 msgid "Cancel order &amp; restore cart"
 msgstr "取消订单 &amp; 恢复购物车"
 
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:521
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:520
 msgid "Refund was declined."
 msgstr "退款已取消"
 
@@ -2387,7 +2387,7 @@ msgstr "Enter your PayPal API credentials to process refunds via PayPal. Learn h
 msgid "Get your API credentials from PayPal."
 msgstr "获得来自PayPal的API证书。"
 
-#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:434
+#: includes/gateways/simplify-commerce/class-wc-addons-gateway-simplify-commerce.php:428
 msgid "%s - Pre-order for \"%s\""
 msgstr "%s - 预订 \"%s\""
 
@@ -2900,31 +2900,31 @@ msgstr "无效的webhook传输ID"
 msgid "Invalid webhook delivery"
 msgstr "无效的webhook传输"
 
-#: includes/api/v2/class-wc-api-products.php:2328
+#: includes/api/v2/class-wc-api-products.php:2329
 msgid "Invalid product SKU"
 msgstr "无效的产品SKU"
 
-#: includes/class-wc-ajax.php:201
+#: includes/class-wc-ajax.php:202
 msgid "Sorry there was a problem removing this coupon."
 msgstr "当移除这个优惠券的时候发生一个错误。"
 
-#: includes/class-wc-ajax.php:207
+#: includes/class-wc-ajax.php:208
 msgid "Coupon has been removed."
 msgstr "优惠码已被移除。"
 
-#: includes/class-wc-ajax.php:258
+#: includes/class-wc-ajax.php:259
 msgid "Sorry, your session has expired."
 msgstr "对不起，你的会话已过期。"
 
-#: includes/class-wc-ajax.php:258
+#: includes/class-wc-ajax.php:259
 msgid "Return to homepage"
 msgstr "返回首页"
 
-#: includes/class-wc-ajax.php:2220
+#: includes/class-wc-ajax.php:2221
 msgid "Invalid refund amount"
 msgstr "无效的退款金额"
 
-#: includes/class-wc-ajax.php:2265
+#: includes/class-wc-ajax.php:2266
 msgid "Refund failed"
 msgstr "退款失败"
 
@@ -3012,102 +3012,102 @@ msgstr "分页%d"
 msgid "In order for <strong>database caching</strong> to work with WooCommerce you must add <code>_wc_session_</code> to the \"Ignored Query Strings\" option in W3 Total Cache settings <a href=\"%s\">here</a>."
 msgstr "为了 WooCommerce 能使用 <strong>数据库缓存</strong>,你必须添加 <code>_wc_session_</code>到 \"Ignored Query Strings\"选项 , W3 Total Cache设置 <a href=\"%s\">here</a>."
 
-#: includes/class-wc-cart.php:237
+#: includes/class-wc-cart.php:242
 msgid "%s has been removed from your cart because it can no longer be purchased. Please contact us if you need assistance."
 msgstr "已从购物车中删除%s，因为它已经下架了。如果你需要帮助，请联系我们"
 
-#: includes/class-wc-cart.php:440
+#: includes/class-wc-cart.php:445
 msgid "An item which is no longer available was removed from your cart."
 msgstr "这个项目不再可用并从购物车中移除。"
 
-#: includes/class-wc-cart.php:480
+#: includes/class-wc-cart.php:485
 msgid "Sorry, we do not have enough \"%s\" in stock to fulfill your order (%s in stock). Please edit your cart and try again. We apologise for any inconvenience caused."
 msgstr "对不起，我们没有足够的 \"%s\"现货来满足你的订单(%s 有货).请编辑你的订单并重试。给你造成的不便我们深表歉意。"
 
-#: includes/class-wc-cart.php:515
+#: includes/class-wc-cart.php:520
 msgid "Sorry, we do not have enough \"%s\" in stock to fulfill your order right now. Please try again in %d minutes or edit your cart and try again. We apologise for any inconvenience caused."
 msgstr "很抱歉, 我们没有足够的 \"%s\" 库存, 以满足您的订单现在。请在 %d 分钟重试或编辑您的购物车, 然后再试一次。很抱歉给您带来的不便。"
 
-#: includes/class-wc-cart.php:681
+#: includes/class-wc-cart.php:686
 msgid "Get cart should not be called before the wp_loaded action."
 msgstr "在wordpress被完全加载之前不应该调用购物车"
 
-#: includes/class-wc-cart.php:888 includes/class-wc-cart.php:923
-#: includes/class-wc-frontend-scripts.php:263 includes/wc-cart-functions.php:85
+#: includes/class-wc-cart.php:893 includes/class-wc-cart.php:928
+#: includes/class-wc-frontend-scripts.php:264 includes/wc-cart-functions.php:85
 #: templates/cart/mini-cart.php:76
 msgid "View Cart"
 msgstr "查看购物车"
 
-#: includes/class-wc-cart.php:888
+#: includes/class-wc-cart.php:893
 msgid "You cannot add another &quot;%s&quot; to your cart."
 msgstr "无法添加另一个&quot;%s&quot;到购物车"
 
-#: includes/class-wc-cart.php:899
+#: includes/class-wc-cart.php:904
 msgid "You cannot add &quot;%s&quot; to the cart because the product is out of stock."
 msgstr "你不能添加 &quot;%s&quot; 到购物车，因为产品已售完。"
 
-#: includes/class-wc-cart.php:903
+#: includes/class-wc-cart.php:908
 msgid "You cannot add that amount of &quot;%s&quot; to the cart because there is not enough stock (%s remaining)."
 msgstr "你能购买的数量不能超过&quot;%s&quot; 因为我们的库存不足, (库存为%s)."
 
-#: includes/class-wc-checkout.php:101
+#: includes/class-wc-checkout.php:106
 msgid "Account username"
 msgstr "账户名"
 
-#: includes/class-wc-checkout.php:110
+#: includes/class-wc-checkout.php:115
 msgid "Account password"
 msgstr "账户密码"
 
-#: includes/class-wc-checkout.php:197 includes/class-wc-checkout.php:208
-#: includes/class-wc-checkout.php:233 includes/class-wc-checkout.php:245
-#: includes/class-wc-checkout.php:258 includes/class-wc-checkout.php:269
-#: includes/class-wc-checkout.php:276
+#: includes/class-wc-checkout.php:202 includes/class-wc-checkout.php:213
+#: includes/class-wc-checkout.php:238 includes/class-wc-checkout.php:250
+#: includes/class-wc-checkout.php:263 includes/class-wc-checkout.php:274
+#: includes/class-wc-checkout.php:281
 msgid "Error %d: Unable to create order. Please try again."
 msgstr "Error %d：无法创建订单，请稍后再试。"
 
-#: includes/class-wc-checkout.php:345
+#: includes/class-wc-checkout.php:350
 msgid "We were unable to process your order, please try again."
 msgstr "我们现在无法处理您的订单，请稍后再试。"
 
-#: includes/class-wc-checkout.php:358
+#: includes/class-wc-checkout.php:363
 msgid "Sorry, your session has expired. <a href=\"%s\" class=\"wc-backward\">Return to homepage</a>"
 msgstr "抱歉，会话过期。<a href=\"%s\" class=\"wc-backward\">返回到首页</a>"
 
-#: includes/class-wc-checkout.php:438 includes/class-wc-form-handler.php:85
+#: includes/class-wc-checkout.php:443 includes/class-wc-form-handler.php:85
 #: includes/class-wc-form-handler.php:184
 msgid "is a required field."
 msgstr "为必填项"
 
-#: includes/class-wc-checkout.php:451 includes/class-wc-form-handler.php:98
+#: includes/class-wc-checkout.php:456 includes/class-wc-form-handler.php:98
 #: includes/shortcodes/class-wc-shortcode-cart.php:27
 msgid "Please enter a valid postcode/ZIP."
 msgstr "请输入一个有效的邮政编码。"
 
-#: includes/class-wc-checkout.php:460 includes/class-wc-form-handler.php:107
+#: includes/class-wc-checkout.php:465 includes/class-wc-form-handler.php:107
 msgid "is not a valid phone number."
 msgstr "无效电话号码"
 
-#: includes/class-wc-checkout.php:466 includes/class-wc-form-handler.php:114
+#: includes/class-wc-checkout.php:471 includes/class-wc-form-handler.php:114
 msgid "is not a valid email address."
 msgstr "无效电子邮件地址。"
 
-#: includes/class-wc-checkout.php:484
+#: includes/class-wc-checkout.php:489
 msgid "is not valid. Please enter one of the following:"
 msgstr "无效。请按以下方法输入："
 
-#: includes/class-wc-checkout.php:540
+#: includes/class-wc-checkout.php:545
 msgid "You must accept our Terms &amp; Conditions."
 msgstr "你必须接受我们的条款及条件。"
 
-#: includes/class-wc-checkout.php:546
+#: includes/class-wc-checkout.php:551
 msgid "Unfortunately <strong>we do not ship %s</strong>. Please enter an alternative shipping address."
 msgstr "非常抱歉 <strong> 我们不能配送到 %s </strong>。请输入一个替代的配送地址。"
 
-#: includes/class-wc-checkout.php:555
+#: includes/class-wc-checkout.php:560
 msgid "Invalid shipping method."
 msgstr "无效的送货方式。"
 
-#: includes/class-wc-checkout.php:567
+#: includes/class-wc-checkout.php:572
 msgid "Invalid payment method."
 msgstr "无效的支付方式。"
 
@@ -3115,88 +3115,88 @@ msgstr "无效的支付方式。"
 msgid "Please rate the product."
 msgstr "请对产品评分。"
 
-#: includes/class-wc-countries.php:265
+#: includes/class-wc-countries.php:270
 msgid "to the"
 msgstr "to the"
 
-#: includes/class-wc-countries.php:265
+#: includes/class-wc-countries.php:270
 msgid "to"
 msgstr "to"
 
-#: includes/class-wc-countries.php:276
+#: includes/class-wc-countries.php:281
 msgid "the"
 msgstr "the"
 
-#: includes/class-wc-countries.php:286
+#: includes/class-wc-countries.php:291
 msgid "VAT"
 msgstr "增值税"
 
-#: includes/class-wc-countries.php:296
+#: includes/class-wc-countries.php:301
 msgid "(incl. VAT)"
 msgstr "(包含. 增值税)"
 
-#: includes/class-wc-countries.php:296
+#: includes/class-wc-countries.php:301
 msgid "(incl. tax)"
 msgstr "(包含.税)"
 
-#: includes/class-wc-countries.php:306
+#: includes/class-wc-countries.php:311
 msgid "(ex. VAT)"
 msgstr "(不含. 增值税)"
 
-#: includes/class-wc-countries.php:306
+#: includes/class-wc-countries.php:311
 msgid "(ex. tax)"
 msgstr "(税前)"
 
-#: includes/class-wc-countries.php:499
+#: includes/class-wc-countries.php:504
 msgid "Company Name"
 msgstr "公司名称"
 
-#: includes/class-wc-countries.php:520 includes/class-wc-countries.php:521
+#: includes/class-wc-countries.php:525 includes/class-wc-countries.php:526
 msgid "Town / City"
 msgstr "镇/市"
 
-#: includes/class-wc-countries.php:527
+#: includes/class-wc-countries.php:532
 msgid "State / County"
 msgstr "地区/县"
 
-#: includes/class-wc-countries.php:533 includes/class-wc-countries.php:534
+#: includes/class-wc-countries.php:538 includes/class-wc-countries.php:539
 #: templates/cart/shipping-calculator.php:82
 msgid "Postcode / Zip"
 msgstr "邮政编码"
 
-#: includes/class-wc-countries.php:589 includes/class-wc-countries.php:590
+#: includes/class-wc-countries.php:594 includes/class-wc-countries.php:595
 msgid "Suburb"
 msgstr "社区"
 
-#: includes/class-wc-countries.php:612 includes/class-wc-countries.php:790
+#: includes/class-wc-countries.php:617 includes/class-wc-countries.php:795
 msgid "District"
 msgstr "地区"
 
-#: includes/class-wc-countries.php:663 includes/class-wc-countries.php:722
+#: includes/class-wc-countries.php:668 includes/class-wc-countries.php:727
 msgid "Region"
 msgstr "地区"
 
-#: includes/class-wc-countries.php:718 includes/class-wc-countries.php:719
+#: includes/class-wc-countries.php:723 includes/class-wc-countries.php:724
 msgid "Town / District"
 msgstr "镇/街道"
 
-#: includes/class-wc-countries.php:728 includes/class-wc-countries.php:880
+#: includes/class-wc-countries.php:733 includes/class-wc-countries.php:885
 msgid "County"
 msgstr "县"
 
-#: includes/class-wc-countries.php:760
+#: includes/class-wc-countries.php:765
 msgid "Prefecture"
 msgstr "辖区"
 
-#: includes/class-wc-countries.php:841
+#: includes/class-wc-countries.php:846
 msgid "Municipality"
 msgstr "市"
 
-#: includes/class-wc-countries.php:866 includes/class-wc-countries.php:867
+#: includes/class-wc-countries.php:871 includes/class-wc-countries.php:872
 msgid "Zip"
 msgstr "邮政编码"
 
-#: includes/class-wc-coupon.php:797
+#: includes/class-wc-coupon.php:802
 msgid "Please enter a coupon code."
 msgstr "请输入优惠码。"
 
@@ -3214,35 +3214,35 @@ msgstr "登录"
 msgid "Go to homepage"
 msgstr "回到首页"
 
-#: includes/class-wc-emails.php:262
+#: includes/class-wc-emails.php:267
 msgid "Note"
 msgstr "注意"
 
-#: includes/class-wc-emails.php:330
+#: includes/class-wc-emails.php:335
 msgid "Tel"
 msgstr "电话"
 
-#: includes/class-wc-emails.php:339
+#: includes/class-wc-emails.php:344
 msgid "Customer details"
 msgstr "客户详情"
 
-#: includes/class-wc-emails.php:339
+#: includes/class-wc-emails.php:344
 msgid "Your details"
 msgstr "您的详情"
 
-#: includes/class-wc-emails.php:393
+#: includes/class-wc-emails.php:398
 msgid "Product low in stock"
 msgstr "产品库存不足"
 
-#: includes/class-wc-emails.php:394
+#: includes/class-wc-emails.php:399
 msgid "%s is low in stock."
 msgstr "%s库存较少。"
 
-#: includes/class-wc-emails.php:411
+#: includes/class-wc-emails.php:416
 msgid "Product out of stock"
 msgstr "产品无货。"
 
-#: includes/class-wc-emails.php:412
+#: includes/class-wc-emails.php:417
 msgid "%s is out of stock."
 msgstr "%s缺货。"
 
@@ -3334,7 +3334,7 @@ msgstr "密码不匹配."
 msgid "Anti-spam field was filled in."
 msgstr "验证码字段已填写。"
 
-#: includes/class-wc-frontend-scripts.php:220
+#: includes/class-wc-frontend-scripts.php:221
 msgid "Please select a rating"
 msgstr "请选择评分"
 
@@ -3384,7 +3384,7 @@ msgstr "对不起，没有针对您语言的可用翻译 =/"
 msgid "Translations installed/updated successfully!"
 msgstr "翻译安装/更新成功！"
 
-#: includes/class-wc-order.php:40 includes/wc-cart-functions.php:246
+#: includes/class-wc-order.php:45 includes/wc-cart-functions.php:246
 msgid "(Includes %s)"
 msgstr "(包含 %s)"
 
@@ -3593,22 +3593,22 @@ msgid "Refunded <span class=\"count\">(%s)</span>"
 msgid_plural "Refunded <span class=\"count\">(%s)</span>"
 msgstr[0] "已退款 <span class=\"count\">(%s)</span>"
 
-#: includes/class-wc-checkout.php:103
+#: includes/class-wc-checkout.php:108
 msgctxt "placeholder"
 msgid "Username"
 msgstr "用户名"
 
-#: includes/class-wc-checkout.php:112
+#: includes/class-wc-checkout.php:117
 msgctxt "placeholder"
 msgid "Password"
 msgstr "密码"
 
-#: includes/class-wc-checkout.php:121
+#: includes/class-wc-checkout.php:126
 msgctxt "placeholder"
 msgid "Notes about your order, e.g. special notes for delivery."
 msgstr "为您的订单添加备注，例如：送货特别注意事项。"
 
-#: includes/class-wc-countries.php:510
+#: includes/class-wc-countries.php:515
 msgctxt "placeholder"
 msgid "Street address"
 msgstr "编辑地址"
@@ -3673,11 +3673,11 @@ msgctxt "Order status"
 msgid "Refunded"
 msgstr "已退款"
 
-#: includes/class-wc-ajax.php:2362
+#: includes/class-wc-ajax.php:2363
 msgid "Description is missing."
 msgstr "描述丢失。"
 
-#: includes/class-wc-ajax.php:2365
+#: includes/class-wc-ajax.php:2366
 msgid "User is missing."
 msgstr "用户丢失。"
 
@@ -3705,7 +3705,7 @@ msgstr "Nonce验证无效"
 msgid "You do not have permissions to access this page!"
 msgstr "您没有访问此页的权限！"
 
-#: includes/class-wc-emails.php:394
+#: includes/class-wc-emails.php:399
 msgid "There are %d left"
 msgstr "还剩%d "
 
@@ -3713,7 +3713,7 @@ msgstr "还剩%d "
 msgid "New passwords do not match."
 msgstr "新密码不匹配。"
 
-#: includes/class-wc-frontend-scripts.php:235
+#: includes/class-wc-frontend-scripts.php:236
 msgid "Error processing checkout. Please try again."
 msgstr "结算时出错了，请重试。"
 
@@ -3721,15 +3721,15 @@ msgstr "结算时出错了，请重试。"
 msgid "Use as product image"
 msgstr "用作产品图片"
 
-#: includes/class-wc-ajax.php:2368
+#: includes/class-wc-ajax.php:2369
 msgid "Permissions is missing."
 msgstr "权限丢失。"
 
-#: includes/class-wc-ajax.php:2397
+#: includes/class-wc-ajax.php:2398
 msgid "API Key updated successfully."
 msgstr "API Key 更新成功。"
 
-#: includes/class-wc-ajax.php:2428
+#: includes/class-wc-ajax.php:2429
 msgid "API Key generated successfully. Make sure to copy your new API keys now. You won't be able to see it again!"
 msgstr "API Key已生成，请确保现在就复制一份，您将再也看不到它了！"
 
@@ -3746,7 +3746,7 @@ msgstr "无效的作用域 %s"
 msgid "An error occurred in the request and at the time were unable to send the consumer data"
 msgstr "在请求时发生错误，此时无法发送的用户数据"
 
-#: includes/class-wc-emails.php:442
+#: includes/class-wc-emails.php:447
 msgid "%s units of %s have been backordered in order #%s."
 msgstr "%s 件%s 已被预订，订单#%s."
 
@@ -3755,15 +3755,15 @@ msgctxt "Page slug"
 msgid "shop"
 msgstr "shop"
 
-#: includes/class-wc-cart.php:466
+#: includes/class-wc-cart.php:471
 msgid "Sorry, \"%s\" is not in stock. Please edit your cart and try again. We apologise for any inconvenience caused."
 msgstr "对不起,\"%s\"缺货了,请修改购物车内所购产品，再试一下。我们对造成的任何不便深表歉意。"
 
-#: includes/class-wc-cart.php:894
+#: includes/class-wc-cart.php:899
 msgid "Sorry, this product cannot be purchased."
 msgstr "对不起，暂时无法购买该产品。"
 
-#: includes/class-wc-cart.php:924
+#: includes/class-wc-cart.php:929
 msgid "You cannot add that amount to the cart &mdash; we have %s in stock and you already have %s in your cart."
 msgstr "不能添加那个数量的产品到购物车。我们库存有 %s 并且你购物车中已包含 %s "
 
@@ -3832,11 +3832,11 @@ msgstr "设置产品图片"
 msgid "Remove product image"
 msgstr "删除产品图片"
 
-#: includes/class-wc-frontend-scripts.php:271
+#: includes/class-wc-frontend-scripts.php:272
 msgid "Sorry, no products matched your selection. Please choose a different combination."
 msgstr "很抱歉,没有符合您查找条件的产品，请尝试其它搜选条件。"
 
-#: includes/class-wc-frontend-scripts.php:272
+#: includes/class-wc-frontend-scripts.php:273
 msgid "Sorry, this product is unavailable. Please choose a different combination."
 msgstr "抱歉,该产品已下架，请选择其它产品。"
 
@@ -3906,112 +3906,112 @@ msgstr "Consumer Key 丢失"
 msgid "Consumer Secret is missing"
 msgstr "Consumer Secret 丢失"
 
-#: includes/class-wc-ajax.php:1428
+#: includes/class-wc-ajax.php:1429
 msgid "No products had their stock reduced - they may not have stock management enabled."
 msgstr "没有产品库存减少 - 它们可能没有启用库存管理。"
 
-#: includes/class-wc-ajax.php:1469 includes/class-wc-ajax.php:2280
+#: includes/class-wc-ajax.php:1470 includes/class-wc-ajax.php:2281
 msgid "Item #%s stock increased from %s to %s."
 msgstr "#%s 的库存从 %s 恢复到 %s。"
 
-#: includes/class-wc-ajax.php:1479
+#: includes/class-wc-ajax.php:1480
 msgid "No products had their stock increased - they may not have stock management enabled."
 msgstr "没有产品库存增加 - 它们可能没有启用库存管理。"
 
-#: includes/class-wc-ajax.php:1498
+#: includes/class-wc-ajax.php:1499
 msgid "Value"
 msgstr "值"
 
-#: includes/class-wc-ajax.php:2645
+#: includes/class-wc-ajax.php:2646
 msgid "Dismiss this notice."
 msgstr "忽略此提示"
 
-#: includes/class-wc-countries.php:515
+#: includes/class-wc-countries.php:520
 msgctxt "placeholder"
 msgid "Apartment, suite, unit etc. (optional)"
 msgstr "某单元几号"
 
-#: includes/class-wc-countries.php:650
+#: includes/class-wc-countries.php:655
 msgid "Canton"
 msgstr "坎顿"
 
-#: includes/class-wc-countries.php:620 includes/class-wc-countries.php:643
-#: includes/class-wc-countries.php:669 includes/class-wc-countries.php:734
-#: includes/class-wc-countries.php:754 includes/class-wc-countries.php:772
-#: includes/class-wc-countries.php:834 includes/class-wc-countries.php:860
-#: includes/class-wc-countries.php:907
+#: includes/class-wc-countries.php:625 includes/class-wc-countries.php:648
+#: includes/class-wc-countries.php:674 includes/class-wc-countries.php:739
+#: includes/class-wc-countries.php:759 includes/class-wc-countries.php:777
+#: includes/class-wc-countries.php:839 includes/class-wc-countries.php:865
+#: includes/class-wc-countries.php:912
 msgid "Province"
 msgstr "省级区域"
 
-#: includes/class-wc-countries.php:964
+#: includes/class-wc-countries.php:969
 msgid "Email Address"
 msgstr "电邮地址"
 
-#: includes/class-wc-coupon.php:687
+#: includes/class-wc-coupon.php:692
 msgid "Coupon code applied successfully."
 msgstr "优惠码应用成功。"
 
-#: includes/class-wc-coupon.php:690
+#: includes/class-wc-coupon.php:695
 msgid "Coupon code removed successfully."
 msgstr "优惠码移除成功。"
 
-#: includes/class-wc-coupon.php:708
+#: includes/class-wc-coupon.php:713
 msgid "Coupon is not valid."
 msgstr "优惠码无效。"
 
-#: includes/class-wc-coupon.php:711
+#: includes/class-wc-coupon.php:716
 msgid "Coupon \"%s\" does not exist!"
 msgstr "优惠码\"%s\" 不存在！"
 
-#: includes/class-wc-coupon.php:720
+#: includes/class-wc-coupon.php:725
 msgid "Coupon code already applied!"
 msgstr "已用优惠码！"
 
-#: includes/class-wc-coupon.php:723
+#: includes/class-wc-coupon.php:728
 msgid "Sorry, coupon \"%s\" has already been applied and cannot be used in conjunction with other coupons."
 msgstr "抱歉， 优惠码\"%s\"已经被使用，而且不能和其它优惠码一起使用。"
 
-#: includes/class-wc-coupon.php:717
+#: includes/class-wc-coupon.php:722
 msgid "Sorry, it seems the coupon \"%s\" is not yours - it has now been removed from your order."
 msgstr "抱歉， 优惠码 \"%s\" 不是你的 - 已从订单中移除。"
 
-#: includes/class-wc-coupon.php:714
+#: includes/class-wc-coupon.php:719
 msgid "Sorry, it seems the coupon \"%s\" is invalid - it has now been removed from your order."
 msgstr "抱歉， 优惠码 \"%s\" 无效 - 已从订单中移除。"
 
-#: includes/class-wc-coupon.php:726
+#: includes/class-wc-coupon.php:731
 msgid "Coupon usage limit has been reached."
 msgstr "优惠码已过期。"
 
-#: includes/class-wc-coupon.php:729
+#: includes/class-wc-coupon.php:734
 msgid "This coupon has expired."
 msgstr "抱歉， 此优惠券已过期。"
 
-#: includes/class-wc-coupon.php:735
+#: includes/class-wc-coupon.php:740
 msgid "The maximum spend for this coupon is %s."
 msgstr "消费不多于 %s 可用此优惠码。"
 
-#: includes/class-wc-coupon.php:732
+#: includes/class-wc-coupon.php:737
 msgid "The minimum spend for this coupon is %s."
 msgstr "消费不少于 %s 可用此优惠码。"
 
-#: includes/class-wc-coupon.php:738
+#: includes/class-wc-coupon.php:743
 msgid "Sorry, this coupon is not applicable to your cart contents."
 msgstr "抱歉，此优惠码不适用于您所购的产品。"
 
-#: includes/class-wc-coupon.php:751
+#: includes/class-wc-coupon.php:756
 msgid "Sorry, this coupon is not applicable to the products: %s."
 msgstr "抱歉，此优惠码不适用于这个产品：%s。"
 
-#: includes/class-wc-coupon.php:771
+#: includes/class-wc-coupon.php:776
 msgid "Sorry, this coupon is not applicable to the categories: %s."
 msgstr "抱歉，此优惠码不适用于此分类：%s。"
 
-#: includes/class-wc-coupon.php:794
+#: includes/class-wc-coupon.php:799
 msgid "Coupon does not exist!"
 msgstr "优惠码不存在！"
 
-#: includes/class-wc-coupon.php:774
+#: includes/class-wc-coupon.php:779
 msgid "Sorry, this coupon is not valid for sale items."
 msgstr "抱歉，此优惠码不适用于促销产品。"
 
@@ -4051,7 +4051,7 @@ msgstr "文件未定义"
 msgid "File not found"
 msgstr "无法找到文件"
 
-#: includes/class-wc-emails.php:441
+#: includes/class-wc-emails.php:446
 msgid "Product Backorder"
 msgstr "产品预订"
 
@@ -4080,7 +4080,7 @@ msgstr[0] "%s是必填选项"
 msgid "You are now logged in as <strong>%s</strong>"
 msgstr "当前登录为 <strong>%s</strong>"
 
-#: includes/class-wc-frontend-scripts.php:242
+#: includes/class-wc-frontend-scripts.php:243
 #: includes/wc-template-functions.php:1626
 msgid "required"
 msgstr "必填"
@@ -4576,16 +4576,16 @@ msgstr "模板"
 msgid "This section shows any files that are overriding the default WooCommerce template pages."
 msgstr "这部分显示了覆盖默认WooCommerce模板页面的任何文件。"
 
-#: includes/admin/views/html-admin-page-status-report.php:689
+#: includes/admin/views/html-admin-page-status-report.php:688
 msgid "<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of date. The core version is %s"
 msgstr "<code> %s</code> 版本<strong style=\"color:red\"> %s</strong> 是过时的。核心版本为 %s"
 
-#: includes/admin/views/html-admin-page-status-report.php:701
-#: includes/admin/views/html-admin-page-status-report.php:710
+#: includes/admin/views/html-admin-page-status-report.php:700
+#: includes/admin/views/html-admin-page-status-report.php:709
 msgid "Overrides"
 msgstr "重写"
 
-#: includes/admin/views/html-admin-page-status-report.php:722
+#: includes/admin/views/html-admin-page-status-report.php:721
 msgid "Learn how to update outdated templates"
 msgstr "学习如何更新模板"
 
@@ -5129,43 +5129,43 @@ msgstr "无效的产品产品分类号码"
 msgid "A product category with the provided ID could not be found"
 msgstr "找不到与您提供的号码匹配的产品分类"
 
-#: includes/api/class-wc-api-products.php:1731
 #: includes/api/class-wc-api-products.php:1732
+#: includes/api/class-wc-api-products.php:1733
 #: includes/api/v1/class-wc-api-products.php:461
 #: includes/api/v1/class-wc-api-products.php:462
-#: includes/api/v2/class-wc-api-products.php:1736
 #: includes/api/v2/class-wc-api-products.php:1737
-#: includes/wc-product-functions.php:283
+#: includes/api/v2/class-wc-api-products.php:1738
+#: includes/wc-product-functions.php:287
 #: templates/single-product/product-image.php:42
 msgid "Placeholder"
 msgstr "占位"
 
-#: includes/api/class-wc-api-products.php:1806
-#: includes/api/v2/class-wc-api-products.php:1811
+#: includes/api/class-wc-api-products.php:1807
+#: includes/api/v2/class-wc-api-products.php:1812
 msgid "Invalid URL %s"
 msgstr "无效的URL %s"
 
-#: includes/api/class-wc-api-products.php:1818
-#: includes/api/v2/class-wc-api-products.php:1823
+#: includes/api/class-wc-api-products.php:1819
+#: includes/api/v2/class-wc-api-products.php:1824
 msgid "Error getting remote image %s"
 msgstr "获取远程图片失败  %s"
 
-#: includes/api/class-wc-api-products.php:1979
-#: includes/api/class-wc-api-products.php:2023
-#: includes/api/v2/class-wc-api-products.php:1984
-#: includes/api/v2/class-wc-api-products.php:2028
+#: includes/api/class-wc-api-products.php:1980
+#: includes/api/class-wc-api-products.php:2024
+#: includes/api/v2/class-wc-api-products.php:1985
+#: includes/api/v2/class-wc-api-products.php:2029
 msgid "You do not have permission to read product attributes"
 msgstr "您没有查阅产品属性的权限"
 
-#: includes/api/class-wc-api-products.php:2018
-#: includes/api/v2/class-wc-api-products.php:2023
+#: includes/api/class-wc-api-products.php:2019
+#: includes/api/v2/class-wc-api-products.php:2024
 msgid "Invalid product attribute ID"
 msgstr "无效的产品属性ID"
 
-#: includes/api/class-wc-api-products.php:2033
-#: includes/api/class-wc-api-products.php:2274
-#: includes/api/v2/class-wc-api-products.php:2038
-#: includes/api/v2/class-wc-api-products.php:2279
+#: includes/api/class-wc-api-products.php:2034
+#: includes/api/class-wc-api-products.php:2275
+#: includes/api/v2/class-wc-api-products.php:2039
+#: includes/api/v2/class-wc-api-products.php:2280
 msgid "A product attribute with the provided ID could not be found"
 msgstr "找不到与您提供的产品属性ID匹配的产品属性"
 
@@ -5267,18 +5267,18 @@ msgstr "无法创建webhook：%s"
 msgid "Webhook topic must be valid"
 msgstr "Webhook 主题必须是有效的"
 
-#: includes/api/class-wc-api-products.php:2235
-#: includes/api/v2/class-wc-api-products.php:2240
+#: includes/api/class-wc-api-products.php:2236
+#: includes/api/v2/class-wc-api-products.php:2241
 msgid "Could not edit the attribute"
 msgstr "不能编辑此属性"
 
-#: includes/api/class-wc-api-products.php:2262
-#: includes/api/v2/class-wc-api-products.php:2267
+#: includes/api/class-wc-api-products.php:2263
+#: includes/api/v2/class-wc-api-products.php:2268
 msgid "You do not have permission to delete product attributes"
 msgstr "您没有删除产品属性的权限"
 
-#: includes/api/class-wc-api-products.php:2284
-#: includes/api/v2/class-wc-api-products.php:2289
+#: includes/api/class-wc-api-products.php:2285
+#: includes/api/v2/class-wc-api-products.php:2290
 msgid "Could not delete the attribute"
 msgstr "不能删除此属性"
 
@@ -5288,13 +5288,13 @@ msgstr "不能删除此属性"
 msgid "API user is invalid"
 msgstr "API 用户无效"
 
-#: includes/api/class-wc-api-products.php:2107
-#: includes/api/v2/class-wc-api-products.php:2112
+#: includes/api/class-wc-api-products.php:2108
+#: includes/api/v2/class-wc-api-products.php:2113
 msgid "You do not have permission to create product attributes"
 msgstr "您没有创建产品属性的权限"
 
-#: includes/api/class-wc-api-products.php:2189
-#: includes/api/v2/class-wc-api-products.php:2194
+#: includes/api/class-wc-api-products.php:2190
+#: includes/api/v2/class-wc-api-products.php:2195
 msgid "You do not have permission to edit product attributes"
 msgstr "您没有编辑产品属性的权限"
 
@@ -5304,7 +5304,7 @@ msgstr "您没有编辑产品属性的权限"
 #: includes/api/class-wc-api-orders.php:1307
 #: includes/api/class-wc-api-orders.php:1599
 #: includes/api/class-wc-api-products.php:205
-#: includes/api/class-wc-api-products.php:2100
+#: includes/api/class-wc-api-products.php:2101
 #: includes/api/class-wc-api-webhooks.php:169
 #: includes/api/v2/class-wc-api-coupons.php:213
 #: includes/api/v2/class-wc-api-customers.php:345
@@ -5312,7 +5312,7 @@ msgstr "您没有编辑产品属性的权限"
 #: includes/api/v2/class-wc-api-orders.php:1306
 #: includes/api/v2/class-wc-api-orders.php:1598
 #: includes/api/v2/class-wc-api-products.php:210
-#: includes/api/v2/class-wc-api-products.php:2105
+#: includes/api/v2/class-wc-api-products.php:2106
 #: includes/api/v2/class-wc-api-webhooks.php:169
 msgid "No %1$s data specified to create %1$s"
 msgstr "没有创建 %1$s所需的 %1$s数据。"
@@ -5323,7 +5323,7 @@ msgstr "没有创建 %1$s所需的 %1$s数据。"
 #: includes/api/class-wc-api-orders.php:1364
 #: includes/api/class-wc-api-orders.php:1676
 #: includes/api/class-wc-api-products.php:307
-#: includes/api/class-wc-api-products.php:2181
+#: includes/api/class-wc-api-products.php:2182
 #: includes/api/class-wc-api-webhooks.php:245
 #: includes/api/v2/class-wc-api-coupons.php:329
 #: includes/api/v2/class-wc-api-customers.php:400
@@ -5331,7 +5331,7 @@ msgstr "没有创建 %1$s所需的 %1$s数据。"
 #: includes/api/v2/class-wc-api-orders.php:1363
 #: includes/api/v2/class-wc-api-orders.php:1675
 #: includes/api/v2/class-wc-api-products.php:312
-#: includes/api/v2/class-wc-api-products.php:2186
+#: includes/api/v2/class-wc-api-products.php:2187
 #: includes/api/v2/class-wc-api-webhooks.php:245
 msgid "No %1$s data specified to edit %1$s"
 msgstr "没有编辑 %1$s所需的 %1$s数据"
@@ -5339,27 +5339,27 @@ msgstr "没有编辑 %1$s所需的 %1$s数据"
 #: includes/api/class-wc-api-coupons.php:526
 #: includes/api/class-wc-api-customers.php:789
 #: includes/api/class-wc-api-orders.php:1789
-#: includes/api/class-wc-api-products.php:2344
+#: includes/api/class-wc-api-products.php:2345
 #: includes/api/v2/class-wc-api-coupons.php:526
 #: includes/api/v2/class-wc-api-customers.php:789
 #: includes/api/v2/class-wc-api-orders.php:1788
-#: includes/api/v2/class-wc-api-products.php:2373
+#: includes/api/v2/class-wc-api-products.php:2374
 msgid "No %1$s data specified to create/edit %1$s"
 msgstr "没有创建/编辑 %1$s所需的 %1$s数据"
 
 #: includes/api/class-wc-api-coupons.php:534
 #: includes/api/class-wc-api-customers.php:797
 #: includes/api/class-wc-api-orders.php:1797
-#: includes/api/class-wc-api-products.php:2352
+#: includes/api/class-wc-api-products.php:2353
 #: includes/api/v2/class-wc-api-coupons.php:534
 #: includes/api/v2/class-wc-api-customers.php:797
 #: includes/api/v2/class-wc-api-orders.php:1796
-#: includes/api/v2/class-wc-api-products.php:2381
+#: includes/api/v2/class-wc-api-products.php:2382
 msgid "Unable to accept more than %s items for this request"
 msgstr "此请求的项目不能多于%s个项目"
 
-#: includes/api/class-wc-api-products.php:2077
-#: includes/api/v2/class-wc-api-products.php:2082
+#: includes/api/class-wc-api-products.php:2078
+#: includes/api/v2/class-wc-api-products.php:2083
 msgid "Invalid product attribute type - the product attribute type must be any of these: %s"
 msgstr "无效的产品属性类型-此产品属性类型至少应该是： %s"
 
@@ -5367,8 +5367,8 @@ msgstr "无效的产品属性类型-此产品属性类型至少应该是： %s"
 msgid "WooCommerce API. Use a consumer key in the username field and a consumer secret in the password field"
 msgstr "WooCommerce API，使用一个onsumer key在用户名输入栏并使用一个consumer secret在密码栏"
 
-#: includes/api/class-wc-api-products.php:2082
-#: includes/api/v2/class-wc-api-products.php:2087
+#: includes/api/class-wc-api-products.php:2083
+#: includes/api/v2/class-wc-api-products.php:2088
 msgid "Invalid product attribute order_by type - the product attribute order_by type must be any of these: %s"
 msgstr "无效的产品属性order_by 类型 - 此产品属性order_by 类型必须是以下中的: %s"
 
@@ -5487,13 +5487,13 @@ msgstr "你没有创建优惠券的权限。"
 #: includes/api/class-wc-api-coupons.php:227
 #: includes/api/class-wc-api-customers.php:359
 #: includes/api/class-wc-api-products.php:219
-#: includes/api/class-wc-api-products.php:2064
+#: includes/api/class-wc-api-products.php:2065
 #: includes/api/class-wc-api-server.php:427
 #: includes/api/v1/class-wc-api-server.php:409
 #: includes/api/v2/class-wc-api-coupons.php:227
 #: includes/api/v2/class-wc-api-customers.php:359
 #: includes/api/v2/class-wc-api-products.php:224
-#: includes/api/v2/class-wc-api-products.php:2069
+#: includes/api/v2/class-wc-api-products.php:2070
 #: includes/api/v2/class-wc-api-server.php:427 includes/class-wc-auth.php:159
 msgid "Missing parameter %s"
 msgstr "缺少参数 %s"
@@ -5555,15 +5555,15 @@ msgstr "提供的订单币种无效"
 msgid "Order ID is invalid"
 msgstr "订单ID是无效的"
 
-#: includes/api/class-wc-api-products.php:1847
-#: includes/api/v2/class-wc-api-products.php:1852
+#: includes/api/class-wc-api-products.php:1848
+#: includes/api/v2/class-wc-api-products.php:1853
 msgid "Zero size file downloaded"
 msgstr "已下载空文件"
 
-#: includes/api/class-wc-api-products.php:2302
+#: includes/api/class-wc-api-products.php:2303
 #: includes/api/class-wc-api-resource.php:386
 #: includes/api/v1/class-wc-api-resource.php:325
-#: includes/api/v2/class-wc-api-products.php:2307
+#: includes/api/v2/class-wc-api-products.php:2308
 #: includes/api/v2/class-wc-api-resource.php:386
 msgid "Deleted %s"
 msgstr "删除%s"
@@ -6279,7 +6279,7 @@ msgid "Generate API Key"
 msgstr "生成"
 
 #: includes/admin/settings/views/html-keys-edit.php:97
-#: includes/class-wc-ajax.php:2429
+#: includes/class-wc-ajax.php:2430
 msgid "Revoke Key"
 msgstr "撤销 K"
 
@@ -7172,7 +7172,7 @@ msgstr "数量"
 #: includes/admin/meta-boxes/views/html-order-items.php:64
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:144
 #: includes/admin/settings/class-wc-settings-tax.php:28
-#: includes/class-wc-countries.php:286 includes/class-wc-tax.php:631
+#: includes/class-wc-countries.php:291 includes/class-wc-tax.php:636
 msgid "Tax"
 msgstr "税"
 
@@ -8179,7 +8179,7 @@ msgstr "想帮助WooCommerce变的更帅吗？允许WooThemes收集些非敏感�
 #: includes/admin/views/html-bulk-edit-product.php:284
 #: includes/admin/views/html-notice-tracking.php:13
 #: includes/admin/views/html-quick-edit-product.php:203
-#: includes/class-wc-ajax.php:826 includes/class-wc-ajax.php:2489
+#: includes/class-wc-ajax.php:827 includes/class-wc-ajax.php:2490
 msgid "Allow"
 msgstr "允许"
 
@@ -8864,12 +8864,12 @@ msgstr "保存/更新 %s"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:47
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:96
-#: includes/class-wc-countries.php:493 includes/class-wc-form-handler.php:178
+#: includes/class-wc-countries.php:498 includes/class-wc-form-handler.php:178
 msgid "Last Name"
 msgstr "姓氏"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:86
-#: includes/class-wc-countries.php:971
+#: includes/class-wc-countries.php:976
 msgid "Phone"
 msgstr "电话"
 
@@ -8922,7 +8922,7 @@ msgstr "顾客账单地址"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:245
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:328
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:330
-#: includes/class-wc-countries.php:509
+#: includes/class-wc-countries.php:514
 msgid "Address"
 msgstr "地址"
 
@@ -8980,7 +8980,7 @@ msgid "Customer's notes about the order"
 msgstr "客户对订单的注释"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-downloads.php:55
-#: includes/class-wc-ajax.php:1118
+#: includes/class-wc-ajax.php:1119
 msgid "File %d"
 msgstr "文件已取消。"
 
@@ -8997,7 +8997,7 @@ msgid "by %s"
 msgstr "来自 %s"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-notes.php:56
-#: includes/class-wc-ajax.php:1748
+#: includes/class-wc-ajax.php:1749
 msgid "Delete note"
 msgstr "删除备注"
 
@@ -9213,7 +9213,7 @@ msgstr "仅含运费"
 #: includes/admin/settings/views/settings-tax.php:53
 #: includes/admin/views/html-bulk-edit-product.php:95
 #: includes/admin/views/html-quick-edit-product.php:73
-#: includes/class-wc-ajax.php:814 includes/class-wc-ajax.php:2477
+#: includes/class-wc-ajax.php:815 includes/class-wc-ajax.php:2478
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:210
 msgid "Standard"
 msgstr "标准"
@@ -9251,14 +9251,14 @@ msgstr "允许缺货？"
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:325
 #: includes/admin/views/html-bulk-edit-product.php:282
 #: includes/admin/views/html-quick-edit-product.php:201
-#: includes/class-wc-ajax.php:824 includes/class-wc-ajax.php:2487
+#: includes/class-wc-ajax.php:825 includes/class-wc-ajax.php:2488
 msgid "Do not allow"
 msgstr "不允许"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:326
 #: includes/admin/views/html-bulk-edit-product.php:283
 #: includes/admin/views/html-quick-edit-product.php:202
-#: includes/class-wc-ajax.php:825 includes/class-wc-ajax.php:2488
+#: includes/class-wc-ajax.php:826 includes/class-wc-ajax.php:2489
 msgid "Allow, but notify customer"
 msgstr "允许，但通知客户"
 
@@ -9402,7 +9402,7 @@ msgstr "在产品级别开启库存管理"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:43
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:92
-#: includes/class-wc-countries.php:488 includes/class-wc-form-handler.php:177
+#: includes/class-wc-countries.php:493 includes/class-wc-form-handler.php:177
 msgid "First Name"
 msgstr "名字"
 
@@ -9751,7 +9751,7 @@ msgid "Customer Message"
 msgstr "顾客留言"
 
 #: includes/admin/class-wc-admin-post-types.php:265
-#: includes/class-wc-checkout.php:120
+#: includes/class-wc-checkout.php:125
 msgid "Order Notes"
 msgstr "订单备注"
 
@@ -9782,14 +9782,14 @@ msgid "External/Affiliate"
 msgstr "外部/加盟"
 
 #: includes/admin/class-wc-admin-post-types.php:349
-#: includes/admin/class-wc-admin-post-types.php:1671
+#: includes/admin/class-wc-admin-post-types.php:1669
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:57
 #: includes/admin/meta-boxes/views/html-variation-admin.php:80
 msgid "Virtual"
 msgstr "虚拟"
 
 #: includes/admin/class-wc-admin-post-types.php:351
-#: includes/admin/class-wc-admin-post-types.php:1663
+#: includes/admin/class-wc-admin-post-types.php:1661
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:64
 #: includes/admin/meta-boxes/views/html-variation-admin.php:78
 msgid "Downloadable"
@@ -9965,111 +9965,111 @@ msgstr "完成"
 msgid "Sort Products"
 msgstr "产品排序"
 
-#: includes/admin/class-wc-admin-post-types.php:1400
-#: includes/admin/class-wc-admin-post-types.php:1401
+#: includes/admin/class-wc-admin-post-types.php:1398
+#: includes/admin/class-wc-admin-post-types.php:1399
 msgid "Mark processing"
 msgstr "标记为正在处理"
 
-#: includes/admin/class-wc-admin-post-types.php:1403
-#: includes/admin/class-wc-admin-post-types.php:1404
+#: includes/admin/class-wc-admin-post-types.php:1401
+#: includes/admin/class-wc-admin-post-types.php:1402
 msgid "Mark on-hold"
 msgstr "标记为保留"
 
-#: includes/admin/class-wc-admin-post-types.php:1406
-#: includes/admin/class-wc-admin-post-types.php:1407
+#: includes/admin/class-wc-admin-post-types.php:1404
+#: includes/admin/class-wc-admin-post-types.php:1405
 msgid "Mark complete"
 msgstr "标记为已完成"
 
-#: includes/admin/class-wc-admin-post-types.php:1443
+#: includes/admin/class-wc-admin-post-types.php:1441
 msgid "Order status changed by bulk edit:"
 msgstr "由批量编辑造成的订单状态变更:"
 
-#: includes/admin/class-wc-admin-post-types.php:1477
+#: includes/admin/class-wc-admin-post-types.php:1475
 msgid "Order status changed."
 msgid_plural "%s order statuses changed."
 msgstr[0] "%s 订单状态改变."
 
-#: includes/admin/class-wc-admin-post-types.php:1623
+#: includes/admin/class-wc-admin-post-types.php:1621
 msgid "Show all product types"
 msgstr "显示全部产品类型"
 
-#: includes/admin/class-wc-admin-post-types.php:1639
+#: includes/admin/class-wc-admin-post-types.php:1637
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:41
-#: includes/wc-product-functions.php:511
+#: includes/wc-product-functions.php:515
 msgid "External/Affiliate product"
 msgstr "外接/关联产品"
 
-#: includes/admin/class-wc-admin-post-types.php:1645
+#: includes/admin/class-wc-admin-post-types.php:1643
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:39
-#: includes/wc-product-functions.php:509
+#: includes/wc-product-functions.php:513
 msgid "Simple product"
 msgstr "单个产品"
 
-#: includes/admin/class-wc-admin-post-types.php:1686
+#: includes/admin/class-wc-admin-post-types.php:1684
 msgid "Show all types"
 msgstr "显示所有类型"
 
-#: includes/admin/class-wc-admin-post-types.php:1715
+#: includes/admin/class-wc-admin-post-types.php:1713
 #: includes/admin/settings/views/html-keys-edit.php:35
 msgid "Search for a customer&hellip;"
 msgstr "搜索用户......"
 
-#: includes/admin/class-wc-admin-post-types.php:2041
+#: includes/admin/class-wc-admin-post-types.php:2039
 msgid "Product name"
 msgstr "产品名称"
 
-#: includes/admin/class-wc-admin-post-types.php:2044
+#: includes/admin/class-wc-admin-post-types.php:2042
 #: templates/cart/cart.php:128 templates/checkout/form-coupon.php:25
 msgid "Coupon code"
 msgstr "优惠券代码"
 
-#: includes/admin/class-wc-admin-post-types.php:2059
+#: includes/admin/class-wc-admin-post-types.php:2057
 msgid "Description (optional)"
 msgstr "说明(可不填)"
 
-#: includes/admin/class-wc-admin-post-types.php:2076
+#: includes/admin/class-wc-admin-post-types.php:2074
 msgid "Insert into %s"
 msgstr "插入到 %s"
 
-#: includes/admin/class-wc-admin-post-types.php:2077
+#: includes/admin/class-wc-admin-post-types.php:2075
 msgid "Uploaded to this %s"
 msgstr "已上传到 %s"
 
-#: includes/admin/class-wc-admin-post-types.php:2097
+#: includes/admin/class-wc-admin-post-types.php:2095
 msgid "Catalog/search"
 msgstr "目录/搜索"
 
-#: includes/admin/class-wc-admin-post-types.php:2098
+#: includes/admin/class-wc-admin-post-types.php:2096
 #: includes/admin/views/html-bulk-edit-product.php:187
 #: includes/admin/views/html-quick-edit-product.php:144
 msgid "Catalog"
 msgstr "分类"
 
-#: includes/admin/class-wc-admin-post-types.php:2099
+#: includes/admin/class-wc-admin-post-types.php:2097
 #: includes/admin/views/html-bulk-edit-product.php:188
 #: includes/admin/views/html-quick-edit-product.php:145
 msgid "Search"
 msgstr "搜索"
 
-#: includes/admin/class-wc-admin-post-types.php:2100
+#: includes/admin/class-wc-admin-post-types.php:2098
 #: includes/admin/views/html-bulk-edit-product.php:189
 #: includes/admin/views/html-quick-edit-product.php:146
 msgid "Hidden"
 msgstr "隐藏"
 
-#: includes/admin/class-wc-admin-post-types.php:2104
+#: includes/admin/class-wc-admin-post-types.php:2102
 msgid "Catalog visibility:"
 msgstr "目录可见:"
 
-#: includes/admin/class-wc-admin-post-types.php:2126
+#: includes/admin/class-wc-admin-post-types.php:2124
 msgid "Enable this option to feature this product."
 msgstr "启用该选项以推荐此产品。"
 
-#: includes/admin/class-wc-admin-post-types.php:2131
+#: includes/admin/class-wc-admin-post-types.php:2129
 msgid "OK"
 msgstr "确定"
 
-#: includes/admin/class-wc-admin-post-types.php:2132
+#: includes/admin/class-wc-admin-post-types.php:2130
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:175
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:745
 #: includes/admin/meta-boxes/views/html-order-items.php:251
@@ -10117,8 +10117,8 @@ msgstr "城市"
 #: includes/admin/class-wc-admin-profile.php:121
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:67
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:116
-#: includes/class-wc-countries.php:593 includes/class-wc-countries.php:594
-#: includes/class-wc-countries.php:876 includes/class-wc-countries.php:877
+#: includes/class-wc-countries.php:598 includes/class-wc-countries.php:599
+#: includes/class-wc-countries.php:881 includes/class-wc-countries.php:882
 msgid "Postcode"
 msgstr "邮编"
 
@@ -10129,7 +10129,7 @@ msgstr "邮编"
 #: includes/admin/class-wc-admin-setup-wizard.php:504
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:71
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:120
-#: includes/class-wc-countries.php:504
+#: includes/class-wc-countries.php:509
 msgid "Country"
 msgstr "国家"
 
@@ -10161,7 +10161,7 @@ msgstr "电话"
 #: includes/admin/class-wc-admin-profile.php:88
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:83
 #: includes/admin/reports/class-wc-report-customer-list.php:230
-#: includes/class-wc-emails.php:323 templates/single-product-reviews.php:67
+#: includes/class-wc-emails.php:328 templates/single-product-reviews.php:67
 msgid "Email"
 msgstr "电子邮件"
 
@@ -10534,7 +10534,7 @@ msgid "Yes, please import some starter tax rates"
 msgstr "是的，请导入一些税率。"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:505
-#: includes/class-wc-countries.php:597 includes/class-wc-countries.php:870
+#: includes/class-wc-countries.php:602 includes/class-wc-countries.php:875
 msgid "State"
 msgstr "省/直辖市/自治区"
 
@@ -10654,19 +10654,19 @@ msgstr "在此为您的产品上传或指定一张图片，此图片将会显示
 msgid "When you are finished editing your product, hit the \"Publish\" button to publish your product to your store."
 msgstr "当您完成了产品的编辑时，点击\"发布\"按钮就可以将您的产品发布到您的店铺了。"
 
-#: includes/admin/class-wc-admin-post-types.php:1636
+#: includes/admin/class-wc-admin-post-types.php:1634
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:40
-#: includes/wc-product-functions.php:510
+#: includes/wc-product-functions.php:514
 msgid "Grouped product"
 msgstr "成组产品"
 
-#: includes/admin/class-wc-admin-post-types.php:1642
+#: includes/admin/class-wc-admin-post-types.php:1640
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:42
-#: includes/wc-product-functions.php:512
+#: includes/wc-product-functions.php:516
 msgid "Variable product"
 msgstr "可变产品"
 
-#: includes/admin/class-wc-admin-post-types.php:2128
+#: includes/admin/class-wc-admin-post-types.php:2126
 msgid "Featured Product"
 msgstr "推荐产品"
 
@@ -10815,7 +10815,7 @@ msgstr "API Key 撤销成功"
 msgid "Action failed. Please refresh the page and retry."
 msgstr "动作失败。请刷新页面重试。"
 
-#. #-#-#-#-#  tmp-woocommerce.pot (WooCommerce 2.4.8)  #-#-#-#-#
+#. #-#-#-#-#  tmp-woocommerce.pot (WooCommerce 2.4.10)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/abstracts/abstract-wc-order.php:2171
 #: includes/abstracts/abstract-wc-order.php:2172
@@ -10912,7 +10912,7 @@ msgstr "%qty% 变量"
 #: includes/admin/class-wc-admin-assets.php:204
 #: includes/admin/class-wc-admin-assets.php:325
 #: includes/admin/settings/views/html-webhooks-edit.php:50
-#: includes/class-wc-frontend-scripts.php:278
+#: includes/class-wc-frontend-scripts.php:279
 msgid "Select an option&hellip;"
 msgstr "选择一个选项&hellip;"
 
@@ -10960,7 +10960,7 @@ msgstr "删除这个属性？"
 #: includes/admin/settings/class-wc-settings-shipping.php:203
 #: includes/admin/settings/views/html-webhooks-edit.php:15
 #: includes/admin/views/html-admin-page-status-report.php:589
-#: includes/class-wc-ajax.php:1498
+#: includes/class-wc-ajax.php:1499
 #: includes/widgets/class-wc-widget-product-categories.php:52
 #: templates/single-product-reviews.php:65
 msgid "Name"
@@ -11020,7 +11020,7 @@ msgstr "加载客户的收货地址？这将删除任何当前输入送货信息
 
 #: includes/admin/class-wc-admin-assets.php:234
 #: includes/admin/class-wc-admin-post-types.php:225
-#: includes/admin/class-wc-admin-post-types.php:2108
+#: includes/admin/class-wc-admin-post-types.php:2106
 #: includes/admin/views/html-bulk-edit-product.php:199
 #: includes/admin/views/html-quick-edit-product.php:157
 msgid "Featured"
@@ -11047,14 +11047,14 @@ msgid "Your product has variations! Before changing the product type, it is a go
 msgstr "你的产品有变动！在更改产品型号前，最好先删除变动以避免在货品列表中出现错误。"
 
 #: includes/admin/class-wc-admin-attributes.php:98
-#: includes/api/class-wc-api-products.php:2068
-#: includes/api/v2/class-wc-api-products.php:2073
+#: includes/api/class-wc-api-products.php:2069
+#: includes/api/v2/class-wc-api-products.php:2074
 msgid "Slug \"%s\" is too long (28 characters max). Shorten it, please."
 msgstr "别名：\"%s\"太长了(系统最多只允许28个字符)请删减掉一些字符。"
 
 #: includes/admin/class-wc-admin-attributes.php:100
-#: includes/api/class-wc-api-products.php:2070
-#: includes/api/v2/class-wc-api-products.php:2075
+#: includes/api/class-wc-api-products.php:2071
+#: includes/api/v2/class-wc-api-products.php:2076
 msgid "Slug \"%s\" is not allowed because it is a reserved term. Change it, please."
 msgstr "别名：\"%s\" 不可注册，因为包含了系统禁止注册的单词或词组，请更换其他的别名。"
 
@@ -11065,8 +11065,8 @@ msgstr "请提供一个属性名以及别名。"
 
 #: includes/admin/class-wc-admin-attributes.php:121
 #: includes/admin/class-wc-admin-attributes.php:154
-#: includes/api/class-wc-api-products.php:2072
-#: includes/api/v2/class-wc-api-products.php:2077
+#: includes/api/class-wc-api-products.php:2073
+#: includes/api/v2/class-wc-api-products.php:2078
 msgid "Slug \"%s\" is already in use. Change it, please."
 msgstr "别名：\"%s\"已被使用，请更换其他的别名。"
 
@@ -11154,7 +11154,7 @@ msgstr "分类方法"
 #: includes/admin/class-wc-admin-attributes.php:372
 #: includes/admin/class-wc-admin-post-types.php:431
 #: includes/admin/class-wc-admin-post-types.php:559
-#: includes/admin/class-wc-admin-post-types.php:2112
+#: includes/admin/class-wc-admin-post-types.php:2110
 #: includes/admin/class-wc-admin-webhooks-table-list.php:99
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:235
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:319
@@ -11499,10 +11499,10 @@ msgid "Reviews"
 msgstr "评论"
 
 #: includes/admin/class-wc-admin-notices.php:100
-#: includes/class-wc-checkout.php:69 includes/class-wc-checkout.php:78
-#: includes/class-wc-emails.php:43 includes/class-wc-emails.php:52
-#: includes/class-wc-payment-gateways.php:46
-#: includes/class-wc-payment-gateways.php:55 includes/class-wc-shipping.php:65
+#: includes/class-wc-checkout.php:74 includes/class-wc-checkout.php:83
+#: includes/class-wc-emails.php:48 includes/class-wc-emails.php:57
+#: includes/class-wc-payment-gateways.php:51
+#: includes/class-wc-payment-gateways.php:60 includes/class-wc-shipping.php:65
 #: includes/class-wc-shipping.php:74 includes/emails/class-wc-email.php:685
 #: woocommerce.php:106 woocommerce.php:114
 msgid "Cheatin&#8217; huh?"
@@ -11558,7 +11558,7 @@ msgstr "产品名称"
 #: includes/admin/reports/class-wc-report-stock.php:108
 #: includes/admin/views/html-bulk-edit-product.php:223
 #: includes/admin/views/html-quick-edit-product.php:166
-#: includes/class-wc-ajax.php:831 includes/class-wc-ajax.php:2494
+#: includes/class-wc-ajax.php:832 includes/class-wc-ajax.php:2495
 #: includes/class-wc-product-variation.php:526
 #: includes/class-wc-product-variation.php:536
 #: includes/class-wc-product-variation.php:552
@@ -11573,7 +11573,7 @@ msgstr "有货"
 #: includes/admin/reports/class-wc-report-stock.php:110
 #: includes/admin/views/html-bulk-edit-product.php:224
 #: includes/admin/views/html-quick-edit-product.php:167
-#: includes/class-wc-ajax.php:832 includes/class-wc-ajax.php:2495
+#: includes/class-wc-ajax.php:833 includes/class-wc-ajax.php:2496
 #: includes/class-wc-product-variation.php:555
 #: includes/class-wc-product-variation.php:559
 msgid "Out of stock"
@@ -11599,84 +11599,84 @@ msgstr "%1$s %2$s"
 
 #: includes/admin/class-wc-admin-assets.php:103
 #: includes/admin/class-wc-admin-setup-wizard.php:96
-#: includes/class-wc-frontend-scripts.php:279
+#: includes/class-wc-frontend-scripts.php:280
 msgctxt "enhanced select"
 msgid "One result is available, press enter to select it."
 msgstr "1个结果可用，请按下enter键选择它。"
 
 #: includes/admin/class-wc-admin-assets.php:104
 #: includes/admin/class-wc-admin-setup-wizard.php:97
-#: includes/class-wc-frontend-scripts.php:280
+#: includes/class-wc-frontend-scripts.php:281
 msgctxt "enhanced select"
 msgid "%qty% results are available, use up and down arrow keys to navigate."
 msgstr "%qty%条结果可用，使用方向键的↑或↓键来选择。"
 
 #: includes/admin/class-wc-admin-assets.php:105
 #: includes/admin/class-wc-admin-setup-wizard.php:98
-#: includes/class-wc-frontend-scripts.php:281
+#: includes/class-wc-frontend-scripts.php:282
 msgctxt "enhanced select"
 msgid "No matches found"
 msgstr "没有匹配项"
 
 #: includes/admin/class-wc-admin-assets.php:106
 #: includes/admin/class-wc-admin-setup-wizard.php:99
-#: includes/class-wc-frontend-scripts.php:282
+#: includes/class-wc-frontend-scripts.php:283
 msgctxt "enhanced select"
 msgid "Loading failed"
 msgstr "加载失败"
 
 #: includes/admin/class-wc-admin-assets.php:107
 #: includes/admin/class-wc-admin-setup-wizard.php:100
-#: includes/class-wc-frontend-scripts.php:283
+#: includes/class-wc-frontend-scripts.php:284
 msgctxt "enhanced select"
 msgid "Please enter 1 or more characters"
 msgstr "请输入至少一个字符"
 
 #: includes/admin/class-wc-admin-assets.php:108
 #: includes/admin/class-wc-admin-setup-wizard.php:101
-#: includes/class-wc-frontend-scripts.php:284
+#: includes/class-wc-frontend-scripts.php:285
 msgctxt "enhanced select"
 msgid "Please enter %qty% or more characters"
 msgstr "请至少输入%qty%个字符"
 
 #: includes/admin/class-wc-admin-assets.php:109
 #: includes/admin/class-wc-admin-setup-wizard.php:102
-#: includes/class-wc-frontend-scripts.php:285
+#: includes/class-wc-frontend-scripts.php:286
 msgctxt "enhanced select"
 msgid "Please delete 1 character"
 msgstr "请删除1个字符"
 
 #: includes/admin/class-wc-admin-assets.php:110
 #: includes/admin/class-wc-admin-setup-wizard.php:103
-#: includes/class-wc-frontend-scripts.php:286
+#: includes/class-wc-frontend-scripts.php:287
 msgctxt "enhanced select"
 msgid "Please delete %qty% characters"
 msgstr "请删除%qty%个字符"
 
 #: includes/admin/class-wc-admin-assets.php:111
 #: includes/admin/class-wc-admin-setup-wizard.php:104
-#: includes/class-wc-frontend-scripts.php:287
+#: includes/class-wc-frontend-scripts.php:288
 msgctxt "enhanced select"
 msgid "You can only select 1 item"
 msgstr "你只能选择1项"
 
 #: includes/admin/class-wc-admin-assets.php:112
 #: includes/admin/class-wc-admin-setup-wizard.php:105
-#: includes/class-wc-frontend-scripts.php:288
+#: includes/class-wc-frontend-scripts.php:289
 msgctxt "enhanced select"
 msgid "You can only select %qty% items"
 msgstr "你只能选择%qty%项"
 
 #: includes/admin/class-wc-admin-assets.php:113
 #: includes/admin/class-wc-admin-setup-wizard.php:106
-#: includes/class-wc-frontend-scripts.php:289
+#: includes/class-wc-frontend-scripts.php:290
 msgctxt "enhanced select"
 msgid "Loading more results&hellip;"
 msgstr "载入更多结果......"
 
 #: includes/admin/class-wc-admin-assets.php:114
 #: includes/admin/class-wc-admin-setup-wizard.php:107
-#: includes/class-wc-frontend-scripts.php:290
+#: includes/class-wc-frontend-scripts.php:291
 msgctxt "enhanced select"
 msgid "Searching&hellip;"
 msgstr "搜索中......"
@@ -11796,7 +11796,7 @@ msgstr "延时交货"
 #: includes/abstracts/abstract-wc-order.php:1760
 #: includes/abstracts/abstract-wc-product.php:969
 #: includes/abstracts/abstract-wc-product.php:975
-#: includes/class-wc-cart.php:1565 includes/class-wc-product-variable.php:368
+#: includes/class-wc-cart.php:1570 includes/class-wc-product-variable.php:368
 #: includes/class-wc-product-variation.php:307
 msgid "Free!"
 msgstr "免费"
@@ -11838,7 +11838,7 @@ msgid "Item #%s variation #%s stock reduced from %s to %s."
 msgstr "#%s 的库存从 %s 减少到 %s."
 
 #: includes/abstracts/abstract-wc-order.php:2463
-#: includes/class-wc-ajax.php:1417
+#: includes/class-wc-ajax.php:1418
 msgid "Item #%s stock reduced from %s to %s."
 msgstr "#%s 库存从 %s 减少到 %s."
 

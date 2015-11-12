@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 $editAccess = vc_user_access_check_shortcode_edit( $shortcode );
 $allAccess = vc_user_access_check_shortcode_all( $shortcode );
 ?>

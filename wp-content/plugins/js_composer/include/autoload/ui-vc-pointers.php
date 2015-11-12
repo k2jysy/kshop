@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 global $vc_default_pointers, $vc_pointers;
 $vc_default_pointers = (array) apply_filters( 'vc_pointers_list',

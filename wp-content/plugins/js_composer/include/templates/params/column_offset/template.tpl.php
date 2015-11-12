@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div class="vc_column-offset" data-column-offset="true">
 	<?php if ( '1' === vc_settings()->get( 'not_responsive_css' ) ) :  ?>
 		<div class="wpb_alert wpb_content_element vc_alert_rounded wpb_alert-warning">

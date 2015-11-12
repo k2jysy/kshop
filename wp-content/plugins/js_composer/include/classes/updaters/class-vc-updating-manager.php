@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 /**
  * Manage update messages and Plugins info for VC in default Wordpress plugins list.
@@ -78,7 +81,7 @@ class Vc_Updating_Manager {
 		$remote_version = $this->getRemote_version();
 
 		// If a newer version is available, add the update
-		if ( version_compare( $this->current_version, $remote_version, '<' ) ) {
+		if (version_compare( $this->current_version, $remote_version, '<' ) ) {
 			$obj = new stdClass();
 			$obj->slug = $this->slug;
 			$obj->new_version = $remote_version;

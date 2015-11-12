@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 /**
  * WPBakery Visual Composer front end editor
@@ -797,6 +800,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		if ( ! empty( $this->post_shortcodes ) ) {
 			return;
 		}
+		$content = shortcode_unautop( $content );
 		$not_shortcodes = preg_split( '/' . self::shortcodesRegexp() . '/', $content );
 
 		foreach ( $not_shortcodes as $string ) {

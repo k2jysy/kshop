@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 add_action( 'vc_edit_form_fields_after_render', 'vc_output_required_params_to_init' );
 

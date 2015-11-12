@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 add_filter( 'attachment_fields_to_edit', 'vc_attachment_filter_field', 10, 2 );
 add_filter( 'media_meta', 'vc_attachment_filter_media_meta', 10, 2 );

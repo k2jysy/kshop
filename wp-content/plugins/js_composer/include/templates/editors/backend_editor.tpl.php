@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 require_once vc_path_dir( 'EDITORS_DIR', 'navbar/class-vc-navbar.php' );
 /** @var $post WP_Post */
 $nav_bar = new Vc_Navbar( $post );

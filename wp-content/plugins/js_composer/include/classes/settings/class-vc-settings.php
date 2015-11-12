@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 /**
  * WPBakery Visual Composer Plugin
  *
@@ -213,11 +216,16 @@ class Vc_Settings {
 			'responsive_max' => '768',
 			'compiled_js_composer_less' => '',
 		);
-		$vc_action = vc_action();
-		if ( 'restore_color' === $vc_action ) {
+		if ( 'restore_color' === vc_post_param( 'vc_action' ) && vc_user_access()
+				->check( 'wp_verify_nonce', vc_post_param( '_wpnonce' ), vc_settings()->getOptionGroup() . '_color' . '-options' ) // see settings_fields() function
+				->validateDie()
+				->wpAny( 'manage_options' )
+				->validateDie()
+				->part( 'settings' )
+				->can( 'vc-color-tab' )
+				->validateDie()
+				->get() ) {
 			$this->restoreColor();
-		} elseif ( 'remove_all_css_classes' === $vc_action ) {
-			$this->removeAllCssClasses();
 		}
 
 		/**
@@ -316,20 +324,6 @@ class Vc_Settings {
 		), array( &$this, 'compiled_js_composer_less_callback' ) );
 
 		/**
-		 * Tab: Element Class names
-		 */
-		$tab = 'element_css';
-		$this->addSection( $tab );
-		$this->addField( $tab, __( 'Row CSS class name', 'js_composer' ), 'row_css_class', array(
-			&$this,
-			'sanitize_row_css_class_callback',
-		), array( &$this, 'row_css_class_callback' ) );
-		$this->addField( $tab, __( 'Columns CSS class names', 'js_composer' ), 'column_css_classes', array(
-			&$this,
-			'sanitize_column_css_classes_callback',
-		), array( &$this, 'column_css_classes_callback' ) );
-
-		/**
 		 * Tab: Custom CSS
 		 */
 		$tab = 'custom_css';
@@ -411,12 +405,15 @@ class Vc_Settings {
 		delete_option( self::$field_prefix . 'gutter' );
 		delete_option( self::$field_prefix . 'responsive_max' );
 		delete_option( self::$field_prefix . 'use_custom' );
+		delete_option( self::$field_prefix . 'compiled_js_composer_less' );
+		delete_option( self::$field_prefix . 'less_version' );
 	}
 
 	/**
-	 *
+	 * @deprecated since 4.4
 	 */
 	public function removeAllCssClasses() {
+		_deprecated_function( '\Vc_Settings::removeAllCssClasses', '4.4' );
 		delete_option( self::$field_prefix . 'row_css_class' );
 		delete_option( self::$field_prefix . 'column_css_classes' );
 	}
@@ -735,6 +732,7 @@ class Vc_Settings {
 	 * Row css class callback
 	 */
 	public function row_css_class_callback() {
+		_deprecated_function( '\Vc_Settings::row_css_class_callback', '4.4' );
 		$value = ( $value = get_option( self::$field_prefix . 'row_css_class' ) ) ? $value : '';
 		echo ! empty( $value ) ? $value : '<i>' . __( 'Empty value', 'js_composer' ) . '</i>';
 	}
@@ -947,6 +945,7 @@ class Vc_Settings {
 	 * @return mixed
 	 */
 	public function sanitize_row_css_class_callback( $value ) {
+		_deprecated_function( '\Vc_Settings::row_css_class_callback', '4.4' );
 		return $value;
 	}
 
@@ -1115,9 +1114,11 @@ class Vc_Settings {
 	}
 
 	/**
+     * @deprecated 4.4
 	 * @return bool
 	 */
 	public static function requireNotification() {
+		_deprecated_function( '\Vc_Settings::requireNotification', '4.4' );
 		$row_css_class = ( $value = get_option( self::$field_prefix . 'row_css_class' ) ) ? $value : '';
 		$column_css_classes = ( $value = get_option( self::$field_prefix . 'column_css_classes' ) ) ? $value : '';
 

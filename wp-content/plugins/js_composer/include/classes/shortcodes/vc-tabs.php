@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 class WPBakeryShortCode_VC_Tabs extends WPBakeryShortCode {
 	static $filter_added = false;

@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 /**
  * Shortcode attributes
  * @var $atts
@@ -78,9 +81,7 @@ if ( '' !== $title && 'separator_no_text' !== $layout ) {
 
 
 $separatorHtml = <<<TEMPLATE
-<div class="$css_class"><span
-	class="vc_sep_holder vc_sep_holder_l"><span $inline_css class="vc_sep_line"></span></span>$content<span
-	class="vc_sep_holder vc_sep_holder_r"><span $inline_css class="vc_sep_line"></span></span>
+<div class="$css_class"><span class="vc_sep_holder vc_sep_holder_l"><span $inline_css class="vc_sep_line"></span></span>$content<span class="vc_sep_holder vc_sep_holder_r"><span $inline_css class="vc_sep_line"></span></span>
 </div>
 TEMPLATE;
 echo $separatorHtml;

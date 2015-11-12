@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
 // The List of welcome pages tabs.
 global $vc_page_welcome_tabs;

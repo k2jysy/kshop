@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 add_action( 'admin_enqueue_scripts', array( vc_backend_editor(), 'enqueueEditorScripts' ) );
 add_action( 'admin_enqueue_scripts', array( visual_composer()->templatesPanelEditor(), 'enqueuePreviewScripts' ) );
 add_filter( 'admin_body_class', array( visual_composer()->templatesPanelEditor(), 'addBodyClassTemplatePreview' ) );

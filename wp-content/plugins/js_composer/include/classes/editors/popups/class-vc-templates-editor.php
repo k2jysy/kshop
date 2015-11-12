@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 _deprecated_file( 'class-vc-templates-editor.php', '4.4', 'class-vc-templates-panel-editor.php', ' will be removed in 4.9' );
 
 /**

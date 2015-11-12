@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 require_once vc_path_dir( 'PARAMS_DIR', 'vc_grid_item/editor/navbar/class-vc-navbar-grid-item.php' );
 $nav_bar = new Vc_Navbar_Grid_Item( $post );
 $nav_bar->render();

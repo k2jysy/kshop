@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <script type="text/html" id="vc_controls-template-default">
 	<div
 		class="vc_controls-element" data-can-all="{{ can_all }}" data-can-edit="{{ can_edit }}">

@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+?>
 <div class="vc_ui-dropdown" data-vc-ui-element="settings-dropdown" data-vc-action="dropdown"
      data-vc-content=".vc_ui-dropdown-content">
 	<div class="vc_ui-dropdown-trigger">
