@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KutethemeToolkit\n"
 "POT-Creation-Date: 2015-11-06 12:04+0800\n"
-"PO-Revision-Date: 2015-11-09 03:39+0800\n"
+"PO-Revision-Date: 2015-11-14 18:08+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -1643,11 +1643,11 @@ msgstr ""
 
 #: js_composer/shortcodes/brand.php:337
 msgid "shop this brand"
-msgstr ""
+msgstr "购买这个品牌"
 
 #: js_composer/shortcodes/brand.php:371
 msgid "View More"
-msgstr ""
+msgstr "了解更多"
 
 #: js_composer/shortcodes/categories.php:13 post-types/post-types.php:119
 #: post-types/post-types.php:120 post-types/post-types.php:129
