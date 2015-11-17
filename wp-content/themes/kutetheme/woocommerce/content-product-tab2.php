@@ -17,8 +17,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php
     $product_name = get_the_title();
     
-    if( strlen($product_name) > 18 ){
-        $product_name = substr( $product_name, 0, 18 );
+    if( strlen($product_name) > 100 ){
+        $product_name = substr( $product_name, 0, 100 );
         $product_name = trim( $product_name ) . "...";
     }
     ?>
