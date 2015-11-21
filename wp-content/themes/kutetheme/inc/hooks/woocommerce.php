@@ -219,7 +219,7 @@ function kt_get_rating_html($rating_html, $rating){
     }
     //if($rating <=0) return'';
     $rating_html  = '<div class="product-star" title="' . sprintf( esc_attr__( 'Rated %s out of 5', 'kutetheme' ), $rating > 0 ? $rating : 0  ) . '">';
-    for($i = 1;$i <= 5 ;$i++){
+    for($i = 0; $i < 5 ;$i++){
         if($rating >= $i){
             if( ( $rating - $i ) > 0 && ( $rating - $i ) < 1 ){
                 $rating_html .= '<i class="fa fa-star-half-o"></i>';    
@@ -1021,19 +1021,19 @@ if ( ! function_exists( 'kt_woocommerce_image_dimensions' ) ) {
         $catalog = array(
             'width'     => '300',   // px
             'height'    => '366',   // px
-            'crop'      => 1        // true
+            'crop'      => 1        // true or false
         );
     
         $single = array(
             'width'     => '420',   // px
             'height'    => '512',   // px
-            'crop'      => 1        // true
+            'crop'      => 1        // true or false
         );
     
         $thumbnail = array(
             'width'     => '100',   // px
             'height'    => '122',   // px
-            'crop'      => 1        // false
+            'crop'      => 1        // true or false
         );
     
         // Image sizes
@@ -1369,4 +1369,74 @@ if( ! function_exists( 'kt_get_max_date_sale') ) {
             return $sale_price_dates_to;
         }
     }
+}
+
+// Add class columns in list product
+
+if( !function_exists( 'kt_product_list_columns_class' )){
+    function kt_product_list_columns_class($class){
+        $kt_woo_grid_column = kt_option( 'kt_woo_grid_column', '3' );
+        $class.=' columns-'.$kt_woo_grid_column;
+
+        return $class;
+    }
+}
+
+add_action( 'woocommerce_product_loop_start', 'kt_product_list_columns_class',1 );
+
+
+add_filter( 'wp_nav_menu_items', 'kt_myaccount_menu_link', 10, 2 );
+
+function kt_myaccount_menu_link( $items, $args ) {
+   $kt_enable_myaccount_box = kt_option('kt_enable_myaccount_box','enable');
+   if( $kt_enable_myaccount_box == 'disable'){
+     return $items;
+   }
+   ob_start();
+   if ($args->theme_location == 'topbar_menuright') {
+    ?>
+        <?php if( kt_is_wc() ):?>
+            <?php
+            $myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );
+            $myaccount_link = get_permalink( get_option('woocommerce_myaccount_page_id') );
+            ?>
+            <?php if( is_user_logged_in()): ?>
+                <?php
+                
+                if ( $myaccount_page_id ) {
+                      $logout_url = wp_logout_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) );
+                      if ( get_option( 'woocommerce_force_ssl_checkout' ) == 'yes' ){
+                        $logout_url = str_replace( 'http:', 'https:', $logout_url );
+                      }
+                }
+                ?>
+                <li class="menu-item menu-item-has-children">
+                    <a href="<?php echo esc_url( $myaccount_link );?>"><?php _e('My Account','kutetheme');?></a>
+                    <ul class="sub-menu">
+                        <?php 
+                        if( function_exists( 'YITH_WCWL' ) ):
+                            $wishlist_url = YITH_WCWL()->get_wishlist_url();
+                        ?>
+                        <li><a href="<?php echo esc_attr( $wishlist_url );?>"><?php _e('Wishlists','kutetheme');?></a></li>
+                        <?php endif;?>
+                        <?php if(defined( 'YITH_WOOCOMPARE' )): 
+                            global $yith_woocompare; 
+                            $count = count($yith_woocompare->obj->products_list); ?>
+                        <li><a href="#" class="yith-woocompare-open"><?php esc_html_e( "Compare", 'kutetheme') ?><span>(<?php echo esc_attr( $count ); ?>)</span></a></li>
+                        <?php endif; ?>
+                        <?php if(isset($logout_url) && $logout_url):?>
+                        <li><a href="<?php echo esc_url( $logout_url );?>"><?php _e('Logout','kutetheme');?></a></li>
+                        <?php endif;?>
+                    </ul>
+                </li>
+            <?php else:?>
+                <li class="menu-item login-item"><a href="<?php echo esc_url( $myaccount_link );?>"><?php _e('Login/Register','kutetheme');?></a></li>
+            <?php endif;?>
+        <?php endif;?>
+   <?php
+   }
+   $item = ob_get_contents();
+   $items = $item.$items;
+   ob_clean();
+   return $items;
 }

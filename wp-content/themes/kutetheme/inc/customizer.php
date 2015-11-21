@@ -337,8 +337,8 @@ function kt_get_color_scheme_css( $colors ) {
     body .box-vertical-megamenus .title,
     body .option5 #main-menu .navbar .navbar-nav>li:hover, 
 	body .option5 #main-menu .navbar .navbar-nav>li.active,
-    
-    .option7 .header .top-header{
+    .option7 .header .top-header,
+    .option2 .nav-ontop #box-vertical-megamenus .title{
         background-color: <?php echo esc_attr( $colors['box_background_color'] ); ?>;
     }
     
@@ -408,12 +408,10 @@ function kt_get_color_scheme_css( $colors ) {
     body .box-vertical-megamenus .all-category span:hover,
 
     .header.option3 .main-header .header-search-box .form-inline .btn-search,
-    .header.option3 .nav-top-menu .box-vertical-megamenus .title,
     .header.option3 .box-vertical-megamenus .vertical-menu-list>li:hover,
     .header.option3 .box-vertical-megamenus .all-category:hover>span,
     .hot-deals-box .hot-deals-tab .hot-deals-tab-box .box-count-down .box-count:before,
     body .header.option3 .nav-ontop,
-    body .header.option3 .nav-ontop #box-vertical-megamenus .title,
     body .header.option4 .box-vertical-megamenus .title,
     body .header.option4 .box-vertical-megamenus .vertical-menu-list>li:hover,
     body .header.option4 .box-vertical-megamenus .all-category:hover span,
@@ -421,7 +419,6 @@ function kt_get_color_scheme_css( $colors ) {
     body .option4 .cart-block .cart-block-content .cart-buttons a.btn-check-out,
     body .option3 .cart-block .cart-block-content .cart-buttons a.btn-check-out,
     body .option3 .nav-ontop,
-    body .option3 .nav-ontop #box-vertical-megamenus .title,
     body .trending .trending-title,
     
     .option7 .hot-deals-box .hot-deals-tab .hot-deals-title.vertical-text,
@@ -433,7 +430,11 @@ function kt_get_color_scheme_css( $colors ) {
     .option7 .products .search:hover,
     .option7 .owl-controls .owl-prev:hover, 
     .option7 .owl-controls .owl-next:hover,
-    #footer2.footer3 .mailchimp-wrapper .mailchimp-form .mailchimp-submit
+    #footer2.footer3 .mailchimp-wrapper .mailchimp-form .mailchimp-submit,
+    .top-main-menu.style2 .main-menu-wapper,
+    .option2 .nav-top-menu.nav-ontop,
+    .top-main-menu.style5 .main-menu-wapper,
+    .top-main-menu.style6 .main-menu-wapper
     {
         background-color: <?php echo esc_attr( $colors['main_color'] ); ?>;
     }
@@ -470,7 +471,9 @@ function kt_get_color_scheme_css( $colors ) {
     
     .option7 .brand .page-heading span.page-heading-title,
     .option7 .blog-list .page-heading span.page-heading-title,
-    .option7 .brand .band-logo.no-product h3:hover{
+    .option7 .brand .band-logo.no-product h3:hover,
+    .latest-deals-product .product-list li:hover,
+    body .count-down-time2 .box-count{
       	border-color: <?php echo esc_attr( $colors['main_color'] ); ?>;
     }
     .box-vertical-megamenus .vertical-menu-content,
@@ -490,10 +493,10 @@ function kt_get_color_scheme_css( $colors ) {
     body .option4 #main-menu .navbar .navbar-nav>li.active>a,
     
     body .site .option4 a:hover,
-    body .footer-menu-list li a, 
     body .woocommerce .wishlist_table ins, 
     body footer#footer2 a:hover,
-    body #footer2 .widget-body li a:hover{
+    body #footer2 .widget-body li a:hover,
+    body .count-down-time2 .box-count{
         color: <?php echo esc_attr( $colors['main_color'] ); ?>;
     }
     /* Text Color */
@@ -551,7 +554,7 @@ function kt_get_color_scheme_css( $colors ) {
 	}
     <?php
     $css = ob_get_clean();
-	return $css;
+	//return $css;
 }
 
 /**

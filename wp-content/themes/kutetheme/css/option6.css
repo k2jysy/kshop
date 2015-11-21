@@ -32,60 +32,6 @@
 	left: 40%;
 	text-transform: uppercase;
 }
-/*-------------------
-[2. Latest deals products]
-*/
-.latest-deals-product{
-  margin-top: 20px;
-  position: relative;
-}
-.latest-deals-product .count-down-time2{
-  position: absolute;
-  top: -61px;
-  right: 80px;
-}
-.latest-deals-product .product-list li{
-  border: 1px solid #eaeaea;
-  overflow: hidden;
-  padding-bottom: 5px;
-}
-.latest-deals-product .product-list li:hover{
-  border: 1px solid #007176;
-}
-.latest-deals-product .owl-next{
-  top: -40px;
-}
-.latest-deals-product .owl-prev{
-  top: -40px;
-  left: inherit;
-  right: 26px;
-}
-
-.count-down-time2{
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 40px;
-}
-.count-down-time2 .icon-clock{
-  width: 23px;
-  height: 26px;
-  background: url("../images/icon-clock.png") no-repeat center center;
-  display: inline-block;
-  margin-top: 5px;
-}
-.count-down-time2 .box-count{
-  text-transform: none;
-  color: #007176;
-  border: 1px solid #007176;
-  height: 30px;
-  line-height: 30px;
-  display: inline-block;
-  padding: 0 10px;
-  margin-top: 4px;
-  margin-right: 4px;
-  margin-left: 4px;
-}
 
 
 /*
@@ -140,9 +86,6 @@
 .option6 .cart-block{
 	margin-top: 5px;
 }
-.option6 .cart-block .cart-block-content .product-info .p-right .p-rice{
-	  color:#f96d10;
-}
 .option6 #shopping-cart-box-ontop .cart-block{
 	margin-top: 0;
 }
@@ -188,7 +131,6 @@
 .option6 .main-header .header-search-box .form-inline .btn-search{
 	color: #fff;
 	font-size: 16px;
-	background-color: #007176;
 }
 .option6 .select2-container--default .select2-selection--single .select2-selection__rendered{
 	color: #fff;
@@ -256,11 +198,6 @@
 .option6 #form-search-opntop .btn-search .fa{
 	display: none;
 }
-.option6 #box-vertical-megamenus{
-	width: 85px;
-	padding: 0;
-}
-
 .option6 #main-menu .navbar{
 	border-radius: 0;
 	background: #007176;
@@ -315,8 +252,6 @@
 	top: 1px;
 }
 .option6 .nav-ontop #box-vertical-megamenus .title{
-	background: #000;
-	color: #fff;
 	border-left: none;
 	text-align: center;
 	height: 51px;
@@ -500,12 +435,6 @@
 }
 .option6 .box-vertical-megamenus .vertical-menu-content ul>li>a.parent:before{
 	right: 20px;
-}
-.option6 .vertical-dropdown-menu .mega-products .mega-product .product-price .new-price{
-	  color: #f96d10;
-}
-.option6 .cart-block .cart-block-content .cart-buttons a.btn-check-out{
-	background: #007176;
 }
 
 .option6 .page-heading{
@@ -1700,9 +1629,7 @@
 	.option6 #main-menu .navbar-header{
 		margin: 0;
 	}
-	.option6 #box-vertical-megamenus{
-		display: none;
-	}
+	
 	.option6 #main-menu .navbar-collapse{
 		margin-left: 0;
 	}

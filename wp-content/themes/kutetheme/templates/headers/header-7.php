@@ -14,21 +14,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div class="option7">
 <!-- HEADER -->
-<div id="header" class="header">
+<div id="header" class="header style7">
     <div class="top-header">
         <div class="container">
-            <?php echo kt_get_hotline(); ?>
-            <?php kt_get_social_header();?>
             <?php 
-                if( kt_is_wc() ): 
-                    do_action('kt_mini_cart');
-                endif; 
-             ?>
-            <div class="support-link">
-                <a href="<?php kt_service_link(); ?>"><?php esc_html_e( 'Services', 'kutetheme' ) ?></a>
-                <a href="<?php kt_support_link(); ?>"><?php esc_html_e( 'Support', 'kutetheme' ) ?></a>
-            </div>
-            <?php echo kt_menu_my_account(); ?>
+            if( kt_is_wc() ): 
+                do_action('kt_mini_cart');
+            endif; 
+            ?>
+            <?php kt_topbar_menu();?>
         </div>
     </div>
     <!--/.top-header -->
@@ -40,16 +34,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                     <?php echo kt_get_logo(); ?>
                 </div>
                 <div id="main-menu" class="col-sm-12 col-md-9 main-menu">
-                    <nav class="navbar navbar-default">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                    <i class="fa fa-bars"></i>
-                                </button>
-                                <a class="navbar-brand" href="#"><?php _e( 'MENU', 'kutetheme' ) ?></a>
-                            </div>
-                            <?php kt_setting_mega_menu(); ?>
-                        </div>
+                    <nav class="main-menu-style7 main-menu-wapper">
+                        <?php kt_setting_mega_menu(); ?>
+                        <a href="#" class="mobile-navigation"><?php _e('Main menu','kutetheme');?><i class="fa fa-bars"></i></a>
                     </nav>
                 </div>
             </div>
@@ -101,7 +88,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     wp_reset_postdata();
     wp_reset_query();
     ?>
-    <?php do_action( 'kt_show_menu_option_7' ) ?>
+    <div class="container">
+        <?php do_action( 'kt_show_menu_option_7' ) ?>
+    </div>
 </div>
 <!-- end header -->
 </div>

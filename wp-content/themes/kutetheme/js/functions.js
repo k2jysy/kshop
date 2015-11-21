@@ -109,7 +109,89 @@
             obj_qty.val(val_qty);
         });
       }
-    
+    // Auto height product list
+    function auto_height_product_list(){
+        var max = 0;
+        $('.product-list.grid li.product').each(function(){
+            var item_height = $(this).height();
+            if( item_height > max ){
+                max = item_height;
+            }
+            $(this).addClass('product-autoheight');
+        }) 
+        $('.product-autoheight .product-container').css('min-height',max+"px");
+    }
+
+    function autoHeight_product_grid(){
+        $('.autoHeight').each(function(){
+            var max = 0;
+            $(this).find('.autoHeight-item').each(function(){
+                var item_height = $(this).innerHeight();
+                if(item_height > max ){
+                    max = item_height;
+                    
+                }
+                $(this).addClass('item-set-height');
+            })
+            $(this).find('.item-set-height').css('height',max+"px");
+        })
+    }
+    /* ---------------------------------------------
+     MENU REPONSIIVE
+     --------------------------------------------- */
+     function init_menu_reposive(){
+          var kt_is_mobile = (Modernizr.touch) ? true : false;
+          if(kt_is_mobile === true){
+            $(document).on('click', '.navigation .menu-item-has-children > a', function(e){
+              var licurrent = $(this).closest('li');
+              var liItem = $('.navigation .menu-item-has-children');
+              if ( !licurrent.hasClass('show-submenu') ) {
+                liItem.removeClass('show-submenu');
+                licurrent.parents().each(function (){
+                    if($(this).hasClass('menu-item-has-children')){
+                     $(this).addClass('show-submenu');   
+                    }
+                      if($(this).hasClass('.navigation')){
+                          return false;
+                      }
+                })
+                licurrent.addClass('show-submenu');
+                // Close all child submenu if parent submenu is closed
+                if ( !licurrent.hasClass('show-submenu') ) {
+                  licurrent.find('li').removeClass('show-submenu');
+                  }
+                  return false;
+                  e.preventDefault();
+              }else{
+                var href = $(this).attr('href');
+                  if ( $.trim( href ) == '' || $.trim( href ) == '#' ) {
+                      licurrent.toggleClass('show-submenu');
+                  }
+                  else{
+                      window.location = href;
+                  } 
+              }
+              // Close all child submenu if parent submenu is closed
+                  if ( !licurrent.hasClass('show-submenu') ) {
+                      //licurrent.find('li').removeClass('show-submenu');
+                  }
+                  e.stopPropagation();
+          });
+        $(document).on('click', function(e){
+              var target = $( e.target );
+              if ( !target.closest('.show-submenu').length || !target.closest('.navigation').length ) {
+                  $('.show-submenu').removeClass('show-submenu');
+              }
+          }); 
+          // On Desktop
+          }else{
+              $('.navigation .menu-item-has-children').hover(function(){
+                $(this).addClass('show-submenu');
+              }, function(){
+                $(this).removeClass('show-submenu'); 
+              });
+          }
+     }
     /* ---------------------------------------------
      Scripts initialization
      --------------------------------------------- */
@@ -117,17 +199,22 @@
         // auto width megamenu
         auto_width_megamenu();
         resizeTopmenu();
+        autoHeight_product_grid();
+        auto_height_product_list();
     });
     /* ---------------------------------------------
      Scripts ready
      --------------------------------------------- */
     $(document).ready(function() {
+        init_menu_reposive();
         woo_quantily();
         show_other_item_vertical_menu();
         /* Only Count down */
         hasOnlyCountdown();
         /* Resize top menu*/
         resizeTopmenu();
+        auto_height_product_list();
+        autoHeight_product_grid();
         /* Zoom image */
         if($('#product-zoom').length >0){
             $('#product-zoom').elevateZoom({
@@ -180,8 +267,8 @@
                });
             }else{
                 $this.countdown(finalDate, function(event) {
-                 var fomat = '<span class="box-count"><span class="number">%D</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count"><span class="number">%H</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count"><span class="number">%M</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count"><span class="number">%S</span> <span class="text">Secs</span></span>';
-                 $this.html(event.strftime(fomat));
+                 //var fomat = '<span class="box-count"><span class="number">%D</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count"><span class="number">%H</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count"><span class="number">%M</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count"><span class="number">%S</span> <span class="text">Secs</span></span>';
+                 $this.html(event.strftime(layout));
                });
                             
             }
@@ -196,8 +283,8 @@
            var m = time_max.data('m');
            var d = time_max.data('d');
 
-           var labels = ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'];
-           var layout = '<span class="box-count day"><span class="number">{dnn}</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count hrs"><span class="number">{hnn}</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count min"><span class="number">{mnn}</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count secs"><span class="number">{snn}</span> <span class="text">Secs</span></span>';
+           //var labels = ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'];
+           //var layout = '<span class="box-count day"><span class="number">{dnn}</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count hrs"><span class="number">{hnn}</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count min"><span class="number">{mnn}</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count secs"><span class="number">{snn}</span> <span class="text">Secs</span></span>';
            var austDay = new Date( y , m - 1 , d ,'00','00','00');
             $(this).countdown({
                 until: austDay,
@@ -280,7 +367,7 @@
             $(this).closest('.vertical-menu-content').find('li.cat-link-orther').each(function(){
                 $(this).slideDown();
             });
-            $(this).addClass('colse-cate').removeClass('open-cate').html('收起分类');
+            $(this).addClass('colse-cate').removeClass('open-cate').html('折叠分类');
         })
         /* Close category */
         $(document).on('click','.colse-cate',function(){
@@ -308,6 +395,7 @@
             };
             $.post(screenReaderText.ajaxurl, data, function(response){
                // console.log(response);
+               auto_height_product_list();
             })
             return false;
         })
@@ -326,7 +414,6 @@
             })
             return false;
         })
-
         /// tre menu category
         $(document).on('click','.tree-menu li span',function(){
             $(this).closest('li').children('ul').slideToggle();
@@ -338,7 +425,7 @@
         /* Open menu on mobile */
         $(document).on('click','.btn-open-mobile',function(){
             var width = $(window).width();
-            if(width >1024){
+            if(width > 1024){
                 if($('body').hasClass('home') && !$('.box-vertical-megamenus').is('.hiden_content')){
                     if($('#nav-top-menu').hasClass('nav-ontop') || $('#header').hasClass('option6') || $('#header').hasClass('option5') ){
                         
@@ -349,6 +436,10 @@
             }
             $(this).closest('.box-vertical-megamenus').find('.vertical-menu-content').slideToggle();
             $(this).closest('.title').toggleClass('active');
+            if( width < 768 ){
+              $('.main-menu .navigation-main-menu').hide();
+            }
+            
             return false;
         })
         /* Product qty */
@@ -413,34 +504,43 @@
         );
 
         // OWl related product
-        $('.related.products .product-list,.upsells.products .product-list').owlCarousel(
-            {
-                dots:false,
-                nav:true,
-                navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-                responsive : {
-                  // breakpoint from 0 up
-                  0 : {
-                      items : 1,
-                  },
-                  // breakpoint from 480 up
-                  480 : {
-                      items : 2,
-                  },
-                  // breakpoint from 768 up
-                  768 : {
-                      items : 2,
-                  },
-                  1000 : {
-                      items : 3,
-                  },
-                  1025 : {
-                      items : 3,
-                  }
-              },
-              rtl: rtl
+         $('.related.products .product-list,.upsells.products .product-list').each(function(){
+            var t = $(this).closest('.products');
+            var desktop_item = 3;
+            var ipad_item = 2;
+            if(t.hasClass('full-layout')){
+              desktop_item = 4;
+              ipad_item = 3;
             }
-        );
+            $(this).owlCarousel(
+                {
+                    dots:false,
+                    nav:true,
+                    navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+                    responsive : {
+                      // breakpoint from 0 up
+                      0 : {
+                          items : 1,
+                      },
+                      // breakpoint from 480 up
+                      480 : {
+                          items : ipad_item,
+                      },
+                      // breakpoint from 768 up
+                      768 : {
+                          items : ipad_item,
+                      },
+                      1000 : {
+                          items : desktop_item,
+                      },
+                      1025 : {
+                          items : desktop_item,
+                      }
+                  },
+                  rtl: rtl
+                }
+            );
+         })
 
       // Category product
       $(document).on('click','.widget_product_categories a',function(){
@@ -457,8 +557,8 @@
       })
       // count downt
       if($('.countdown-lastest, .count-down-time').length >0){
-          var labels = ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'];
-          var layout = '<span class="box-count day"><span class="number">{dnn}</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count hrs"><span class="number">{hnn}</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count min"><span class="number">{mnn}</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count secs"><span class="number">{snn}</span> <span class="text">Secs</span></span>';
+          //var labels = ['Years', 'Months', 'Weeks', 'Days', 'Hrs', 'Mins', 'Secs'];
+          //var layout = '<span class="box-count day"><span class="number">{dnn}</span> <span class="text">Days</span></span><span class="dot">:</span><span class="box-count hrs"><span class="number">{hnn}</span> <span class="text">Hrs</span></span><span class="dot">:</span><span class="box-count min"><span class="number">{mnn}</span> <span class="text">Mins</span></span><span class="dot">:</span><span class="box-count secs"><span class="number">{snn}</span> <span class="text">Secs</span></span>';
           $('.countdown-lastest, .count-down-time').each(function() {
               var austDay = new Date($(this).data('y'),$(this).data('m') - 1,$(this).data('d'),$(this).data('h'),$(this).data('i'),$(this).data('s'));
               $(this).countdown({
@@ -554,9 +654,13 @@
             kt_lazy( $lazy );
         });
         
-        
-        kt_lazy( first_lazy ); 
-          
+        kt_lazy( first_lazy );
+
+        $(document).on('click','.mobile-navigation',function(){
+          $(this).closest('.main-menu-wapper').find('.navigation-main-menu').toggle();
+          $('#box-vertical-megamenus .vertical-menu-content').hide();
+          return false;
+        })
     });
     /* ---------------------------------------------
      Scripts resize
@@ -568,6 +672,7 @@
         remove_menu_ontop();
         // resize top menu
         resizeTopmenu();
+        auto_height_product_list();
     });
     /* ---------------------------------------------
      Scripts scroll
@@ -583,7 +688,7 @@
         var h = $(window).scrollTop();
         var max_h = $('#header').height() + $('#top-banner').height();
         var width = $(window).width();
-        if(width > 767){
+        if(width > 991){
             if( h > (max_h + vertical_menu_height)-50){
                 // fix top menu
                 $('#nav-top-menu').addClass('nav-ontop');
@@ -702,8 +807,6 @@
             $("#main-menu li.dropdown >a").removeAttr('data-toggle');
         }
     }
-
-
     function show_other_item_vertical_menu(){
       if( $( '.box-vertical-megamenus' ).length > 0 ){
           var all_item = 0;

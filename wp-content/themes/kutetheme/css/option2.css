@@ -40,9 +40,6 @@
   padding-bottom: 5px;
   margin-bottom: 1px;
 }
-.latest-deals-product .product-list li:hover{
-  border: 1px solid #958457;
-}
 .latest-deals-product .owl-next{
   top: -40px;
 }
@@ -92,21 +89,6 @@
 .option2 .product-list li .quick-view{
 	right: 10px;
 }
-.option2 .product-list li .quick-view a:hover{
-	background: #958457;
-}
-.option2 .product-list li .quick-view a:hover{
-	background: #958457;
-}
-.option2 .product-list li .quick-view a:hover {
-	background: #958457;
-}
-.option2 .product-list li .add-to-cart:hover{
-	background: #958457;
-}
-.option2 .product-list li .product-price {
-	color: #f96d10;
-}
 
 
 /*
@@ -114,9 +96,6 @@
 */
 .option2 .cart-block{
 	margin-top: 5px;
-}
-.option2 .cart-block .cart-block-content .product-info .p-right .p-rice{
-	  color: #f96d10;
 }
 .option2 #shopping-cart-box-ontop .cart-block{
 	margin-top: 0;
@@ -131,14 +110,6 @@
 	float: right;
 	margin-right: 40px;
 	border-left: 1px solid #eaeaea;
-}
-
-.option2 .main-header .header-search-box .form-inline .btn-search{
-	background-color: #958457;
-}
-
-.option2 .nav-top-menu.nav-ontop{
-	background: #958457;
 }
 .option2 #main-menu .navbar{
 	border-radius: 0;
@@ -172,17 +143,12 @@
 .option2 #main-menu li.dropdown:hover:before{
 	display: none;
 }
-
-.option2 .box-vertical-megamenus .title{
-	background: #4c311d;
-}
 .option2 .box-vertical-megamenus .vertical-menu-content{
 	border-top: none;
 	padding-bottom: 1px;
 }
 
 .option2 .nav-ontop #box-vertical-megamenus .title{
-	background: #958457;
 	color: #fff;
 	border-left: none;
 }
@@ -229,15 +195,8 @@
 	border: none;
 	padding: 0 20px;
 }
-.option2 .box-vertical-megamenus .vertical-menu-list>li:hover{
-	background: #958457;
-}
 .option2 .box-vertical-megamenus .vertical-menu-list>li:hover>a{
-	color: #fff;
 	border-color: transparent;
-}
-.option2 .box-vertical-megamenus .vertical-menu-list>li:hover>a:before{
-	color: #fff;
 }
 .option2 .box-vertical-megamenus .vertical-menu-list:li:last-child>a{
 	border:none;
@@ -259,11 +218,6 @@
 	padding-right: 0;
 }
 .option2 .vertical-dropdown-menu .mega-group-header span{
-	border-color: #958457;
-}
-.option2 .box-vertical-megamenus .all-category span:hover{
-	background: #958457;
-	color: #fff;
 	border-color: #958457;
 }
 .option2 .box-vertical-megamenus .all-category span:after{

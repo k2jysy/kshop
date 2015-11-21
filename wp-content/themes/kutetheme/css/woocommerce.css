@@ -159,7 +159,7 @@
     width: 38px;
     text-align: center;
     float: right;
-    height: 29px;
+    height: 28px;
     border-left: 1px solid #eaeaea;
     background: #fafafa;
     line-height: 28px;
@@ -281,6 +281,7 @@
 .widget_product_categories ul>li.current-cat>a{
 	color: #ff3366 ;
 }
+
 .widget_product_categories ul>li>a:before {
     content: "\f105";
     font-size: 14px;
@@ -288,6 +289,9 @@
     text-align: right;
     font-family: "FontAwesome";
     padding-right: 12px;
+}
+.widget_product_categories ul>li.current-cat >.children{
+	display: block;
 }
 .widget_product_categories ul>li>a.open:before{
 	content: "\f107";
@@ -697,7 +701,22 @@
 .upsells.products .owl-controls .owl-next{
 	right: 15px;
 }
-
+.upsells.products .search.yith-wcqv-button,
+.related.products .search.yith-wcqv-button{
+	position: static;
+	top: inherit;
+	right: inherit;
+	left: inherit;
+	bottom: inherit;
+	-ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.upsells.products .woocommerce.product.compare-button,
+.related.products .woocommerce.product.compare-button{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 .summary.entry-summary{
 	line-height: 24px;
 }
@@ -1435,7 +1454,9 @@ Cart
 .woocommerce #reviews #comments ol.commentlist li .comment-text{
 	margin-left: 70px;
 }
-
+#yith-quick-view-content div.summary{
+	float: right;
+}
 /*---------------
 [Compare popup]
 ----------------*/
@@ -1530,6 +1551,72 @@ span.sku_wrapper{
 		float: left;
 		padding: 0;
 	}
+}
+
+.sidebar-left .product-list.columns-4.grid,
+.sidebar-left .product-list.columns-5.grid,
+.sidebar-left .product-list.columns-6.grid,
+.sidebar-right .product-list.columns-4.grid,
+.sidebar-right .product-list.columns-5.grid,
+.sidebar-right .product-list.columns-6.grid,
+.sidebar-full .product-list.columns-6.grid{
+	padding: 0 10px;
+}
+.sidebar-left .product-list.columns-4.grid li.product,
+.sidebar-left .product-list.columns-5.grid li.product,
+.sidebar-left .product-list.columns-6.grid li.product,
+.sidebar-right .product-list.columns-4.grid li.product,
+.sidebar-right .product-list.columns-5.grid li.product,
+.sidebar-right .product-list.columns-6.grid li.product,
+.sidebar-full .product-list.columns-6.grid li.product{
+	text-align: center;
+	padding: 0 5px;
+}
+.sidebar-left .product-list.columns-4.grid li.product .content_price del,
+.sidebar-left .product-list.columns-4.grid li.product .content_price ins,
+.sidebar-left .product-list.columns-5.grid li.product .content_price del,
+.sidebar-left .product-list.columns-5.grid li.product .content_price ins,
+.sidebar-left .product-list.columns-6.grid li.product .content_price del,
+.sidebar-left .product-list.columns-6.grid li.product .content_price ins,
+.sidebar-right .product-list.columns-4.grid li.product .content_price del,
+.sidebar-right .product-list.columns-4.grid li.product .content_price ins,
+.sidebar-right .product-list.columns-5.grid li.product .content_price del,
+.sidebar-right .product-list.columns-5.grid li.product .content_price ins,
+.sidebar-right .product-list.columns-6.grid li.product .content_price del,
+.sidebar-right .product-list.columns-6.grid li.product .content_price ins,
+.sidebar-full .product-list.columns-6.grid li.product .content_price del,
+.sidebar-full .product-list.columns-6.grid li.product .content_price ins{
+	float: none;
+	margin: 0;
+	width: 100%;\
+}
+.sidebar-left .product-list.columns-4.grid li.product .content_price .price,
+.sidebar-left .product-list.columns-5.grid li.product .content_price .price,
+.sidebar-left .product-list.columns-6.grid li.product .content_price .price,
+.sidebar-right .product-list.columns-4.grid li.product .content_price .price,
+.sidebar-right .product-list.columns-5.grid li.product .content_price .price,
+.sidebar-right .product-list.columns-6.grid li.product .content_price .price,
+.sidebar-full .product-list.columns-6.grid li.product .content_price .price{
+	width: 100%;
+}
+.sidebar-left .product-list.columns-4.grid li.product .product-star,
+.sidebar-left .product-list.columns-5.grid li.product .product-star,
+.sidebar-left .product-list.columns-6.grid li.product .product-star,
+.sidebar-right .product-list.columns-4.grid li.product .product-star,
+.sidebar-right .product-list.columns-5.grid li.product .product-star,
+.sidebar-right .product-list.columns-6.grid li.product .product-star,
+.sidebar-full .product-list.columns-6.grid li.product .product-star{
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+.woocommerce #content div.product div.images, .woocommerce #content div.product div.summary, .woocommerce div.product div.images, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.images, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.images, .woocommerce-page div.product div.summary{
+	width: 48%;
+	float: left;
+}
+.woocommerce #content div.product div.summary,
+.woocommerce-page div.product div.summary{
+	float: right;
 }
 /*--------------------
 [14. Styles for devices(>=481px and <=767px)]

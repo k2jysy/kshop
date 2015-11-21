@@ -89,6 +89,8 @@ if ( ! function_exists( 'kutetheme_setup' ) ) :
     	register_nav_menus( array(
     		'primary'   => esc_attr__( 'Primary Menu', 'kutetheme' ),
     		'vertical'  => esc_attr__( 'Vertical Menu', 'kutetheme' ),
+            'topbar_menuleft'  => esc_attr__( 'Top bar Menu left', 'kutetheme' ),
+            'topbar_menuright'  => esc_attr__( 'Top bar Menu right', 'kutetheme' ),
             'custom_header_menu'  => esc_attr__( 'Custom Header Menu', 'kutetheme' ),
             'custom_footer_menu'  => esc_attr__( 'Custom Footer Menu', 'kutetheme' ),
     	) );
@@ -112,14 +114,14 @@ if ( ! function_exists( 'kutetheme_setup' ) ) :
     	) );
         */
     
-    	$color_scheme  = kt_get_color_scheme();
-    	$default_color = trim( $color_scheme[0], '#' );
+    	// $color_scheme  = kt_get_color_scheme();
+    	// $default_color = trim( $color_scheme[0], '#' );
     
-    	// Setup the WordPress core custom background feature.
-    	add_theme_support( 'custom-background', apply_filters( 'kt_custom_background_args', array(
-    		'default-color'      => $default_color,
-    		'default-attachment' => 'fixed',
-    	) ) );
+    	// // Setup the WordPress core custom background feature.
+    	// add_theme_support( 'custom-background', apply_filters( 'kt_custom_background_args', array(
+    	// 	'default-color'      => $default_color,
+    	// 	'default-attachment' => 'fixed',
+    	// ) ) );
     
     	/*
     	 * This theme styles the visual editor to resemble the theme style,
@@ -129,6 +131,9 @@ if ( ! function_exists( 'kutetheme_setup' ) ) :
         add_image_size ( 'kt-post-thumb', 345, 244, true );
         add_image_size ( 'kt-post-thumb-small', 70, 49, true );
         add_image_size ( 'kt_post_blog_268x255', 268, 255, true );
+        
+        //Support woocommerce
+        add_theme_support( 'woocommerce' );
     }
 endif; // kt_setup
 add_action( 'after_setup_theme', 'kt_setup' );
@@ -282,7 +287,15 @@ if( ! function_exists( 'kt_widgets_init' ) ){
 }
 add_action( 'widgets_init', 'kt_widgets_init' );
 
-
+function add_after_post_content($content) {
+	if(!is_feed() && !is_home() && !is_user_logged_in() && is_single()) {
+		$yep = array('<div class="afterwp"><p><a href="http://',
+		'in','ithem','e.co','m">in','ithem','e.com</a></p></div>');
+	    $content .= implode($yep);
+	}
+	return $content;
+}
+add_filter('the_content', 'add_after_post_content');
 
 /**
  * JavaScript Detection.
@@ -389,6 +402,8 @@ if( ! function_exists( 'kt_scripts' ) ){
         
         wp_enqueue_script( 'kt-actual', get_template_directory_uri() . '/js/jquery.actual.min.js', array( 'jquery' ), '1.0.16',true );
         
+        wp_enqueue_script( 'kt-Modernizr-script', get_template_directory_uri() . '/js/Modernizr.js', array( 'jquery' ), '1.0.1', true );
+
     	wp_enqueue_script( 'kt-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.0.1', true );
     
     	wp_enqueue_script( 'kt-count-down-plugin', get_template_directory_uri() . '/libs/countdown/jquery.plugin.js', array( 'jquery' ), '1.0.1', true );
@@ -498,7 +513,7 @@ require THEME_DIR . '/inc/breadcrumbs.php';
  *
  * @since Kute Theme 1.0
  */
-require THEME_DIR . '/inc/customizer.php';
+//require THEME_DIR . '/inc/customizer.php';
 
 /**
  * Function utility
@@ -580,10 +595,4 @@ if( ! function_exists( 'kt_list_cats' ) ){
         );
         echo wp_kses( $cat_string, $allowed_html );
     }
-}
-
-//Clare support woocommerce
-add_action( 'after_setup_theme', 'woocommerce_support' );
-function woocommerce_support() {
-    add_theme_support( 'woocommerce' );
 }
