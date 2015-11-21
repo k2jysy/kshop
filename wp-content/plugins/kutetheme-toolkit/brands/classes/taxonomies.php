@@ -43,7 +43,7 @@ class KT_Product_Brand_Taxonomies {
 			'update_item'       => __( 'Update Product Brand', 'kutetheme' ),
 			'add_new_item'      => __( 'Add New Product Brand', 'kutetheme' ),
 			'new_item_name'     => __( 'New Brand Name', 'kutetheme'),
-			'menu_name'         => 'Brands',
+			'menu_name'         => '品牌',
 		);
         
         $args = array(
@@ -269,7 +269,7 @@ class KT_Product_Brand_Taxonomies {
 
 
 	 public function kt_product_brand_add_meta_box() {
-		 add_meta_box( 'mytaxonomy_id', 'Brands',array( $this,'kt_product_brand_metabox'),'product' ,'side','core');
+		 add_meta_box( 'mytaxonomy_id', '品牌',array( $this,'kt_product_brand_metabox'),'product' ,'side','core');
 	 }
 
 	//Callback to set up the metabox

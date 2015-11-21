@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KutethemeToolkit\n"
 "POT-Creation-Date: 2015-11-06 12:04+0800\n"
-"PO-Revision-Date: 2015-11-14 18:08+0800\n"
+"PO-Revision-Date: 2015-11-19 06:03+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -90,19 +90,19 @@ msgstr "缩略图"
 
 #: brands/classes/taxonomies.php:73 brands/classes/taxonomies.php:152
 msgid "Upload/Add image"
-msgstr ""
+msgstr "上传/添加图片"
 
 #: brands/classes/taxonomies.php:74 brands/classes/taxonomies.php:153
 msgid "Remove image"
-msgstr ""
+msgstr "移除图片"
 
 #: brands/classes/taxonomies.php:98 brands/classes/taxonomies.php:177
 msgid "Choose an image"
-msgstr ""
+msgstr "选择一个图片"
 
 #: brands/classes/taxonomies.php:100 brands/classes/taxonomies.php:179
 msgid "Use image"
-msgstr ""
+msgstr "用这个图片"
 
 #: brands/classes/taxonomies.php:228
 msgid "Image"
@@ -110,7 +110,7 @@ msgstr ""
 
 #: brands/classes/taxonomies.php:299
 msgid "Most Used"
-msgstr ""
+msgstr "最常用"
 
 #: cmb2/admin.php:33
 msgid "Theme Options"
@@ -686,7 +686,7 @@ msgstr ""
 #: js_composer/shortcodes/box_product.php:336
 #: js_composer/shortcodes/tab-category.php:292
 msgid "New Arrivals"
-msgstr ""
+msgstr "新到货"
 
 #: js_composer/includes/tab-1.php:37 js_composer/includes/tab-2.php:38
 #: js_composer/includes/tab-3.php:99 js_composer/includes/tab-4.php:38
@@ -695,13 +695,13 @@ msgstr ""
 #: js_composer/shortcodes/list_product.php:54
 #: js_composer/shortcodes/tab-category.php:291
 msgid "Most Reviews"
-msgstr ""
+msgstr "热评"
 
 #: js_composer/includes/tab-1.php:39 js_composer/includes/tab-2.php:42
 #: js_composer/includes/tab-3.php:103 js_composer/includes/tab-4.php:42
 #: js_composer/includes/tab-5.php:64 js_composer/includes/tab-6.php:46
 msgid "On sales"
-msgstr ""
+msgstr "在售"
 
 #: js_composer/includes/tab-1.php:41 js_composer/includes/tab-2.php:40
 #: js_composer/includes/tab-3.php:101 js_composer/includes/tab-4.php:40
@@ -718,7 +718,7 @@ msgstr ""
 #: js_composer/shortcodes/tab-category.php:290
 #: js_composer/shortcodes/tab-product.php:58
 msgid "Best Sellers"
-msgstr ""
+msgstr "畅销"
 
 #: js_composer/includes/tab-1.php:93
 msgid "featured"
@@ -1579,7 +1579,7 @@ msgstr ""
 
 #: js_composer/shortcodes/brand.php:13
 msgid "Brands"
-msgstr ""
+msgstr "品牌"
 
 #: js_composer/shortcodes/brand.php:16
 msgid "Display brand showcase"
@@ -2540,7 +2540,7 @@ msgstr ""
 #: post-types/post-types.php:10 post-types/post-types.php:48
 #: post-types/post-types.php:81
 msgid "Add New"
-msgstr ""
+msgstr "新添加"
 
 #: post-types/post-types.php:11
 msgid "Add New Menu Item"
@@ -2580,80 +2580,80 @@ msgstr ""
 
 #: post-types/post-types.php:46 post-types/post-types.php:47
 msgid "Testimonial"
-msgstr ""
+msgstr "推荐信"
 
 #: post-types/post-types.php:49 post-types/post-types.php:58
 msgid "Testimonials"
-msgstr ""
+msgstr "推荐信"
 
 #: post-types/post-types.php:50
 msgid "Add New Testimonial"
-msgstr ""
+msgstr "添加新推荐信"
 
 #: post-types/post-types.php:51
 msgid "Edit Testimonial"
-msgstr ""
+msgstr "编辑推荐信"
 
 #: post-types/post-types.php:52
 msgid "New Testimonial"
-msgstr ""
+msgstr "新推荐信"
 
 #: post-types/post-types.php:53
 msgid "View Testimonial"
-msgstr ""
+msgstr "查看推荐信"
 
 #: post-types/post-types.php:54
 msgid "Search Testimonial"
-msgstr ""
+msgstr "查找推荐信"
 
 #: post-types/post-types.php:55
 msgid "No Testimonial found"
-msgstr ""
+msgstr "没有发现推荐信"
 
 #: post-types/post-types.php:56
 msgid "No Testimonial found in Trash"
-msgstr ""
+msgstr "回收站中没有推荐信"
 
 #: post-types/post-types.php:57
 msgid "Parent Testimonial"
-msgstr ""
+msgstr "父推荐信"
 
 #: post-types/post-types.php:79 post-types/post-types.php:80
 #: post-types/post-types.php:82 post-types/post-types.php:91
 msgid "Services"
-msgstr ""
+msgstr "服务"
 
 #: post-types/post-types.php:83
 msgid "Add New Service"
-msgstr ""
+msgstr "添加新服务"
 
 #: post-types/post-types.php:84
 msgid "Edit Service"
-msgstr ""
+msgstr "编辑服务"
 
 #: post-types/post-types.php:85
 msgid "New Service"
-msgstr ""
+msgstr "新服务"
 
 #: post-types/post-types.php:86
 msgid "View Service"
-msgstr ""
+msgstr "查看服务"
 
 #: post-types/post-types.php:87
 msgid "Search Service"
-msgstr ""
+msgstr "查找服务"
 
 #: post-types/post-types.php:88
 msgid "No Service found"
-msgstr ""
+msgstr "没有发现服务"
 
 #: post-types/post-types.php:89
 msgid "No Service found in Trash"
-msgstr ""
+msgstr "在回收站中没有发现服务"
 
 #: post-types/post-types.php:90
 msgid "Parent Service"
-msgstr ""
+msgstr "父服务"
 
 #: post-types/post-types.php:121
 msgid "Search Categories"

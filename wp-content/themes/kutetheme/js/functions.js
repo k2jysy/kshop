@@ -280,14 +280,14 @@
             $(this).closest('.vertical-menu-content').find('li.cat-link-orther').each(function(){
                 $(this).slideDown();
             });
-            $(this).addClass('colse-cate').removeClass('open-cate').html('Close');
+            $(this).addClass('colse-cate').removeClass('open-cate').html('收起分类');
         })
         /* Close category */
         $(document).on('click','.colse-cate',function(){
             $(this).closest('.vertical-menu-content').find('li.cat-link-orther').each(function(){
                 $(this).slideUp();
             });
-            $(this).addClass('open-cate').removeClass('colse-cate').html('All Categories');
+            $(this).addClass('open-cate').removeClass('colse-cate').html('所有分类');
             return false;
         })
         // bar ontop click

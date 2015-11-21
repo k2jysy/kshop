@@ -517,7 +517,7 @@ class WC_Countries {
 				'class'       => array( 'form-row-wide', 'address-field' )
 			),
 			'address_2' => array(
-				'placeholder' => _x( 'Apartment, suite, unit etc. (optional)', 'placeholder', 'woocommerce' ),
+				'placeholder' => _x( '详细地址，例如：XX小区，XX栋，XX室', 'placeholder', 'woocommerce' ),
 				'class'       => array( 'form-row-wide', 'address-field' ),
 				'required'    => false
 			),

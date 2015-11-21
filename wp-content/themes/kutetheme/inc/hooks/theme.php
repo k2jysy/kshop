@@ -71,12 +71,7 @@ if( ! function_exists( 'kt_register_required_plugins' ) ):
                 'name'      => 'WooCommerce',
                 'slug'      => 'woocommerce',
                 'required'  => false,
-            ),
-    		array(
-                'name'      => 'YITH WooCommerce Compare',
-                'slug'      => 'yith-woocommerce-compare',
-                'required'  => false,
-            ),
+            ),    		
             array(
                 'name' => 'YITH WooCommerce Wishlist', // The plugin name
                 'slug' => 'yith-woocommerce-wishlist', // The plugin slug (typically the folder name)

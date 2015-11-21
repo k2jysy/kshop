@@ -256,6 +256,8 @@ function kt_register_user_profile_metabox() {
 	/**
 	 * Metabox for the user profile screen
 	 */
+	 
+	
 	$cmb_user = new_cmb2_box( array(
 		'id'               => $prefix . 'edit',
 		'title'            => __( 'User Profile Metabox', 'kutetheme' ),
@@ -263,6 +265,8 @@ function kt_register_user_profile_metabox() {
 		'show_names'       => true,
 		'new_user_section' => 'add-new-user', // where form will show on new user page. 'add-existing-user' is only other valid option.
 	) );
+	
+	/*
 
 	$cmb_user->add_field( array(
 		'name'     => __( 'Extra Info', 'kutetheme' ),
@@ -311,6 +315,20 @@ function kt_register_user_profile_metabox() {
 		'name' => __( 'User Field', 'kutetheme' ),
 		'desc' => __( 'field description (optional)', 'kutetheme' ),
 		'id'   => $prefix . 'user_text_field',
+		'type' => 'text',
+	) );
+	*/
+	$cmb_user->add_field( array(
+		'name' => __( '手机', 'kutetheme' ),
+		'desc' => __( '请填入正确手机号', 'kutetheme' ),
+		'id'   => $prefix . 'googleplusurl',
+		'type' => 'text',
+	) );
+	
+	$cmb_user->add_field( array(
+		'name' => __( '微信', 'kutetheme' ),
+		'desc' => __( '请填入正确微信号', 'kutetheme' ),
+		'id'   => $prefix . 'linkedinurl',
 		'type' => 'text',
 	) );
 

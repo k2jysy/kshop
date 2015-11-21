@@ -10712,7 +10712,7 @@ msgstr "编辑地址"
 #: includes/class-wc-countries.php:514
 msgctxt "placeholder"
 msgid "Apartment, suite, unit etc. (optional)"
-msgstr "Apartment, suite, unit etc. (optional)"
+msgstr "详细地址，例如：XX小区，XX栋，XX室"
 
 #: templates/product-searchform.php:3
 msgctxt "placeholder"
