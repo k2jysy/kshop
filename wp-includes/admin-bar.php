@@ -103,6 +103,7 @@ function wp_admin_bar_render() {
  * @param WP_Admin_Bar $wp_admin_bar
  */
 function wp_admin_bar_wp_menu( $wp_admin_bar ) {
+	/* 关闭后台Wordpress图标
 	$wp_admin_bar->add_menu( array(
 		'id'    => 'wp-logo',
 		'title' => '<span class="ab-icon"></span><span class="screen-reader-text">' . __( 'About WordPress' ) . '</span>',
@@ -150,6 +151,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'title'     => __('Feedback'),
 		'href'      => __('https://wordpress.org/support/forum/requests-and-feedback'),
 	) );
+	*/
 }
 
 /**
@@ -599,6 +601,7 @@ function wp_admin_bar_edit_menu( $wp_admin_bar ) {
  * @param WP_Admin_Bar $wp_admin_bar
  */
 function wp_admin_bar_new_content_menu( $wp_admin_bar ) {
+	/*关闭admin top menu中新建菜单
 	$actions = array();
 
 	$cpts = (array) get_post_types( array( 'show_in_admin_bar' => true ), 'objects' );
@@ -653,6 +656,7 @@ function wp_admin_bar_new_content_menu( $wp_admin_bar ) {
 			'href'      => admin_url( $link )
 		) );
 	}
+	*/
 }
 
 /**
@@ -750,7 +754,7 @@ function wp_admin_bar_appearance_menu( $wp_admin_bar ) {
  * @param WP_Admin_Bar $wp_admin_bar
  */
 function wp_admin_bar_updates_menu( $wp_admin_bar ) {
-
+  /*关闭更新菜单
 	$update_data = wp_get_update_data();
 
 	if ( !$update_data['counts']['total'] )
@@ -767,6 +771,8 @@ function wp_admin_bar_updates_menu( $wp_admin_bar ) {
 			'title' => $update_data['title'],
 		),
 	) );
+	
+	*/
 }
 
 /**

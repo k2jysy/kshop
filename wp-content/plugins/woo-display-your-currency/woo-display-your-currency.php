@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Woo Display Additional Currency
-Plugin URI: 
-Description: This plugin will add currency to catalog and product display page.  The currency symbol and exchange rates can be set from admin.
-Author: Brijesh Mishra
+Plugin Name: 商品双币显示
+Plugin URI: www.i-dev.cc
+Description: 这个插件用于解决海淘代购过程中商品双币种显示，管理员还可以自己设定汇率。
+Author: 思远工作室
 Version: 1.0
-Author URI: 
+Author URI: www.i-dev.cc
 */
 
 
@@ -28,7 +28,7 @@ add_action('admin_menu', 'woo_display_additional_currency');
 function woo_display_additional_currency() {
 
 	//create new top-level menu
-	add_menu_page('Woo Additional Currency', 'Woo Additional Currency', 'administrator', __FILE__, 'brijesh_currency_settings_page',plugins_url('/images/icon.png', __FILE__));
+	add_menu_page('汇率调整', '汇率调整', 'administrator', __FILE__, 'brijesh_currency_settings_page',plugins_url('/images/icon.png', __FILE__));
 
 	//call register settings function
 	add_action( 'admin_init', 'register_mysettings' );
