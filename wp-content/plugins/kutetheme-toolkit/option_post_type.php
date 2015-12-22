@@ -256,6 +256,8 @@ function kt_register_user_profile_metabox() {
 	/**
 	 * Metabox for the user profile screen
 	 */
+	 
+	
 	$cmb_user = new_cmb2_box( array(
 		'id'               => $prefix . 'edit',
 		'title'            => __( 'User Profile Metabox', 'kutetheme' ),
@@ -263,21 +265,63 @@ function kt_register_user_profile_metabox() {
 		'show_names'       => true,
 		'new_user_section' => 'add-new-user', // where form will show on new user page. 'add-existing-user' is only other valid option.
 	) );
-
+	
+	
 	$cmb_user->add_field( array(
-		'name'     => __( 'Extra Info', 'kutetheme' ),
-		'desc'     => __( 'field description (optional)', 'kutetheme' ),
-		'id'       => $prefix . 'extra_info',
+		'name'     => __( '微信资料', 'kutetheme' ),
+		'desc'     => __( '用户在微信所显示信息', 'kutetheme' ),
+		'id'       => 'weixin_user_info',
 		'type'     => 'title',
 		'on_front' => false,
 	) );
-
+	
+	$cmb_user->add_field( array(
+		'name' => __( '性别', 'kutetheme' ),
+		'desc' => __( '', 'kutetheme' ),
+		'id'   => 'weixin_user_sex',
+		'type' => 'select',
+    'options'          => array(
+			'男'   =>__('男','kutetheme'),
+			'女' =>__('女','kutetheme' ),
+	    ),
+	) );
+	
+	$cmb_user->add_field( array(
+		'name' => __( '关注公众号日期', 'kutetheme' ),
+		'desc' => __( '', 'kutetheme' ),
+		'id'   => 'weixin_user_subscribe',
+		'type' => 'label',
+	) );
+	
+	$cmb_user->add_field( array(
+		'name' => __( '国家', 'kutetheme' ),
+		'desc' => __( '', 'kutetheme' ),
+		'id'   => 'weixin_user_country',
+		'type' => 'text',
+	) );
+	
+	$cmb_user->add_field( array(
+		'name' => __( '省区', 'kutetheme' ),
+		'desc' => __( '', 'kutetheme' ),
+		'id'   => 'weixin_user_province',
+		'type' => 'text',
+	) );
+	
+	$cmb_user->add_field( array(
+		'name' => __( '市县', 'kutetheme' ),
+		'desc' => __( '', 'kutetheme' ),
+		'id'   => 'weixin_user_city',
+		'type' => 'text',
+	) );	
+	
+	/*
 	$cmb_user->add_field( array(
 		'name'    => __( 'Avatar', 'kutetheme' ),
 		'desc'    => __( 'field description (optional)', 'kutetheme' ),
 		'id'      => $prefix . 'avatar',
 		'type'    => 'file',
 	) );
+	
 
 	$cmb_user->add_field( array(
 		'name' => __( 'Facebook URL', 'kutetheme' ),
@@ -306,6 +350,7 @@ function kt_register_user_profile_metabox() {
 		'id'   => $prefix . 'linkedinurl',
 		'type' => 'text_url',
 	) );
+	
 
 	$cmb_user->add_field( array(
 		'name' => __( 'User Field', 'kutetheme' ),
@@ -313,10 +358,13 @@ function kt_register_user_profile_metabox() {
 		'id'   => $prefix . 'user_text_field',
 		'type' => 'text',
 	) );
-
+	*/	
+	
 }
 
 add_action( 'cmb2_init', 'kt_register_theme_options_metabox' );
+
+
 /**
  * Hook in and register a metabox to handle a theme options page
  */

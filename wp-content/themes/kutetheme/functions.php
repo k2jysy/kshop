@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Kute Theme functions and definitions
  *
@@ -596,3 +596,5 @@ if( ! function_exists( 'kt_list_cats' ) ){
         echo wp_kses( $cat_string, $allowed_html );
     }
 }
+
+

@@ -4252,8 +4252,9 @@ if  ($vtprd_cart_item->db_unit_price_special <= 0 ) {
     //v1.0.9.0  begin
     // new functions
     //****************************************
-    add_action( 'show_user_profile', 'vtprd_my_show_extra_profile_fields' );
-    add_action( 'edit_user_profile', 'vtprd_my_show_extra_profile_fields' );
+	
+    //add_action( 'show_user_profile', 'vtprd_my_show_extra_profile_fields' );
+    //add_action( 'edit_user_profile', 'vtprd_my_show_extra_profile_fields' );
     
     function vtprd_my_show_extra_profile_fields( $user ) { 
        		
@@ -4284,8 +4285,8 @@ if  ($vtprd_cart_item->db_unit_price_special <= 0 ) {
         return;
     }
       
-      add_action( 'personal_options_update',  'vtprd_my_save_extra_profile_fields' );
-      add_action( 'edit_user_profile_update', 'vtprd_my_save_extra_profile_fields' );
+      //add_action( 'personal_options_update',  'vtprd_my_save_extra_profile_fields' );
+      //add_action( 'edit_user_profile_update', 'vtprd_my_save_extra_profile_fields' );
       
       function vtprd_my_save_extra_profile_fields( $user_id ) {
       
