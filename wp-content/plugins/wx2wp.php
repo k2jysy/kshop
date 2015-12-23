@@ -15,7 +15,7 @@ add_filter('manage_users_columns', 'add_user_nickname_column');
 
 function add_user_nickname_column($columns) {
 
-	//unset($columns['name']);
+	unset($columns['name']);
 	//unset($columns['email']);
 	unset($columns['roles']);
 	unset($columns['posts']);
@@ -46,7 +46,7 @@ add_filter('manage_users_columns', 'add_weixin_sex_column');
 
 function add_weixin_sex_column($columns) {
 
-	$columns['weixin_sex'] = '性别';
+	$columns['weixin_user_sex'] = '性别';
 
 	return $columns;
 
@@ -56,19 +56,75 @@ add_action('manage_users_custom_column',  'show_weixin_sex_column_content', 20, 
 
 function show_weixin_sex_column_content($value, $column_name, $user_id) {
 
-	$weixin_sex = get_user_meta($user_id,'_kt_user_weixin_sex',true);
+	$weixin_user_sex = get_user_meta($user_id,'weixin_user_sex',true);
+	if($weixin_user_sex == '1'){		
+		$weixin_user_sex = '男';		
+	} 
+	if($weixin_user_sex == '2'){		
+		$weixin_user_sex = '女';		
+	} 
 
-	if ( 'weixin_sex' == $column_name )
+	if ( 'weixin_user_sex' == $column_name )
 
-		return $weixin_sex;
+		return $weixin_user_sex;
 
 	return $value;
+}
+
+//Add weixin user province to user manage list columns
+add_filter('manage_users_columns', 'add_weixin_province_column');
+
+function add_weixin_province_column($columns) {
+
+    $columns['weixin_user_province'] = '所在地区';
+
+    return $columns;
+
+}
+
+add_action('manage_users_custom_column',  'show_weixin_province_column_content', 20, 3);
+
+function show_weixin_province_column_content($value, $column_name, $user_id) {
+
+    $weixin_user_province = get_user_meta($user_id,'weixin_user_province',true);
+
+    if ( 'weixin_user_province' == $column_name )
+
+        return $weixin_user_province;
+
+    return $value;
+
+}
+
+//Add weixin user city to user manage list columns
+add_filter('manage_users_columns', 'add_weixin_city_column');
+
+function add_weixin_city_column($columns) {
+
+    $columns['weixin_user_city'] = '所在城市';
+
+    return $columns;
+
+}
+
+add_action('manage_users_custom_column',  'show_weixin_city_column_content', 20, 3);
+
+function show_weixin_city_column_content($value, $column_name, $user_id) {
+
+    $weixin_user_city = get_user_meta($user_id,'weixin_user_city',true);
+
+    if ( 'weixin_user_city' == $column_name )
+
+        return $weixin_user_city;
+
+    return $value;
+
 }
 
 //Add weixin user subscribe time to user manage list
 add_filter('manage_users_columns','add_weixin_users_column_reg_time');
 function add_weixin_users_column_reg_time($column_headers){
-	$column_headers['reg_time'] = '注册时间';
+	$column_headers['reg_time'] = '关注公众号时间';
 	return $column_headers;
 }
 

@@ -281,8 +281,8 @@ function kt_register_user_profile_metabox() {
 		'id'   => 'weixin_user_sex',
 		'type' => 'select',
     'options'          => array(
-			'男'   =>__('男','kutetheme'),
-			'女' =>__('女','kutetheme' ),
+			'1'   =>__('男','kutetheme'),
+			'2' =>__('女','kutetheme' ),
 	    ),
 	) );
 	
