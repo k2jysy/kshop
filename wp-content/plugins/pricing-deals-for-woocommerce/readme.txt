@@ -1,10 +1,10 @@
 === Pricing Deals for WooCommerce ===
 Contributors: vark
-Donate link: http://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/
+Donate link: https://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/
 Tags: dynamic pricing,  WooCommerce, ecommerce, e commerce, e-commerce, commerce, store, sales, promotion, advertising, sell, shop, shopping, cart, checkout, configurable, variable, widgets, reports, marketing, deals, price, discount, group pricing, wholesale, membership, role, promotion, bogo, catalog only
 Requires at least: 3.3
-Tested up to: 4.3.1
-Stable tag: 1.1.1.2
+Tested up to: 4.7
+Stable tag: 1.1.6.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -28,14 +28,20 @@ Power your store to greater success with pricing deals and sales promotions! Jus
 *   New Product Visibility Setting - Wholesale/Retail Product display
 *   New Product Purchasability Setting -  Wholesale/Retail/Catalog-only purchasability
 *   New Product Purchasability Price Filter - Replace price with message
-*   Works with WooCommerce 2.4+
+*   Works with WooCommerce 2.6+
 *   Multilanguage support through [QTranslate](https://wordpress.org/plugins/qtranslate-x/) 
 
 
 = Unparalleled Customer Service =
 
 *   Customer Service is as important as the plugin functionality itself
-*   [Support](http://www.varktech.com/support/) is open 7 days for questions and 1-on-1 assistance.
+*   [Support](https://www.varktech.com/support/) is open 7 days for questions and 1-on-1 assistance.
+
+
+= Full PRO Demo Now Available for FREE =
+
+*   3-Day Demo PRO Free Full license [now available](https://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)
+
 
 = A Complete Discount Marketing Package =
 
@@ -55,14 +61,14 @@ Pricing Deals does more than offer discounting functions:
 *   Pricing Deals of any sort, by Role/Membership
 *   Pretty much any deal you can think of, you’ll be able to do!
 
-[Visit the Documentation](http://www.varktech.com/documentation/pricing-deals/introrule/)
+[Visit the Documentation](https://www.varktech.com/documentation/pricing-deals/introrule/)
 
 = Pricing Deals is the Swiss Army Knife of Deals...  to focus on the basic functionality, try these plugins: =
-1. [Wholesale Pricing for WooCommerce](http://wordpress.org/extend/plugins/wholesale-pricing-for-woocommerce) .. (wholesale only - skinnier pricing deals plugin)
-1. [Cart Deals for WooCommerce](http://wordpress.org/extend/plugins/cart-deals-for-woocommerce)  .. (just the basic Cart discounts, please - skinnier pricing deals plugin)
+1. [Wholesale Pricing for WooCommerce](https://wordpress.org/extend/plugins/wholesale-pricing-for-woocommerce) .. (wholesale only - skinnier pricing deals plugin)
+1. [Cart Deals for WooCommerce](https://wordpress.org/extend/plugins/cart-deals-for-woocommerce)  .. (just the basic Cart discounts, please - skinnier pricing deals plugin)
 1. (Pricing Deals itself **already contains** the Wholesale Pricing and Cart Deals functionality)
 
-[Visit the Pro Version](http://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)
+[Visit the Pro Version](https://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)
 
 = The Details =
  
@@ -91,7 +97,7 @@ Pricing Deals is many plugins in one!
 
 ** With the Pricing Deals plugin *all of these actions can be applied and managed in one place, and requires no product database updates!* ** 
 
-[Visit the Documentation](http://www.varktech.com/documentation/pricing-deals/introrule/)
+[Visit the Documentation](https://www.varktech.com/documentation/pricing-deals/introrule/)
   
 **The free version gives you:**
  
@@ -112,7 +118,7 @@ The Pro version  gives you incredible control over rule groups - by category, pr
 
 **The Pro version  *also* gives you: (*group power*!)** 
 
-*   For All deal types, the  [Pro version](http://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)   gives you group power - the additional flexibility of applying Sales and Promotions to:
+*   For All deal types, the  [Pro version](https://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)   gives you group power - the additional flexibility of applying Sales and Promotions to:
 	*   *Whole Store, Wholesaler or Membership or Role (Display different prices for logged in users), Product Category and Pricing Deal custom Category, Product or Variation*
 *   Deal Types
 	*   BOGO (Buy One, Get One) [for any product, variation, category or role]
@@ -125,11 +131,11 @@ The Pro version  gives you incredible control over rule groups - by category, pr
 *   Retail / Wholesale Product Visibility control!
 *   and more!
 
-*[Vist the Pro Version](http://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)*
+*[Vist the Pro Version](https://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)*
    
 
-[Documentation](http://www.varktech.com/documentation/pricing-deals/introrule/) | 
-[Shameless E-Commerce](http://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)
+[Documentation](https://www.varktech.com/documentation/pricing-deals/introrule/) | 
+[Shameless E-Commerce](https://www.varktech.com/woocommerce/woocommerce-dynamic-pricing-discounts-pro/)
 
 
 
@@ -145,11 +151,11 @@ The Pro version  gives you incredible control over rule groups - by category, pr
 
 
 = Additional Plugins by VarkTech.com =
-1. [Wholesale Pricing for WooCommerce](http://wordpress.org/extend/plugins/wholesale-pricing-for-woocommerce) .. (skinnier pricing deals plugin)
-1. [Cart Deals for WooCommerce](http://wordpress.org/extend/plugins/cart-deals-for-woocommerce) ..  (skinnier pricing deals plugin)
-1. [Minimum Purchase for WooCommerce](http://wordpress.org/extend/plugins/minimum-purchase-for-woocommerce)
-1. [Maximum Purchase for WooCommerce](http://wordpress.org/extend/plugins/maximum-purchase-for-woocommerce) 
-1. [Min or Max Purchase for WooCommerce](http://wordpress.org/extend/plugins/min-or-max-purchase-for-woocommerce)   
+1. [Wholesale Pricing for WooCommerce](https://wordpress.org/extend/plugins/wholesale-pricing-for-woocommerce) .. (skinnier pricing deals plugin)
+1. [Cart Deals for WooCommerce](https://wordpress.org/extend/plugins/cart-deals-for-woocommerce) ..  (skinnier pricing deals plugin)
+1. [Minimum Purchase for WooCommerce](https://wordpress.org/extend/plugins/minimum-purchase-for-woocommerce)
+1. [Maximum Purchase for WooCommerce](https://wordpress.org/extend/plugins/maximum-purchase-for-woocommerce) 
+1. [Min or Max Purchase for WooCommerce](https://wordpress.org/extend/plugins/min-or-max-purchase-for-woocommerce)   
 
 
 == Installation ==
@@ -170,9 +176,9 @@ The Pro version  gives you incredible control over rule groups - by category, pr
 
 Please review the documentation, which has lots of helpful hints and examples.
 
-[Documentation](http://www.varktech.com/documentation/pricing-deals/introrule/) 
+[Documentation](https://www.varktech.com/documentation/pricing-deals/introrule/) 
 
-Direct support requests can be made here on the support tab, or at the [Support](http://www.varktech.com/support/) page at varktech.com.  We try to respond to all posts within 12 hours.      
+Direct support requests can be made here on the support tab, or at the [Support](https://www.varktech.com/support/) page at varktech.com.  We try to respond to all posts within 12 hours.      
 
 
 
@@ -187,6 +193,59 @@ Direct support requests can be made here on the support tab, or at the [Support]
 
 
 == Changelog ==
+
+= 1.1.6.7 - 2016-07-18 =
+* Enhancement - Improved "Cheapest" Deals: 
+		Cheapest option now in the Rule's Blueprint area - **please hover** to read the how-to.
+* Enhancement - Pro plugin custom "update available" messaging now included on the plugins page, 
+		just under the listing forPricing Deals Pro.
+* Enhancement - Only check for Pro plugin update if required.
+
+= 1.1.6.6 - 2016-07-09 =
+SVN Update issue, final resolution!
+
+= 1.1.6.5 - 2016-07-09 =
+SVN Update issue
+
+= 1.1.6.4 - 2016-07-09 =
+SVN Update issue
+
+= 1.1.6.3 - 2016-07-09 =
+* Enhancement - Pro plugin updater now active - Pro plugin updates now delivered directly to the plugins.php page
+* Fix - If Woocommerce deactivated, slide through with no warning
+* Fix - Warn if PHP version less than 5.3.1
+* Fix - repair rare Fatal error: Call to a member function get_tax_class() ...
+* Fix - repair auto add for free bug
+
+= 1.1.6.2 - 2016-06-19 =
+* Fix - Auto update was accidentally forcing re-registration
+
+= 1.1.6.1 - 2016-06-19 =
+* Fix - URL fixes in anchors
+* Fix - Registration fixes (pro only):
+	 - fix to rego clock (pro activation)
+	 - fix cron scheduling
+	 - Localhost and IP warnings suspended
+	 - Phone Home frequency reduced (pro activation check)
+	 - document that Licensing and PHone Home functions are PRO-only, and run
+		only if the PRO version is installed and active
+
+= 1.1.6 - 2016-06-15 =
+* Fix - Added warning for invalid Client website IP address
+* Fix - delete 'Deals' coupon when not needed for plugin setting
+* Fix - removed bloginfo from admin pages
+* Fix - minor registration issues
+* Enhancement - Now allow ANY staging.wpengine site as part of a test site registration
+
+= 1.1.5 - 2016-06-05 =
+* Fix - Added code to handle the rare "Fatal error: Call to a member function get_tax_class() ..."
+* Enhancement - At store page refresh, catch any price changes and refigure discount
+* Enhancement - Now with FREE full PRO demo available, 3-Day PRO licensing included.
+
+= 1.1.1.3 - 2016-01-22 =
+* Fix - Date range end date issue resolved
+* Fix - Price Range of Variable Products with a partial Catalog Discount (where only some of the variations have discounts) resolved
+* Enhancement - Now Compatible with WooCommerce Currency Switcher  (by realmag777).
 
 = 1.1.1.2 - 2015-11-07 =
 * Fix - Coupon discount mini-cart intermittent display issue on 1st time for auto adds
@@ -203,9 +262,16 @@ Direct support requests can be made here on the support tab, or at the [Support]
 * Fix - shortcode in-the-loop product messaging
 * Fix - discount and sale price scheduling
 * Fix - fix for variation pricing for variation groups larger than 20, Catalog rules discount
+* Fix - on Users screen
+		Pricing Deals User Tax Free (box) User Transactions are Tax-Free
+		- is now recognized by the system correctly
+		- NB - if the switch is set on, then toggled off, to clear same browser sesion of the setting:
+			- Pricing Deal Settings 'nuke session variables'
+			- log out/log back in to Uswer
+		
 * Enhancement - New Filter to enable Pricing Deals to pick up pricing from other plugins 
     
-		     // *** add to bottom of Theme Functions file
+		     // *** add to bottom of Theme Functions file (before the closing ? line, if there is one)
  		     //allows Pricing Deals to pick up current product pricing from other plugins
  		     //  ---  more resource intensive  ---
      
@@ -234,7 +300,7 @@ Direct support requests can be made here on the support tab, or at the [Support]
 	switch to advanced rule in update process to expose errored field. 
 * Fix - fix to user tax exempt status on User Screen - save to user updated, not user making the update!
 * Enhancement - New Rule Option => Rule Discounts activated by Coupon
-		- http://www.varktech.com/documentation/pricing-deals/introrule/#discount.discountcoupon
+		- https://www.varktech.com/documentation/pricing-deals/introrule/#discount.discountcoupon
 		- A Woocommerce Coupon code may be included on a Pricing Deals Rule 
 		- if the rule has a Woocommerce coupon code included, that rule's discount will only be applied 
 			once the same coupon code is redeemed in the cart.
@@ -252,7 +318,7 @@ Direct support requests can be made here on the support tab, or at the [Support]
 * Fix - "Discount applied to list price, taken if it is less than sale price" now works with Catalog rules also. 
 * Fix - buy_tax_free capability applied globally...
 * Enhancement - Wholesale Product Visibility (pro):
-		- http://www.varktech.com/documentation/pricing-deals/introrule/#rolesetup.productvisibility
+		- https://www.varktech.com/documentation/pricing-deals/introrule/#rolesetup.productvisibility
 		- Product screen now has a 'wholesale product' checkbox in the PUBLISH box
 			- Label all wholesale products as wholesale
 		- Settings Page now has "Wholesale Products Display Options"
@@ -521,6 +587,16 @@ Direct support requests can be made here on the support tab, or at the [Support]
 
 
 == Upgrade Notice ==
+
+= 1.1.6 - 2016-06-15 =
+* Fix - Added warning for invalid Client website IP address
+* Fix - minor registration issues
+* Enhancement - Now allow ANY staging.wpengine site as part of a test site registration
+
+= 1.1.5 - 2016-06-05 =
+* Fix - Added code to handle the rare "Fatal error: Call to a member function get_tax_class() ..."
+* Enhancement - At store page refresh, catch any price changes and refigure discount
+* Enhancement - Now with FREE PRO demo available, PRO licensing included.
 
 = 1.1.1.2 - 2015-11-07 =
 * Fix - Coupon discount mini-cart intermittent display issue on 1st time 

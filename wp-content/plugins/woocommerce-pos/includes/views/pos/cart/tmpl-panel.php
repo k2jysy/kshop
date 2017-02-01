@@ -1,5 +1,5 @@
 <div class="panel-header list-header cart-header">
-  <div class="qty"><?php _ex( '数量', 'Abbreviation of Quantity', 'woocommerce-pos' ); ?></div>
+  <div class="qty">数量</div>
   <div class="title"><?php /* translators: woocommerce */ _e( 'Product', 'woocommerce' ); ?></div>
   <div class="price"><?php /* translators: woocommerce */ _e( 'Price', 'woocommerce' ); ?></div>
   <div class="total"><?php /* translators: woocommerce */ _e( 'Total', 'woocommerce' ); ?></div>

@@ -4,7 +4,7 @@
  *
  * @author Yithemes
  * @package YITH WooCommerce Quick View
- * @version 1.0.0
+ * @version 1.1.1
  */
 
 if ( ! defined( 'YITH_WCQV' ) ) {
@@ -77,7 +77,7 @@ if ( ! class_exists( 'YITH_WCQV_Admin' ) ) {
 		/**
 		 * Returns single instance of the class
 		 *
-		 * @return \YITH_WCQV
+		 * @return \YITH_WCQV_Admin
 		 * @since 1.0.0
 		 */
 		public static function get_instance(){

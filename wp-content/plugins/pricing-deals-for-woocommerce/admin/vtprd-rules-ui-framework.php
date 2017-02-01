@@ -434,6 +434,39 @@ class VTPRD_Rules_UI_Framework {
                  )
             ),
 
+          //v1.1.6.7                                  
+          'apply_deal_to_cheapest_select' =>  array ( 
+              //dropdown select info
+                'select'    => array(
+                    'id'    => 'apply-deal-to-cheapest-select',
+                    'class' => 'select-group clear-left',
+                    'name'  => 'apply-deal-to-cheapest-select',
+                    'tabindex'  => ''
+                ),
+              //dropdown options
+              'option'  => array(
+                  array (
+                    'id'       => 'apply-deal-to-cheapest-off',
+                    'class'    => '',
+                    'value'    => 'no',
+                    'title'    => __('Process as normal', 'vtprd')   
+                   ), 
+                  array (
+                    'id'       => 'apply-deal-to-cheapest-on',
+                    'class'    => '',
+                    'value'    => 'cheapest',
+                    'title'    => __('Apply to Cheapest item first', 'vtprd')    
+                   ), 
+                 array (
+                    'id'       => 'apply-deal-to-most-expensive-on',
+                    'class'    => '',
+                    'value'    => 'most-expensive',
+                    'title'    => __('Apply to Most Expensive first', 'vtprd')    
+                   )                                                                         
+
+                 )
+            ),
+
           //v1.1.0.8          
           'only_for_this_coupon_name' => array (   
               'id'    => 'only_for_this_coupon_name',

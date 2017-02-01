@@ -370,6 +370,8 @@ class VTPRD_Rule {
      public  $wizard_on_off_sw_select; //addition of wizard to screen... defaults to  'on'
      
      public  $advertising_msg_badge_sw; //v1.0.9.0  if this is on, span is created which allows a badge to be attached using css
+          
+     public  $apply_deal_to_cheapest_select; //v1.1.6.7 
      //*********************
    
      //******************************************
@@ -569,7 +571,10 @@ class VTPRD_Rule {
      $this->rule_error_message = array();
      $this->rule_error_red_fields = array();
      $this->rule_error_box_fields = array();
-     $this->advertising_msg_badge_sw;  //v1.0.9.0         
+     $this->advertising_msg_badge_sw;  //v1.0.9.0    
+     $this->apply_deal_to_cheapest_select = 'no'; //v1.1.6.7     
+     
+          
      /* ************************************************* */
      /* Rule Processing at Purchase
      *  data is loaded here only at purchase processing time

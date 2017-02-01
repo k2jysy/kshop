@@ -1,5 +1,5 @@
 <li class="list-row subtotal">
-  <div><?php /* translators: woocommerce */ _e( '购物车合计', 'woocommerce' ); ?>:</div>
+  <div>总计：</div>
   <div class="total">{{{money subtotal}}}</div>
   <div class="action"></div>
 </li>

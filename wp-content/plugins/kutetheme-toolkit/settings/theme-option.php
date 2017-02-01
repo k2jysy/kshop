@@ -150,6 +150,12 @@ $config = array(
                             '5' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v5.jpg',
                             '6' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v6.jpg',
                             '7' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v7.jpg',
+                            '8' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v8.jpg',
+                            '9' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v9.jpg',
+                            '11' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v11.jpg',
+                            '12' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v12.jpg',
+                            '13' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v13.jpg',
+                            '14' => KUTETHEME_PLUGIN_URL .'/assets/imgs/v14.jpg',
                 		),
                 	)
                 )
@@ -264,6 +270,74 @@ $config = array(
                         'show_option_none' => 'Choose Category'
                 	)
                 )
+            ),
+            $prefix . 'header_9' => array(
+                'setting' => array( 
+                    'id'      => $prefix . 'header_9',
+                    'hookup'  => false,
+                    'title'   => 'Header 9',
+                    'show_on' => array(
+                        // These are important, don't remove
+                        'key'   => 'options-page',
+                        'value' => array( $key )
+                    ) 
+                ),
+                'fields'    => array(
+                    array(
+                        'name'    => __( 'Enable Header postion', 'kutetheme' ),
+                        'id'      => 'kt_enable_header9_postion',
+                        'type'    => 'select',
+                        'default' => 'enable',
+                        'options' => array(
+                            'enable'  => 'Enable',
+                            'disable'  => 'Disable'
+                        ),
+                    ),
+                )
+            ),
+            $prefix . 'header_11' => array(
+                'setting' => array( 
+                    'id'      => $prefix . 'header_11',
+                    'hookup'  => false,
+                    'title'   => 'Header 11',
+                    'show_on' => array(
+                        // These are important, don't remove
+                        'key'   => 'options-page',
+                        'value' => array( $key )
+                    ) 
+                ),
+                'fields'    => array(
+                    array(
+                        'name'    => __( 'Enable Box contact info', 'kutetheme' ),
+                        'id'      => 'kt_enable_box_contact_info11',
+                        'type'    => 'select',
+                        'default' => 'enable',
+                        'options' => array(
+                            'enable'  => 'Enable',
+                            'disable'  => 'Disable'
+                        ),
+                    ),
+                    array(
+                        'name'    => __( 'Enable Hot line on contact info', 'kutetheme' ),
+                        'id'      => 'kt_enable_hotline_contact_info11',
+                        'type'    => 'select',
+                        'default' => 'enable',
+                        'options' => array(
+                            'enable'  => 'Enable',
+                            'disable'  => 'Disable'
+                        ),
+                    ),
+                    array(
+                        'name'    => __( 'Enable Social on contact info', 'kutetheme' ),
+                        'id'      => 'kt_enable_social_contact_info11',
+                        'type'    => 'select',
+                        'default' => 'enable',
+                        'options' => array(
+                            'enable'  => 'Enable',
+                            'disable'  => 'Disable'
+                        ),
+                    ),
+                )
             )
 		),
     ),
@@ -295,6 +369,9 @@ $config = array(
                 			'1' => KUTETHEME_PLUGIN_URL .'/assets/imgs/fv1.jpg',
                 			'2' => KUTETHEME_PLUGIN_URL .'/assets/imgs/fv2.jpg',
                 			'3' => KUTETHEME_PLUGIN_URL .'/assets/imgs/fv3.jpg',
+                            '4' => KUTETHEME_PLUGIN_URL .'/assets/imgs/fv4.jpg',
+                            '5' => KUTETHEME_PLUGIN_URL .'/assets/imgs/fv5.jpg',
+                            '6' => KUTETHEME_PLUGIN_URL .'/assets/imgs/fv6.jpg',
                 		)
                 	),
                     array(
@@ -343,6 +420,30 @@ $config = array(
                         'type'    => 'text',
                         'default' => 'You a Client , large or small, and want to participate in this adventure, please send us an email to support@kuteshop.com'
                     )
+                )
+            ),
+            $prefix . 'footer_4' => array(
+                'setting' => array( 
+                    'id'      => $prefix . 'footer_4',
+                    'hookup'  => false,
+                    'title'   => 'Footer 4, 5',
+                    'show_on' => array(
+                        // These are important, don't remove
+                        'key'   => 'options-page',
+                        'value' => array( $key )
+                    ) 
+                ),
+                'fields'    => array(
+                    array(
+                        'name'    => __( 'Footer Payment logos', 'kutetheme' ),
+                        'id'      => 'kt_footer_payment_logos',
+                        'type'    => 'file_list',
+                        'desc'    => __( 'Display payment logos on footer style 4, 5', 'kutetheme' ),
+                        'options' => array(
+                            'url' => false, // Hide the text input for the url
+                            'add_upload_file_text' => 'Add payment images' // Change upload button text. Default: "Add or Upload File"
+                        ),
+                    ),
                 )
             ),
 		),
@@ -972,8 +1073,279 @@ $config = array(
                     ),
                 )
             ),
+            //Color Header 9
+            $prefix . 'header_9_color' => array(
+                'setting' => array( 
+                    'id'      => $prefix . 'header_9_color',
+                    'hookup'  => false,
+                    'title'   => 'Header 9',
+                    'show_on' => array(
+                        // These are important, don't remove
+                        'key'   => 'options-page',
+                        'value' => array( $key )
+                    ) 
+                ),
+                'fields'    => array(
+                    array(
+                        'name'    => 'Header Bg Color',
+                        'id'      => 'h9_header_bg',
+                        'type'    => 'colorpicker',
+                        'default' => '#000',
+                    ),
+                    array(
+                        'name'    => __( 'Header Overlay opacity', 'kutetheme' ),
+                        'id'      => 'h9_header_opacity',
+                        'type'    => 'select',
+                        'default' => '0.6',
+                        'options' => array(
+                            '0.1' => '0.1',
+                            '0.2' => '0.2',
+                            '0.3' => '0.3',
+                            '0.4' => '0.4',
+                            '0.5' => '0.5',
+                            '0.6' => '0.6',
+                            '0.7' => '0.7',
+                            '0.8' => '0.8',
+                            '0.9' => '0.9',
+                            '1'   => '1',
+                        )
+                    ),
+                    array(
+                        'name'    => 'Topbar color',
+                        'id'      => 'h9_header_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#fff',
+                    ),
+                    array(
+                        'name'    => 'Topbar hover color',
+                        'id'      => 'h9_header_hover_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#ff6633',
+                    ),
+                    array(
+                        'name'    => 'Topbar bg color',
+                        'id'      => 'h9_topbar_bg_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#000',
+                    ),
+                    array(
+                        'name'    => __( 'Topbar Overlay opacity', 'kutetheme' ),
+                        'id'      => 'h9_topbar_opacity',
+                        'type'    => 'select',
+                        'default' => '0.4',
+                        'options' => array(
+                            '0.1' => '0.1',
+                            '0.2' => '0.2',
+                            '0.3' => '0.3',
+                            '0.4' => '0.4',
+                            '0.5' => '0.5',
+                            '0.6' => '0.6',
+                            '0.7' => '0.7',
+                            '0.8' => '0.8',
+                            '0.9' => '0.9',
+                            '1'   => '1',
+                        )
+                    ),
+                    array(
+                        'name'    => 'Topbar color',
+                        'id'      => 'h9_topbar_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#fff',
+                    ),
+                    array(
+                        'name'    => 'Topbar hover color',
+                        'id'      => 'h9_topbar_hover_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#ff6633',
+                    )
+                )
+            ),
+            //Color Header 11
+            $prefix . 'header_11_color' => array(
+                'setting' => array( 
+                    'id'      => $prefix . 'header_11_color',
+                    'hookup'  => false,
+                    'title'   => 'Header 11',
+                    'show_on' => array(
+                        // These are important, don't remove
+                        'key'   => 'options-page',
+                        'value' => array( $key )
+                    ) 
+                ),
+                'fields'    => array(
+                    array(
+                        'name'    => 'Header Bg Color',
+                        'id'      => 'h11_header_bg',
+                        'type'    => 'colorpicker',
+                        'default' => '#f5f5f5',
+                    ),
+                    array(
+                        'name'    => 'Box Category Bg Color',
+                        'id'      => 'h11_box_category_bg',
+                        'type'    => 'colorpicker',
+                        'default' => '#ff6633',
+                    ),
+                    array(
+                        'name'    => 'Box Category Text Color',
+                        'id'      => 'h11_box_category_text_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#fff',
+                    ),
+                    array(
+                        'name'    => 'Box header bg color',
+                        'id'      => 'h11_box_header_bg_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#333',
+                    ),
+                    array(
+                        'name'    => 'Box Contact info bg color',
+                        'id'      => 'h11_box_contact_info_bg_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#666666',
+                    ),
+                    array(
+                        'name'    => 'Box Contact info text color',
+                        'id'      => 'h11_box_contact_info_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#fff',
+                    ),
+                )
+            ),
+            //Color Header 12
+            $prefix . 'header_12_color' => array(
+                'setting' => array( 
+                    'id'      => $prefix . 'header_12_color',
+                    'hookup'  => false,
+                    'title'   => 'Header 12',
+                    'show_on' => array(
+                        // These are important, don't remove
+                        'key'   => 'options-page',
+                        'value' => array( $key )
+                    ) 
+                ),
+                'fields'    => array(
+                    array(
+                        'name'    => 'Header Bg Color',
+                        'id'      => 'h12_header_bg',
+                        'type'    => 'colorpicker',
+                        'default' => '#394264',
+                    ),
+                    array(
+                        'name'    => 'Box Category Bg Color',
+                        'id'      => 'h12_box_category_bg',
+                        'type'    => 'colorpicker',
+                        'default' => '#ff3366',
+                    ),
+                    array(
+                        'name'    => 'TopBar Text Color',
+                        'id'      => 'h12_topbar_text_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#9099b7',
+                    ),
+                    
+                    array(
+                        'name'    => 'Mega Menu Text Color',
+                        'id'      => 'h12_mege_menu_text_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#9099b7',
+                    ),
+                    
+                    array(
+                        'name'    => 'Box Category Text Color',
+                        'id'      => 'h12_box_category_text_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#fff',
+                    ),
+                    array(
+                        'name'    => 'TopBar Text Hover Color',
+                        'id'      => 'h12_topbar_text_hover_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#9099b7',
+                    ),
+                    
+                    array(
+                        'name'    => 'Mega Menu Text Hover Color',
+                        'id'      => 'h12_mege_menu_text_hover_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#fff',
+                    ),
+                    array(
+                        'name'    => 'Box header bg color',
+                        'id'      => 'h12_box_header_bg_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#50597b',
+                    ),
+                )
+            ),
+            //Color Header 13
+            $prefix . 'header_13_color' => array(
+                'setting' => array( 
+                    'id'      => $prefix . 'header_13_color',
+                    'hookup'  => false,
+                    'title'   => 'Header 13',
+                    'show_on' => array(
+                        // These are important, don't remove
+                        'key'   => 'options-page',
+                        'value' => array( $key )
+                    ) 
+                ),
+                'fields'    => array(
+                    array(
+                        'name'    => 'Box Category Bg Color',
+                        'id'      => 'h13_box_category_bg',
+                        'type'    => 'colorpicker',
+                        'default' => '#000',
+                    ),
+                    array(
+                        'name'    => 'Box Category Text Color',
+                        'id'      => 'h13_box_category_text_color',
+                        'type'    => 'colorpicker',
+                        'default' => '#fff',
+                    ),
+                )
+            ),
 		),
     ),
+    //Logo
+    // $prefix . 'kt_fonts' =>  array(
+    //     'setting' => array(
+    //         'id'      => $prefix . 'kt_fonts',
+    //         'title'   => 'Fonts',
+    //         'hookup'  => false,
+    //         'show_on' => array(
+    //             // These are important, don't remove
+    //             'key'   => 'options-page',
+    //             'value' => array( $key )
+    //         )
+    //     ),
+    //     'fields'    => array(
+    //         array(
+    //             'name'    => __( 'Main Fonts', 'kutetheme' ),
+    //             'id'      => 'kt_main_font',
+    //             'type'    => 'select',
+    //             'default' => 'Arial',
+    //             'options' => array(
+    //                 'Arial' => 'Arial, Helvetica, sans-serif',
+    //                 'Arimo' => 'Arimo',
+    //                 'Montserrat' => 'Montserrat',
+    //                 'Oswald'=>'Oswald'
+    //             ),
+    //             'desc'    => __( 'Specify the body font properties.', 'kutetheme' ),
+    //         ),
+    //         array(
+    //             'name'    => __( 'Secondary font', 'kutetheme' ),
+    //             'id'      => 'kt_secondary_font',
+    //             'type'    => 'select',
+    //             'default' => 'Arial',
+    //             'options' => array(
+    //                 'Arial' => 'Arial, Helvetica, sans-serif',
+    //                 'Arimo' => 'Arimo',
+    //                 'Montserrat' => 'Montserrat',
+    //                 'Oswald'=>'Oswald'
+    //             ),
+    //         ),
+    //     )
+    // ),
     //Woocommerce
     $prefix . 'woocommerce' => array(
         'title'   => 'Woocommerce',
@@ -1186,6 +1558,24 @@ $config = array(
         		'name' => __( 'Instagram', 'kutetheme' ),
         		'desc' => __( 'Your instagram username', 'kutetheme' ),
         		'id'   => 'kt_instagram_link_id',
+        		'type' => 'text',
+        	),
+        	  array(
+        		'name' => __( 'Weixin', 'kutetheme' ),
+        		'desc' => __( 'Your weixin account', 'kutetheme' ),
+        		'id'   => 'kt_weixin_link_id',
+        		'type' => 'text',
+        	),
+        	 array(
+        		'name' => __( 'QQ', 'kutetheme' ),
+        		'desc' => __( 'Your QQ number', 'kutetheme' ),
+        		'id'   => 'kt_qq_link_id',
+        		'type' => 'text',
+        	),
+        	 array(
+        		'name' => __( 'Weibo', 'kutetheme' ),
+        		'desc' => __( 'Your weibo account', 'kutetheme' ),
+        		'id'   => 'kt_weibo_link_id',
         		'type' => 'text',
         	)
         )

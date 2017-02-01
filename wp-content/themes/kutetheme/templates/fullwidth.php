@@ -8,17 +8,16 @@
  */
  get_header();?>
     <div id="primary" class="content-area">
-    	<main id="main" class="site-main" role="main">
+    	<main id="main" class="site-main">
     	<?php
     	// Start the loop.
     	while ( have_posts() ) : the_post();
             ?>
-            <div class="container"><?php the_content( );?></div>
+            <div class="main-content"><?php the_content( );?></div>
             <?php
     	// End the loop.
     	endwhile;
     	?>
-    
     	</main><!-- .site-main -->
     </div><!-- .content-area -->
 <?php 

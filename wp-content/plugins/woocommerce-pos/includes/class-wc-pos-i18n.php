@@ -307,73 +307,73 @@ class WC_POS_i18n {
 
     return apply_filters( 'woocommerce_pos_i18n', array(
       'titles'   => array(
-        'browser'       => _x( '浏览', 'system status: browser capabilities', 'woocommerce-pos' ),
+        'browser'       => _x( 'Browser', 'system status: browser capabilities', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'cart'          => __( '购物车', 'woocommerce' ),
+        'cart'          => __( 'Cart', 'woocommerce' ),
         /* translators: woocommerce */
-        'checkout'      => __( '结账', 'woocommerce' ),
+        'checkout'      => __( 'Checkout', 'woocommerce' ),
         /* translators: woocommerce */
-        'coupons'       => __( '优惠卷', 'woocommerce' ),
+        'coupons'       => __( 'Coupons', 'woocommerce' ),
         /* translators: woocommerce */
-        'customers'     => __( '顾客', 'woocommerce' ),
+        'customers'     => __( 'Customers', 'woocommerce' ),
         /* translators: woocommerce */
-        'fee'           => __( '其他费用', 'woocommerce' ),
-        'hotkeys'       => _x( '热键', 'keyboard shortcuts', 'woocommerce-pos' ),
+        'fee'           => __( 'Fee', 'woocommerce' ),
+        'hotkeys'       => _x( 'HotKeys', 'keyboard shortcuts', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'order'         => __( '订单', 'woocommerce' ),
+        'order'         => __( 'Order', 'woocommerce' ),
         /* translators: woocommerce */
-        'orders'        => __( '订单', 'woocommerce' ),
+        'orders'        => __( 'Orders', 'woocommerce' ),
         /* translators: woocommerce */
-        'products'      => __( '商品', 'woocommerce' ),
+        'products'      => __( 'Products', 'woocommerce' ),
         /* translators: woocommerce */
-        'receipt'       => __( '收据', 'woocommerce' ),
+        'receipt'       => __( 'Receipt', 'woocommerce' ),
         /* translators: woocommerce */
-        'shipping'      => __( '配送', 'woocommerce' ),
-        'to-pay'        => __( '需要支付', 'woocommerce-pos' ),
-        'paid'          => __( '已付款', 'woocommerce-pos' ),
-        'unpaid'        => __( '未付款', 'woocommerce-pos' ),
-        'email-receipt' => __( '电子邮件收据', 'woocommerce-pos' ),
-        'open'          => _x( '打开', 'order status, ie: open order in cart', 'woocommerce-pos' ),
-        'change'        => _x( '变化', 'Money returned from cash sale', 'woocommerce-pos' ),
+        'shipping'      => __( 'Shipping', 'woocommerce' ),
+        'to-pay'        => __( '去付款', 'woocommerce-pos' ),
+        'paid'          => __( '已付', 'woocommerce-pos' ),
+        'unpaid'        => __( '未付', 'woocommerce-pos' ),
+        'email-receipt' => __( 'Email Receipt', 'woocommerce-pos' ),
+        'open'          => _x( 'Open', 'order status, ie: open order in cart', 'woocommerce-pos' ),
+        'change'        => _x( '找零', 'Money returned from cash sale', 'woocommerce-pos' ),
         'support-form'  => __( 'Support Form', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'system-status' => __( '系统状态', 'woocommerce' ),
+        'system-status' => __( 'System Status', 'woocommerce' ),
       ),
       'buttons'  => array(
         /* translators: woocommerce */
-        'checkout'        =>  __( '结账', 'woocommerce' ),
-        'clear'           => _x( '清空', 'system status: delete local records', 'woocommerce-pos' ),
+        'checkout'        =>  __( 'Checkout', 'woocommerce' ),
+        'clear'           => _x( 'Clear', 'system status: delete local records', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'close'           => __( '关闭' ),
+        'close'           => __( 'Close' ),
         /* translators: woocommerce */
-        'coupon'          => __( '优惠券', 'woocommerce' ),
-        'discount'        => __( '折扣', 'woocommerce-pos' ),
+        'coupon'          => __( 'Coupon', 'woocommerce' ),
+        'discount'        => __( 'Discount', 'woocommerce-pos' ),
         /* translators: wordpress */
-        'email'           => __( '电子邮件' ),
+        'email'           => __( 'Email' ),
         /* translators: woocommerce */
-        'fee'             => __( '其他费用', 'woocommerce' ),
+        'fee'             => __( 'Fee', 'woocommerce' ),
         /* translators: woocommerce */
-        'new-order'       => __( '确认订单', 'woocommerce' ),
+        'new-order'       => __( 'New Order', 'woocommerce' ),
         /* translators: woocommerce */
-        'note'            => __( '备注', 'woocommerce' ),
+        'note'            => __( 'Note', 'woocommerce' ),
         /* translators: wordpress */
-        'print'           => __( '打印' ),
-        'process-payment' => __( '立即支付', 'woocommerce-pos' ),
+        'print'           => __( 'Print' ),
+        'process-payment' => __( '付款', 'woocommerce-pos' ),
         /* translators: wordpress */
-        'refresh'         => __( '刷新' ),
-        'restore'         => _x( '恢复默认设置', 'restore default settings', 'woocommerce-pos' ),
-        'return'          => _x( '返回', 'Numpad return key', 'woocommerce-pos' ),
-        'return-to-sale'  => __( '返回购买', 'woocommerce-pos' ),
+        'refresh'         => __( 'Refresh' ),
+        'restore'         => _x( 'Restore defaults', 'restore default settings', 'woocommerce-pos' ),
+        'return'          => _x( 'return', 'Numpad return key', 'woocommerce-pos' ),
+        'return-to-sale'  => __( '返回购物车', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'save'            => __( '保存', 'woocommerce' ),
-        'send'            => __( '发送', 'woocommerce-pos' ),
+        'save'            => __( 'Save Changes', 'woocommerce' ),
+        'send'            => __( 'Send', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'shipping'        => __( '配送', 'woocommerce' ),
-        'void'            => __( '清空', 'woocommerce-pos' ),
+        'shipping'        => __( 'Shipping', 'woocommerce' ),
+        'void'            => __( '清空购物车', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'expand-all'      => __( '全部展开', 'woocommerce' ),
+        'expand-all'      => __( 'Expand all', 'woocommerce' ),
         /* translators: woocommerce */
-        'close-all'       => __( '关闭所有', 'woocommerce' ),
+        'close-all'       => __( 'Close all', 'woocommerce' ),
         'legacy'          => __( 'Enable legacy server support', 'woocommerce-pos' ),
       ),
       'messages' => array(
@@ -382,18 +382,18 @@ class WC_POS_i18n {
         /* translators: woocommerce */
         'error'       => __( 'Sorry, there has been an error.', 'woocommerce' ),
         /* translators: woocommerce */
-        'loading'     => __( '运行中 ...' ),
+        'loading'     => __( 'Loading ...' ),
         /* translators: woocommerce */
         'success'     => __( 'Your changes have been saved.', 'woocommerce' ),
         'browser'     => __( 'Your browser is not supported!', 'woocommerce-pos' ),
         'legacy'      => __( 'Unable to use RESTful HTTP methods', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'no-products' => __( '没有找到商品', 'woocommerce' ),
+        'no-products' => __( 'No Products found', 'woocommerce' ),
         /* translators: woocommerce */
-        'cart-empty'  => __( '你的购物车中没有商品.', 'woocommerce' ),
+        'cart-empty'  => __( 'Your cart is currently empty.', 'woocommerce' ),
         'no-gateway'  => __( 'No payment gateways enabled.', 'woocommerce-pos' ),
         /* translators: woocommerce */
-        'no-customer' => __( '顾客没有找到', 'woocommerce' )
+        'no-customer' => __( 'Customer not found', 'woocommerce' )
       ),
       'plural'   => array(
         'records' => _x( 'record |||| records', 'eg: 23 records', 'woocommerce-pos' ),

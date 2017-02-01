@@ -62,12 +62,12 @@ if( ! class_exists( 'YITH_WCQV_Frontend' ) ) {
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles_scripts' ) );
 
 			// quick view ajax
-			add_action( 'wp_ajax_yith_load_product_quick_view', array( $this, 'yith_load_product_quick_view_ajax' ) );
-			add_action( 'wp_ajax_nopriv_yith_load_product_quick_view', array( $this, 'yith_load_product_quick_view_ajax' ) );
+		    add_action( 'wp_ajax_yith_load_product_quick_view', array( $this, 'yith_load_product_quick_view_ajax' ) );
+		    add_action( 'wp_ajax_nopriv_yith_load_product_quick_view', array( $this, 'yith_load_product_quick_view_ajax' ) );
 
 			// add button
 			add_action( 'woocommerce_after_shop_loop_item', array( $this, 'yith_add_quick_view_button' ), 15 );
-			add_action( 'yith_wccl_table_after_product_name', array( $this, 'yith_add_quick_view_button' ), 15 );
+			add_action( 'yith_wcwl_table_after_product_name', array( $this, 'yith_add_quick_view_button' ), 15 );
 
 			// load modal template
 			add_action( 'wp_footer', array( $this, 'yith_quick_view' ) );
@@ -88,23 +88,20 @@ if( ! class_exists( 'YITH_WCQV_Frontend' ) ) {
 
 			$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
-			wp_enqueue_script( 'yith-wcqv-frontend', YITH_WCQV_ASSETS_URL . '/js/frontend.js', array('jquery'), '1.0', true);
+			wp_register_script( 'yith-wcqv-frontend', YITH_WCQV_ASSETS_URL . '/js/frontend'.$suffix.'.js', array('jquery'), $this->version, true);
+			wp_enqueue_script( 'yith-wcqv-frontend' );
 			wp_enqueue_style( 'yith-quick-view', YITH_WCQV_ASSETS_URL . '/css/yith-quick-view.css' );
 
-			?>
-			<style>
-				#yith-quick-view-modal .yith-wcqv-main {
-					background: <?php echo get_option( 'yith-wcqv-background-modal' ); ?>
-				}
-				#yith-quick-view-close {
-					color: <?php echo get_option( 'yith-wcqv-close-color' ); ?>
-				}
-				#yith-quick-view-close:hover {
-					color: <?php echo get_option( 'yith-wcqv-close-color-hover' ); ?>
-				}
-		    </style>
+			$background_modal = get_option( 'yith-wcqv-background-modal' );
+			$close_color = get_option( 'yith-wcqv-close-color' );
+			$close_color_hover = get_option( 'yith-wcqv-close-color-hover' );
 
-			<?php
+			$inline_style = "
+				#yith-quick-view-modal .yith-wcqv-main{background:{$background_modal};}
+				#yith-quick-view-close{color:{$close_color};}
+				#yith-quick-view-close:hover{color:{$close_color_hover};}";
+
+			wp_add_inline_style( 'yith-quick-view', $inline_style );
 		}
 
 		/**
@@ -160,9 +157,9 @@ if( ! class_exists( 'YITH_WCQV_Frontend' ) ) {
             do_action( 'yith_quick_view_custom_style_scripts' );
 
 			wp_localize_script( 'yith-wcqv-frontend', 'yith_qv', array (
-					'ajaxurl' => admin_url( 'admin-ajax.php' ),
-					'is2_2' => $version,
-					'loader' => $loader
+					'ajaxurl'           => admin_url( 'admin-ajax.php', 'relative' ),
+					'loader'            => $loader,
+					'is2_2'             => $version
 				)
 			);
 

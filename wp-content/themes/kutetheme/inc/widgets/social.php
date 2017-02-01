@@ -34,6 +34,9 @@ class Widget_KT_Social extends WP_Widget {
         $googleplus = kt_option('kt_google_plus_link_id');
         $youtube    = kt_option('kt_youtube_link_id');
         $instagram  = kt_option('kt_instagram_link_id');
+        $weixin     = kt_option('kt_weixin_link_id');
+        $qq         = kt_option('kt_qq_link_id');
+        $weibo      = kt_option('kt_weibo_link_id');
         
         $social_icons = '';
         
@@ -74,8 +77,22 @@ class Widget_KT_Social extends WP_Widget {
         if ($vk) {
             $social_icons .= '<a href="https://vk.com/'.esc_attr( $vk ).'" title ="'.__( 'Vk', 'kutetheme' ).'" ><i class="fa fa-vk"></i></a>';
         }
+        
+        if ($weixin) {
+            $social_icons .= '<a href="https://wx.qq.com/'.esc_attr( $weixin ).'" title ="'.__( 'weixin', 'kutetheme' ).' "><i class="fa fa-weixin"></i></a>';
+        }
+        
+        if ($qq) {
+            $social_icons .= '<a href="http://wpa.qq.com/msgrd?v=3&uin='.esc_attr( $qq ).'"&site=qq&menu=yes title ="'.__( 'qq', 'kutetheme' ).' "><i class="fa fa-qq"></i></a>';
+        }
+        
+        if ($weibo) {
+            $social_icons .= '<a href="http://weibo.com/u/'.esc_attr( $weibo ).'" title ="'.__( 'weibo', 'kutetheme' ).' "><i class="fa fa-weibo"></i></a>';
+        }
         ?>
+        <?php if($wtitle): ?>
         <div class="introduce-title"><?php echo esc_attr($wtitle) ?></div>
+        <?php endif;?>
         <div class="social-link">
             <?php
                 echo kt_get_html( $social_icons );

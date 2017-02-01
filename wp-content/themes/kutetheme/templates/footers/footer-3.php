@@ -53,7 +53,7 @@
              <div class="row">
                  <div class="col-sm-6 col-md-3">
                      <div class="widget-container widget-contact-info">
-                         <h3 class="widget-title"><?php _e( 'Infomation', 'kutetheme' ) ?></h3>
+                         <h3 class="widget-title"><?php _e( 'Information', 'kutetheme' ) ?></h3>
                          <div class="widget-body">
                              <ul>
                                  <li><a class="location" href="#"><span class="address"><?php _e( 'Address:', 'kutetheme' ) ?></span><?php echo kt_get_html($address);?></a></li>
@@ -69,7 +69,7 @@
                             if(is_active_sidebar('footer-menu-1')){
                                 dynamic_sidebar('footer-menu-1');
                             }
-                        ?>
+                         ?>
                      </div>
                  </div>
                  <div class="col-sm-3 col-md-2">
@@ -118,7 +118,7 @@
                      <div class="col-sm-12">
                          <div class="footer-coppyright">
                              <?php if( $copyright ): ?>
-                                <p class="text-center"><?php echo esc_textarea( $copyright ) ; ?></p>
+                                <p class="text-center"><?php echo kt_get_html( $copyright ) ; ?></p>
                              <?php endif; ?>
                          </div>
                      </div>

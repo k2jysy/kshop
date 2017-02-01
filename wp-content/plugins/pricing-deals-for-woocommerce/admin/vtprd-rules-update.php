@@ -96,6 +96,8 @@ action amt condition can be an amt or $$
       $vtprd_rule->rule_on_off_sw_select    = $_REQUEST['rule-on-off-sw-select'];
       $vtprd_rule->rule_type_select         = $_REQUEST['rule-type-select'];
       $vtprd_rule->wizard_on_off_sw_select  = $_REQUEST['wizard-on-off-sw-select']; 
+      
+      $vtprd_rule->apply_deal_to_cheapest_select  = $_REQUEST['apply-deal-to-cheapest-select']; //v.1.6.7
         
       $upperSelectsDoneSw                   = $_REQUEST['upperSelectsDoneSw']; 
       
@@ -555,7 +557,58 @@ action amt condition can be an amt or $$
           }               
        }
        //v1.1.0.8 end
-  
+
+                                                    
+       //v1.1.6.7 begin
+       //CHEAPEST selector EDITS
+       if  ( ( $vtprd_rule->apply_deal_to_cheapest_select == 'cheapest' ) ||
+             ( $vtprd_rule->apply_deal_to_cheapest_select == 'most-expensive' ) ) {
+          if ($vtprd_rule->pricing_type_select != 'bogo') {
+                   $vtprd_rule->rule_error_message[] = array( 
+                        'insert_error_before_selector' => '.top-box',  
+                        'error_msg'  => __('Deal Type must be "BOGO" when "Apply to cheapest item first" selected in Blueprint Area ', 'vtprd') );   //mwn20140414       
+                   $vtprd_rule->rule_error_red_fields[] = '#pricing-type-select-label' ;
+                   $vtprd_rule->rule_error_red_fields[] = '#apply-to-cheapest-label';                      
+          }
+          if ($vtprd_rule->minimum_purchase_select != 'next') {
+                   $vtprd_rule->rule_error_message[] = array( 
+                        'insert_error_before_selector' => '.top-box',  
+                        'error_msg'  => __('Deal Action must be "NEXT" when "Apply to cheapest item first" selected in Blueprint Area ', 'vtprd') );   //mwn20140414       
+                   $vtprd_rule->rule_error_red_fields[] = '#minimum-purchase-select-label' ;
+                   $vtprd_rule->rule_error_red_fields[] = '#apply-to-cheapest-label';                      
+          }                  
+          if ( $vtprd_rule->actionPop == 'sameAsInPop' ) {
+                   $vtprd_rule->rule_error_message[] = array( 
+                    'insert_error_before_selector' => '#action_group_box_0',  
+                    'error_msg'  => __('In "Get Group Product Filter", "Discount Group Same as Buy Group" was selected.  This is NOT ALLOWED when "Apply to cheapest item first" selected in Blueprint Area.', 'vtprd') );
+                   $vtprd_rule->rule_error_red_fields[] = '#action_group_title_anchor';
+                   $vtprd_rule->rule_error_red_fields[] = '#apply-to-cheapest-label';  
+          }
+          if ( ($vtprd_rule->rule_deal_info[0]['buy_amt_type'] == 'quantity') ||
+               ($vtprd_rule->rule_deal_info[0]['buy_amt_type'] == 'currency') ) {
+                  $carry_on = true;
+          } else {
+                  $vtprd_rule->rule_error_message[] = array( 
+                        'insert_error_before_selector' => '#buy_amt_box_0',  
+                        'error_msg'  => __('"Buy Unit Quantity" or "Buy $$ Value" required when "Apply to cheapest item first" selected in Blueprint Area', 'vtprd') );
+                  $vtprd_rule->rule_error_red_fields[] = '#buy_amt_type_label_0';
+                  $vtprd_rule->rule_error_red_fields[] = '#discount_amt_type_label_0'; 
+                  $vtprd_rule->rule_error_red_fields[] = '#apply-to-cheapest-label';                                         
+          }
+          if ( ($vtprd_rule->rule_deal_info[0]['buy_amt_type'] == 'quantity') &&
+               ($vtprd_rule->rule_deal_info[0]['buy_amt_count'] == '1') )  {
+                  $vtprd_rule->rule_error_message[] = array( 
+                        'insert_error_before_selector' => '#buy_amt_box_0',  
+                        'error_msg'  => __('"Buy Unit Quantity" must be > 1 when "Apply to cheapest item first" selected in Blueprint Area', 'vtprd') );
+                  $vtprd_rule->rule_error_red_fields[] = '#discount_amt_type_label_0';
+                  $vtprd_rule->rule_error_box_fields[] = '#buy_amt_count_0';     
+                  $vtprd_rule->rule_error_red_fields[] = '#apply-to-cheapest-label';                                         
+          }          
+          
+        }
+       //v1.1.6.7 end
+
+    
     
       //********************************************************************************************************************
       //The WPSC Realtime Catalog repricing action does not pass variation-level info, so these options are disallowed

@@ -3,8 +3,8 @@ Contributors: angelleye
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T962XWAC2HHZN
 Tags: woocommerce, offers, negotiation
 Requires at least: 3.8
-Tested up to: 4.4
-Stable tag: 1.2.0
+Tested up to: 4.7
+Stable tag: 1.3.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -117,6 +117,40 @@ Automatic updates should work great for you.  As always, though, we recommend ba
 * [Additional Plugin Tools](https://www.angelleye.com/offers-for-woocommerce-user-guide/#section-6)
 
 == Changelog ==
+
+= 1.3.1 - 01.03.2017 =
+* Feature - Adds ability to display current high offer on the product page. ([#257](https://github.com/angelleye/offers-for-woocommerce/issues/257))
+* Feature - Silent Auction - Adds the ability to leave the price empty for products and still allows buyers to submit offers. ([#156](https://github.com/angelleye/offers-for-woocommerce/issues/156))
+* Tweak - Adjusts display location for highest current offer on product pages (when enabled.)  ([#257](https://github.com/angelleye/offers-for-woocommerce/issues/257))
+* Tweak - Deletes related offer data when products are deleted. ([#251](https://github.com/angelleye/offers-for-woocommerce/issues/251))
+* Tweak - Adds a div wrapper around the offer button for more direct access to the element. ([#250](https://github.com/angelleye/offers-for-woocommerce/issues/250))
+* Fix - Resolves an issue with the loader graphic. ([#254](https://github.com/angelleye/offers-for-woocommerce/issues/254))
+* Fix - Resolves a conflict with WC PDF Invoices and Packing Slips that caused double headers to be output in offer email notifications. ([#227](https://github.com/angelleye/offers-for-woocommerce/issues/227))
+
+= 1.3.0 - 07.07.2016 =
+* Feature - Adds the ability to accept or deny offers directly from the email notification. ([#206](https://github.com/angelleye/offers-for-woocommerce/issues/206))
+* Feature - Adds offer history to the user account screen so that buyers can see their offer history with the website. ([#235](https://github.com/angelleye/offers-for-woocommerce/issues/235))
+* Feature - Adds an option to disable coupons for orders with an accepted offer so that buyers cannot "double dip". ([#213](https://github.com/angelleye/offers-for-woocommerce/issues/213))
+* Feature - Capability Manager compatibility. ([#231](https://github.com/angelleye/offers-for-woocommerce/issues/231))
+* Feature - Adds the option to make all communication between buyers and sellers anonymous. ([#239](https://github.com/angelleye/offers-for-woocommerce/issues/239))
+* Feature - If an auto-accept rule is triggered, the buyer is now sent directly to checkout for the accepted offer instead of needing to wait for the email notification. ([#240](https://github.com/angelleye/offers-for-woocommerce/issues/240))
+* Fix - Resolves a conflict with WPML plugin. ([#233](https://github.com/angelleye/offers-for-woocommerce/issues/233))
+* Fix - Resolves errors that occur if you open an offer for an item that has been deleted. ([#236](https://github.com/angelleye/offers-for-woocommerce/issues/236))
+* Fix - Localization adjustments. ([#238](https://github.com/angelleye/offers-for-woocommerce/issues/238))
+* Fix - WooCommerce Tab Manager compatibility ([#244](https://github.com/angelleye/offers-for-woocommerce/issues/244))
+* Fix - WooCommerce 2.6 compatibility. ([#242](https://github.com/angelleye/offers-for-woocommerce/issues/242))
+
+= 1.2.2 - 01.30.2016 =
+* Fix - Ensures expiration date option does not show up when it shouldn't. ([#226](https://github.com/angelleye/offers-for-woocommerce/issues/226))
+* Fix - Resolves PHP notices. ([#228](https://github.com/angelleye/offers-for-woocommerce/issues/228))
+* Fix - Resolves logic problems with auto-accept rules in relation to counter offer amounts. ([#229](https://github.com/angelleye/offers-for-woocommerce/issues/229))
+* Fix - Resolves rounding issues. ([#230](https://github.com/angelleye/offers-for-woocommerce/issues/230))
+
+= 1.2.1 - 01.23.2016 =
+* Feature - Adds new hooks to offer submit form for custom field / content entry. ([#212](https://github.com/angelleye/offers-for-woocommerce/issues/212))
+* Fix - Resolves small bugs and improves general code structure.
+* Fix - Resolves an issue keeping email notifications from sending while logged in as an administrator. ([#222](https://github.com/angelleye/offers-for-woocommerce/issues/222))
+* Tweak - Hides the expiration date option when declining an offer. ([#208](https://github.com/angelleye/offers-for-woocommerce/issues/208))
 
 = 1.2.0 - 12.16.2015 =
 * Feature - Adds ability for users to join your MailChimp / ConstantContact mailing list while submitting an offer. ([#7](https://github.com/angelleye/offers-for-woocommerce/issues/7))

@@ -110,16 +110,18 @@ endif;
                     			'ignore_sticky_posts'	=> 1,
                     			'posts_per_page' 		=> $per_page,
                     			'meta_query' 			=> $meta_query,
-                                'suppress_filter'       => true,
-                                'tax_query'             => array(
+                                'suppress_filter'       => true
+                    		);
+                            if( $term ){
+                                $args [ 'tax_query' ] = array(
                                     array(
                                         'taxonomy' => 'product_cat',
                                         'field'    => 'id',
                                         'terms'    => $term->term_id,
                                         'operator' => 'IN'
-                                    ),
-                                )
-                    		);
+                                    )
+                                );
+                            }
                             $i = 0; ?>
                             <?php foreach( $tabs as $tab ): ?>
                             <?php 
@@ -274,7 +276,7 @@ endif;
                                 <?php else: ?>
                                     <div class="box-right">
                                         <?php if( $is_phone ): ?>
-                                            <ul class="product-list owl-carousel" data-autoplay="false" data-navigation="false" data-margin="0" data-slidespeed="250" data-theme="style-navigation-bottom" data-autoheight="false" data-nav="true" data-dots="false" data-items="1">
+                                            <ul class="product-list owl-carousel" data-autoplay="false" data-nav="false" data-navigation="false" data-margin="0" data-slidespeed="250" data-theme="style-navigation-bottom" data-autoheight="false" data-nav="true" data-dots="false" data-items="1">
                                         <?php else: ?>
                                             <ul class="product-list row">                                    
                                         <?php endif; ?>                                   

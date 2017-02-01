@@ -66,19 +66,31 @@ if ( ! class_exists( 'YITH_WCQV' ) ) {
 		 */
 		public function __construct() {
 
-			// Load Plugin Framework
-			add_action( 'plugins_loaded', array( $this, 'plugin_fw_loader' ), 15 );
+			$action = array(
+				'woocommerce_get_refreshed_fragments',
+				'woocommerce_apply_coupon',
+				'woocommerce_remove_coupon',
+				'woocommerce_update_shipping_method',
+				'woocommerce_update_order_review',
+				'woocommerce_add_to_cart',
+				'woocommerce_checkout'
+			);
 
-			// Class admin
-			if ( is_admin() ) {
-				YITH_WCQV_Admin();
+			// Exit if is woocommerce ajax
+			if( defined( 'DOING_AJAX') && DOING_AJAX && isset( $_REQUEST['action'] ) && in_array( $_REQUEST['action'], $action ) ) {
+				return;
 			}
 
+			if ( is_admin() && ! ( defined( 'DOING_AJAX') && DOING_AJAX && isset( $_REQUEST['context'] ) && $_REQUEST['context'] == 'frontend' ) ) {
+				//Load Plugin Framework
+				add_action( 'after_setup_theme', array( $this, 'plugin_fw_loader' ), 1 );
+
+				YITH_WCQV_Admin();
+			}
 			// Class frontend
 			$enable             = get_option( 'yith-wcqv-enable' ) == 'yes' ? true : false;
 			$enable_on_mobile   = get_option( 'yith-wcqv-enable-mobile' ) ==  'yes' ? true : false;
 
-			// Class frontend
 			if( ( ! wp_is_mobile() && $enable ) || ( wp_is_mobile() && $enable_on_mobile && $enable ) ) {
 				YITH_WCQV_Frontend();
 			}
@@ -93,16 +105,15 @@ if ( ! class_exists( 'YITH_WCQV' ) ) {
 		 * @return void
 		 * @author Andrea Grillo <andrea.grillo@yithemes.com>
 		 */
-		public function plugin_fw_loader() {
-
-			if ( ! defined( 'YIT_CORE_PLUGIN' ) ) {
-				global $plugin_fw_data;
-				if ( ! empty( $plugin_fw_data ) ) {
-					$plugin_fw_file = array_shift($plugin_fw_data);
-					require_once( $plugin_fw_file );
-				}
-			}
-		}
+        public function plugin_fw_loader() {
+            if ( ! defined( 'YIT_CORE_PLUGIN' ) ) {
+                global $plugin_fw_data;
+                if( ! empty( $plugin_fw_data ) ){
+                    $plugin_fw_file = array_shift( $plugin_fw_data );
+                    require_once( $plugin_fw_file );
+                }
+            }
+        }
 	}
 }
 

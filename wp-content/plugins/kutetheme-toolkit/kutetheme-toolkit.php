@@ -3,7 +3,7 @@
 Plugin Name: KutethemeToolkit
 Plugin URI: http://kutethemes.com/demo/kuteshop/
 Description: A Toolkit for Kute theme
-Version: 1.2.1
+Version: 1.2.5
 Author: KuteTheme
 Author URI: http://kutethemes.com/
 Text Domain: kutetheme
@@ -16,6 +16,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 define("KUTETHEME_PLUGIN_PATH", trailingslashit( plugin_dir_path(__FILE__) ) );
 define("KUTETHEME_PLUGIN_URL", trailingslashit( plugin_dir_url(__FILE__) ) );
 
+if( ! defined( 'THEME_DIR' ) ) {
+    define( 'THEME_DIR', trailingslashit(get_template_directory()));
+}
+if( ! defined( 'THEME_URL' ) ) {
+    define( 'THEME_URL', trailingslashit(get_template_directory_uri()));
+}
 
 if( ! function_exists('kt_check_active_plugin') ){
     function kt_check_active_plugin( $key ){

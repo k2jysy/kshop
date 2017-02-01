@@ -41,8 +41,8 @@ class WC_POS_Admin_Menu {
 
     add_submenu_page(
       WC_POS_PLUGIN_NAME,
-      __( 'View POS', 'woocommerce-pos' ),
-      __( 'View POS', 'woocommerce-pos' ),
+      __( '快捷购物', 'woocommerce-pos' ),
+      __( '快捷购物', 'woocommerce-pos' ),
       'manage_woocommerce_pos',
       null
     );

@@ -16,7 +16,24 @@ jQuery(document).ready(function($){
     var qv_modal    = $(document).find( '#yith-quick-view-modal' ),
         qv_overlay  = qv_modal.find( '.yith-quick-view-overlay'),
         qv_content  = qv_modal.find( '#yith-quick-view-content' ),
-        qv_close    = qv_modal.find( '#yith-quick-view-close' );
+        qv_close    = qv_modal.find( '#yith-quick-view-close' ),
+        qv_wrapper  = qv_modal.find( '.yith-wcqv-wrapper'),
+        qv_wrapper_w = qv_wrapper.width(),
+        qv_wrapper_h = qv_wrapper.height(),
+        center_modal = function() {
+
+            var window_w = $(window).width(),
+                window_h = $(window).height(),
+                width    = ( ( window_w - 60 ) > qv_wrapper_w ) ? qv_wrapper_w : ( window_w - 60 ),
+                height   = ( ( window_h - 120 ) > qv_wrapper_h ) ? qv_wrapper_h : ( window_h - 120 );
+
+            qv_wrapper.css({
+                'left' : (( window_w/2 ) - ( width/2 )),
+                'top' : (( window_h/2 ) - ( height/2 )),
+                'width'     : width + 'px',
+                'height'    : height + 'px'
+            });
+        };
 
 
     /*==================
@@ -60,46 +77,55 @@ jQuery(document).ready(function($){
 
     var ajax_call = function( t, product_id, is_blocked ) {
 
-        $.post( yith_qv.ajaxurl, { action: 'yith_load_product_quick_view', product_id: product_id }, function( data ) {
+        $.ajax({
+            url: yith_qv.ajaxurl,
+            data: {
+                action: 'yith_load_product_quick_view',
+                product_id: product_id
+            },
+            dataType: 'html',
+            type: 'POST',
+            success: function (data) {
 
-            qv_content.html( data );
+                qv_content.html(data);
 
-            // quantity fields for WC 2.2
-            if( yith_qv.is2_2 ) {
-                qv_content.find('div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)').addClass('buttons_added').append('<input type="button" value="+" class="plus" />').prepend('<input type="button" value="-" class="minus" />');
+                // quantity fields for WC 2.2
+                if (yith_qv.is2_2) {
+                    qv_content.find('div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)').addClass('buttons_added').append('<input type="button" value="+" class="plus" />').prepend('<input type="button" value="-" class="minus" />');
+                }
+
+                // Variation Form
+                var form_variation = qv_content.find('.variations_form');
+
+                form_variation.wc_variation_form();
+                form_variation.trigger('check_variations');
+
+                if (typeof $.fn.yith_wccl !== 'undefined') {
+                    form_variation.yith_wccl();
+                }
+
+                // Init prettyPhoto
+                if (typeof $.fn.prettyPhoto !== 'undefined') {
+                    qv_content.find("a[data-rel^='prettyPhoto'], a.zoom").prettyPhoto({
+                        hook: 'data-rel',
+                        social_tools: false,
+                        theme: 'pp_woocommerce',
+                        horizontal_padding: 20,
+                        opacity: 0.8,
+                        deeplinking: false
+                    });
+                }
+
+                if (!qv_modal.hasClass('open')) {
+                    qv_modal.removeClass('loading').addClass('open');
+                    if (is_blocked)
+                        t.unblock();
+                }
+
+                // stop loader
+                $(document).trigger('qv_loader_stop');
+
             }
-
-            // Variation Form
-            var form_variation = qv_content.find( '.variations_form' );
-
-            form_variation.wc_variation_form();
-            form_variation.trigger( 'check_variations' );
-
-            if( typeof $.fn.yith_wccl !== 'undefined' ) {
-                form_variation.yith_wccl();
-            }
-
-            // Init prettyPhoto
-            if( typeof $.fn.prettyPhoto !== 'undefined' ) {
-                qv_content.find("a[data-rel^='prettyPhoto'], a.zoom").prettyPhoto({
-                    hook              : 'data-rel',
-                    social_tools      : false,
-                    theme             : 'pp_woocommerce',
-                    horizontal_padding: 20,
-                    opacity           : 0.8,
-                    deeplinking       : false
-                });
-            }
-
-            if( ! qv_modal.hasClass( 'open' ) ) {
-                qv_modal.removeClass('loading').addClass('open');
-                if( is_blocked )
-                    t.unblock();
-            }
-
-            // stop loader
-            $(document).trigger( 'qv_loader_stop' );
-
         });
     };
 
@@ -134,6 +160,10 @@ jQuery(document).ready(function($){
     };
 
     close_modal_qv();
+
+
+    center_modal();
+    $( window ).on( 'resize', center_modal );
 
     // START
     $.fn.yith_quick_view();

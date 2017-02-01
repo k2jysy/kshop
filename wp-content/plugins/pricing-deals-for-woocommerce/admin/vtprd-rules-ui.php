@@ -567,7 +567,23 @@ class VTPRD_Rules_UI{
                            <?php } ?> 
                          </select> 
                          <?php vtprd_show_object_hover_help ('hover-help', 'small') ?>
-                   </span>                              
+                   </span>  
+                   
+                   
+                   <?php //v1.1.6.7 begin ?> 
+                   <span class="blue-dropdown cheapest-type" id="apply-to-cheapest-select-area"> 
+                      <label class="wizard-type-label" id="apply-to-cheapest-label"><?php _e('Apply Discount to Cheapest Item First', 'vtprd');?></label> 
+                         <select id="<?php echo $vtprd_rule_display_framework['apply_deal_to_cheapest_select']['select']['id'];?>" class="<?php echo $vtprd_rule_display_framework['apply_deal_to_cheapest_select']['select']['class']; ?>  hasHoverHelp2" name="<?php echo $vtprd_rule_display_framework['apply_deal_to_cheapest_select']['select']['name'];?>" tabindex="<?php echo $vtprd_rule_display_framework['apply_deal_to_cheapest_select']['select']['tabindex']; ?>" >          
+                           <?php
+                           for($i=0; $i < sizeof($vtprd_rule_display_framework['apply_deal_to_cheapest_select']['option']); $i++) { 
+                           ?>                             
+                              <option id="<?php echo $vtprd_rule_display_framework['apply_deal_to_cheapest_select']['option'][$i]['id']; ?>"  class="<?php echo $vtprd_rule_display_framework['apply_deal_to_cheapest_select']['option'][$i]['class']; ?>"  value="<?php echo $vtprd_rule_display_framework['apply_deal_to_cheapest_select']['option'][$i]['value']; ?>"   <?php if ($vtprd_rule_display_framework['apply_deal_to_cheapest_select']['option'][$i]['value'] == $vtprd_rule->apply_deal_to_cheapest_select )  { echo $selected; } ?> >  <?php echo $vtprd_rule_display_framework['apply_deal_to_cheapest_select']['option'][$i]['title']; ?> </option>
+                           <?php } ?> 
+                         </select> 
+                         <?php  vtprd_show_object_hover_help ('apply_deal_to_cheapest', 'small') ?>
+                   </span>                   
+                   <?php //v1.1.6.7 end ?>                    
+                                               
                      
               </span>
           </div> <?php //end blue-line ?>
@@ -727,7 +743,7 @@ class VTPRD_Rules_UI{
             <span class="show-in-adanced-mode-only">
                 <span class="left-column  left-column-less-padding-top3">  
                     <span class="title  hasWizardHelpRight" id="buy_amt_type_title<?php echo '_' .$k; ?>" >            
-                      <a id="buy_amt_title_anchor<?php echo '_' .$k; ?>" class="title-anchors second-level-title" href="javascript:void(0);"><?php _e('Group Amount', 'vtprd'); echo '<br>'; _e('Applies to', 'vtprd');?></a>
+                      <a id="buy_amt_appliesto_anchor<?php echo '_' .$k; ?>" class="title-anchors second-level-title" href="javascript:void(0);"><?php _e('Group Amount', 'vtprd'); echo '<br>'; _e('Applies to', 'vtprd');?></a>
                     </span> 
                     <?php vtprd_show_object_hover_help ('buy_amt_applies_to', 'wizard') ?>           
                 </span> 

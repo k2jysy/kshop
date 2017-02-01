@@ -81,7 +81,7 @@ class WC_POS_Params {
         'id' => 'featured:true'
       ),
       'onsale' => array(
-        'label' => _x( '热销', 'Product tab: \'On Sale\' products', 'woocommerce-pos'),
+        'label' => _x( 'On Sale', 'Product tab: \'On Sale\' products', 'woocommerce-pos'),
         'id' => 'on_sale:true'
       ),
     );

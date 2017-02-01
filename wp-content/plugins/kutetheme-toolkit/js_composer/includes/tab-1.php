@@ -123,16 +123,18 @@ if ( ! defined( 'ABSPATH' ) ) {
                 			'ignore_sticky_posts'	=> 1,
                 			'posts_per_page' 		=> $per_page,
                 			'meta_query' 			=> $meta_query,
-                            'suppress_filter'       => true,
-                            'tax_query'             => array(
+                            'suppress_filter'       => true
+                		);
+                        if( $term ){
+                            $args [ 'tax_query' ] = array(
                                 array(
                                     'taxonomy' => 'product_cat',
                                     'field'    => 'id',
                                     'terms'    => $term->term_id,
                                     'operator' => 'IN'
-                                ),
-                            )
-                		);
+                                )
+                            );
+                        }
                         $i = 0; ?>
                         <?php foreach( $tabs as $tab ): ?>
                         
@@ -237,16 +239,16 @@ if ( ! defined( 'ABSPATH' ) ) {
                 
                         if ( $products->have_posts() ) :
                             $data_carousel = array(
-                                "autoplay" => $autoplay,
-                                "navigation" => $navigation,
-                                "margin"    => $margin,
-                                "slidespeed" => $slidespeed,
-                                "theme" => 'style-navigation-bottom',
-                                "autoheight" => 'false',
-                                'nav' => 'true',
-                                'dots' => 'false',
-                                'loop' => $loop,
-                                'autoplayTimeout' => 1000,
+                                "autoplay"      => $autoplay,
+                                "navigation"    => $navigation,
+                                "margin"        => $margin,
+                                "slidespeed"    => $slidespeed,
+                                "theme"         => 'style-navigation-bottom',
+                                "autoheight"    => 'false',
+                                'nav'           => $navigation,
+                                'dots'          => 'false',
+                                'loop'          => $loop,
+                                'autoplayTimeout'    => 1000,
                                 'autoplayHoverPause' => 'true'
                             );
                             

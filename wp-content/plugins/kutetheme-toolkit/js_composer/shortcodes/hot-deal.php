@@ -15,6 +15,14 @@ vc_map( array(
             "admin_label" => true,
         ),
         array(
+            "type"        => "dropdown",
+            "heading"     => __("Product Size", 'kutetheme'),
+            "param_name"  => "size",
+            "value"       => $product_thumbnail,
+            'std'         => 'kt_shop_catalog_164',
+            "description" => __( "Product size", 'kutetheme' ),
+        ),
+        array(
             "type"        => "textfield",
             "heading"     => __( "Number Post", 'kutetheme' ),
             "param_name"  => "per_page",
@@ -195,11 +203,17 @@ vc_map( array(
 ));
 
 class WPBakeryShortCode_Box_Hot_Deal extends WPBakeryShortCode {
+    public $product_size = 'kt_shop_catalog_164';
+    
     protected function content( $atts, $content = null ) {
         $atts = function_exists( 'vc_map_get_attributes' ) ? vc_map_get_attributes( 'box_hot_deal', $atts ) : $atts;
         extract( shortcode_atts( array(
             'title'          => __( 'Hot deal', 'kutetheme' ),
+            
+            'size'           => 'kt_shop_catalog_164',
+            
             'per_page'       => 5,
+            
             'taxonomy'       => 0,
             'orderby'        => 'date',
             'order'          => 'DESC',
@@ -231,6 +245,7 @@ class WPBakeryShortCode_Box_Hot_Deal extends WPBakeryShortCode {
             'css_animation'    => $this->getCSSAnimation( $css_animation ),
             'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' )
         );
+        $this->product_size = $size;
         
         $elementClass = preg_replace( array( '/\s+/', '/^\s|\s$/' ), array( ' ', '' ), implode( ' ', $elementClass ) );
         
@@ -267,36 +282,12 @@ class WPBakeryShortCode_Box_Hot_Deal extends WPBakeryShortCode {
             "slidespeed"         => $slidespeed,
             "theme"              => 'style-navigation-bottom',
             "autoheight"         => 'false',
-            'nav'                => 'true',
+            'nav'                => $navigation,
             'dots'               => 'false',
             'loop'               => $loop,
             'autoplayTimeout'    => 1000,
             'autoplayHoverPause' => 'true'
         );
-        
-        if( $use_responsive ){
-            $arr = array(
-                '0' => array(
-                    "items" => $items_mobile
-                ), 
-                '768' => array(
-                    "items" => $items_tablet
-                ), 
-                '992' => array(
-                    "items" => $items_destop
-                )
-            );
-            $data_responsive = json_encode($arr);
-            $data_carousel[ "responsive" ] = $data_responsive;
-        }else {
-            if( $items_destop > 0 ){
-                $items_destop = 5;
-            }
-            $data_carousel['items'] =  $items_destop;
-                
-        }
-        $carousel = _data_carousel( $data_carousel );
-        
         $new_title = array( 
             __( 'hot' ),
             __( 'deals' )
@@ -309,6 +300,42 @@ class WPBakeryShortCode_Box_Hot_Deal extends WPBakeryShortCode {
         ob_start();                                
         if( $products->have_posts() ):
         
+            if( $use_responsive ){
+                $arr = array(
+                    '0' => array(
+                        "items" => $items_mobile
+                    ), 
+                    '768' => array(
+                        "items" => $items_tablet
+                    ), 
+                    '992' => array(
+                        "items" => $items_destop
+                    )
+                );
+                $data_responsive = json_encode($arr);
+                $data_carousel[ "responsive" ] = $data_responsive;
+                
+                if( ( $products->post_count <  $items_mobile ) || ( $products->post_count <  $items_tablet ) || ( $products->post_count <  $items_destop ) ){
+                    $data_carousel['loop'] = 'false';
+                }else{
+                    $data_carousel['loop'] = $loop;
+                }
+            }else {
+                if( $items_destop > 0 ) {
+                    $items_destop = 5;
+                }
+                
+                $data_carousel['items'] =  $items_destop;
+                
+                if( ( $products->post_count <  $items_destop ) ){
+                    $data_carousel['loop'] = 'false';
+                }else{
+                    $data_carousel['loop'] = $loop;
+                }
+                    
+            }
+        $carousel = _data_carousel( $data_carousel );
+            
         remove_action('kt_after_shop_loop_item_title', 'woocommerce_template_loop_price', 5);
 
         remove_action('kt_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 10);
@@ -316,6 +343,8 @@ class WPBakeryShortCode_Box_Hot_Deal extends WPBakeryShortCode {
         add_action('kt_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
         
         add_action('kt_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+        
+        add_filter( 'kt_product_thumbnail_loop', array( &$this, 'get_size_product' ) );
         
         $max_time = 0;
         ?>
@@ -393,7 +422,13 @@ class WPBakeryShortCode_Box_Hot_Deal extends WPBakeryShortCode {
         add_action('kt_after_shop_loop_item_title', 'woocommerce_template_loop_price', 5);
 
         add_action('kt_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 10);
+        
+        remove_action( 'kt_product_thumbnail_loop', array( &$this, 'get_size_product' ) );
         endif;
         return ob_get_clean();
+    }
+    
+    public function get_size_product( $size ){
+        return $this->product_size;
     }
 }

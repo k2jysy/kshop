@@ -24,6 +24,32 @@ vc_map( array(
             'description' => __( 'Display title lastest deal box, It\'s hidden when empty', 'kutetheme' )
         ),
         array(
+            "type"        => "dropdown",
+            "heading"     => __("Product Size", 'kutetheme'),
+            "param_name"  => "size",
+            "value"       => $product_thumbnail,
+            'std'         => 'kt_shop_catalog_248',
+            "description" => __( "Product size", 'kutetheme' ),
+        ),
+        array(
+            "type"        => "dropdown",
+        	"heading"     => __("Type", 'kutetheme'),
+        	"param_name"  => "type",
+            "admin_label" => true,
+            'std'         => 'style-1',
+            'value'       => array(
+        		__( 'Style 1', 'kutetheme' )    => 'style-1',
+                __( 'Style 2', 'kutetheme' )    => 'style-2',
+        	),
+        ),
+        array(
+            "type"        => "colorpicker",
+            "heading"     => __("Countdown Color", 'kutetheme'),
+            "param_name"  => "countdown_color",
+            "admin_label" => true,
+            "dependency"  => array("element" => "type","value" => array( 'style-2' )),
+        ),
+        array(
             "type"        => "kt_taxonomy",
             "taxonomy"    => "product_cat",
             "class"       => "",
@@ -35,7 +61,6 @@ vc_map( array(
             'placeholder' => __('Choose categoy', 'kutetheme'),
             "description" => __("Note: Selected categories will be hide if it empty. Only selected categories will be displayed.", 'kutetheme')
         ),
-        
         array(
             "type"        => "kt_number",
             "heading"     => __("Number Product", 'kutetheme'),
@@ -136,11 +161,16 @@ vc_map( array(
     )
 ));
 class WPBakeryShortCode_Lastest_Deals_Sidebar extends WPBakeryShortCode {
+    public $product_size = 'kt_shop_catalog_248';
+    
     protected function content($atts, $content = null) {
         $atts = function_exists( 'vc_map_get_attributes' ) ? vc_map_get_attributes( 'lastest_deals_sidebar', $atts ) : $atts;
         $atts = shortcode_atts( array(
             'title'         => '',
-            'taxonomy'       => '',
+            'size'          => 'kt_shop_catalog_248',
+            'type'          => 'style-1',
+            'countdown_color' => '#ff3366',
+            'taxonomy'      => '',
             'number'        => 12,
             //Carousel            
             'autoplay'      => "false",
@@ -156,6 +186,11 @@ class WPBakeryShortCode_Lastest_Deals_Sidebar extends WPBakeryShortCode {
         ), $atts );
         extract($atts);
         
+        $this->product_size = $size;
+        
+        if( ! $countdown_color ){
+            $countdown_color = '#ff3366';
+        }
         
         $elementClass = array(
         	'base' => apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'latest-deals ', $this->settings['base'], $atts ),
@@ -202,6 +237,7 @@ class WPBakeryShortCode_Lastest_Deals_Sidebar extends WPBakeryShortCode {
         global $woocommerce_loop;
         
         ob_start();
+        add_filter( 'kt_product_thumbnail_loop', array( &$this, 'get_size_product' ) );
         
         if ( $query->have_posts() ) :
             $data_carousel = array(
@@ -211,13 +247,14 @@ class WPBakeryShortCode_Lastest_Deals_Sidebar extends WPBakeryShortCode {
                 "autoheight"         => "false",
                 "loop"               => $loop,
                 "dots"               => "false",
-                'nav'                => "true",
+                'nav'                => $navigation,
                 "autoplayTimeout"    => 1000,
                 "autoplayHoverPause" => "true",
                 'items'              => 1,
             );
             add_filter("woocommerce_get_price_html_from_to", "kt_get_price_html_from_to", 10 , 4);
             add_filter( 'woocommerce_sale_price_html', 'woocommerce_custom_sales_price', 10, 2 );
+            if( $type == 'style-1' ):
             ?>
             <div class="<?php echo esc_attr( $elementClass ); ?>">
                 <h2 class="latest-deal-title"><?php echo esc_html( $title ); ?></h2>
@@ -234,13 +271,37 @@ class WPBakeryShortCode_Lastest_Deals_Sidebar extends WPBakeryShortCode {
                 </div>
             </div>
             <?php
+            else:
+            remove_action( 'kt_loop_product_function', 'kt_get_tool_quickview' );
+            ?>
+            <div class="block-hotdeal-week option12 <?php echo esc_attr( $elementClass ); ?>" data-color="<?php echo esc_attr( $countdown_color ) ?>">
+                <div class="title"><?php echo esc_html( $title ); ?></div>
+                <div class="inner">
+                    <ul class="hotdeal-product owl-carousel" <?php echo _data_carousel( $data_carousel ); ?>>
+                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                            <li class="product">
+                                <?php wc_get_template_part( 'content', 'product-sidebar-2' ); ?>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul>
+                </div>
+            </div>
+            <?php
+            add_action( 'kt_loop_product_function_quickview' , 'kt_get_tool_quickview', 10);
+            endif;
             remove_filter( "woocommerce_get_price_html_from_to", "kt_get_price_html_from_to", 10 , 4);
             remove_filter( 'woocommerce_sale_price_html', 'woocommerce_custom_sales_price', 10, 2 );
         endif;
+        
+        remove_filter( 'kt_product_thumbnail_loop', array( &$this, 'get_size_product' ) );
         wp_reset_postdata();
         wp_reset_query();
         $result = ob_get_contents();
         ob_clean();
         return $result;
+    }
+    
+    public function get_size_product( $size ){
+        return $this->product_size;
     }
 }

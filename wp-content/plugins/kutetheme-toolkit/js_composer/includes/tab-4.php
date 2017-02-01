@@ -75,12 +75,15 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </ul>
                     </div>
                     <?php
-                        $banner_left_args = array(
-                            'post_type' => 'attachment',
-                            'include'   => $banner_left,
-                            'orderby'   => 'post__in'
-                        );
-                        $list_banner_left = get_posts( $banner_left_args );
+                        $list_banner_left = false;
+                        if( $banner_left ){
+                            $banner_left_args = array(
+                                'post_type' => 'attachment',
+                                'include'   => $banner_left,
+                                'orderby'   => 'post__in'
+                            );
+                            $list_banner_left = get_posts( $banner_left_args );
+                        }
                      ?>  
                     <?php if( is_array( $list_banner_left ) && $list_banner_left ): ?>
                         <?php $number_per_slide = 8; ?>
@@ -127,16 +130,18 @@ if ( ! defined( 'ABSPATH' ) ) {
                     			'ignore_sticky_posts'	=> 1,
                     			'posts_per_page' 		=> $per_page,
                     			'meta_query' 			=> $meta_query,
-                                'suppress_filter'       => true,
-                                'tax_query'             => array(
+                                'suppress_filter'       => true
+                    		);
+                            if( $term ){
+                                $args [ 'tax_query' ] = array(
                                     array(
                                         'taxonomy' => 'product_cat',
                                         'field'    => 'id',
                                         'terms'    => $term->term_id,
                                         'operator' => 'IN'
-                                    ),
-                                )
-                    		);
+                                    )
+                                );
+                            }
                             $i = 0; ?>
                             <?php foreach( $tabs as $tab ): ?>
                             
@@ -246,7 +251,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                <div class="row">
                                     <div class="col-sm-12 category-list-product">
                                         <?php if( $is_phone ): ?>
-                                            <ul class="product-list owl-carousel" data-autoplay="false" data-navigation="false" data-margin="0" data-slidespeed="250" data-theme="style-navigation-bottom" data-autoheight="false" data-nav="true" data-dots="false" data-items="1">
+                                            <ul class="product-list owl-carousel" data-autoplay="false" data-nav="false" data-navigation="false" data-margin="0" data-slidespeed="250" data-theme="style-navigation-bottom" data-autoheight="false" data-nav="true" data-dots="false" data-items="1">
                                         <?php else: ?>
                                             <ul class="product-list row">                                    
                                         <?php endif; ?>  

@@ -220,7 +220,7 @@ function kt_get_rating_html($rating_html, $rating){
     //if($rating <=0) return'';
     $rating_html  = '<div class="product-star" title="' . sprintf( esc_attr__( 'Rated %s out of 5', 'kutetheme' ), $rating > 0 ? $rating : 0  ) . '">';
     for($i = 0; $i < 5 ;$i++){
-        if($rating >= $i){
+        if($rating >= $i && $rating > 0 ){
             if( ( $rating - $i ) > 0 && ( $rating - $i ) < 1 ){
                 $rating_html .= '<i class="fa fa-star-half-o"></i>';    
             }else{
@@ -268,6 +268,12 @@ add_action( 'kt_loop_product_function' , 'kt_get_tool_compare', 5);
 add_action( 'kt_loop_product_function' , 'kt_get_tool_quickview', 10);
 
 add_action( 'kt_loop_product_function_quickview' , 'kt_get_tool_quickview', 10);
+
+add_action( 'kt_loop_product_cart_function', 'kt_get_tool_quickview', 1 ); 
+
+add_action( 'kt_loop_product_cart_function', 'woocommerce_template_loop_add_to_cart', 5 );
+
+add_action( 'kt_loop_product_cart_function', 'kt_get_tool_compare', 10 );
 
 add_action( 'kt_loop_product_label', 'kt_show_product_loop_new_flash', 5 );
 
@@ -803,7 +809,7 @@ if( ! function_exists( 'custom_woocommerce_page_title' ) ){
 
 // Product meta
 remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_meta', 40 );
-
+add_filter( 'woocommerce_single_product_summary','woocommerce_template_single_meta', 11 );
 if( ! function_exists('kt_show_product_meta') ){
     function kt_show_product_meta(){
         global $product;
@@ -827,7 +833,7 @@ if( ! function_exists('kt_show_product_meta') ){
         <?php
     }
 }
-add_filter( 'woocommerce_single_product_summary','kt_show_product_meta', 11 );
+//add_filter( 'woocommerce_single_product_summary','kt_show_product_meta', 11 );
 
 //Available Options
 if( ! function_exists( 'kt_available_options' ) ){
@@ -862,10 +868,12 @@ if( ! function_exists( 'kt_utilities_single_product' ) ){
     function kt_utilities_single_product(){
         ?>
         <div class="utilities">
-            <ul>
-                <li><a href="javascript:print();"><i class="fa fa-print"></i> <?php esc_html_e( 'Print', 'kutetheme' );?></a></li>
-                <li><a href="<?php echo esc_url('mailto:?subject='. esc_html( get_the_title() ) );?>"><i class="fa fa-envelope-o"></i> <?php esc_html_e( 'Send to a friend', 'kutetheme' );?></a></li>
+            <!-- Remove print and send mail ico in single product content.
+            <ul> 
+                <li><a href="javascript:print();"><i class="fa fa-print"></i> <?php _e( 'Print', 'kutetheme' );?></a></li>
+                <li><a href="<?php echo esc_url('mailto:?subject='. esc_html( get_the_title() ) );?>"><i class="fa fa-envelope-o"></i> <?php _e( 'Send to a friend', 'kutetheme' );?></a></li>
             </ul>
+             -->
         </div>
         <?php
     }   
@@ -1063,6 +1071,7 @@ if ( ! function_exists( 'kt_get_product_thumbnail' ) ) {
 	 */
 	function kt_get_product_thumbnail( $size = 'shop_catalog', $deprecated1 = 0, $deprecated2 = 0 ) {
 		global $post;
+        $size = apply_filters( 'kt_product_thumbnail_loop', $size );
         
         $dimensions = wc_get_image_size( $size );
         
@@ -1389,6 +1398,7 @@ add_filter( 'wp_nav_menu_items', 'kt_myaccount_menu_link', 10, 2 );
 
 function kt_myaccount_menu_link( $items, $args ) {
    $kt_enable_myaccount_box = kt_option('kt_enable_myaccount_box','enable');
+   $kt_used_header = kt_option('kt_used_header', '1');
    if( $kt_enable_myaccount_box == 'disable'){
      return $items;
    }
@@ -1409,10 +1419,16 @@ function kt_myaccount_menu_link( $items, $args ) {
                         $logout_url = str_replace( 'http:', 'https:', $logout_url );
                       }
                 }
+                $currentUser = wp_get_current_user();
                 ?>
                 <li class="menu-item menu-item-has-children">
-                    <a href="<?php echo esc_url( $myaccount_link );?>"><?php _e('My Account','kutetheme');?></a>
+                    <?php if( $kt_used_header ==8 ):?>
+                    <a href="<?php echo esc_url( $myaccount_link );?>"><i class="fa fa-user"></i> <?php echo esc_html( $currentUser->user_login);?></a>
+                    <?php else:?>
+                    <a href="<?php echo esc_url( $myaccount_link );?>"><i class="fa fa-user"></i> <?php echo esc_html( $currentUser->user_login);?></a>
+                    <?php endif;?>
                     <ul class="sub-menu">
+                        <li><a href="<?php echo esc_url( $myaccount_link );?>"><?php _e('My Account','kutetheme');?></a></li>
                         <?php 
                         if( function_exists( 'YITH_WCWL' ) ):
                             $wishlist_url = YITH_WCWL()->get_wishlist_url();
@@ -1436,7 +1452,20 @@ function kt_myaccount_menu_link( $items, $args ) {
    <?php
    }
    $item = ob_get_contents();
-   $items = $item.$items;
+   if( $kt_used_header == 8){
+        $items = $items.$item;
+   }else{
+        $items = $item.$items;
+   }
+   
    ob_clean();
    return $items;
+}
+
+ add_filter('woocommerce_placeholder_img_src', 'kt_custom_woocommerce_placeholder_img_src');
+   
+function kt_custom_woocommerce_placeholder_img_src( $src ) {
+   
+    $src = THEME_URL . 'images/placeholder.jpg';
+    return $src;
 }

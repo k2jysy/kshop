@@ -3,28 +3,24 @@ msgstr ""
 "Project-Id-Version: Revolution Slider\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Mon Jul 13 2015 10:02:33 GMT+0200 (CEST)\n"
-"PO-Revision-Date: Tue Jul 14 2015 08:40:14 GMT+0200 (CEST)\n"
+"PO-Revision-Date: 2017-01-30 10:11+1300\n"
 "Last-Translator: admin <info@themepunch.com>\n"
 "Language-Team: \n"
-"Language: Chinese (China)\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Loco - https://localise.biz/\n"
-"X-Poedit-Language: \n"
-"X-Poedit-Country: \n"
-"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
-"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
-"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
-"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
-"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
-"X-Poedit-Basepath: \n"
-"X-Poedit-Bookmarks: \n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
+"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
+"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
+"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
+"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Textdomain-Support: yes\n"
-"X-Loco-Target-Locale: zh_CN"
+"X-Loco-Target-Locale: zh_CN\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: ../revslider.php:170
 msgid "Include RevSlider libraries globally (all pages/posts)"
@@ -36,14 +32,14 @@ msgstr ""
 
 #: ../revslider.php:172
 msgid ""
-"If you want to use the PHP function \"putRevSlider\" in your code please make "
-"sure to check \" "
+"If you want to use the PHP function \"putRevSlider\" in your code please make sure "
+"to check \" "
 msgstr ""
 
 #: ../revslider.php:172
 msgid ""
-" \" in the backend's \"General Settings\" (top right panel). <br> <br> Or add "
-"the current page to the \""
+" \" in the backend's \"General Settings\" (top right panel). <br> <br> Or add the "
+"current page to the \""
 msgstr ""
 
 #: ../revslider.php:172
@@ -102,7 +98,7 @@ msgstr ""
 
 #: ../admin/revslider-admin.class.php:198 ../admin/views/slide-overview.php:168 ..
 #: admin/views/system/dialog-copy-move.php:3 ../admin/views/templates/slider-
-#: main-options.php:1309 ../admin/views/templates/slider-main-options.php:4280 ..
+#: main-options.php:1309 ../admin/views/templates/slider-main-options.php:4280
 #: admin/views/templates/slides.php:21 ../admin/views/templates/slides.php:43
 msgid "Close"
 msgstr "关闭"
@@ -116,7 +112,7 @@ msgid "Global Styles Editor"
 msgstr ""
 
 #: ../admin/revslider-admin.class.php:201 ../admin/revslider-admin.class.php:239 .
-#: ./admin/views/templates/slider-main-options.php:4301
+#: admin/views/templates/slider-main-options.php:4301
 msgid "Select Image"
 msgstr ""
 
@@ -244,8 +240,8 @@ msgstr ""
 
 #: ../admin/revslider-admin.class.php:232
 msgid ""
-"This will update the Class with the current set Style settings, this may "
-"affect other Sliders. Proceed?"
+"This will update the Class with the current set Style settings, this may affect "
+"other Sliders. Proceed?"
 msgstr ""
 
 #: ../admin/revslider-admin.class.php:233
@@ -451,9 +447,9 @@ msgstr ""
 
 #: ../admin/revslider-admin.class.php:289
 msgid ""
-"Hi! Would you like to activate your version of Revolution Slider to receive "
-"live updates & get premium support? This is optional and not needed if the "
-"slider came bundled with a theme. "
+"Hi! Would you like to activate your version of Revolution Slider to receive live "
+"updates & get premium support? This is optional and not needed if the slider came "
+"bundled with a theme. "
 msgstr ""
 
 #: ../admin/revslider-admin.class.php:341
@@ -469,7 +465,7 @@ msgid "importing slider settings and data..."
 msgstr ""
 
 #: ../admin/revslider-admin.class.php:525 ../admin/revslider-admin.class.php:546 .
-#: ./admin/revslider-admin.class.php:570
+#: admin/revslider-admin.class.php:570
 msgid "Go Back"
 msgstr ""
 
@@ -591,12 +587,12 @@ msgid "Slide added to Templates"
 msgstr ""
 
 #: ../admin/revslider-admin.class.php:888 ../admin/revslider-admin.class.php:910 .
-#: ./admin/revslider-admin.class.php:931 ../admin/revslider-admin.class.php:980
+#: admin/revslider-admin.class.php:931 ../admin/revslider-admin.class.php:980
 msgid "CSS saved"
 msgstr ""
 
 #: ../admin/revslider-admin.class.php:891 ../admin/revslider-admin.class.php:913 .
-#: ./admin/revslider-admin.class.php:934
+#: admin/revslider-admin.class.php:934
 msgid "CSS could not be saved"
 msgstr ""
 
@@ -609,7 +605,7 @@ msgid "Style deleted!"
 msgstr ""
 
 #: ../admin/revslider-admin.class.php:984 ../admin/revslider-admin.class.php:988 .
-#: ./admin/revslider-admin.class.php:992
+#: admin/revslider-admin.class.php:992
 msgid "Animation saved"
 msgstr ""
 
@@ -790,8 +786,8 @@ msgstr ""
 msgid "Thumbs"
 msgstr ""
 
-#: ../admin/views/navigation-editor.php:42 ../admin/views/navigation-editor.php:
-#: 67 ../admin/views/templates/slide-stage.php:34
+#: ../admin/views/navigation-editor.php:42 ../admin/views/navigation-editor.php: 67
+#: ../admin/views/templates/slide-stage.php:34
 msgid "Actions"
 msgstr "操作"
 
@@ -808,9 +804,8 @@ msgstr ""
 msgid "Markup"
 msgstr ""
 
-#: ../admin/views/navigation-editor.php:69 ../admin/views/navigation-editor.php:
-#: 70 ../admin/views/navigation-editor.php:71 ../admin/views/navigation-editor.
-#: php:72
+#: ../admin/views/navigation-editor.php:69 ../admin/views/navigation-editor.php: 70
+#: ../admin/views/navigation-editor.php:71 ../admin/views/navigation-editor. php:72
 msgid "Reset Defaults"
 msgstr ""
 
@@ -843,10 +838,10 @@ msgstr ""
 msgid "Color Value"
 msgstr ""
 
-#: ../admin/views/navigation-editor.php:106 ../admin/views/navigation-editor.php:
-#: 120 ../admin/views/navigation-editor.php:138 ../admin/views/navigation-editor.
-#: php:154 ../admin/views/navigation-editor.php:170 ../admin/views/navigation-
-#: editor.php:184 ../admin/views/templates/template-selector.php:17 ..
+#: ../admin/views/navigation-editor.php:106 ../admin/views/navigation-editor.php: 120
+#: ../admin/views/navigation-editor.php:138 ../admin/views/navigation-editor. php:154
+#: ../admin/views/navigation-editor.php:170 ../admin/views/navigation- editor.php:184
+#: ../admin/views/templates/template-selector.php:17 ..
 #: admin/views/templates/template-slider-selector.php:15
 msgid "Add"
 msgstr ""
@@ -881,48 +876,48 @@ msgstr ""
 
 #: ../admin/views/navigation-editor.php:125 ../admin/views/templates/slider-main-
 #: options.php:1965 ../admin/views/templates/slider-main-options.php:2397 ..
-#: admin/views/templates/slider-main-options.php:2427 ..
-#: admin/views/templates/slider-main-options.php:2540 ..
-#: admin/views/templates/slider-main-options.php:2710 ..
-#: admin/views/templates/slider-main-options.php:2878 ..
+#: admin/views/templates/slider-main-options.php:2427
+#: admin/views/templates/slider-main-options.php:2540
+#: admin/views/templates/slider-main-options.php:2710
+#: admin/views/templates/slider-main-options.php:2878
 #: admin/views/templates/slider-main-options.php:3213
 msgid "Top"
 msgstr "顶部"
 
 #: ../admin/views/navigation-editor.php:127 ../admin/views/templates/slide-stage.
 #: php:282 ../admin/views/templates/slider-main-options.php:2175 ..
-#: admin/views/templates/slider-main-options.php:2390 ..
-#: admin/views/templates/slider-main-options.php:2419 ..
-#: admin/views/templates/slider-main-options.php:2534 ..
-#: admin/views/templates/slider-main-options.php:2704 ..
-#: admin/views/templates/slider-main-options.php:2872 ..
+#: admin/views/templates/slider-main-options.php:2390
+#: admin/views/templates/slider-main-options.php:2419
+#: admin/views/templates/slider-main-options.php:2534
+#: admin/views/templates/slider-main-options.php:2704
+#: admin/views/templates/slider-main-options.php:2872
 #: admin/views/templates/slider-main-options.php:3207
 msgid "Right"
 msgstr "右边"
 
 #: ../admin/views/navigation-editor.php:129 ../admin/views/templates/slider-main-
 #: options.php:1966 ../admin/views/templates/slider-main-options.php:2399 ..
-#: admin/views/templates/slider-main-options.php:2429 ..
-#: admin/views/templates/slider-main-options.php:2542 ..
-#: admin/views/templates/slider-main-options.php:2712 ..
-#: admin/views/templates/slider-main-options.php:2880 ..
+#: admin/views/templates/slider-main-options.php:2429
+#: admin/views/templates/slider-main-options.php:2542
+#: admin/views/templates/slider-main-options.php:2712
+#: admin/views/templates/slider-main-options.php:2880
 #: admin/views/templates/slider-main-options.php:3215
 msgid "Bottom"
 msgstr "下部"
 
 #: ../admin/views/navigation-editor.php:131 ../admin/views/templates/slide-stage.
 #: php:280 ../admin/views/templates/slider-main-options.php:2173 ..
-#: admin/views/templates/slider-main-options.php:2388 ..
-#: admin/views/templates/slider-main-options.php:2417 ..
-#: admin/views/templates/slider-main-options.php:2532 ..
-#: admin/views/templates/slider-main-options.php:2702 ..
-#: admin/views/templates/slider-main-options.php:2870 ..
+#: admin/views/templates/slider-main-options.php:2388
+#: admin/views/templates/slider-main-options.php:2417
+#: admin/views/templates/slider-main-options.php:2532
+#: admin/views/templates/slider-main-options.php:2702
+#: admin/views/templates/slider-main-options.php:2870
 #: admin/views/templates/slider-main-options.php:3205
 msgid "Left"
 msgstr "左边"
 
-#: ../admin/views/navigation-editor.php:133 ../admin/views/navigation-editor.php:
-#: 149 ../admin/views/navigation-editor.php:165 ../admin/views/templates/slide-
+#: ../admin/views/navigation-editor.php:133 ../admin/views/navigation-editor.php: 149
+#: ../admin/views/navigation-editor.php:165 ../admin/views/templates/slide-
 #: stage.php:751 ../admin/views/templates/slide-stage.php:927
 msgid "Opacity"
 msgstr ""
@@ -931,18 +926,16 @@ msgstr ""
 msgid "Text-Shadow"
 msgstr ""
 
-#: ../admin/views/navigation-editor.php:143 ../admin/views/navigation-editor.php:
-#: 159 ../admin/views/templates/slide-stage.php:1127
+#: ../admin/views/navigation-editor.php:143 ../admin/views/navigation-editor.php: 159
+#: ../admin/views/templates/slide-stage.php:1127
 msgid "Angle"
 msgstr ""
 
-#: ../admin/views/navigation-editor.php:145 ../admin/views/navigation-editor.php:
-#: 161
+#: ../admin/views/navigation-editor.php:145 ../admin/views/navigation-editor.php: 161
 msgid "Distance"
 msgstr ""
 
-#: ../admin/views/navigation-editor.php:147 ../admin/views/navigation-editor.php:
-#: 163
+#: ../admin/views/navigation-editor.php:147 ../admin/views/navigation-editor.php: 163
 msgid "Blur"
 msgstr ""
 
@@ -961,15 +954,13 @@ msgstr ""
 msgid "Resets"
 msgstr ""
 
-#: ../admin/views/navigation-editor.php:192 ../admin/views/navigation-editor.php:
-#: 194 ../admin/views/navigation-editor.php:196 ../admin/views/navigation-editor.
-#: php:198
+#: ../admin/views/navigation-editor.php:192 ../admin/views/navigation-editor.php: 194
+#: ../admin/views/navigation-editor.php:196 ../admin/views/navigation-editor. php:198
 msgid "Classes & Style"
 msgstr ""
 
-#: ../admin/views/navigation-editor.php:193 ../admin/views/navigation-editor.php:
-#: 195 ../admin/views/navigation-editor.php:197 ../admin/views/navigation-editor.
-#: php:199
+#: ../admin/views/navigation-editor.php:193 ../admin/views/navigation-editor.php: 195
+#: ../admin/views/navigation-editor.php:197 ../admin/views/navigation-editor. php:199
 msgid "Only Classes"
 msgstr ""
 
@@ -1013,8 +1004,8 @@ msgstr ""
 msgid "Edit Template Slide"
 msgstr ""
 
-#: ../admin/views/slide-editor.php:316 ../admin/views/templates/slides-list.php:
-#: 107 ../admin/views/templates/wpml-selector.php:10
+#: ../admin/views/slide-editor.php:316 ../admin/views/templates/slides-list.php: 107
+#: ../admin/views/templates/wpml-selector.php:10
 msgid "Edit Slide"
 msgstr "编辑幻灯片"
 
@@ -1023,18 +1014,18 @@ msgid "Title:"
 msgstr ""
 
 #: ../admin/views/slide-editor.php:321 ../admin/views/slider-overview.php:67 ..
-#: admin/views/templates/slider-main-options.php:26 ..
+#: admin/views/templates/slider-main-options.php:26
 #: admin/views/templates/slides.php:10
 msgid "Help"
 msgstr "帮助"
 
 #: ../admin/views/slide-editor.php:350
 msgid ""
-"<b>Warning!!! </b>The jquery ui javascript include that is loaded by some of "
-"the plugins are custom made and not contain needed components like "
-"'autocomplete' or 'draggable' function.\n"
-"		Without those functions the editor may not work correctly. Please remove "
-"those custom jquery ui includes in order the editor will work correctly."
+"<b>Warning!!! </b>The jquery ui javascript include that is loaded by some of the "
+"plugins are custom made and not contain needed components like 'autocomplete' or "
+"'draggable' function.\n"
+"\t\tWithout those functions the editor may not work correctly. Please remove those "
+"custom jquery ui includes in order the editor will work correctly."
 msgstr ""
 
 #: ../admin/views/slide-editor.php:364
@@ -1164,7 +1155,7 @@ msgid "Flickr Placeholders:"
 msgstr ""
 
 #: ../admin/views/slide-editor.php:424 ../admin/views/slide-editor.php:445 ..
-#: admin/views/slide-editor.php:467 ../admin/views/slide-editor.php:490 ..
+#: admin/views/slide-editor.php:467 ../admin/views/slide-editor.php:490
 #: admin/views/slide-editor.php:532
 msgid "Username"
 msgstr ""
@@ -1174,13 +1165,13 @@ msgid "Views"
 msgstr ""
 
 #: ../admin/views/slide-editor.php:429 ../admin/views/slide-editor.php:451 ..
-#: admin/views/slide-editor.php:473 ../admin/views/slide-editor.php:495 ..
+#: admin/views/slide-editor.php:473 ../admin/views/slide-editor.php:495
 #: admin/views/slide-editor.php:515 ../admin/views/slide-editor.php:539
 msgid "Image URL"
 msgstr ""
 
 #: ../admin/views/slide-editor.php:430 ../admin/views/slide-editor.php:452 ..
-#: admin/views/slide-editor.php:474 ../admin/views/slide-editor.php:496 ..
+#: admin/views/slide-editor.php:474 ../admin/views/slide-editor.php:496
 #: admin/views/slide-editor.php:516 ../admin/views/slide-editor.php:540
 msgid "Image &lt;img /&gt;"
 msgstr ""
@@ -1190,15 +1181,15 @@ msgid "Instagram Placeholders:"
 msgstr ""
 
 #: ../admin/views/slide-editor.php:441 ../admin/views/slide-editor.php:463 ..
-#: admin/views/slide-editor.php:485 ../admin/views/slide-editor.php:507 ..
-#: admin/views/slide-editor.php:527 ../admin/views/templates/slide-stage.php:
-#: 1241 ../admin/views/templates/slider-main-options.php:422 ../includes/widget.
+#: admin/views/slide-editor.php:485 ../admin/views/slide-editor.php:507
+#: admin/views/slide-editor.php:527 ../admin/views/templates/slide-stage.php: 1241
+#: ../admin/views/templates/slider-main-options.php:422 ../includes/widget.
 #: class.php:61
 msgid "Title"
 msgstr ""
 
 #: ../admin/views/slide-editor.php:442 ../admin/views/slide-editor.php:464 ..
-#: admin/views/slide-editor.php:486 ../admin/views/slide-editor.php:509 ..
+#: admin/views/slide-editor.php:486 ../admin/views/slide-editor.php:509
 #: admin/views/slide-editor.php:529
 msgid "Content"
 msgstr ""
@@ -1258,8 +1249,8 @@ msgstr ""
 msgid "Number of Views"
 msgstr ""
 
-#: ../admin/views/slide-editor.php:551 ../admin/views/templates/slide-stage.php:
-#: 250 ../admin/views/templates/slide-stage.php:515
+#: ../admin/views/slide-editor.php:551 ../admin/views/templates/slide-stage.php: 250
+#: ../admin/views/templates/slide-stage.php:515
 msgid "Advanced CSS"
 msgstr ""
 
@@ -1406,8 +1397,7 @@ msgstr ""
 
 #: ../admin/views/slide-overview.php:144 ../admin/views/slide-overview.php:146
 msgid ""
-"Click to change the slide image. Note: The post featured image will be "
-"changed."
+"Click to change the slide image. Note: The post featured image will be changed."
 msgstr ""
 
 #: ../admin/views/slide-overview.php:146
@@ -1417,15 +1407,14 @@ msgstr ""
 #: ../admin/views/slide-overview.php:150 ../admin/views/templates/slide-selector.
 #: php:198 ../admin/views/templates/slide-stage.php:89 ..
 #: admin/views/templates/slide-stage.php:704 ../admin/views/templates/slide-
-#: stage.php:879 ../admin/views/templates/sliders-list.php:167 ..
+#: stage.php:879 ../admin/views/templates/sliders-list.php:167
 #: admin/views/templates/slides-list.php:134
 msgid "Delete"
 msgstr "删除"
 
 #: ../admin/views/slide-overview.php:173
 msgid ""
-"Warning! Removing this entry will cause the original wordpress post to be "
-"deleted."
+"Warning! Removing this entry will cause the original wordpress post to be deleted."
 msgstr ""
 
 #: ../admin/views/slider-overview.php:69
@@ -1475,13 +1464,13 @@ msgstr "文章"
 msgid "Gallery"
 msgstr "图片墙"
 
-#: ../admin/views/slider-overview.php:95 ../admin/views/system/dialog-video.php:
-#: 30 ../admin/views/templates/sliders-list.php:74
+#: ../admin/views/slider-overview.php:95 ../admin/views/system/dialog-video.php: 30
+#: ../admin/views/templates/sliders-list.php:74
 msgid "Vimeo"
 msgstr ""
 
-#: ../admin/views/slider-overview.php:96 ../admin/views/system/dialog-video.php:
-#: 28 ../admin/views/templates/sliders-list.php:68
+#: ../admin/views/slider-overview.php:96 ../admin/views/system/dialog-video.php: 28
+#: ../admin/views/templates/sliders-list.php:68
 msgid "YouTube"
 msgstr ""
 
@@ -1591,8 +1580,8 @@ msgstr ""
 
 #: ../admin/views/slider-overview.php:176
 msgid ""
-" - We help you in case of Bugs, installation problems, and Conflicts with "
-"other plugins and Themes"
+" - We help you in case of Bugs, installation problems, and Conflicts with other "
+"plugins and Themes"
 msgstr ""
 
 #: ../admin/views/slider-overview.php:177
@@ -1601,8 +1590,8 @@ msgstr ""
 
 #: ../admin/views/slider-overview.php:177
 msgid ""
-" - Get the latest version of our Plugin. New Features and Bug Fixes are "
-"available regularly !"
+" - Get the latest version of our Plugin. New Features and Bug Fixes are available "
+"regularly !"
 msgstr ""
 
 #: ../admin/views/slider-overview.php:194
@@ -1611,10 +1600,10 @@ msgstr ""
 
 #: ../admin/views/slider-overview.php:199
 msgid ""
-"Please note that this plugin came bundled with a theme. The use of the "
-"Revolution Slider is limited to this theme only.<br>If you need support from "
-"the Slider author ThemePunch or you want to use the Revolution slider with "
-"an other theme you will need an extra single license available at CodeCanyon."
+"Please note that this plugin came bundled with a theme. The use of the Revolution "
+"Slider is limited to this theme only.<br>If you need support from the Slider "
+"author ThemePunch or you want to use the Revolution slider with an other theme you "
+"will need an extra single license available at CodeCanyon."
 msgstr ""
 
 #: ../admin/views/slider-overview.php:210
@@ -1667,8 +1656,8 @@ msgstr ""
 
 #: ../admin/views/slider-overview.php:229
 msgid ""
-"Participate in polls and customer surveys that help us increase the quality "
-"of our products and services"
+"Participate in polls and customer surveys that help us increase the quality of our "
+"products and services"
 msgstr ""
 
 #: ../admin/views/slider-overview.php:238
@@ -1676,7 +1665,7 @@ msgid "Update History"
 msgstr ""
 
 #: ../admin/views/slider-overview.php:248 ../admin/views/slider-overview.php:272 .
-#: ./admin/views/templates/sliders-list.php:190
+#: admin/views/templates/sliders-list.php:190
 msgid "Import Slider"
 msgstr ""
 
@@ -1695,21 +1684,21 @@ msgid "Custom Animations:"
 msgstr "自定义动画："
 
 #: ../admin/views/slider-overview.php:262 ../admin/views/slider-overview.php:267 .
-#: ./admin/views/templates/slider-main-options.php:3564 ..
-#: admin/views/templates/slider-main-options.php:3569 ..
-#: admin/views/templates/template-selector.php:246 ..
-#: admin/views/templates/template-selector.php:251 ..
-#: admin/views/templates/template-slider-selector.php:175 ..
+#: admin/views/templates/slider-main-options.php:3564 ..
+#: admin/views/templates/slider-main-options.php:3569
+#: admin/views/templates/template-selector.php:246
+#: admin/views/templates/template-selector.php:251
+#: admin/views/templates/template-slider-selector.php:175
 #: admin/views/templates/template-slider-selector.php:180
 msgid "overwrite"
 msgstr "覆盖"
 
 #: ../admin/views/slider-overview.php:263 ../admin/views/slider-overview.php:268 .
-#: ./admin/views/templates/slider-main-options.php:3565 ..
-#: admin/views/templates/slider-main-options.php:3570 ..
-#: admin/views/templates/template-selector.php:247 ..
-#: admin/views/templates/template-selector.php:252 ..
-#: admin/views/templates/template-slider-selector.php:176 ..
+#: admin/views/templates/slider-main-options.php:3565 ..
+#: admin/views/templates/slider-main-options.php:3570
+#: admin/views/templates/template-selector.php:247
+#: admin/views/templates/template-selector.php:252
+#: admin/views/templates/template-slider-selector.php:176
 #: admin/views/templates/template-slider-selector.php:181
 msgid "append"
 msgstr "附加"
@@ -1781,28 +1770,28 @@ msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:58 ..
 #: admin/views/system/dialog-global-settings.php:92 ../admin/views/system/dialog-
-#: global-settings.php:113 ../admin/views/system/dialog-global-settings.php:134 ..
-#: admin/views/system/dialog-global-settings.php:187 ..
-#: admin/views/system/dialog-global-settings.php:209 ..
+#: global-settings.php:113 ../admin/views/system/dialog-global-settings.php:134
+#: admin/views/system/dialog-global-settings.php:187
+#: admin/views/system/dialog-global-settings.php:209
 #: admin/views/templates/slider-main-options.php:3506
 msgid "On"
 msgstr "打开"
 
 #: ../admin/views/system/dialog-global-settings.php:63 ..
 #: admin/views/system/dialog-global-settings.php:97 ../admin/views/system/dialog-
-#: global-settings.php:118 ../admin/views/system/dialog-global-settings.php:139 ..
-#: admin/views/system/dialog-global-settings.php:192 ..
-#: admin/views/system/dialog-global-settings.php:214 ..
-#: admin/views/templates/slider-main-options.php:2210 ..
-#: admin/views/templates/slider-main-options.php:3487 ..
+#: global-settings.php:118 ../admin/views/system/dialog-global-settings.php:139
+#: admin/views/system/dialog-global-settings.php:192
+#: admin/views/system/dialog-global-settings.php:214
+#: admin/views/templates/slider-main-options.php:2210
+#: admin/views/templates/slider-main-options.php:3487
 #: admin/views/templates/slider-main-options.php:3508
 msgid "Off"
 msgstr "关闭"
 
 #: ../admin/views/system/dialog-global-settings.php:68
 msgid ""
-"ON - Add CSS and JS Files to all pages. </br>Off - CSS and JS Files will be "
-"only loaded on Pages where any rev_slider shortcode exists."
+"ON - Add CSS and JS Files to all pages. </br>Off - CSS and JS Files will be only "
+"loaded on Pages where any rev_slider shortcode exists."
 msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:74
@@ -1811,8 +1800,8 @@ msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:79
 msgid ""
-"Specify the page id's that the front end includes will be included in. "
-"Example: 2,3,5 also: homepage,3,4"
+"Specify the page id's that the front end includes will be included in. Example: "
+"2,3,5 also: homepage,3,4"
 msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:86
@@ -1821,8 +1810,8 @@ msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:101
 msgid ""
-"Putting the js to footer (instead of the head) is good for fixing some "
-"javascript conflicts."
+"Putting the js to footer (instead of the head) is good for fixing some javascript "
+"conflicts."
 msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:107
@@ -1839,8 +1828,8 @@ msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:143
 msgid ""
-"This will enable the option to export the Slider Markups to copy/paste it "
-"directly into websites."
+"This will enable the option to export the Slider Markups to copy/paste it directly "
+"into websites."
 msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:149
@@ -1849,9 +1838,9 @@ msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:154
 msgid ""
-"Insert something in it and it will be used instead of http://fonts."
-"googleapis.com/css?family= (For example: http://fonts.useso.com/css?family= "
-"which will also work for chinese visitors)"
+"Insert something in it and it will be used instead of http://fonts.googleapis.com/"
+"css?family= (For example: http://fonts.useso.com/css?family= which will also work "
+"for chinese visitors)"
 msgstr ""
 
 #: ../admin/views/system/dialog-global-settings.php:161
@@ -1904,8 +1893,8 @@ msgstr ""
 
 #: ../admin/views/system/dialog-video.php:12 ../admin/views/templates/slide-
 #: general-settings.php:33 ../admin/views/templates/slider-main-options.php:142 ..
-#: admin/views/templates/slider-main-options.php:193 ..
-#: admin/views/templates/slider-main-options.php:277 ..
+#: admin/views/templates/slider-main-options.php:193
+#: admin/views/templates/slider-main-options.php:277
 #: admin/views/templates/slider-main-options.php:300
 msgid "Source"
 msgstr ""
@@ -1921,8 +1910,8 @@ msgstr "设置"
 
 #: ../admin/views/system/dialog-video.php:15 ../admin/views/templates/slide-stage.
 #: php:32 ../admin/views/templates/slider-main-options.php:2342 ..
-#: admin/views/templates/slider-main-options.php:2487 ..
-#: admin/views/templates/slider-main-options.php:2643 ..
+#: admin/views/templates/slider-main-options.php:2487
+#: admin/views/templates/slider-main-options.php:2643
 #: admin/views/templates/slider-main-options.php:2812
 msgid "Visibility"
 msgstr ""
@@ -2205,9 +2194,8 @@ msgstr ""
 
 #: ../admin/views/system/validation.php:41
 msgid ""
-"You can find the API key by visiting your Envato Account page, then clicking "
-"the My Settings tab. At the bottom of the page you will find your accounts "
-"API key."
+"You can find the API key by visiting your Envato Account page, then clicking the "
+"My Settings tab. At the bottom of the page you will find your accounts API key."
 msgstr ""
 
 #: ../admin/views/system/validation.php:45
@@ -2244,8 +2232,8 @@ msgstr ""
 
 #: ../admin/views/system/validation.php:68
 msgid ""
-"To register the plugin on a different website, click the “Deregister” button "
-"here first."
+"To register the plugin on a different website, click the “Deregister” button here "
+"first."
 msgstr ""
 
 #: ../admin/views/system/validation.php:79
@@ -2355,7 +2343,7 @@ msgid "YouTube Video"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:130 ..
-#: admin/views/templates/slide-general-settings.php:146 ..
+#: admin/views/templates/slide-general-settings.php:146
 #: admin/views/templates/slide-general-settings.php:881
 msgid "ID:"
 msgstr ""
@@ -2365,7 +2353,7 @@ msgid "example: T8--OggjJKQ"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:134 ..
-#: admin/views/templates/slide-general-settings.php:150 ..
+#: admin/views/templates/slide-general-settings.php:150
 #: admin/views/templates/slide-general-settings.php:180
 msgid "Cover Image:"
 msgstr ""
@@ -2383,7 +2371,7 @@ msgid "MPEG:"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:165 ..
-#: admin/views/templates/slide-general-settings.php:171 ..
+#: admin/views/templates/slide-general-settings.php:171
 #: admin/views/templates/slide-general-settings.php:177
 msgid "Change Video"
 msgstr ""
@@ -2484,15 +2472,15 @@ msgid "Scale: (in %):"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:391 ..
-#: admin/views/templates/slide-general-settings.php:399 ..
-#: admin/views/templates/slide-general-settings.php:407 ..
+#: admin/views/templates/slide-general-settings.php:399
+#: admin/views/templates/slide-general-settings.php:407
 #: admin/views/templates/slide-general-settings.php:415
 msgid "From"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:393 ..
-#: admin/views/templates/slide-general-settings.php:401 ..
-#: admin/views/templates/slide-general-settings.php:409 ..
+#: admin/views/templates/slide-general-settings.php:401
+#: admin/views/templates/slide-general-settings.php:409
 #: admin/views/templates/slide-general-settings.php:417
 msgid "To"
 msgstr ""
@@ -2529,8 +2517,8 @@ msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:486
 msgid ""
-"A new delay value for the Slide. If no delay defined per slide, the delay "
-"defined via Options (9000ms) will be used."
+"A new delay value for the Slide. If no delay defined per slide, the delay defined "
+"via Options (9000ms) will be used."
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:492
@@ -2547,8 +2535,7 @@ msgstr "未发布"
 
 #: ../admin/views/templates/slide-general-settings.php:497
 msgid ""
-"The state of the slide. The unpublished slide will be excluded from the "
-"slider."
+"The state of the slide. The unpublished slide will be excluded from the slider."
 msgstr "幻灯片的状态。未发表的幻灯片将不会使用"
 
 #: ../admin/views/templates/slide-general-settings.php:510
@@ -2649,8 +2636,7 @@ msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:864
 msgid ""
-"Define a description here to show at the navigation if enabled in Slider "
-"Settings"
+"Define a description here to show at the navigation if enabled in Slider Settings"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:873
@@ -2659,14 +2645,14 @@ msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:875
 msgid ""
-"Adds a unique class to the li of the Slide like class=\"rev_special_class\" "
-"(add only the classnames, seperated by space)"
+"Adds a unique class to the li of the Slide like class=\"rev_special_class\" (add "
+"only the classnames, seperated by space)"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:883
 msgid ""
-"Adds a unique ID to the li of the Slide like id=\"rev_special_id\" (add only "
-"the id)"
+"Adds a unique ID to the li of the Slide like id=\"rev_special_id\" (add only the "
+"id)"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:889
@@ -2713,8 +2699,8 @@ msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:923
 msgid ""
-"A link on the whole slide pic (use {{link}} or {{meta:somemegatag}} in "
-"template sliders to link to a post or some other meta)"
+"A link on the whole slide pic (use {{link}} or {{meta:somemegatag}} in template "
+"sliders to link to a post or some other meta)"
 msgstr ""
 
 #: ../admin/views/templates/slide-general-settings.php:929
@@ -2949,7 +2935,7 @@ msgstr ""
 #: ../admin/views/templates/slide-stage.php:179 ../admin/views/templates/slide-
 #: stage.php:180 ../admin/views/templates/slide-stage.php:522 ..
 #: admin/views/templates/slide-stage.php:523 ../admin/views/templates/slider-
-#: main-options.php:1984 ../admin/views/templates/slider-main-options.php:2117 ..
+#: main-options.php:1984 ../admin/views/templates/slider-main-options.php:2117
 #: admin/views/templates/slider-main-options.php:2221
 msgid "Font Color"
 msgstr ""
@@ -3011,8 +2997,7 @@ msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:243 ../admin/views/templates/slide-
 #: stage.php:511 ../admin/views/templates/slide-stage.php:1975 ..
-#: admin/views/templates/slide-stage.php:2041 ../admin/views/templates/slide-
-#: stage.php:2123
+#: admin/views/templates/slide-stage.php:2041 stage.php:2123
 msgid "Background"
 msgstr ""
 
@@ -3068,16 +3053,16 @@ msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:281 ../admin/views/templates/slider-
 #: main-options.php:2174 ../admin/views/templates/slider-main-options.php:2389 ..
-#: admin/views/templates/slider-main-options.php:2398 ..
-#: admin/views/templates/slider-main-options.php:2418 ..
-#: admin/views/templates/slider-main-options.php:2428 ..
-#: admin/views/templates/slider-main-options.php:2533 ..
-#: admin/views/templates/slider-main-options.php:2541 ..
-#: admin/views/templates/slider-main-options.php:2703 ..
-#: admin/views/templates/slider-main-options.php:2711 ..
-#: admin/views/templates/slider-main-options.php:2871 ..
-#: admin/views/templates/slider-main-options.php:2879 ..
-#: admin/views/templates/slider-main-options.php:3206 ..
+#: admin/views/templates/slider-main-options.php:2398
+#: admin/views/templates/slider-main-options.php:2418
+#: admin/views/templates/slider-main-options.php:2428
+#: admin/views/templates/slider-main-options.php:2533
+#: admin/views/templates/slider-main-options.php:2541
+#: admin/views/templates/slider-main-options.php:2703
+#: admin/views/templates/slider-main-options.php:2711
+#: admin/views/templates/slider-main-options.php:2871
+#: admin/views/templates/slider-main-options.php:2879
+#: admin/views/templates/slider-main-options.php:3206
 #: admin/views/templates/slider-main-options.php:3214
 msgid "Center"
 msgstr "居中"
@@ -3121,18 +3106,18 @@ msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:310 ../admin/views/templates/slide-
 #: stage.php:311 ../admin/views/templates/slide-stage.php:553 ..
-#: admin/views/templates/slide-stage.php:554 ../admin/views/templates/slide-
-#: stage.php:2008 ../admin/views/templates/slide-stage.php:2073 ..
+#: admin/views/templates/slide-stage.php:554 stage.php:2008
+#: ../admin/views/templates/slide-stage.php:2073
 #: admin/views/templates/slide-stage.php:2140
 msgid "Border Color"
 msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:315 ../admin/views/templates/slide-
 #: stage.php:316 ../admin/views/templates/slide-stage.php:557 ..
-#: admin/views/templates/slide-stage.php:558 ../admin/views/templates/slide-
-#: stage.php:2012 ../admin/views/templates/slide-stage.php:2013 ..
-#: admin/views/templates/slide-stage.php:2077 ../admin/views/templates/slide-
-#: stage.php:2078 ../admin/views/templates/slide-stage.php:2144 ..
+#: admin/views/templates/slide-stage.php:558 stage.php:2012
+#: ../admin/views/templates/slide-stage.php:2013
+#: admin/views/templates/slide-stage.php:2077 stage.php:2078
+#: ../admin/views/templates/slide-stage.php:2144
 #: admin/views/templates/slide-stage.php:2145
 msgid "Border Opacity"
 msgstr ""
@@ -3145,10 +3130,10 @@ msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:331 ../admin/views/templates/slide-
 #: stage.php:332 ../admin/views/templates/slide-stage.php:575 ..
-#: admin/views/templates/slide-stage.php:576 ../admin/views/templates/slide-
-#: stage.php:2017 ../admin/views/templates/slide-stage.php:2018 ..
-#: admin/views/templates/slide-stage.php:2082 ../admin/views/templates/slide-
-#: stage.php:2083 ../admin/views/templates/slide-stage.php:2149 ..
+#: admin/views/templates/slide-stage.php:576 stage.php:2017
+#: ../admin/views/templates/slide-stage.php:2018
+#: admin/views/templates/slide-stage.php:2082 stage.php:2083
+#: ../admin/views/templates/slide-stage.php:2149
 #: admin/views/templates/slide-stage.php:2150
 msgid "Border Width"
 msgstr ""
@@ -3249,8 +3234,8 @@ msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:399 ../admin/views/templates/slide-
 #: stage.php:631 ../admin/views/templates/slider-main-options.php:849 ..
-#: admin/views/templates/slider-main-options.php:880 ..
-#: admin/views/templates/slider-main-options.php:913 ..
+#: admin/views/templates/slider-main-options.php:880
+#: admin/views/templates/slider-main-options.php:913
 #: admin/views/templates/slider-main-options.php:947
 msgid "Layer"
 msgstr ""
@@ -3431,8 +3416,8 @@ msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:768
 msgid ""
-"Mask is not available due Style Transitions. Please remove any Rotation, "
-"Scale or skew effect form Idle and Hover settings"
+"Mask is not available due Style Transitions. Please remove any Rotation, Scale or "
+"skew effect form Idle and Hover settings"
 msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:1037 ../admin/views/templates/slide-
@@ -3781,16 +3766,16 @@ msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:1831 ../admin/views/templates/slide-
 #: stage.php:1832 ../admin/views/templates/slide-stage.php:1833 ..
-#: admin/views/templates/slide-stage.php:1836 ../admin/views/templates/slide-
-#: stage.php:1837 ../admin/views/templates/slide-stage.php:1838 ..
-#: admin/views/templates/slide-stage.php:1841 ../admin/views/templates/slide-
-#: stage.php:1842 ../admin/views/templates/slide-stage.php:1843 ..
-#: admin/views/templates/slide-stage.php:1846 ../admin/views/templates/slide-
-#: stage.php:1847 ../admin/views/templates/slide-stage.php:1848 ..
-#: admin/views/templates/slide-stage.php:1851 ../admin/views/templates/slide-
-#: stage.php:1852 ../admin/views/templates/slide-stage.php:1853 ..
-#: admin/views/templates/slide-stage.php:1856 ../admin/views/templates/slide-
-#: stage.php:1857 ../admin/views/templates/slide-stage.php:1858
+#: admin/views/templates/slide-stage.php:1836 stage.php:1837
+#: ../admin/views/templates/slide-stage.php:1838
+#: admin/views/templates/slide-stage.php:1841 stage.php:1842
+#: ../admin/views/templates/slide-stage.php:1843
+#: admin/views/templates/slide-stage.php:1846 stage.php:1847
+#: ../admin/views/templates/slide-stage.php:1848
+#: admin/views/templates/slide-stage.php:1851 stage.php:1852
+#: ../admin/views/templates/slide-stage.php:1853
+#: admin/views/templates/slide-stage.php:1856 stage.php:1857
+#: ../admin/views/templates/slide-stage.php:1858
 msgid "Click Here"
 msgstr ""
 
@@ -3838,11 +3823,11 @@ msgstr ""
 
 #: ../admin/views/templates/slide-stage.php:2168 ../admin/views/templates/slider-
 #: main-options.php:2367 ../admin/views/templates/slider-main-options.php:2378 ..
-#: admin/views/templates/slider-main-options.php:2512 ..
-#: admin/views/templates/slider-main-options.php:2523 ..
-#: admin/views/templates/slider-main-options.php:2669 ..
-#: admin/views/templates/slider-main-options.php:2680 ..
-#: admin/views/templates/slider-main-options.php:2837 ..
+#: admin/views/templates/slider-main-options.php:2512
+#: admin/views/templates/slider-main-options.php:2523
+#: admin/views/templates/slider-main-options.php:2669
+#: admin/views/templates/slider-main-options.php:2680
+#: admin/views/templates/slider-main-options.php:2837
 #: admin/views/templates/slider-main-options.php:2848
 msgid "Width"
 msgstr ""
@@ -3973,17 +3958,17 @@ msgstr "延迟时间"
 
 #: ../admin/views/templates/slide-stage.php:2315 ../admin/views/templates/slider-
 #: main-options.php:1620 ../admin/views/templates/slider-main-options.php:1626 ..
-#: admin/views/templates/slider-main-options.php:1645 ..
-#: admin/views/templates/slider-main-options.php:1889 ..
-#: admin/views/templates/slider-main-options.php:1895 ..
-#: admin/views/templates/slider-main-options.php:2353 ..
-#: admin/views/templates/slider-main-options.php:2358 ..
-#: admin/views/templates/slider-main-options.php:2498 ..
-#: admin/views/templates/slider-main-options.php:2503 ..
-#: admin/views/templates/slider-main-options.php:2655 ..
-#: admin/views/templates/slider-main-options.php:2660 ..
-#: admin/views/templates/slider-main-options.php:2824 ..
-#: admin/views/templates/slider-main-options.php:2828 ..
+#: admin/views/templates/slider-main-options.php:1645
+#: admin/views/templates/slider-main-options.php:1889
+#: admin/views/templates/slider-main-options.php:1895
+#: admin/views/templates/slider-main-options.php:2353
+#: admin/views/templates/slider-main-options.php:2358
+#: admin/views/templates/slider-main-options.php:2498
+#: admin/views/templates/slider-main-options.php:2503
+#: admin/views/templates/slider-main-options.php:2655
+#: admin/views/templates/slider-main-options.php:2660
+#: admin/views/templates/slider-main-options.php:2824
+#: admin/views/templates/slider-main-options.php:2828
 #: admin/views/templates/slider-main-options.php:3318
 msgid "ms"
 msgstr "毫秒(ms)"
@@ -4095,8 +4080,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:126
 msgid ""
-"Find the Instagram User ID <a target=\"_blank\" href=\"http://www.otzberg."
-"net/iguserid/\">here</a>"
+"Find the Instagram User ID <a target=\"_blank\" href=\"http://www.otzberg.net/"
+"iguserid/\">here</a>"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:133 ..
@@ -4114,8 +4099,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:139
 msgid ""
-"Read <a target=\"_blank\" href=\"http://weblizar.com/get-flickr-api-"
-"key/\">here</a> how to receive your Flickr API key"
+"Read <a target=\"_blank\" href=\"http://weblizar.com/get-flickr-api-key/\">here</"
+"a> how to receive your Flickr API key"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:144
@@ -4314,8 +4299,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:271
 msgid ""
-"Find information about the YouTube API key <a target=\"_blank\" href=\"https:"
-"//developers.google.com/youtube/v3/getting-started#before-you-start\">here</a>"
+"Find information about the YouTube API key <a target=\"_blank\" href=\"https://"
+"developers.google.com/youtube/v3/getting-started#before-you-start\">here</a>"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:274
@@ -4331,7 +4316,7 @@ msgid "Display the channel´s videos"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:279 ..
-#: admin/views/templates/slider-main-options.php:305 ..
+#: admin/views/templates/slider-main-options.php:305
 #: admin/views/templates/slider-main-options.php:323
 msgid "Channel"
 msgstr ""
@@ -4350,8 +4335,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:291
 msgid ""
-"See how to find the Youtube channel ID <a target=\"_blank\" href=\"https:"
-"//support.google.com/youtube/answer/3250431?hl=en\">here</a>"
+"See how to find the Youtube channel ID <a target=\"_blank\" href=\"https://support."
+"google.com/youtube/answer/3250431?hl=en\">here</a>"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:297
@@ -4545,8 +4530,8 @@ msgid "Max"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:857 ..
-#: admin/views/templates/slider-main-options.php:888 ..
-#: admin/views/templates/slider-main-options.php:921 ..
+#: admin/views/templates/slider-main-options.php:888
+#: admin/views/templates/slider-main-options.php:921
 #: admin/views/templates/slider-main-options.php:956
 msgid "Layer Grid Size"
 msgstr ""
@@ -4556,7 +4541,7 @@ msgid "Specify a layer grid size above"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:893 ..
-#: admin/views/templates/slider-main-options.php:926 ..
+#: admin/views/templates/slider-main-options.php:926
 #: admin/views/templates/slider-main-options.php:961
 msgid "Custom Grid Size"
 msgstr ""
@@ -4583,9 +4568,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:990
 msgid ""
-"Example: #header or .header, .footer, #somecontainer | Height of Slider will "
-"be decreased with the height of these Containers to fit perfect in the "
-"screen."
+"Example: #header or .header, .footer, #somecontainer | Height of Slider will be "
+"decreased with the height of these Containers to fit perfect in the screen."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:996
@@ -4594,8 +4578,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:998
 msgid ""
-"Decrease/Increase height of Slider. Can be used with px and %. "
-"Positive/Negative values allowed. Example: 40px or 10%"
+"Decrease/Increase height of Slider. Can be used with px and %. Positive/Negative "
+"values allowed. Example: 40px or 10%"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1004 ..
@@ -4613,8 +4597,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1017
 msgid ""
-"Adds overflow:hidden to the slider wrapping container which will hide / cut "
-"any overlapping elements. Mostly used in Carousel Sliders."
+"Adds overflow:hidden to the slider wrapping container which will hide / cut any "
+"overlapping elements. Mostly used in Carousel Sliders."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1021
@@ -4623,8 +4607,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1024
 msgid ""
-"It will keep aspect ratio and ignore max height of Layer Grid by upscaling. "
-"Layer Area will be vertical centered."
+"It will keep aspect ratio and ignore max height of Layer Grid by upscaling. Layer "
+"Area will be vertical centered."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1030
@@ -4641,8 +4625,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1276
 msgid ""
-"Go for further customization using the advanced settings on the right of "
-"this configuration page."
+"Go for further customization using the advanced settings on the right of this "
+"configuration page."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1278
@@ -4655,12 +4639,12 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1284
 msgid ""
-"Our drag and drop editor will make creating slide content an absolut breeze. "
-"This is where the magic happens!"
+"Our drag and drop editor will make creating slide content an absolut breeze. This "
+"is where the magic happens!"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1289 ..
-#: admin/views/templates/slider-main-options.php:4286 ..
+#: admin/views/templates/slider-main-options.php:4286
 #: admin/views/templates/slides.php:8
 msgid "Edit Slides"
 msgstr "编辑幻灯片"
@@ -4671,8 +4655,7 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1298
 msgid ""
-"There are several ways to add your slider to your wordpress post / page / "
-"etc."
+"There are several ways to add your slider to your wordpress post / page / etc."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1305 ..
@@ -4729,8 +4712,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1602
 msgid ""
-"Show multi language controls across the slider. Only available when wpml "
-"plugin exists."
+"Show multi language controls across the slider. Only available when wpml plugin "
+"exists."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1602
@@ -4739,8 +4722,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1610
 msgid ""
-"Call next slide when inactive browser tab is focused again. Use this for "
-"avoid dissorted layers and broken timeouts after bluring the browser tab."
+"Call next slide when inactive browser tab is focused again. Use this for avoid "
+"dissorted layers and broken timeouts after bluring the browser tab."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1610
@@ -4749,8 +4732,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1618
 msgid ""
-"The time one slide stays on the screen in Milliseconds. This is a Default "
-"Global value. Can be adjusted slide to slide also in the slide editor."
+"The time one slide stays on the screen in Milliseconds. This is a Default Global "
+"value. Can be adjusted slide to slide also in the slide editor."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1618
@@ -4837,7 +4820,7 @@ msgid "Start Offset Y:"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1830 ..
-#: admin/views/templates/slider-main-options.php:1840 ..
+#: admin/views/templates/slider-main-options.php:1840
 #: admin/views/templates/slider-main-options.php:1845
 msgid "End Offset Y:"
 msgstr ""
@@ -4852,8 +4835,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1864
 msgid ""
-"Start from a different slide instead of the first slide. I.e. good for "
-"preview / edit mode."
+"Start from a different slide instead of the first slide. I.e. good for preview / "
+"edit mode."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1864
@@ -4862,8 +4845,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1868
 msgid ""
-"If active, it will overwrite the first slide transition. Use it to get "
-"special transition for the first slide."
+"If active, it will overwrite the first slide transition. Use it to get special "
+"transition for the first slide."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1868
@@ -4936,9 +4919,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1931
 msgid ""
-"If only one Slide is in the Slider, you can choose wether the Slide should "
-"loop or if it should stop. If only one Slide exist, slide will be duplicated "
-"!"
+"If only one Slide is in the Slider, you can choose wether the Slide should loop or "
+"if it should stop. If only one Slide exist, slide will be duplicated !"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1931
@@ -4974,7 +4956,7 @@ msgid "Area out of ViewPort:"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1951 ..
-#: admin/views/templates/slider-main-options.php:3111 ..
+#: admin/views/templates/slider-main-options.php:3111
 #: admin/views/templates/slider-main-options.php:3195
 msgid "%"
 msgstr ""
@@ -5004,44 +4986,44 @@ msgid "Progress Bar Heigth"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1973 ..
-#: admin/views/templates/slider-main-options.php:1979 ..
-#: admin/views/templates/slider-main-options.php:2074 ..
-#: admin/views/templates/slider-main-options.php:2080 ..
-#: admin/views/templates/slider-main-options.php:2085 ..
-#: admin/views/templates/slider-main-options.php:2182 ..
-#: admin/views/templates/slider-main-options.php:2188 ..
-#: admin/views/templates/slider-main-options.php:2194 ..
-#: admin/views/templates/slider-main-options.php:2199 ..
-#: admin/views/templates/slider-main-options.php:2369 ..
-#: admin/views/templates/slider-main-options.php:2380 ..
-#: admin/views/templates/slider-main-options.php:2405 ..
-#: admin/views/templates/slider-main-options.php:2411 ..
-#: admin/views/templates/slider-main-options.php:2437 ..
-#: admin/views/templates/slider-main-options.php:2443 ..
-#: admin/views/templates/slider-main-options.php:2475 ..
-#: admin/views/templates/slider-main-options.php:2514 ..
-#: admin/views/templates/slider-main-options.php:2525 ..
-#: admin/views/templates/slider-main-options.php:2548 ..
-#: admin/views/templates/slider-main-options.php:2554 ..
-#: admin/views/templates/slider-main-options.php:2614 ..
-#: admin/views/templates/slider-main-options.php:2628 ..
-#: admin/views/templates/slider-main-options.php:2633 ..
-#: admin/views/templates/slider-main-options.php:2638 ..
-#: admin/views/templates/slider-main-options.php:2671 ..
-#: admin/views/templates/slider-main-options.php:2682 ..
-#: admin/views/templates/slider-main-options.php:2718 ..
-#: admin/views/templates/slider-main-options.php:2724 ..
-#: admin/views/templates/slider-main-options.php:2785 ..
-#: admin/views/templates/slider-main-options.php:2799 ..
-#: admin/views/templates/slider-main-options.php:2804 ..
-#: admin/views/templates/slider-main-options.php:2809 ..
-#: admin/views/templates/slider-main-options.php:2839 ..
-#: admin/views/templates/slider-main-options.php:2850 ..
-#: admin/views/templates/slider-main-options.php:2886 ..
-#: admin/views/templates/slider-main-options.php:2892 ..
-#: admin/views/templates/slider-main-options.php:3101 ..
-#: admin/views/templates/slider-main-options.php:3110 ..
-#: admin/views/templates/slider-main-options.php:3117 ..
+#: admin/views/templates/slider-main-options.php:1979
+#: admin/views/templates/slider-main-options.php:2074
+#: admin/views/templates/slider-main-options.php:2080
+#: admin/views/templates/slider-main-options.php:2085
+#: admin/views/templates/slider-main-options.php:2182
+#: admin/views/templates/slider-main-options.php:2188
+#: admin/views/templates/slider-main-options.php:2194
+#: admin/views/templates/slider-main-options.php:2199
+#: admin/views/templates/slider-main-options.php:2369
+#: admin/views/templates/slider-main-options.php:2380
+#: admin/views/templates/slider-main-options.php:2405
+#: admin/views/templates/slider-main-options.php:2411
+#: admin/views/templates/slider-main-options.php:2437
+#: admin/views/templates/slider-main-options.php:2443
+#: admin/views/templates/slider-main-options.php:2475
+#: admin/views/templates/slider-main-options.php:2514
+#: admin/views/templates/slider-main-options.php:2525
+#: admin/views/templates/slider-main-options.php:2548
+#: admin/views/templates/slider-main-options.php:2554
+#: admin/views/templates/slider-main-options.php:2614
+#: admin/views/templates/slider-main-options.php:2628
+#: admin/views/templates/slider-main-options.php:2633
+#: admin/views/templates/slider-main-options.php:2638
+#: admin/views/templates/slider-main-options.php:2671
+#: admin/views/templates/slider-main-options.php:2682
+#: admin/views/templates/slider-main-options.php:2718
+#: admin/views/templates/slider-main-options.php:2724
+#: admin/views/templates/slider-main-options.php:2785
+#: admin/views/templates/slider-main-options.php:2799
+#: admin/views/templates/slider-main-options.php:2804
+#: admin/views/templates/slider-main-options.php:2809
+#: admin/views/templates/slider-main-options.php:2839
+#: admin/views/templates/slider-main-options.php:2850
+#: admin/views/templates/slider-main-options.php:2886
+#: admin/views/templates/slider-main-options.php:2892
+#: admin/views/templates/slider-main-options.php:3101
+#: admin/views/templates/slider-main-options.php:3110
+#: admin/views/templates/slider-main-options.php:3117
 #: admin/views/templates/slider-main-options.php:3120
 msgid "px"
 msgstr "像素(px)"
@@ -5049,8 +5031,8 @@ msgstr "像素(px)"
 #: ../admin/views/templates/slider-main-options.php:1977
 #, php-format
 msgid ""
-"The opacity of the progress bar <br>(0 == Transparent, 100 = Solid color, 50 "
-"= 50% opacity etc...)"
+"The opacity of the progress bar <br>(0 == Transparent, 100 = Solid color, 50 = "
+"50% opacity etc...)"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1977
@@ -5078,8 +5060,8 @@ msgid "Spinner"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2056 ..
-#: admin/views/templates/slider-main-options.php:2529 ..
-#: admin/views/templates/slider-main-options.php:2686 ..
+#: admin/views/templates/slider-main-options.php:2529
+#: admin/views/templates/slider-main-options.php:2686
 #: admin/views/templates/slider-main-options.php:2854
 msgid "Position"
 msgstr "位置"
@@ -5106,8 +5088,7 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2072
 msgid ""
-"Hide the slider under the defined slider width. Value 0 will disable the "
-"function."
+"Hide the slider under the defined slider width. Value 0 will disable the function."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2072 ..
@@ -5117,8 +5098,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2078
 msgid ""
-"Hide the selected layers (set layers hide under in slide editor) under the "
-"defined slider width. Value 0 will disable the function."
+"Hide the selected layers (set layers hide under in slide editor) under the defined "
+"slider width. Value 0 will disable the function."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2078
@@ -5127,8 +5108,7 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2083
 msgid ""
-"Hide all layers under the defined slider width. Value 0 will disable the "
-"function."
+"Hide all layers under the defined slider width. Value 0 will disable the function."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2083
@@ -5171,8 +5151,7 @@ msgstr "背景颜色"
 
 #: ../admin/views/templates/slider-main-options.php:2120
 msgid ""
-"Padding around the slider. Together with background color shows as slider "
-"border."
+"Padding around the slider. Together with background color shows as slider border."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2120
@@ -5201,8 +5180,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2133
 msgid ""
-"General background image size. Cover - always fill the container, cuts "
-"overlays. Contain- always fits image into slider."
+"General background image size. Cover - always fill the container, cuts overlays. "
+"Contain- always fits image into slider."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2135
@@ -5239,8 +5218,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2150
 msgid ""
-"General background image position.  i.e. center center to always center "
-"vertical and horizontal the image in the slider background."
+"General background image position.  i.e. center center to always center vertical "
+"and horizontal the image in the slider background."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2152
@@ -5285,11 +5264,11 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2171
 msgid ""
-"The position of the slider within the parrent container. (float:left or "
-"float:right or with margin:0px auto;). We recomment do use always CENTER, "
-"since the slider will auto fill and grow with the wrapping container. Set "
-"any border,padding, floating etc. to the wrapping container where the slider "
-"embeded instead of using left/right here !"
+"The position of the slider within the parrent container. (float:left or float:"
+"right or with margin:0px auto;). We recomment do use always CENTER, since the "
+"slider will auto fill and grow with the wrapping container. Set any border,"
+"padding, floating etc. to the wrapping container where the slider embeded instead "
+"of using left/right here !"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2171
@@ -5383,34 +5362,34 @@ msgid "Arrows Style"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2327 ..
-#: admin/views/templates/slider-main-options.php:2458 ..
-#: admin/views/templates/slider-main-options.php:2592 ..
+#: admin/views/templates/slider-main-options.php:2458
+#: admin/views/templates/slider-main-options.php:2592
 #: admin/views/templates/slider-main-options.php:2764
 msgid "No Style"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2343
 msgid ""
-"Enable to make arrows always visible. Disable to hide arrows after the "
-"defined time."
+"Enable to make arrows always visible. Disable to hide arrows after the defined "
+"time."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2343 ..
-#: admin/views/templates/slider-main-options.php:2645 ..
+#: admin/views/templates/slider-main-options.php:2645
 #: admin/views/templates/slider-main-options.php:2814
 msgid "Always Show "
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2345 ..
-#: admin/views/templates/slider-main-options.php:2491 ..
-#: admin/views/templates/slider-main-options.php:2647 ..
+#: admin/views/templates/slider-main-options.php:2491
+#: admin/views/templates/slider-main-options.php:2647
 #: admin/views/templates/slider-main-options.php:2816
 msgid "Yes"
 msgstr "是"
 
 #: ../admin/views/templates/slider-main-options.php:2346 ..
-#: admin/views/templates/slider-main-options.php:2492 ..
-#: admin/views/templates/slider-main-options.php:2648 ..
+#: admin/views/templates/slider-main-options.php:2492
+#: admin/views/templates/slider-main-options.php:2648
 #: admin/views/templates/slider-main-options.php:2817
 msgid "No"
 msgstr "否"
@@ -5420,7 +5399,7 @@ msgid "Time after the Arrows will be hidden(Default: 200 ms)"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2351 ..
-#: admin/views/templates/slider-main-options.php:2496 ..
+#: admin/views/templates/slider-main-options.php:2496
 #: admin/views/templates/slider-main-options.php:2653
 msgid "Hide After"
 msgstr ""
@@ -5430,7 +5409,7 @@ msgid "Time after the Arrows will be hidden on Mobile(Default: 1200 ms)"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2356 ..
-#: admin/views/templates/slider-main-options.php:2501 ..
+#: admin/views/templates/slider-main-options.php:2501
 #: admin/views/templates/slider-main-options.php:2658
 msgid "Hide After on Mobile"
 msgstr ""
@@ -5468,9 +5447,9 @@ msgid "Horizontal position of the left arrow."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2386 ..
-#: admin/views/templates/slider-main-options.php:2415 ..
-#: admin/views/templates/slider-main-options.php:2530 ..
-#: admin/views/templates/slider-main-options.php:2700 ..
+#: admin/views/templates/slider-main-options.php:2415
+#: admin/views/templates/slider-main-options.php:2530
+#: admin/views/templates/slider-main-options.php:2700
 #: admin/views/templates/slider-main-options.php:2868
 msgid "Horizontal Align"
 msgstr ""
@@ -5480,9 +5459,9 @@ msgid "Vertical position of the left arrow."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2395 ..
-#: admin/views/templates/slider-main-options.php:2425 ..
-#: admin/views/templates/slider-main-options.php:2538 ..
-#: admin/views/templates/slider-main-options.php:2708 ..
+#: admin/views/templates/slider-main-options.php:2425
+#: admin/views/templates/slider-main-options.php:2538
+#: admin/views/templates/slider-main-options.php:2708
 #: admin/views/templates/slider-main-options.php:2876
 msgid "Vertical Align"
 msgstr ""
@@ -5492,9 +5471,9 @@ msgid "Offset from current horizontal position of of left arrow."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2403 ..
-#: admin/views/templates/slider-main-options.php:2435 ..
-#: admin/views/templates/slider-main-options.php:2546 ..
-#: admin/views/templates/slider-main-options.php:2716 ..
+#: admin/views/templates/slider-main-options.php:2435
+#: admin/views/templates/slider-main-options.php:2546
+#: admin/views/templates/slider-main-options.php:2716
 #: admin/views/templates/slider-main-options.php:2884
 msgid "Horizontal Offset"
 msgstr ""
@@ -5504,9 +5483,9 @@ msgid "Offset from current vertical position of of left arrow."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2409 ..
-#: admin/views/templates/slider-main-options.php:2441 ..
-#: admin/views/templates/slider-main-options.php:2552 ..
-#: admin/views/templates/slider-main-options.php:2722 ..
+#: admin/views/templates/slider-main-options.php:2441
+#: admin/views/templates/slider-main-options.php:2552
+#: admin/views/templates/slider-main-options.php:2722
 #: admin/views/templates/slider-main-options.php:2890
 msgid "Vertical Offset"
 msgstr ""
@@ -5552,7 +5531,7 @@ msgid "Space between the bullets."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2473 ..
-#: admin/views/templates/slider-main-options.php:2612 ..
+#: admin/views/templates/slider-main-options.php:2612
 #: admin/views/templates/slider-main-options.php:2783
 msgid "Space"
 msgstr ""
@@ -5562,31 +5541,31 @@ msgid "Direction of the Bullets. Vertical or Horizontal."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2479 ..
-#: admin/views/templates/slider-main-options.php:2617 ..
+#: admin/views/templates/slider-main-options.php:2617
 #: admin/views/templates/slider-main-options.php:2788
 msgid "Direction"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2481 ..
-#: admin/views/templates/slider-main-options.php:2619 ..
-#: admin/views/templates/slider-main-options.php:2790 ..
-#: admin/views/templates/slider-main-options.php:2919 ..
+#: admin/views/templates/slider-main-options.php:2619
+#: admin/views/templates/slider-main-options.php:2790
+#: admin/views/templates/slider-main-options.php:2919
 #: admin/views/templates/slider-main-options.php:2934
 msgid "Horizontal"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2482 ..
-#: admin/views/templates/slider-main-options.php:2620 ..
-#: admin/views/templates/slider-main-options.php:2791 ..
-#: admin/views/templates/slider-main-options.php:2920 ..
+#: admin/views/templates/slider-main-options.php:2620
+#: admin/views/templates/slider-main-options.php:2791
+#: admin/views/templates/slider-main-options.php:2920
 #: admin/views/templates/slider-main-options.php:2935
 msgid "Vertical"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2489
 msgid ""
-"Enable to make bullets always visible. Disable to hide bullets after the "
-"defined time."
+"Enable to make bullets always visible. Disable to hide bullets after the defined "
+"time."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2489
@@ -5606,7 +5585,7 @@ msgid "Force Hide Navigation Bullets under width"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2507 ..
-#: admin/views/templates/slider-main-options.php:2664 ..
+#: admin/views/templates/slider-main-options.php:2664
 #: admin/views/templates/slider-main-options.php:2832
 msgid "Hide under Width"
 msgstr ""
@@ -5621,7 +5600,7 @@ msgid "Force Hide Navigation Bullets over width"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2518 ..
-#: admin/views/templates/slider-main-options.php:2675 ..
+#: admin/views/templates/slider-main-options.php:2675
 #: admin/views/templates/slider-main-options.php:2843
 msgid "Hide over Width"
 msgstr ""
@@ -5682,7 +5661,7 @@ msgid "Wrapper color"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2580 ..
-#: admin/views/templates/slider-main-options.php:2752 ..
+#: admin/views/templates/slider-main-options.php:2752
 #: admin/views/templates/slider-main-options.php:2753
 msgid "Wrapper Color"
 msgstr ""
@@ -5744,8 +5723,8 @@ msgstr "缩略图高度"
 
 #: ../admin/views/templates/slider-main-options.php:2636
 msgid ""
-"The minimum width of the auto resized thumbs. Between Max and Min width the "
-"sizes are auto calculated)."
+"The minimum width of the auto resized thumbs. Between Max and Min width the sizes "
+"are auto calculated)."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2636
@@ -5754,8 +5733,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2645
 msgid ""
-"Enable to make thumbnails always visible. Disable to hide thumbnails after "
-"the defined time."
+"Enable to make thumbnails always visible. Disable to hide thumbnails after the "
+"defined time."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2653
@@ -5894,8 +5873,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2807
 msgid ""
-"The minimum width of the auto resized Tabs. Between Max and Min width the "
-"sizes are auto calculated)."
+"The minimum width of the auto resized Tabs. Between Max and Min width the sizes "
+"are auto calculated)."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2807
@@ -5904,8 +5883,7 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2814
 msgid ""
-"Enable to make tabs always visible. Disable to hide tabs after the defined "
-"time."
+"Enable to make tabs always visible. Disable to hide tabs after the defined time."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2822
@@ -5936,8 +5914,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2856
 msgid ""
-"Put the tabs inside or outside of the slider container. Outside added tabs "
-"will decrease the size of the slider."
+"Put the tabs inside or outside of the slider container. Outside added tabs will "
+"decrease the size of the slider."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2868
@@ -6006,8 +5984,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2932
 msgid ""
-"Keyboard Direction to swap slides (horizontal - left/right arrow, vertical - "
-"up/down arrow)?"
+"Keyboard Direction to swap slides (horizontal - left/right arrow, vertical - up/"
+"down arrow)?"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:2932
@@ -6040,8 +6018,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3094
 msgid ""
-"Infinity Carousel Scroll. No Endpoints exists at first and last slide if "
-"valuse is set to ON."
+"Infinity Carousel Scroll. No Endpoints exists at first and last slide if valuse is "
+"set to ON."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3094
@@ -6106,8 +6084,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3138
 msgid ""
-"Stretch carousel element width to the wrapping container width.  Using this "
-"you can see only 1 item in same time."
+"Stretch carousel element width to the wrapping container width.  Using this you "
+"can see only 1 item in same time."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3138
@@ -6116,8 +6094,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3148
 msgid ""
-"All elements out of focus will get some Opacity value based on the Distance "
-"to the current focused element, or only the coming/leaving elements."
+"All elements out of focus will get some Opacity value based on the Distance to the "
+"current focused element, or only the coming/leaving elements."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3148
@@ -6146,8 +6124,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3173
 msgid ""
-"The maximum rotation of the Side elements. Rotation will depend on the "
-"element distance to the current focused element. 0 will turn off the Rotation"
+"The maximum rotation of the Side elements. Rotation will depend on the element "
+"distance to the current focused element. 0 will turn off the Rotation"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3173
@@ -6172,9 +6150,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3193
 msgid ""
-"The maximum scale down of the Side elements. Scale will depend on the "
-"element distance to the current focused element. Min value is 0 and max "
-"value is 100."
+"The maximum scale down of the Side elements. Scale will depend on the element "
+"distance to the current focused element. Min value is 0 and max value is 100."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3193
@@ -6199,8 +6176,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3289
 msgid ""
-"Enabling this, will give you new options in the slides to create a unique "
-"parallax effect"
+"Enabling this, will give you new options in the slides to create a unique parallax "
+"effect"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3289
@@ -6268,18 +6245,18 @@ msgid "Parallax Levels"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3324 ..
-#: admin/views/templates/slider-main-options.php:3328 ..
-#: admin/views/templates/slider-main-options.php:3332 ..
-#: admin/views/templates/slider-main-options.php:3336 ..
-#: admin/views/templates/slider-main-options.php:3340 ..
-#: admin/views/templates/slider-main-options.php:3344 ..
-#: admin/views/templates/slider-main-options.php:3348 ..
-#: admin/views/templates/slider-main-options.php:3352 ..
-#: admin/views/templates/slider-main-options.php:3356 ..
+#: admin/views/templates/slider-main-options.php:3328
+#: admin/views/templates/slider-main-options.php:3332
+#: admin/views/templates/slider-main-options.php:3336
+#: admin/views/templates/slider-main-options.php:3340
+#: admin/views/templates/slider-main-options.php:3344
+#: admin/views/templates/slider-main-options.php:3348
+#: admin/views/templates/slider-main-options.php:3352
+#: admin/views/templates/slider-main-options.php:3356
 #: admin/views/templates/slider-main-options.php:3360
 msgid ""
-"Defines a level that can be used in Slide Editor for this Slider. Smaller "
-"value gives a smaller offset effect, higher value will increase the effect."
+"Defines a level that can be used in Slide Editor for this Slider. Smaller value "
+"gives a smaller offset effect, higher value will increase the effect."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3324
@@ -6328,14 +6305,13 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3406
 msgid ""
-"How to load/preload the images. <br><br><strong>All</strong> - Load all "
-"image element in a sequence at the initialisation. This will boost up the "
-"loading of your page, and will preload all images to have a smooth breakless "
-"run already in the first loop.  <br><br><strong>Smart</strong> - It will "
-"allow to load the page as quickest, and load only the current and neighbour "
-"slide elements.  Will load on demand the next element if not loaded yet.   "
-"<br><br><strong>Single</strong> - It will load only the slide which should "
-"be shown, always on demand."
+"How to load/preload the images. <br><br><strong>All</strong> - Load all image "
+"element in a sequence at the initialisation. This will boost up the loading of "
+"your page, and will preload all images to have a smooth breakless run already in "
+"the first loop.  <br><br><strong>Smart</strong> - It will allow to load the page "
+"as quickest, and load only the current and neighbour slide elements.  Will load on "
+"demand the next element if not loaded yet.   <br><br><strong>Single</strong> - It "
+"will load only the slide which should be shown, always on demand."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3406
@@ -6356,8 +6332,7 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3418
 msgid ""
-"Define SEO Optimization for the Images in the Slider, useful if Lazy Load is "
-"on."
+"Define SEO Optimization for the Images in the Slider, useful if Lazy Load is on."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3418
@@ -6422,8 +6397,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3499
 msgid ""
-"Turns on / off jquery noconflict mode. Try to enable this option if "
-"javascript conflicts exist on the page."
+"Turns on / off jquery noconflict mode. Try to enable this option if javascript "
+"conflicts exist on the page."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3499
@@ -6442,8 +6417,8 @@ msgstr "把JS包含在body块"
 
 #: ../admin/views/templates/slider-main-options.php:3512
 msgid ""
-"Activate a protection against wordpress output filters that adds html blocks "
-"to the shortcode output like P and BR."
+"Activate a protection against wordpress output filters that adds html blocks to "
+"the shortcode output like P and BR."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3512
@@ -6494,9 +6469,9 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3577
 msgid ""
-"Note! Custom styles will be updated if they exist. Importing slider, will "
-"delete all the current slider settings and slides and replacing it with the "
-"imported content."
+"Note! Custom styles will be updated if they exist. Importing slider, will delete "
+"all the current slider settings and slides and replacing it with the imported "
+"content."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3583
@@ -6509,8 +6484,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3589
 msgid ""
-"Replace all layer and backgorund image url's. example - replace from: http:"
-"//localhost"
+"Replace all layer and backgorund image url's. example - replace from: http://"
+"localhost"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3589
@@ -6519,8 +6494,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3593
 msgid ""
-"Replace all layer and backgorund image url's. example - replace to: http:"
-"//yoursite.com"
+"Replace all layer and backgorund image url's. example - replace to: http://"
+"yoursite.com"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3593
@@ -6614,9 +6589,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3669
 msgid ""
-"Recalculate all positions, sizing etc in the slider.  This should be called "
-"i.e. if Slider was invisible and becomes visible without any window resize "
-"event."
+"Recalculate all positions, sizing etc in the slider.  This should be called i.e. "
+"if Slider was invisible and becomes visible without any window resize event."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3669
@@ -6625,8 +6599,8 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3673
 msgid ""
-"Unbind all listeners, remove current animations and delete containers. Ready "
-"for Garbage collection."
+"Unbind all listeners, remove current animations and delete containers. Ready for "
+"Garbage collection."
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3673
@@ -6736,9 +6710,9 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3776
 msgid ""
-"Copy the Google Font Family from <a href=\"http://www.google.com/fonts\" "
-"target=\"_blank\">http://www.google.com/fonts</a> like: <strong>Open+Sans:400,"
-"700,600</strong>"
+"Copy the Google Font Family from <a href=\"http://www.google.com/fonts\" target="
+"\"_blank\">http://www.google.com/fonts</a> like: <strong>Open+Sans:400,700,600</"
+"strong>"
 msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3831
@@ -6858,8 +6832,8 @@ msgstr ""
 #: ../admin/views/templates/template-selector.php:237 ..
 #: admin/views/templates/template-slider-selector.php:166
 msgid ""
-"Please select the corresponding zip file from the download packages import "
-"folder called"
+"Please select the corresponding zip file from the download packages import folder "
+"called"
 msgstr ""
 
 #: ../admin/views/templates/template-slider-selector.php:159 ..
@@ -6977,19 +6951,19 @@ msgid "Overall Slider Performance"
 msgstr ""
 
 #: ../includes/operations.class.php:2006 ../includes/operations.class.php:2096 ..
-#: includes/operations.class.php:2183 ../includes/operations.class.php:2260 ..
+#: includes/operations.class.php:2183 ../includes/operations.class.php:2260
 #: includes/operations.class.php:2386 ../includes/operations.class.php:2467
 msgid "Slow"
 msgstr ""
 
 #: ../includes/operations.class.php:2007 ../includes/operations.class.php:2097 ..
-#: includes/operations.class.php:2184 ../includes/operations.class.php:2261 ..
+#: includes/operations.class.php:2184 ../includes/operations.class.php:2261
 #: includes/operations.class.php:2387 ../includes/operations.class.php:2468
 msgid "Ok"
 msgstr ""
 
 #: ../includes/operations.class.php:2008 ../includes/operations.class.php:2098 ..
-#: includes/operations.class.php:2185 ../includes/operations.class.php:2262 ..
+#: includes/operations.class.php:2185 ../includes/operations.class.php:2262
 #: includes/operations.class.php:2388 ../includes/operations.class.php:2469
 msgid "Fast"
 msgstr ""
@@ -7030,16 +7004,16 @@ msgid "Images Loaded:"
 msgstr ""
 
 #: ../includes/operations.class.php:2110 ../includes/operations.class.php:2202 ..
-#: includes/operations.class.php:2273 ../includes/operations.class.php:2399 ..
+#: includes/operations.class.php:2273 ../includes/operations.class.php:2399
 #: includes/operations.class.php:2480
 msgid "Hide Details"
 msgstr ""
 
-#: ../includes/operations.class.php:2110 ../includes/operations.class.php:2110 ..
-#: includes/operations.class.php:2202 ../includes/operations.class.php:2202 ..
-#: includes/operations.class.php:2273 ../includes/operations.class.php:2273 ..
-#: includes/operations.class.php:2399 ../includes/operations.class.php:2399 ..
-#: includes/operations.class.php:2480 ../includes/operations.class.php:2480
+#: ../includes/operations.class.php:2110 .. includes/operations.class.php:2202
+#: ../includes/operations.class.php:2202 includes/operations.class.php:2273
+#: ../includes/operations.class.php:2273 includes/operations.class.php:2399
+#: ../includes/operations.class.php:2399 includes/operations.class.php:2480
+#: ../includes/operations.class.php:2480
 msgid "Show Details"
 msgstr ""
 
@@ -7097,8 +7071,8 @@ msgstr ""
 
 #: ../includes/output.class.php:273
 msgid ""
-"No slides found, please add at least one Slide Template to the choosen "
-"Template Slider."
+"No slides found, please add at least one Slide Template to the choosen Template "
+"Slider."
 msgstr ""
 
 #: ../includes/output.class.php:275
@@ -7127,8 +7101,8 @@ msgstr ""
 
 #: ../includes/slider.class.php:905
 msgid ""
-"no custom animations found, if slider uses custom animations, the provided "
-"export may be broken..."
+"no custom animations found, if slider uses custom animations, the provided export "
+"may be broken..."
 msgstr ""
 
 #: ../includes/slider.class.php:963
@@ -7137,8 +7111,8 @@ msgstr ""
 
 #: ../includes/slider.class.php:965
 msgid ""
-"no dynamic styles found, if slider uses dynamic styles, the provided export "
-"may be broken..."
+"no dynamic styles found, if slider uses dynamic styles, the provided export may be "
+"broken..."
 msgstr ""
 
 #: ../includes/slider.class.php:1050 ../includes/slider.class.php:1083 ..
@@ -7190,8 +7164,8 @@ msgstr ""
 msgid "Original"
 msgstr ""
 
-#: ../includes/framework/base.class.php:220 ../includes/framework/base.class.php:
-#: 267 ../includes/framework/base.class.php:282
+#: ../includes/framework/base.class.php:220 ../includes/framework/base.class.php: 267
+#: ../includes/framework/base.class.php:282
 msgid "Large"
 msgstr ""
 
@@ -7199,9 +7173,8 @@ msgstr ""
 msgid "Large Square"
 msgstr ""
 
-#: ../includes/framework/base.class.php:222 ../includes/framework/base.class.php:
-#: 257 ../includes/framework/base.class.php:266 ../includes/framework/base.class.
-#: php:281
+#: ../includes/framework/base.class.php:222 ../includes/framework/base.class.php: 257
+#: ../includes/framework/base.class.php:266 ../includes/framework/base.class. php:281
 msgid "Medium"
 msgstr ""
 
@@ -7213,8 +7186,7 @@ msgstr ""
 msgid "Medium 640"
 msgstr ""
 
-#: ../includes/framework/base.class.php:225 ../includes/framework/base.class.php:
-#: 265
+#: ../includes/framework/base.class.php:225 ../includes/framework/base.class.php: 265
 msgid "Small"
 msgstr ""
 
@@ -7222,8 +7194,8 @@ msgstr ""
 msgid "Small 320"
 msgstr ""
 
-#: ../includes/framework/base.class.php:227 ../includes/framework/base.class.php:
-#: 234 ../includes/framework/base.class.php:280
+#: ../includes/framework/base.class.php:227 ../includes/framework/base.class.php: 234
+#: ../includes/framework/base.class.php:280
 msgid "Thumbnail"
 msgstr "缩略图"
 
@@ -7231,8 +7203,7 @@ msgstr "缩略图"
 msgid "Square"
 msgstr ""
 
-#: ../includes/framework/base.class.php:233 ../includes/framework/base.class.php:
-#: 240
+#: ../includes/framework/base.class.php:233 ../includes/framework/base.class.php: 240
 msgid "Standard Resolution"
 msgstr ""
 

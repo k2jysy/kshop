@@ -45,6 +45,7 @@
     .section .section-title h2{
         display: table-cell;
         vertical-align: middle;
+        line-height: 27px;
     }
 
     .section-title{

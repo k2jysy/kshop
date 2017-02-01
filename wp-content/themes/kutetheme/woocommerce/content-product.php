@@ -45,13 +45,13 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 
 // Bootstrap Column
 $bootstrapColumn = round( 12 / $woocommerce_loop['columns'] );
-$classes[] = 'col-xs-12 col-lg-' . $bootstrapColumn;
+$classes[] = 'col-xs-12 col-md-' . $bootstrapColumn;
 
 $kt_woo_shop_sidebar_are = kt_option('kt_woo_shop_sidebar_are','left');
 if( $kt_woo_shop_sidebar_are =="full"){
-    $classes[] = 'col-sm-4 col-md-4';
+    $classes[] = 'col-sm-4';
 }else{
-    $classes[] = 'col-sm-6 col-md-4';
+    $classes[] = 'col-sm-6';
 }
 
 ?>
@@ -92,13 +92,13 @@ if( $kt_woo_shop_sidebar_are =="full"){
         </div>
         <div class="right-block">
             <?php
-            $product_name = get_the_title();
-            if( strlen( $product_name ) > 50 ) {
-                $product_name = substr( $product_name, 0, 50);
-                $product_name = trim( $product_name ) ."...";
-            }
+            // $product_name = get_the_title();
+            // if( strlen( $product_name ) > 25 ) {
+            //     $product_name = substr( $product_name, 0, 25);
+            //     $product_name = trim( $product_name ) ."...";
+            // }
             ?>
-            <h5 class="product-name"><a title="<?php echo esc_attr( get_the_title() );?>" href="<?php the_permalink(); ?>"><?php echo esc_html( $product_name ) ; ?></a></h5>
+            <h5 class="product-name"><a title="<?php echo esc_attr( get_the_title() );?>" href="<?php the_permalink(); ?>"><?php the_title( ); ?></a></h5>
             <div class="content_price">
                 <?php
         			/**
@@ -110,7 +110,7 @@ if( $kt_woo_shop_sidebar_are =="full"){
         		?>
             </div>
             <div class="info-orther">
-                <p class="availability"><?php esc_html_e( 'Availability', 'kutetheme' );?>: <span class="instock"><?php esc_html_e( 'In stock', 'kutetheme' );?></span><span class="outofstock"><?php esc_html_e( 'Out of stock', 'kutetheme' );?></span></p>
+                <p class="availability"><?php _e( 'Availability', 'kutetheme' );?>: <span class="instock"><?php _e( 'In stock', 'kutetheme' );?></span><span class="outofstock"><?php _e( 'Out of stock', 'kutetheme' );?></span></p>
                 <div class="product-desc"><?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?></div>
             </div>
         </div>

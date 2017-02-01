@@ -18,6 +18,15 @@ vc_map( array(
             "admin_label" => true,
         ),
         array(
+            "type"        => "dropdown",
+            "heading"     => __("Product Size", 'kutetheme'),
+            "param_name"  => "size",
+            "value"       => $product_thumbnail,
+            'std'         => 'kt_shop_catalog_214',
+            "description" => __( "Product size", 'kutetheme' ),
+            "admin_label" => true,
+        ),
+        array(
             "type"        => "textfield",
             "heading"     => __( "Number Post", 'kutetheme' ),
             "param_name"  => "per_page",
@@ -46,7 +55,7 @@ vc_map( array(
                 __( 'Tab 4', 'kutetheme' ) => 'tab-4',
                 __( 'Tab 5', 'kutetheme' ) => 'tab-5',
                 __( 'Tab 6', 'kutetheme' ) => 'tab-6',
-                /*__( 'Tab 7', 'kutetheme' ) => 'tab-7',*/
+                __( 'Tab 7', 'kutetheme' ) => 'tab-7',
         	),
         ),
         
@@ -56,9 +65,6 @@ vc_map( array(
             "param_name"  => "category",
             "admin_label" => true,
         ),
-        
-        
-        // Carousel
         array(
             'type'  => 'dropdown',
             'value' => array(
@@ -116,7 +122,7 @@ vc_map( array(
             'type'        => 'attach_images',
             'heading'     => __( 'Banner left', 'kutetheme' ),
             'param_name'  => 'banner_left',
-            "dependency"  => array("element" => "tabs_type","value" => array('tab-1', 'tab-2', 'tab-3', 'tab-4', 'tab-5', 'tab-6')),
+            "dependency"  => array("element" => "tabs_type","value" => array('tab-1', 'tab-2', 'tab-3', 'tab-4', 'tab-5', 'tab-6', 'tab-7')),
             'description' => __( 'Setup image on  left of the tab', 'kutetheme' )
     	),
         
@@ -352,14 +358,18 @@ vc_map( array(
     )
 ) );
 class WPBakeryShortCode_Categories_Tab extends WPBakeryShortCodesContainer {
+    public $product_size = 'kt_shop_catalog_214';
+    
     protected function content($atts, $content = null) {
         $atts = function_exists( 'vc_map_get_attributes' ) ? vc_map_get_attributes( 'categories_tab', $atts ) : $atts;
         extract( shortcode_atts( array(
             'title'          => 'Tabs Name',
+            'size'           => 'kt_shop_catalog_214',
             'tabs_type'      => 'tab-1',
             'per_page'       => 10,
             'column'         => 4,
             'category'       => 0,
+            'term_link'     => '',
             'main_color'     => '#ff3366',
             'icon'           => '',
             'bg_cate'        => '',
@@ -388,7 +398,7 @@ class WPBakeryShortCode_Categories_Tab extends WPBakeryShortCodesContainer {
         
          global $woocommerce_loop;
         $is_phone = false;
-        
+        $this->product_size = $size;
         if( function_exists( 'kt_is_phone' ) && kt_is_phone() ){
             $is_phone = true;
         }
@@ -412,10 +422,6 @@ class WPBakeryShortCode_Categories_Tab extends WPBakeryShortCodesContainer {
         
         $tabs = kt_get_all_attributes( 'tab_section', $content );
         
-        $id = uniqid($category);
-        
-        $term = get_term( $category, 'product_cat' );
-        
         if( isset( $bg_cate ) && $bg_cate ): 
             $att_bg = wp_get_attachment_image_src( $bg_cate , 'full' );  
             $att_bg_url =  is_array($att_bg) ? esc_url($att_bg[0]) : ""; 
@@ -423,21 +429,27 @@ class WPBakeryShortCode_Categories_Tab extends WPBakeryShortCodesContainer {
                 $style = "style='background: #fff url(".$att_bg_url.") no-repeat left bottom;'";
             }
         endif; 
-        if( count( $tabs ) >0 && $term ):
-            $term_link = get_term_link($term);
-            if( ! $is_phone ){
-                $args = array(
-                   'hierarchical' => 1,
-                   'show_option_none' => '',
-                   'hide_empty' => 0,
-                   'parent' => $term->term_id,
-                   'taxonomy' => 'product_cat'
-                );
-                $subcats = get_categories($args);
-            }
-            
+        if( count( $tabs ) > 0 ):
+            $id = uniqid($category);
+            $args = array(
+               'hierarchical' => 1,
+               'show_option_none' => '',
+               'hide_empty' => 0,
+               'taxonomy' => 'product_cat'
+            );
+            $term = get_term( $category, 'product_cat' );
             
             if( file_exists( KUTETHEME_PLUGIN_PATH . '/js_composer/includes/'.$tabs_type.'.php' ) ){
+                
+                if( ! is_wp_error( $term ) && $term ){
+                    $args [ 'parent' ] = $term->term_id;
+                    $term_link = get_term_link( $term );
+                }else{
+                    $term = false;
+                }
+                if( ! $is_phone ){
+                    $subcats = get_categories($args);
+                }
                 if( $tabs_type == 'tab-1' ){
                     $elementClass .= ' option1 tab-1';
                 }elseif( $tabs_type == 'tab-2' ){
@@ -451,9 +463,13 @@ class WPBakeryShortCode_Categories_Tab extends WPBakeryShortCodesContainer {
                 }elseif( $tabs_type == 'tab-6' ){
                     $elementClass .= ' option7 tab-6';
                 }elseif( $tabs_type == 'tab-7' ){
-                    $elementClass .= ' option7 tab-7';
+                    $elementClass .= ' option12 tab-7';
                 }
+                ob_start();
+                add_filter( 'kt_product_thumbnail_loop', array( &$this, 'get_size_product' ) );
                 @include( KUTETHEME_PLUGIN_PATH . 'js_composer/includes/'.$tabs_type.'.php' );
+                remove_filter( 'kt_product_thumbnail_loop', array( &$this, 'get_size_product' ) );
+                return ob_get_clean();
             }
         endif;
     }
@@ -481,5 +497,11 @@ class WPBakeryShortCode_Categories_Tab extends WPBakeryShortCodesContainer {
     	$args['groupby'] = "$wpdb->posts.ID";
     
     	return $args;
+    }
+    public function get_size_product( $size ){
+        return $this->product_size;
+    }
+    public function get_size_product_option_3( $size ){
+        return 'kt_shop_catalog_131';
     }
 }

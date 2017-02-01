@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kutetheme\n"
-"POT-Creation-Date: 2015-11-06 10:30+0800\n"
-"PO-Revision-Date: 2015-11-19 06:51+0800\n"
+"POT-Creation-Date: 2017-01-29 00:23+1300\n"
+"PO-Revision-Date: 2017-01-30 10:03+1300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,11 +22,19 @@ msgstr ""
 
 #: 404.php:16 woocommerce/404.php:25
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "亲，你访问的页面找不到啊。"
+msgstr "糟糕！ 该网页无法找到。"
 
 #: 404.php:19 woocommerce/404.php:31
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "查找的东西没有发现，也可以换一个试试。"
+msgstr "它看起来像没有被发现。也许尝试一个新搜索?"
+
+#: archive-look-books.php:4
+msgid "Look Books"
+msgstr ""
+
+#: archive-look-books.php:35
+msgid "No Look book item."
+msgstr ""
 
 #: comments.php:28
 #, php-format
@@ -37,25 +45,25 @@ msgstr[0] ""
 
 #: comments.php:53
 msgid "Comments are closed."
-msgstr "评论被关闭"
+msgstr "评论已经被关闭"
 
 #: content-none.php:15
 msgid "Nothing Found"
-msgstr "没有发现"
+msgstr "搜索内容不存在"
 
 #: content-none.php:22
 msgid "Ready to publish your first post?"
-msgstr "准备发布你的第一个内容？"
+msgstr "准备好发布您的第一篇文章? "
 
 #: content-none.php:22
 msgid "Get started here"
-msgstr "从这里开始"
+msgstr "快速入门"
 
 #: content-none.php:26
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
-msgstr "对不起，没有您要查找的东西。请尝试用不同的关键词再试。"
+msgstr "对不起，没有匹配您的搜索条件。请用一些不同的关键字再试一次。"
 
 #: content-none.php:31
 msgid ""
@@ -63,180 +71,196 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: content-page.php:29 single-service.php:38 single.php:44
+#: content-page.php:27 single-service.php:38 single.php:44
 msgid "Pages:"
-msgstr "页面："
+msgstr "页数："
 
-#: content-page.php:33
+#: content-page.php:31
 msgid "Page"
-msgstr "页面"
+msgstr "页"
 
 #: footer.php:18
 msgid "Scroll to Top"
-msgstr "滚动到顶部"
+msgstr "返回到顶部"
 
 #: footer.php:18
 msgid "Scroll"
 msgstr "滚动"
 
-#: functions.php:90
+#: functions.php:94
 msgid "Primary Menu"
-msgstr ""
+msgstr "主菜单"
 
-#: functions.php:91
+#: functions.php:95
 msgid "Vertical Menu"
-msgstr ""
+msgstr "垂直菜单"
 
-#: functions.php:92
+#: functions.php:96
+msgid "Top bar Menu left"
+msgstr "頂部選單左邊"
+
+#: functions.php:97
+msgid "Top bar Menu right"
+msgstr "頂部選單右邊"
+
+#: functions.php:98
 msgid "Custom Header Menu"
-msgstr ""
+msgstr "自定义页眉"
 
-#: functions.php:93
+#: functions.php:99
 msgid "Custom Footer Menu"
-msgstr ""
+msgstr "自定义页脚"
 
-#: functions.php:155
+#: functions.php:200
 msgid "Widget Area"
-msgstr ""
+msgstr "小部件区域"
 
-#: functions.php:157 functions.php:166 functions.php:176
+#: functions.php:202 functions.php:211 functions.php:221
 msgid "Add widgets here to appear in your sidebar."
-msgstr ""
+msgstr "在此处添加小部件以显示在侧边栏中."
 
-#: functions.php:164
+#: functions.php:209
 msgid "Widget Shop Area"
-msgstr ""
+msgstr "商店小部件区域"
 
-#: functions.php:174
+#: functions.php:219
 msgid "Widget Shop single Area"
 msgstr ""
 
-#: functions.php:185
+#: functions.php:230
 msgid "Footer Menu 1"
 msgstr ""
 
-#: functions.php:187
+#: functions.php:232
 msgid "The footer menu 1 widget area"
 msgstr ""
 
-#: functions.php:195
+#: functions.php:240
 msgid "Footer Menu 2"
 msgstr ""
 
-#: functions.php:197
+#: functions.php:242
 msgid "The footer menu 2 widget area"
 msgstr ""
 
-#: functions.php:205
+#: functions.php:250
 msgid "Footer Menu 3"
 msgstr ""
 
-#: functions.php:207
+#: functions.php:252
 msgid "The footer menu 3 widget area"
 msgstr ""
 
-#: functions.php:215
+#: functions.php:260
 msgid "Footer Menu 4"
 msgstr ""
 
-#: functions.php:217
+#: functions.php:262
 msgid "The footer newsletter 4 widget area on footer style 3"
 msgstr ""
 
-#: functions.php:225
+#: functions.php:270
 msgid "Footer Social"
-msgstr ""
+msgstr "页脚 － 社交网络"
 
-#: functions.php:227
+#: functions.php:272
 msgid "The footer social widget area"
 msgstr ""
 
-#: functions.php:235
+#: functions.php:280
 msgid "Footer Payment"
-msgstr ""
+msgstr "页脚付款图标"
 
-#: functions.php:237
+#: functions.php:282
 msgid "The footer payment widget area"
-msgstr ""
+msgstr "页脚支付小工具区域"
 
-#: functions.php:245
+#: functions.php:290
 msgid "Footer Bottom"
-msgstr ""
+msgstr "页脚底部"
 
-#: functions.php:247
+#: functions.php:292
 msgid "The footer bottom widget area"
 msgstr ""
 
-#: functions.php:255
+#: functions.php:300
 msgid "Footer Menu Bottom"
 msgstr ""
 
-#: functions.php:257
+#: functions.php:302
 msgid "The footer menu bottom widget area"
 msgstr ""
 
-#: functions.php:303
+#: functions.php:348
 msgid "Years"
 msgstr "年"
 
-#: functions.php:303
+#: functions.php:348
 msgid "Months"
 msgstr "月"
 
-#: functions.php:303
+#: functions.php:348
 msgid "Weeks"
-msgstr "周"
+msgstr "星期"
 
-#: functions.php:303 functions.php:304
+#: functions.php:348 functions.php:349
 msgid "Days"
 msgstr "天"
 
-#: functions.php:303 functions.php:304
+#: functions.php:348 functions.php:349
 msgid "Hrs"
 msgstr "小时"
 
-#: functions.php:303 functions.php:304
+#: functions.php:348 functions.php:349
 msgid "Mins"
 msgstr "分钟"
 
-#: functions.php:303 functions.php:304
+#: functions.php:348 functions.php:349
 msgid "Secs"
 msgstr "秒"
 
-#: functions.php:403
+#: functions.php:350 inc/hooks/theme.php:201 inc/hooks/theme.php:232
+#: inc/hooks/theme.php:263 inc/hooks/theme.php:293 inc/hooks/theme.php:325
+#: inc/hooks/theme.php:356 inc/hooks/theme.php:387
+#: templates/headers/header-11.php:59 templates/headers/header-12.php:45
+#: templates/headers/header-13.php:57
+msgid "Close"
+msgstr "结束"
+
+#: functions.php:460
 msgid "expand child menu"
 msgstr "展开子菜单"
 
-#: functions.php:404
+#: functions.php:461
 msgid "collapse child menu"
 msgstr "折叠子菜单"
 
-#: functions.php:426 inc/widgets/kt_image.php:82 inc/widgets/slider.php:170
+#: functions.php:487 inc/widgets/kt_image.php:82 inc/widgets/slider.php:170
 #: inc/widgets/slider.php:198 inc/widgets/slider.php:229
 #: inc/widgets/trademark-payment.php:120 inc/widgets/trademark-payment.php:148
 #: inc/widgets/trademark-payment.php:179
 msgid "Select your image"
-msgstr "选择你的图片"
+msgstr "选择您的图片"
 
-#: functions.php:552
+#: functions.php:613
 msgid "Showing"
-msgstr "显示中"
+msgstr "显示"
 
-#: functions.php:553
+#: functions.php:614
 msgid "of"
 msgstr ""
 
-#: functions.php:553
+#: functions.php:614
 msgid "posts"
-msgstr ""
+msgstr "文章"
 
 #: inc/breadcrumbs.php:56 inc/breadcrumbs.php:224
 msgid "Home"
-msgstr "主页"
+msgstr "首页"
 
 #: inc/breadcrumbs.php:57 inc/breadcrumbs.php:225
 msgid "404 Not Found"
-msgstr "404 没有找到"
+msgstr "404 错误 ,该页面无法找到"
 
 #: inc/breadcrumbs.php:58 inc/breadcrumbs.php:226
 msgid "Archives"
@@ -250,12 +274,12 @@ msgstr ""
 #: inc/breadcrumbs.php:62 inc/breadcrumbs.php:230
 #, php-format
 msgid "Page %s"
-msgstr "页 %s"
+msgstr "第页 %s"
 
 #: inc/breadcrumbs.php:64 inc/breadcrumbs.php:232
 #, php-format
 msgid "Minute %s"
-msgstr "分钟 %s"
+msgstr "分 %s"
 
 #: inc/breadcrumbs.php:66 inc/breadcrumbs.php:234
 #, php-format
@@ -305,47 +329,47 @@ msgstr ""
 #: inc/breadcrumbs.php:1180 inc/breadcrumbs.php:1216 inc/breadcrumbs.php:1233
 #: inc/breadcrumbs.php:1264
 msgid "Edit"
-msgstr ""
+msgstr "编辑"
 
 #: inc/breadcrumbs.php:1208
 msgid "Split"
-msgstr ""
+msgstr "分割"
 
 #: inc/breadcrumbs.php:1212
 msgid "Merge"
-msgstr ""
+msgstr "合并"
 
 #: inc/customizer.php:30
 msgid "Base Color Scheme"
-msgstr ""
+msgstr "颜色设置"
 
 #: inc/customizer.php:45
 msgid "Theme Color"
-msgstr ""
+msgstr "主题颜色"
 
 #: inc/customizer.php:46
 msgid "Applied to the theme color."
-msgstr ""
+msgstr "适用于主题色。"
 
 #: inc/customizer.php:61
 msgid "Box and Sidebar Background Color"
-msgstr ""
+msgstr "边栏背景颜色"
 
 #: inc/customizer.php:62
 msgid "Applied to the box and sidebar color."
-msgstr ""
+msgstr "适用于边栏的颜色。"
 
 #: inc/customizer.php:74
 msgid "Text Color"
-msgstr ""
+msgstr "文本颜色"
 
 #: inc/customizer.php:75
 msgid "Applied to the text color"
-msgstr ""
+msgstr "适用于文本颜色"
 
 #: inc/customizer.php:87
 msgid "Price Color"
-msgstr ""
+msgstr "价格颜色"
 
 #: inc/customizer.php:88
 msgid "Applied to the price on wide screens."
@@ -357,36 +381,36 @@ msgstr ""
 
 #: inc/customizer.php:119
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: inc/customizer.php:133
 msgid "Brown"
-msgstr ""
+msgstr "棕色"
 
 #: inc/customizer.php:147
 msgid "Blue"
-msgstr ""
+msgstr "蓝色"
 
 #: inc/customizer.php:161
 msgid "Orange"
-msgstr ""
+msgstr "橙色"
 
 #: inc/hooks/class-tgm-plugin-activation.php:333
 msgid "Install Required Plugins"
-msgstr ""
+msgstr "安装所需的插件"
 
 #: inc/hooks/class-tgm-plugin-activation.php:334
 msgid "Install Plugins"
-msgstr ""
+msgstr "安装插件"
 
 #: inc/hooks/class-tgm-plugin-activation.php:335
 #, php-format
 msgid "Installing Plugin: %s"
-msgstr ""
+msgstr "正在安裝插件: %s"
 
 #: inc/hooks/class-tgm-plugin-activation.php:336
 msgid "Something went wrong with the plugin API."
-msgstr ""
+msgstr "插件API出了问题。"
 
 #: inc/hooks/class-tgm-plugin-activation.php:338
 #, php-format
@@ -566,47 +590,47 @@ msgstr ""
 
 #: inc/hooks/class-tgm-plugin-activation.php:2168
 msgid "Required"
-msgstr ""
+msgstr "需要"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2171
 msgid "Recommended"
-msgstr ""
+msgstr "推荐"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2187
 msgid "WordPress Repository"
-msgstr ""
+msgstr "WordPress的版本库"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2190
 msgid "External Source"
-msgstr ""
+msgstr "外部源"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2193
 msgid "Pre-Packaged"
-msgstr ""
+msgstr "预安装"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2210
 msgid "Not Installed"
-msgstr ""
+msgstr "未安装"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2214
 msgid "Installed But Not Activated"
-msgstr ""
+msgstr "已安装但未激活"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2216
 msgid "Active"
-msgstr ""
+msgstr "激活"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2222
 msgid "Required Update not Available"
-msgstr ""
+msgstr "所需的更新不可用"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2225
 msgid "Requires Update"
-msgstr ""
+msgstr "需要更新"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2228
 msgid "Update recommended"
-msgstr ""
+msgstr "更新推荐"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2236
 #, php-format
@@ -646,42 +670,42 @@ msgstr ""
 
 #: inc/hooks/class-tgm-plugin-activation.php:2380
 msgid "Installed version:"
-msgstr ""
+msgstr "安装版本："
 
 #: inc/hooks/class-tgm-plugin-activation.php:2388
 msgid "Minimum required version:"
-msgstr ""
+msgstr "所需的最低版本:"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2400
 msgid "Available version:"
-msgstr ""
+msgstr "可用版本:"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2423
 #, php-format
 msgid ""
 "No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
 "Dashboard</a>"
-msgstr ""
+msgstr "无需安装，更新或激活插件 <a href=\"%1$s\">返回操作中心</a>"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2437
 msgid "Plugin"
-msgstr ""
+msgstr "插件"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2438
 msgid "Source"
-msgstr ""
+msgstr "来源"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2439
 msgid "Type"
-msgstr ""
+msgstr "类型："
 
 #: inc/hooks/class-tgm-plugin-activation.php:2443
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2444
 msgid "Status"
-msgstr ""
+msgstr "状态"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2492
 #, php-format
@@ -707,15 +731,15 @@ msgstr ""
 
 #: inc/hooks/class-tgm-plugin-activation.php:2604
 msgid "Install"
-msgstr ""
+msgstr "安装"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2610
 msgid "Update"
-msgstr ""
+msgstr "更新"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2613
 msgid "Activate"
-msgstr ""
+msgstr "激活"
 
 #: inc/hooks/class-tgm-plugin-activation.php:2644
 msgid "No plugins were selected to be installed. No action taken."
@@ -774,12 +798,12 @@ msgstr ""
 #: inc/hooks/class-tgm-plugin-activation.php:3371
 #: inc/hooks/class-tgm-plugin-activation.php:3377
 msgid "Show Details"
-msgstr ""
+msgstr "显示详细信息"
 
 #: inc/hooks/class-tgm-plugin-activation.php:3371
 #: inc/hooks/class-tgm-plugin-activation.php:3377
 msgid "Hide Details"
-msgstr ""
+msgstr "隐藏详细信息"
 
 #: inc/hooks/class-tgm-plugin-activation.php:3372
 msgid "All installations and activations have been completed."
@@ -810,22 +834,27 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/hooks/theme.php:197 inc/hooks/theme.php:239 inc/hooks/theme.php:280
-#: inc/hooks/theme.php:420 inc/hooks/theme.php:464
+#: inc/hooks/theme.php:196 inc/hooks/theme.php:227 inc/hooks/theme.php:258
+#: inc/hooks/theme.php:288 inc/hooks/theme.php:320 inc/hooks/theme.php:351
+#: inc/hooks/theme.php:382 templates/headers/header-11.php:54
+#: templates/headers/header-12.php:40 templates/headers/header-13.php:52
 msgid "Categories"
 msgstr "分类"
 
-#: inc/hooks/theme.php:202 inc/hooks/theme.php:244 inc/hooks/theme.php:285
-#: inc/hooks/theme.php:326 inc/hooks/theme.php:380 inc/hooks/theme.php:424
-#: inc/hooks/theme.php:468 templates/search-form/product-search-form.php:3
+#: inc/hooks/theme.php:201 inc/hooks/theme.php:232 inc/hooks/theme.php:263
+#: inc/hooks/theme.php:293 inc/hooks/theme.php:325 inc/hooks/theme.php:356
+#: inc/hooks/theme.php:387 templates/search-form/product-search-form.php:3
 msgid "All Categories"
-msgstr "所有分类"
+msgstr "全部类型"
 
-#: inc/hooks/theme.php:216 inc/hooks/theme.php:258 inc/hooks/theme.php:299
-#: inc/hooks/theme.php:394 inc/hooks/theme.php:438
-#: templates/headers/header-4.php:28
-msgid "Menu"
-msgstr "菜单"
+#: inc/hooks/theme.php:208 inc/hooks/theme.php:239 inc/hooks/theme.php:270
+#: inc/hooks/theme.php:332 inc/hooks/theme.php:363
+#: templates/headers/header-11.php:32 templates/headers/header-12.php:20
+#: templates/headers/header-13.php:66 templates/headers/header-14.php:11
+#: templates/headers/header-4.php:19 templates/headers/header-7.php:39
+#: templates/headers/header-8.php:21 templates/headers/header-9.php:43
+msgid "Main menu"
+msgstr "主菜单"
 
 #: inc/hooks/woocommerce.php:175 inc/hooks/woocommerce.php:206
 msgid "%"
@@ -843,165 +872,190 @@ msgstr ""
 msgid ")"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:221 inc/hooks/woocommerce.php:1296
+#: inc/hooks/woocommerce.php:221 inc/hooks/woocommerce.php:1303
 #, php-format
 msgid "Rated %s out of 5"
-msgstr "评价 5星中的  %s  星"
+msgstr "在满分 5 分的评价中拿到 %s 分"
 
-#: inc/hooks/woocommerce.php:387
+#: inc/hooks/woocommerce.php:393
 #, php-format
 msgid "%d item in my cart"
 msgid_plural "%d items in my cart"
-msgstr[0] "%d 项在我的购物车"
+msgstr[0] "您的购物车中有%d个项目"
 
-#: inc/hooks/woocommerce.php:407
+#: inc/hooks/woocommerce.php:413
 msgid "Remove this item"
-msgstr "删除这一项"
+msgstr "删除此项目"
 
-#: inc/hooks/woocommerce.php:427
+#: inc/hooks/woocommerce.php:433
 msgid "Qty: "
-msgstr "数量："
+msgstr "数量"
 
-#: inc/hooks/woocommerce.php:427
+#: inc/hooks/woocommerce.php:433
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:435
-msgid "Total"
-msgstr "总共"
-
 #: inc/hooks/woocommerce.php:441
+msgid "Total"
+msgstr "总价"
+
+#: inc/hooks/woocommerce.php:447
 msgid "Checkout"
-msgstr "结账"
+msgstr "去付款"
 
-#: inc/hooks/woocommerce.php:464
+#: inc/hooks/woocommerce.php:470
 msgid "Continue Shopping &rarr;"
-msgstr "继续购买 &rarr;"
+msgstr "继续购物"
 
-#: inc/hooks/woocommerce.php:464 inc/hooks/woocommerce.php:466
+#: inc/hooks/woocommerce.php:470 inc/hooks/woocommerce.php:472
 msgid "Product successfully added to your cart."
-msgstr "产品已经成功添加到您的购物车"
+msgstr "商品已加入您的购物车"
 
-#: inc/hooks/woocommerce.php:466
+#: inc/hooks/woocommerce.php:472
 msgid "View Cart &rarr;"
-msgstr "查看购物车 &rarr;"
+msgstr "查看购物车"
 
-#: inc/hooks/woocommerce.php:493
+#: inc/hooks/woocommerce.php:499
 msgid "Price"
 msgstr "价格"
 
-#: inc/hooks/woocommerce.php:574 inc/hooks/woocommerce.php:780
+#: inc/hooks/woocommerce.php:580 inc/hooks/woocommerce.php:786
 msgid "grid"
 msgstr "网格"
 
-#: inc/hooks/woocommerce.php:577 inc/hooks/woocommerce.php:783
+#: inc/hooks/woocommerce.php:583 inc/hooks/woocommerce.php:789
 msgid "list"
 msgstr "列表"
 
-#: inc/hooks/woocommerce.php:815 woocommerce/content-product.php:107
+#: inc/hooks/woocommerce.php:821 woocommerce/content-product.php:113
 msgid "In stock"
-msgstr "现货"
+msgstr "有货"
 
-#: inc/hooks/woocommerce.php:816 woocommerce/content-product.php:107
+#: inc/hooks/woocommerce.php:822 woocommerce/content-product.php:113
 msgid "Out of stock"
 msgstr "缺货"
 
-#: inc/hooks/woocommerce.php:821
+#: inc/hooks/woocommerce.php:827
 msgid "Item Code"
-msgstr "项目代码"
+msgstr "品目编号"
 
-#: inc/hooks/woocommerce.php:824 woocommerce/content-product.php:107
+#: inc/hooks/woocommerce.php:830 woocommerce/content-product.php:113
 msgid "Availability"
-msgstr "可用"
+msgstr "可用度"
 
-#: inc/hooks/woocommerce.php:840
+#: inc/hooks/woocommerce.php:846
 msgid "Available Options"
 msgstr "可用选项"
 
-#: inc/hooks/woocommerce.php:866
+#: inc/hooks/woocommerce.php:872
 msgid "Print"
-msgstr "打印"
+msgstr "打    印"
 
-#: inc/hooks/woocommerce.php:867
+#: inc/hooks/woocommerce.php:873
 msgid "Send to a friend"
-msgstr "发送给朋友"
+msgstr "发送给朋友（发送到邮箱）"
 
-#: inc/hooks/woocommerce.php:884
+#: inc/hooks/woocommerce.php:890
 msgid "Size Chart"
-msgstr "尺码表"
+msgstr "图表大小"
 
-#: inc/hooks/woocommerce.php:1141
+#: inc/hooks/woocommerce.php:1148
 msgid "Keywords"
 msgstr "关键词"
 
-#: inc/hooks/woocommerce.php:1150
+#: inc/hooks/woocommerce.php:1157
 msgid ", "
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1150
+#: inc/hooks/woocommerce.php:1157
 msgid " .."
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1176 inc/hooks/woocommerce.php:1241
+#: inc/hooks/woocommerce.php:1183 inc/hooks/woocommerce.php:1248
 #: inc/widgets/social.php:41
 msgid "Facebook"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1179 inc/hooks/woocommerce.php:1244
+#: inc/hooks/woocommerce.php:1186 inc/hooks/woocommerce.php:1251
 #: inc/widgets/social.php:44
 msgid "Twitter"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1182 inc/hooks/woocommerce.php:1247
+#: inc/hooks/woocommerce.php:1189 inc/hooks/woocommerce.php:1254
 #: inc/widgets/social.php:47
 msgid "Dribbble"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1185 inc/hooks/woocommerce.php:1250
+#: inc/hooks/woocommerce.php:1192 inc/hooks/woocommerce.php:1257
 #: inc/widgets/social.php:50
 msgid "Vimeo"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1188 inc/hooks/woocommerce.php:1253
+#: inc/hooks/woocommerce.php:1195 inc/hooks/woocommerce.php:1260
 #: inc/widgets/social.php:53
 msgid "Tumblr"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1191 inc/hooks/woocommerce.php:1256
+#: inc/hooks/woocommerce.php:1198 inc/hooks/woocommerce.php:1263
 #: inc/widgets/social.php:56
 msgid "Skype"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1194 inc/hooks/woocommerce.php:1259
+#: inc/hooks/woocommerce.php:1201 inc/hooks/woocommerce.php:1266
 #: inc/widgets/social.php:59
 msgid "Linkedin"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1197 inc/hooks/woocommerce.php:1262
+#: inc/hooks/woocommerce.php:1204 inc/hooks/woocommerce.php:1269
 #: inc/widgets/social.php:62
 msgid "Google Plus"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1200 inc/hooks/woocommerce.php:1265
+#: inc/hooks/woocommerce.php:1207 inc/hooks/woocommerce.php:1272
 #: inc/widgets/social.php:65
 msgid "Youtube"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1203 inc/hooks/woocommerce.php:1268
+#: inc/hooks/woocommerce.php:1210 inc/hooks/woocommerce.php:1275
 #: inc/widgets/social.php:68
 msgid "Pinterest"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1206 inc/hooks/woocommerce.php:1271
+#: inc/hooks/woocommerce.php:1213 inc/hooks/woocommerce.php:1278
 #: inc/widgets/social.php:71
 msgid "Instagram"
 msgstr ""
 
-#: inc/hooks/woocommerce.php:1210 inc/hooks/woocommerce.php:1275
+#: inc/hooks/woocommerce.php:1217 inc/hooks/woocommerce.php:1282
 #: inc/widgets/social.php:75
 msgid "Vk"
 msgstr ""
+
+#: inc/hooks/woocommerce.php:1429 inc/utility.php:234
+#: woocommerce/cart/mini-cart.php:61
+msgid "My Account"
+msgstr "我的帐户"
+
+#: inc/hooks/woocommerce.php:1434 inc/utility.php:251
+#: woocommerce/cart/mini-cart.php:45 woocommerce/cart/mini-cart.php:69
+#: woocommerce/cart/mini-cart.php:88 woocommerce/cart/mini-cart.php:104
+msgid "Wishlists"
+msgstr "願望清單"
+
+#: inc/hooks/woocommerce.php:1439 inc/utility.php:257
+#: woocommerce/cart/mini-cart.php:41 woocommerce/cart/mini-cart.php:83
+#: woocommerce/cart/mini-cart.php:100
+msgid "Compare"
+msgstr "比较"
+
+#: inc/hooks/woocommerce.php:1442 inc/utility.php:248
+msgid "Logout"
+msgstr "登出"
+
+#: inc/hooks/woocommerce.php:1447
+msgid "Login/Register"
+msgstr "登录/注册"
 
 #: inc/nav/nav_edit_custom_walker.php:90
 #, php-format
@@ -1015,7 +1069,7 @@ msgstr ""
 
 #: inc/nav/nav_edit_custom_walker.php:107
 msgid "sub item"
-msgstr ""
+msgstr "子项"
 
 #: inc/nav/nav_edit_custom_walker.php:122
 msgid "Move up"
@@ -1028,7 +1082,7 @@ msgstr ""
 #: inc/nav/nav_edit_custom_walker.php:137
 #: inc/nav/nav_edit_custom_walker.php:139
 msgid "Edit Menu Item"
-msgstr ""
+msgstr "编辑菜单项"
 
 #: inc/nav/nav_edit_custom_walker.php:148
 msgid "URL"
@@ -1066,19 +1120,19 @@ msgstr ""
 
 #: inc/nav/nav_edit_custom_walker.php:195
 msgid "Move"
-msgstr ""
+msgstr "移动"
 
 #: inc/nav/nav_edit_custom_walker.php:196
 msgid "Up one"
-msgstr ""
+msgstr "上移一層"
 
 #: inc/nav/nav_edit_custom_walker.php:197
 msgid "Down one"
-msgstr ""
+msgstr "下移一層"
 
 #: inc/nav/nav_edit_custom_walker.php:200
 msgid "To the top"
-msgstr ""
+msgstr "移動至最上層"
 
 #: inc/nav/nav_edit_custom_walker.php:207
 #, php-format
@@ -1087,19 +1141,19 @@ msgstr ""
 
 #: inc/nav/nav_edit_custom_walker.php:220
 msgid "Remove"
-msgstr ""
+msgstr "移除"
 
 #: inc/nav/nav_edit_custom_walker.php:221
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: inc/nav/nav_menu_custom_fields.php:30
 msgid "Image Icon"
-msgstr ""
+msgstr "图标"
 
 #: inc/nav/nav_menu_custom_fields.php:35
 msgid "Image preview"
-msgstr ""
+msgstr "图像预览"
 
 #: inc/nav/nav_menu_custom_fields.php:36 inc/widgets/seo-keyword.php:95
 #: inc/widgets/seo-keyword.php:116 inc/widgets/seo-keyword.php:139
@@ -1111,7 +1165,7 @@ msgstr ""
 
 #: inc/nav/nav_menu_custom_fields.php:39
 msgid "Upload image"
-msgstr ""
+msgstr "上传图片"
 
 #: inc/nav/nav_menu_custom_fields.php:53
 msgid "Enable Mega Menu (only for main menu)"
@@ -1123,25 +1177,21 @@ msgstr ""
 
 #: inc/nav/nav_menu_custom_fields.php:62
 msgid "Choose Menu Page"
-msgstr "选择菜单页"
+msgstr ""
 
-#: inc/nav/wp_bootstrap_navwalker.php:250
+#: inc/nav/wp_bootstrap_navwalker.php:236
 msgid "Add a menu"
-msgstr "添加一个菜单"
+msgstr "添加菜单"
 
 #: inc/utility.php:51
 msgid "Contact us today !"
-msgstr "现在联系我们！"
-
-#: inc/utility.php:234 woocommerce/cart/mini-cart.php:59
-msgid "My Account"
-msgstr "我的账户"
+msgstr "今天就联系我们！"
 
 #: inc/utility.php:240
 msgid "Login / Register"
 msgstr "登录/注册"
 
-#: inc/utility.php:244 woocommerce/cart/mini-cart.php:62
+#: inc/utility.php:244 woocommerce/cart/mini-cart.php:64
 msgid "Login"
 msgstr "登录"
 
@@ -1149,24 +1199,9 @@ msgstr "登录"
 msgid "Register"
 msgstr "注册"
 
-#: inc/utility.php:248
-msgid "Logout"
-msgstr "退出"
-
-#: inc/utility.php:251 woocommerce/cart/mini-cart.php:43
-#: woocommerce/cart/mini-cart.php:67 woocommerce/cart/mini-cart.php:86
-#: woocommerce/cart/mini-cart.php:102
-msgid "Wishlists"
-msgstr "愿望单"
-
-#: inc/utility.php:257 woocommerce/cart/mini-cart.php:39
-#: woocommerce/cart/mini-cart.php:81 woocommerce/cart/mini-cart.php:98
-msgid "Compare"
-msgstr "比较"
-
 #: inc/utility.php:373
 msgid "Previous"
-msgstr "前一个"
+msgstr "上一个"
 
 #: inc/utility.php:374
 msgid "Next"
@@ -1174,34 +1209,78 @@ msgstr "下一个"
 
 #: inc/utility.php:393
 msgid "Comment navigation"
-msgstr ""
+msgstr "评论导航"
 
 #: inc/utility.php:396
 msgid "Older Comments"
-msgstr ""
+msgstr "旧评论"
 
 #: inc/utility.php:400
 msgid "Newer Comments"
-msgstr ""
+msgstr "新评论"
 
 #: inc/utility.php:436
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "您的评论正在等待审核。"
 
 #: inc/utility.php:440
 msgid "(Edit)"
-msgstr ""
+msgstr "(编辑)"
 
 #: inc/utility.php:445
 msgid "Reply"
-msgstr ""
+msgstr "发送回复"
 
 #: inc/utility.php:584
 msgid "01 KT Home Style 1"
 msgstr ""
 
-#: inc/utility.php:596
+#: inc/utility.php:597
 msgid "02 KT Home Style 2"
+msgstr ""
+
+#: inc/utility.php:610
+msgid "03 KT Home Style 3"
+msgstr ""
+
+#: inc/utility.php:621
+msgid "04 KT Home Style 4"
+msgstr ""
+
+#: inc/utility.php:632
+msgid "05 KT Home Style 5"
+msgstr ""
+
+#: inc/utility.php:642
+msgid "06 KT Home Style 6"
+msgstr ""
+
+#: inc/utility.php:652
+msgid "07 KT Home Style 7"
+msgstr ""
+
+#: inc/utility.php:663
+msgid "08 KT Home Style 8"
+msgstr ""
+
+#: inc/utility.php:674
+msgid "09 KT Home Style 9"
+msgstr ""
+
+#: inc/utility.php:704
+msgid "11 KT Home Style 11"
+msgstr ""
+
+#: inc/utility.php:734
+msgid "12 KT Home Style 12"
+msgstr ""
+
+#: inc/utility.php:746
+msgid "13 KT Home Style 13"
+msgstr ""
+
+#: inc/utility.php:758
+msgid "14 KT Home Style 14"
 msgstr ""
 
 #: inc/widgets/best-seller.php:16
@@ -1210,32 +1289,32 @@ msgstr ""
 
 #: inc/widgets/best-seller.php:18
 msgid "KT Best Seller"
-msgstr ""
+msgstr "KT畅销商品"
 
 #: inc/widgets/best-seller.php:24 inc/widgets/best-seller.php:91
 #: inc/widgets/best-seller.php:108
 msgid "Best Sellers"
-msgstr ""
+msgstr "热卖"
 
 #: inc/widgets/best-seller.php:121 inc/widgets/on-sale.php:105
 #: inc/widgets/product-special-sidebar.php:103 inc/widgets/seo-keyword.php:79
 #: inc/widgets/seo-keyword.php:97 inc/widgets/seo-keyword.php:118
 #: inc/widgets/seo-keyword.php:141 inc/widgets/slider.php:166
 #: inc/widgets/slider.php:194 inc/widgets/slider.php:224
-#: inc/widgets/social.php:108 inc/widgets/testimonial.php:121
+#: inc/widgets/social.php:101 inc/widgets/testimonial.php:121
 #: inc/widgets/trademark-payment.php:91 inc/widgets/trademark-payment.php:116
 #: inc/widgets/trademark-payment.php:144 inc/widgets/trademark-payment.php:174
 msgid "Title:"
-msgstr ""
+msgstr "标题"
 
 #: inc/widgets/best-seller.php:126 inc/widgets/on-sale.php:109
 #: inc/widgets/testimonial.php:137
 msgid "Number:"
-msgstr ""
+msgstr "数量："
 
 #: inc/widgets/best-seller.php:131
 msgid "Perpage:"
-msgstr ""
+msgstr "每页："
 
 #: inc/widgets/best-seller.php:136
 msgid "Speed Carousel:"
@@ -1243,23 +1322,23 @@ msgstr ""
 
 #: inc/widgets/best-seller.php:144
 msgid "Auto play"
-msgstr ""
+msgstr "自動播放"
 
 #: inc/widgets/best-seller.php:148
 msgid "Loop"
-msgstr ""
+msgstr "循环"
 
 #: inc/widgets/kt_image.php:15
 msgid "Image for widget."
-msgstr ""
+msgstr "图像部件。"
 
 #: inc/widgets/kt_image.php:16
 msgid "KT image"
-msgstr ""
+msgstr "KT图像"
 
 #: inc/widgets/kt_image.php:89
 msgid "Capture:"
-msgstr ""
+msgstr "捕获："
 
 #: inc/widgets/kt_image.php:93 inc/widgets/seo-keyword.php:101
 #: inc/widgets/seo-keyword.php:122 inc/widgets/seo-keyword.php:146
@@ -1267,7 +1346,7 @@ msgstr ""
 #: inc/widgets/slider.php:238 inc/widgets/trademark-payment.php:127
 #: inc/widgets/trademark-payment.php:155 inc/widgets/trademark-payment.php:188
 msgid "Link:"
-msgstr ""
+msgstr "链接："
 
 #: inc/widgets/kt_image.php:97 inc/widgets/seo-keyword.php:105
 #: inc/widgets/seo-keyword.php:126 inc/widgets/seo-keyword.php:151
@@ -1275,7 +1354,7 @@ msgstr ""
 #: inc/widgets/slider.php:243 inc/widgets/trademark-payment.php:131
 #: inc/widgets/trademark-payment.php:159 inc/widgets/trademark-payment.php:193
 msgid "Target:"
-msgstr ""
+msgstr "目标："
 
 #: inc/widgets/kt_image.php:100 inc/widgets/seo-keyword.php:108
 #: inc/widgets/seo-keyword.php:129 inc/widgets/seo-keyword.php:154
@@ -1283,7 +1362,7 @@ msgstr ""
 #: inc/widgets/slider.php:246 inc/widgets/trademark-payment.php:134
 #: inc/widgets/trademark-payment.php:162 inc/widgets/trademark-payment.php:196
 msgid "Stay in Window"
-msgstr ""
+msgstr "留在窗口"
 
 #: inc/widgets/kt_image.php:101 inc/widgets/seo-keyword.php:107
 #: inc/widgets/seo-keyword.php:128 inc/widgets/seo-keyword.php:153
@@ -1291,15 +1370,15 @@ msgstr ""
 #: inc/widgets/slider.php:245 inc/widgets/trademark-payment.php:133
 #: inc/widgets/trademark-payment.php:161 inc/widgets/trademark-payment.php:195
 msgid "Open New Window"
-msgstr ""
+msgstr "新窗口打开"
 
 #: inc/widgets/on-sale.php:16
 msgid "Box On Sale."
-msgstr ""
+msgstr "促销"
 
 #: inc/widgets/on-sale.php:17
 msgid "KT On Sale"
-msgstr ""
+msgstr "KT在售"
 
 #: inc/widgets/on-sale.php:113 inc/widgets/product-special-sidebar.php:107
 #: inc/widgets/testimonial.php:142
@@ -1314,22 +1393,22 @@ msgstr ""
 #: inc/widgets/on-sale.php:116 inc/widgets/product-special-sidebar.php:110
 #: inc/widgets/testimonial.php:145
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #: inc/widgets/on-sale.php:117 inc/widgets/product-special-sidebar.php:111
 #: inc/widgets/testimonial.php:146
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: inc/widgets/on-sale.php:118 inc/widgets/product-special-sidebar.php:112
 #: inc/widgets/testimonial.php:147
 msgid "Date"
-msgstr ""
+msgstr "日期"
 
 #: inc/widgets/on-sale.php:119 inc/widgets/product-special-sidebar.php:113
 #: inc/widgets/testimonial.php:148
 msgid "Modified"
-msgstr ""
+msgstr "修改成功"
 
 #: inc/widgets/on-sale.php:120 inc/widgets/product-special-sidebar.php:114
 #: inc/widgets/testimonial.php:149
@@ -1361,11 +1440,11 @@ msgstr ""
 
 #: inc/widgets/product-special-sidebar.php:67
 msgid "All Products"
-msgstr "所有商品"
+msgstr "全部商品"
 
 #: inc/widgets/product-special-sidebar.php:125
 msgid "Products per page:"
-msgstr "每页商品数量"
+msgstr "每頁商品數量："
 
 #: inc/widgets/seo-keyword.php:16
 msgid "Show trademark, link, keyword, ..."
@@ -1385,11 +1464,11 @@ msgstr ""
 
 #: inc/widgets/slider.php:17
 msgid "KT Slider"
-msgstr ""
+msgstr "KT滑块"
 
 #: inc/widgets/slider.php:129 inc/widgets/testimonial.php:126
 msgid "Auto next slide"
-msgstr ""
+msgstr "自动下一张幻灯片"
 
 #: inc/widgets/slider.php:133 inc/widgets/testimonial.php:130
 msgid "Inifnity loop. Duplicate last and first items to get loop illusion."
@@ -1397,15 +1476,15 @@ msgstr ""
 
 #: inc/widgets/slider.php:136 inc/widgets/testimonial.php:133
 msgid "Slide Speed:"
-msgstr ""
+msgstr "幻灯片放映速度"
 
 #: inc/widgets/social.php:16
 msgid "Accepted display social."
-msgstr ""
+msgstr "添加社交链接"
 
 #: inc/widgets/social.php:17
 msgid "KT Social"
-msgstr ""
+msgstr "社交网络链接"
 
 #: inc/widgets/testimonial.php:16
 msgid "Testimonial Carousel on sidebar."
@@ -1413,7 +1492,7 @@ msgstr ""
 
 #: inc/widgets/testimonial.php:17
 msgid "KT Testimonial"
-msgstr "KT Testimonial"
+msgstr "KT 推荐"
 
 #: inc/widgets/trademark-payment.php:16
 msgid "Accepted trademark payment."
@@ -1421,75 +1500,87 @@ msgstr "接受商标付款"
 
 #: inc/widgets/trademark-payment.php:17
 msgid "KT Trademark Payment"
-msgstr "KT Trademark Payment"
+msgstr ""
 
 #: search.php:28
 #, php-format
 msgid "Search Results for: %s"
-msgstr "查找结果: %s"
+msgstr "搜索结果: %s"
+
+#: single-colection.php:25
+msgid "Designer"
+msgstr "设计者"
+
+#: single-colection.php:59
+msgid "Related Colections"
+msgstr "相关"
+
+#: single-colection.php:75
+msgid "Designed by"
+msgstr "设计者"
 
 #: single-service.php:47 single.php:53
 msgid "Tags:"
-msgstr "标签："
+msgstr "标签:"
 
 #: templates/footers/footer-1.php:28 templates/footers/footer-3.php:59
 msgid "Address:"
-msgstr "地址："
+msgstr "地址:"
 
 #: templates/footers/footer-1.php:33
 msgid "Phone:"
-msgstr "手机："
+msgstr "电话:"
 
 #: templates/footers/footer-1.php:38 templates/footers/footer-3.php:61
 msgid "Email:"
-msgstr "邮件："
+msgstr "Email："
 
 #: templates/footers/footer-2.php:53
 msgid ""
 "Success! Check your inbox or spam folder for a message containing a "
 "confirmation link."
-msgstr "成功！请检查您的收件箱，您将受到一条确认链接。"
+msgstr "成功！检查您的收件箱或垃圾邮件文件夹中是否有包含确认链接的邮件。"
 
-#: templates/footers/footer-2.php:61 templates/footers/footer-3.php:56
+#: templates/footers/footer-2.php:61
 msgid "Infomation"
+msgstr "信息"
+
+#: templates/footers/footer-3.php:56
+msgid "Information"
 msgstr "信息"
 
 #: templates/footers/footer-3.php:60
 msgid "Hotline:"
-msgstr "热线"
+msgstr "服务电话："
 
 #: templates/footers/footer-3.php:104
 msgid "payment"
-msgstr "支付"
+msgstr "支付方式"
 
 #: templates/footers/footer-3.php:106
 msgid "payment logo"
 msgstr "支付图标"
 
-#: templates/headers/header-1.php:23 templates/headers/header-2.php:23
-#: templates/headers/header-3.php:11 templates/headers/header-6.php:23
-#: templates/headers/header-7.php:28
-msgid "Services"
-msgstr "服务"
+#: templates/footers/footer-6.php:17
+msgid "Address"
+msgstr "地址"
 
-#: templates/headers/header-1.php:24 templates/headers/header-2.php:24
-#: templates/headers/header-3.php:12 templates/headers/header-4.php:8
-#: templates/headers/header-5.php:12 templates/headers/header-6.php:24
-#: templates/headers/header-7.php:29
-msgid "Support"
-msgstr "支持"
+#: templates/footers/footer-6.php:20
+msgid "Phone"
+msgstr "电话"
 
-#: templates/headers/header-4.php:7 templates/headers/header-5.php:11
-msgid "Abount Us"
-msgstr "关于我们"
+#: templates/footers/footer-6.php:23
+msgid "Email"
+msgstr ""
 
-#: templates/headers/header-7.php:49
-msgid "MENU"
-msgstr "菜单"
+#: templates/headers/header-11.php:59 templates/headers/header-12.php:45
+#: templates/headers/header-13.php:57
+msgid "View more"
+msgstr "查看更多"
 
 #: templates/loop-search.php:25 templates/loop.php:39
 msgid "Read more"
-msgstr "了解更多"
+msgstr "阅读更多"
 
 #: templates/loop.php:37
 msgid "<i class=\"fa fa-tags\"></i>"
@@ -1497,20 +1588,20 @@ msgstr ""
 
 #: templates/post-meta.php:18
 msgid "by:"
-msgstr ""
+msgstr "设计："
 
 #: templates/post-meta.php:20
 #, php-format
 msgid "View all posts by %s"
-msgstr ""
+msgstr "查看所有文章  %s"
 
 #: templates/post-meta.php:26
 msgid "0 comment"
-msgstr "0 评论"
+msgstr "0評論"
 
 #: templates/post-meta.php:27
 msgid "1 comment"
-msgstr "1 评论"
+msgstr "1条评论"
 
 #: templates/post-meta.php:28
 #, php-format
@@ -1519,38 +1610,45 @@ msgstr ""
 
 #: templates/search-form/post-search-form.php:22
 #: templates/search-form/product-search-form.php:19
+#: templates/search-form/product-search-form.php:34
 msgid "Keyword here..."
-msgstr "关键字..."
+msgstr "请在此输入关键词"
 
-#: woocommerce/cart/mini-cart.php:27
+#: woocommerce/cart/mini-cart.php:29
 msgid "Shopping cart"
-msgstr "订单查询"
+msgstr "购物车"
 
-#: woocommerce/cart/mini-cart.php:28
+#: woocommerce/cart/mini-cart.php:30
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
-msgstr[0] "%d 项目"
+msgstr[0] "%d项"
 
-#: woocommerce/cart/mini-cart.php:29 woocommerce/global/quantity-input.php:22
+#: woocommerce/cart/mini-cart.php:31 woocommerce/global/quantity-input.php:22
 msgid "-"
 msgstr ""
 
-#: woocommerce/cart/mini-cart.php:46 woocommerce/cart/mini-cart.php:54
-#: woocommerce/cart/mini-cart.php:73 woocommerce/cart/mini-cart.php:90
-#: woocommerce/cart/mini-cart.php:105 woocommerce/cart/mini-cart.php:113
+#: woocommerce/cart/mini-cart.php:48 woocommerce/cart/mini-cart.php:56
+#: woocommerce/cart/mini-cart.php:75 woocommerce/cart/mini-cart.php:92
+#: woocommerce/cart/mini-cart.php:107 woocommerce/cart/mini-cart.php:115
+#: woocommerce/cart/mini-cart.php:120
 msgid "My cart"
-msgstr "我的购物车"
+msgstr "查看我的购物车"
 
-#: woocommerce/cart/mini-cart.php:46 woocommerce/cart/mini-cart.php:54
-#: woocommerce/cart/mini-cart.php:90 woocommerce/cart/mini-cart.php:105
-#: woocommerce/cart/mini-cart.php:113
+#: woocommerce/cart/mini-cart.php:48 woocommerce/cart/mini-cart.php:56
+#: woocommerce/cart/mini-cart.php:92 woocommerce/cart/mini-cart.php:107
+#: woocommerce/cart/mini-cart.php:115 woocommerce/cart/mini-cart.php:129
+#: woocommerce/cart/mini-cart.php:138 woocommerce/cart/mini-cart.php:160
 msgid "Cart"
 msgstr "购物车"
 
-#: woocommerce/cart/mini-cart.php:61
+#: woocommerce/cart/mini-cart.php:63
 msgid "Account"
-msgstr "账单"
+msgstr "z账户"
+
+#: woocommerce/cart/mini-cart.php:151
+msgid "Cart:"
+msgstr "购物车"
 
 #: woocommerce/global/quantity-input.php:19
 msgid "Qty"
@@ -1571,33 +1669,37 @@ msgstr "新"
 
 #: woocommerce/loop/sale-flash.php:19
 msgid "Sale"
-msgstr "热销"
+msgstr "特价"
 
 #: woocommerce/single-product/rating.php:30
 #, php-format
 msgid "%s customer review"
 msgid_plural "%s customer reviews"
-msgstr[0] "%s 顾客评论"
+msgstr[0] "%s 客户评价"
 
-#: woocommerce/single-product/related.php:42
+#: woocommerce/single-product/related.php:46
 msgid "Related Products"
 msgstr "相关产品"
 
 #: woocommerce/single-product/review.php:33
 msgid "Your comment is awaiting approval"
-msgstr "你的评论等待审批"
+msgstr "您的评论正在等待审批"
 
 #: woocommerce/single-product/review.php:42
 msgid "verified owner"
-msgstr "核实人"
+msgstr "验证所有者"
 
 #: woocommerce/single-product/tabs/additional-information.php:16
 msgid "Additional Information"
-msgstr "附加信息"
+msgstr "补充信息"
 
 #: woocommerce/single-product/tabs/description.php:16
 msgid "Product Description"
 msgstr "产品描述"
+
+#: woocommerce/single-product/up-sells.php:47
+msgid "You may also like&hellip;"
+msgstr ""
 
 #. Theme Name of the plugin/theme
 msgid "Kutetheme"
@@ -1606,14 +1708,13 @@ msgstr ""
 #. Theme URI of the plugin/theme
 #. Author URI of the plugin/theme
 msgid "http://kutethemes.com/"
-msgstr ""
+msgstr "http://www.k2j.co.nz"
 
 #. Description of the plugin/theme
 msgid ""
 "Kutetheme Fashion is a simple but modern responsive Wordpress theme that "
 "oozes high-street sophistication. Its sharp lines and flat design style has "
-"been designed to be pixel perfect. Simply load your photography and you can "
-"have an online shop to matches the likes of Prada, Gucci and Yves St Laurent."
+"been designed to be pixel perfect."
 msgstr ""
 
 #. Author of the plugin/theme

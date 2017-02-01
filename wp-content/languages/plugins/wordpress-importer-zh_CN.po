@@ -1,20 +1,36 @@
-# Translation of Development (trunk) in Chinese (China)
-# This file is distributed under the same license as the Development (trunk) package.
+# Translation of Stable (latest release) in Chinese (China)
+# This file is distributed under the same license as the Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-10-23 16:06:35+0000\n"
+"PO-Revision-Date: 2015-08-01 21:44:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/1.0-alpha-1000\n"
-"Project-Id-Version: Development (trunk)\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Stable (latest release)\n"
 
-#: wordpress-importer.php:1017
+#. Author of the plugin/theme
+msgid "wordpressdotorg"
+msgstr "wordpressdotorg"
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: wordpress-importer.php:266
+msgid "Assign Authors"
+msgstr "指定作者"
+
+#: wordpress-importer.php:286
+msgid "Submit"
+msgstr "提交"
+
+#: wordpress-importer.php:1056
 msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
 msgstr "选择一个 WXR（.xml）文件，然后点击上传进行导入。"
 
-#: parsers.php:42 parsers.php:63
+#: parsers.php:42 parsers.php:72 parsers.php:80
 msgid "There was an error when reading this WXR file"
 msgstr "读取该 WXR 文件时出现错误"
 
@@ -22,7 +38,7 @@ msgstr "读取该 WXR 文件时出现错误"
 msgid "Details are shown above. The importer will now try again with a different parser..."
 msgstr "以上为详细内容。导入工具现在将尝试使用不同的解析方式……"
 
-#: parsers.php:67 parsers.php:72 parsers.php:262 parsers.php:451
+#: parsers.php:84 parsers.php:89 parsers.php:279 parsers.php:468
 msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
 msgstr "没有找到 WXR 文件，WXR 的版本号缺失或无效"
 
@@ -34,87 +50,87 @@ msgstr "该文件不存在，请重试。"
 msgid "Remember to update the passwords and roles of imported users."
 msgstr "请记住需要更新已导入用户的密码和权限。"
 
-#: wordpress-importer.php:210
+#: wordpress-importer.php:215
 msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
 msgstr "该版本的导入工具不支持该 WXR 文件（版本 %s）。请考虑将其更新。"
 
-#: wordpress-importer.php:235
+#: wordpress-importer.php:240
 msgid "Failed to import author %s. Their posts will be attributed to the current user."
 msgstr "导入作者 %s 失败。他们的日志将被分配到当前用户。"
 
-#: wordpress-importer.php:262
+#: wordpress-importer.php:267
 msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
 msgstr "为了更好地编辑、储存导入的内容，你可以修改这些内容的作者。例如，你可能希望使用 <code>admin</code> 作为所有导入的文章的作者。"
 
-#: wordpress-importer.php:264
+#: wordpress-importer.php:269
 msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
 msgstr "如果在 WordPress 中创建一个新用户，会随机生成一个用户密码并将权限设置为 %s。如果必要的话，请手动更改用户信息。"
 
-#: wordpress-importer.php:305
+#: wordpress-importer.php:310
 msgid "or create new user with login name:"
 msgstr "或创建一位新用户，登录名为："
 
-#: wordpress-importer.php:308
+#: wordpress-importer.php:313
 msgid "as a new user:"
 msgstr "做为一位新用户："
 
-#: wordpress-importer.php:316
+#: wordpress-importer.php:321
 msgid "assign posts to an existing user:"
 msgstr "分配日志现有用户："
 
-#: wordpress-importer.php:318
+#: wordpress-importer.php:323
 msgid "or assign posts to an existing user:"
 msgstr "或将日志分配给现有用户："
 
-#: wordpress-importer.php:369
+#: wordpress-importer.php:374
 msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
 msgstr "创建新用户 %s 失败。他们的日志将被分配到当前用户。"
 
-#: wordpress-importer.php:418
+#: wordpress-importer.php:425
 msgid "Failed to import category %s"
 msgstr "导入分类 %s 失败"
 
-#: wordpress-importer.php:456
+#: wordpress-importer.php:465
 msgid "Failed to import post tag %s"
 msgstr "导入日志标签 %s 失败"
 
-#: wordpress-importer.php:500 wordpress-importer.php:626
+#: wordpress-importer.php:511 wordpress-importer.php:652
 msgid "Failed to import %s %s"
 msgstr "导入 %s %s 失败"
 
-#: wordpress-importer.php:522
+#: wordpress-importer.php:537
 msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
 msgstr "导入 &#8220;%s&#8221; 失败:无效的日志类型 %s"
 
-#: wordpress-importer.php:543
+#: wordpress-importer.php:559
 msgid "%s &#8220;%s&#8221; already exists."
 msgstr "%s &#8220;%s&#8221; 已存在。"
 
-#: wordpress-importer.php:598
+#: wordpress-importer.php:618
 msgid "Failed to import %s &#8220;%s&#8221;"
 msgstr "导入 %s &#8220;%s&#8221; 失败"
 
-#: wordpress-importer.php:744
+#: wordpress-importer.php:783
 msgid "Menu item skipped due to missing menu slug"
 msgstr "由于未找到菜单缩略名，菜单条目已被跳过"
 
-#: wordpress-importer.php:751
+#: wordpress-importer.php:790
 msgid "Menu item skipped due to invalid menu slug: %s"
 msgstr "由于菜单缩略名无效，菜单条目已被跳过：%s"
 
-#: wordpress-importer.php:814
+#: wordpress-importer.php:853
 msgid "Fetching attachments is not enabled"
 msgstr "检测到附件未被启用"
 
-#: wordpress-importer.php:877
+#: wordpress-importer.php:916
 msgid "Remote server returned error response %1$d %2$s"
 msgstr "远程服务器返回错误响应 %1$d %2$s"
 
-#: wordpress-importer.php:889
+#: wordpress-importer.php:928
 msgid "Zero size file downloaded"
 msgstr "0 字节文件已下载"
 
-#: wordpress-importer.php:1001
+#: wordpress-importer.php:1040
 msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
 msgstr "该导入工具有新版本可用。请更新到版本 %s 来确保兼容较新的导出文件。"
 
@@ -122,31 +138,23 @@ msgstr "该导入工具有新版本可用。请更新到版本 %s 来确保兼�
 msgid "Import posts, pages, comments, custom fields, categories, tags and more from a WordPress export file."
 msgstr "从 WordPress 导出文件中导入日志、页面、评论、自定义字段、分类、标签或更多内容。"
 
-#: wordpress-importer.php:994
+#: wordpress-importer.php:1033
 msgid "Import WordPress"
 msgstr "导入 WordPress"
 
-#: wordpress-importer.php:261
-msgid "Assign Authors"
-msgstr "指定作者"
-
-#: wordpress-importer.php:294
+#: wordpress-importer.php:299
 msgid "Import author:"
 msgstr "导入作者："
 
-#: wordpress-importer.php:274
+#: wordpress-importer.php:279
 msgid "Import Attachments"
 msgstr "导入附件"
 
-#: wordpress-importer.php:277
+#: wordpress-importer.php:282
 msgid "Download and import file attachments"
 msgstr "下载并导入文件附件"
 
-#: wordpress-importer.php:281
-msgid "Submit"
-msgstr "提交"
-
-#: wordpress-importer.php:319
+#: wordpress-importer.php:324
 msgid "- Select -"
 msgstr "- 选择 -"
 
@@ -158,28 +166,29 @@ msgstr "导入完毕。"
 msgid "Have fun!"
 msgstr "好好享受吧！"
 
-#: wordpress-importer.php:827
+#: wordpress-importer.php:866
 msgid "Invalid file type"
 msgstr "无效的文件类型"
 
-#: wordpress-importer.php:871
+#: wordpress-importer.php:910
 msgid "Remote server did not respond"
 msgstr "远程服务器无响应"
 
-#: wordpress-importer.php:884
+#: wordpress-importer.php:923
 msgid "Remote file is incorrect size"
 msgstr "远程文件尺寸不正确"
 
-#: wordpress-importer.php:895
+#: wordpress-importer.php:934
 msgid "Remote file is too large, limit is %s"
 msgstr "远程文件太大了，限制为 %s"
 
 #: wordpress-importer.php:134 wordpress-importer.php:143
-#: wordpress-importer.php:194 wordpress-importer.php:202
+#: wordpress-importer.php:194 wordpress-importer.php:198
+#: wordpress-importer.php:207
 msgid "Sorry, there has been an error."
 msgstr "抱歉，有错误发生。"
 
-#: wordpress-importer.php:1091
+#: wordpress-importer.php:1130
 msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
 msgstr "从 WordPress 导出文件中导入<strong>日志、页面、评论、自定义字段、分类与标签</strong>。"
 
@@ -191,14 +200,6 @@ msgstr "WordPress 导入工具"
 msgid "http://wordpress.org/extend/plugins/wordpress-importer/"
 msgstr "http://wordpress.org/extend/plugins/wordpress-importer/"
 
-#. Author of the plugin/theme
-msgid "wordpressdotorg"
-msgstr "wordpressdotorg"
-
-#. Author URI of the plugin/theme
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#: wordpress-importer.php:1016
+#: wordpress-importer.php:1055
 msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
 msgstr "您好！请选择您要导入的 WordPress eXtended RSS (WXR) 文件，我们将把其中的日志、页面、评论、自定义字段、分类及标签导入到您的站点中。"

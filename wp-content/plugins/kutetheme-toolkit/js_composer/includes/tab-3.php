@@ -54,15 +54,27 @@ if( ! $is_phone ):
             ),
         )
     );
+    if( $term ){
+        $deal_args [ 'tax_query' ] = array(
+            array(
+                'taxonomy' => 'product_cat',
+                'field'    => 'id',
+                'terms'    => $term->term_id,
+                'operator' => 'IN'
+            )
+        );
+    }
     $deal_product = new WP_Query( $deal_args );
     if( $deal_product->have_posts() ){
         //add_filter( 'kt_template_loop_product_thumbnail_size', array( $this, 'kt_thumbnail_size_131x160' ) );
         add_filter("woocommerce_get_price_html_from_to", "kt_get_price_html_from_to", 10 , 4);
         add_filter( 'woocommerce_sale_price_html', 'woocommerce_custom_sales_price', 10, 2 );
         ob_start();
+        add_filter( 'kt_product_thumbnail_loop', array( &$this, 'get_size_product_option_3' ) );
         while($deal_product->have_posts()): $deal_product->the_post();
             wc_get_template_part( 'content', 'tab-category-deal' );
         endwhile;
+        remove_filter( 'kt_product_thumbnail_loop', array( &$this, 'get_size_product_option_3' ) );
         $deal_product_tmp = ob_get_clean();
         //remove_filter( 'kt_template_loop_product_thumbnail_size', array( $this, 'kt_thumbnail_size_131x160' ) );
         remove_filter("woocommerce_get_price_html_from_to", "kt_get_price_html_from_to", 10 , 4);
@@ -148,16 +160,18 @@ endif;
                     			'ignore_sticky_posts'	=> 1,
                     			'posts_per_page' 		=> $per_page,
                     			'meta_query' 			=> $meta_query,
-                                'suppress_filter'       => true,
-                                'tax_query'             => array(
+                                'suppress_filter'       => true
+                    		);
+                            if( $term ){
+                                $args [ 'tax_query' ] = array(
                                     array(
                                         'taxonomy' => 'product_cat',
                                         'field'    => 'id',
                                         'terms'    => $term->term_id,
                                         'operator' => 'IN'
-                                    ),
-                                )
-                    		);
+                                    )
+                                );
+                            }
                             $i = 0; ?>
                             <?php foreach( $tabs as $tab ): ?>
                             <?php 
@@ -303,7 +317,7 @@ endif;
                                 <?php endif; ?>
                                 <div class="box-right">
                                 <?php if( $is_phone ): ?>
-                                    <ul class="product-list owl-carousel" data-autoplay="false" data-navigation="false" data-margin="0" data-slidespeed="250" data-theme="style-navigation-bottom" data-autoheight="false" data-nav="true" data-dots="false" data-items="1">
+                                    <ul class="product-list owl-carousel" data-autoplay="false" data-navigation="false" data-nav="false" data-margin="0" data-slidespeed="250" data-theme="style-navigation-bottom" data-autoheight="false" data-nav="true" data-dots="false" data-items="1">
                                 <?php else: ?>
                                     <ul class="product-list row">                                    
                                 <?php endif; ?>  

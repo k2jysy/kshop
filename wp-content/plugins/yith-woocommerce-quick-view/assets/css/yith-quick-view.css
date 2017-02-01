@@ -1,3 +1,12 @@
+/*=======================
+* MODAL POPUP STYLE
+========================*/
+
+html.yith-quick-view-is-open,
+html.yith-quick-view-is-open body {
+    overflow: hidden;
+}
+
 #yith-quick-view-modal {
     position: fixed;
     visibility: hidden;
@@ -5,17 +14,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 10000;
+    z-index: 1400;
     opacity: 0;
     text-align: center;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-#yith-quick-view-modal.open {
-    visibility: visible;
-    opacity: 1;
+
+#yith-quick-view-modal:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0;
 }
+
 #yith-quick-view-modal .yith-quick-view-overlay {
     position: absolute;
     top: 0;
@@ -24,43 +38,43 @@
     left: 0;
     background: rgba( 0, 0, 0, 0.8);
 }
-#yith-quick-view-modal:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-    width: 0;
-}
+
 #yith-quick-view-modal .yith-wcqv-wrapper {
     display: inline-block;
     vertical-align: middle;
-    min-width: 300px;
-    max-width: 1000px;
-    overflow: hidden;
-    z-index: 2000;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    text-align: initial;
-    padding: 15px;
+    text-align: left;
+    height: 700px;
+    width: 1000px;
 }
-#yith-quick-view-modal.open .yith-wcqv-wrapper {
-    visibility: visible;
-}
+
 #yith-quick-view-modal .yith-wcqv-main {
     -webkit-transform: translateY(20%);
     -moz-transform: translateY(20%);
     -ms-transform: translateY(20%);
     transform: translateY(20%);
     opacity: 0;
+    height: 100%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.2);
-    padding: 20px;
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
 }
+
+#yith-quick-view-modal.open,
+#yith-quick-view-modal.open .yith-wcqv-wrapper {
+    visibility: visible;
+    opacity: 1;
+}
+
+#yith-quick-view-modal .yith-quick-view-content {
+    height: 100%;
+}
+
 #yith-quick-view-modal .yith-wcqv-main:after,
 #yith-quick-view-modal .yith-wcqv-main:before {
     content: '';
@@ -74,14 +88,7 @@
     transform: translateY(0);
     opacity: 1;
     height: 100%;
-}
-@media screen and ( max-height: 800px ){
-    #yith-quick-view-modal .yith-wcqv-wrapper {
-        height: 80%;
-    }
-    #yith-quick-view-modal.open .yith-wcqv-main {
-        overflow-y: scroll;
-    }
+    overflow-y: scroll;
 }
 
 #yith-quick-view-close {
@@ -103,8 +110,15 @@
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
 }
+#yith-quick-view-content div.images {
+    width: 40%;
+    float: left;
+}
 #yith-quick-view-content div.summary {
-    padding: 0;
+    margin: 0;
+    padding: 15px;
+    width: 60%;
+    float: left;
 }
 #yith-quick-view-content div.woocommerce-product-rating:after,
 #yith-quick-view-content div.woocommerce-product-rating:before {
@@ -115,7 +129,26 @@
 #yith-quick-view-content div.woocommerce-product-rating a.woocommerce-review-link {
     display: none;
 }
+#yith-quick-view-content .onsale {
+    top: 5px;
+    right: auto;
+    left: 5px;
+}
 
 li.product .yith-wcqv-button .blockUI.blockOverlay:before {
     background: none;
+}
+
+@media( max-width: 480px ) {
+    #yith-quick-view-content div.images,
+    #yith-quick-view-content div.summary {
+        width: 100%;
+        float: none;
+    }
+    #yith-quick-view-content div.summary {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        float: left;
+    }
 }

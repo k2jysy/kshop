@@ -127,7 +127,7 @@ div.tab_custom_ofwc_offer_tab_inner_content fieldset form#woocommerce-make-offer
 div.tab_custom_ofwc_offer_tab_inner_content fieldset form#woocommerce-make-offer-form .woocommerce-make-offer-form-section #woocommerce-make-offer-form-total {  border:1px solid #CCC!important; border-left:none!important; border-top-width:1px!important; background:#FFFFFF!important; cursor: not-allowed; }
 div.tab_custom_ofwc_offer_tab_inner_content fieldset form#woocommerce-make-offer-form .woocommerce-make-offer-form-section #angelleye-offer-notes { width:95%; }
 #woocommerce-make-offer-form-submit-button { float:left; margin-right:20px; margin-top:1px; width:auto!important; }
-div.tab_custom_ofwc_offer_tab_inner_content fieldset form#woocommerce-make-offer-form .woocommerce-make-offer-form-section.woocommerce-make-offer-form-section-submit .offer-submit-loader { display:none; float:left; height:32px; width:auto; line-height:33px; padding-left:45px; font-style:italic; background:url('../images/offer-submit-loader.png') left center no-repeat; }
+div.tab_custom_ofwc_offer_tab_inner_content fieldset form#woocommerce-make-offer-form .woocommerce-make-offer-form-section.woocommerce-make-offer-form-section-submit .offer-submit-loader { display:none; float:left; height:32px; width:auto; line-height:33px; padding-left:45px; font-style:italic; background:url('../images/offer-submit-loader.gif') left center no-repeat; }
 
 div.tab_custom_ofwc_offer_tab_inner_content fieldset form#woocommerce-make-offer-form .woocommerce-make-offer-form-section div.woocommerce-make-offer-form-sym { float:left; font-weight:bold; padding:0px 8px 8px 8px; }
 
@@ -255,4 +255,29 @@ body.archive.woocommerce-page a.button.add_to_cart_button { float:left; position
 	content: "\2713";
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
 	font-size: 15px;
+}
+.ofw-info {
+    background-color: #f7f6f7;
+    color: #515151;
+    list-style: outside none none !important;
+    margin: 9px 0 !important;
+    padding: 1em 2em 1em 1.5em !important;
+/*    position: relative;*/
+    width: auto;
+    word-wrap: break-word;
+    clear: both;
+}
+.ofw-info::before, .ofw-info::after {
+    content: " ";
+    display: table;
+}
+.ofw-info::after {
+    clear: both;
+
+}
+.ofw-info::before {
+    display: inline-block;
+    font-family: WooCommerce;
+    position: absolute;
+    top: 1em;
 }

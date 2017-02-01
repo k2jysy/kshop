@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Kute Theme functions and definitions
  *
@@ -30,9 +30,13 @@
  *
  * @since Kute Theme 1.0
  */
- 
-define( 'THEME_DIR', trailingslashit(get_template_directory()));
-define( 'THEME_URL', trailingslashit(get_template_directory_uri()));
+if( ! defined( 'THEME_DIR' ) ) {
+    define( 'THEME_DIR', trailingslashit(get_template_directory()));
+}
+if( ! defined( 'THEME_URL' ) ) {
+    define( 'THEME_URL', trailingslashit(get_template_directory_uri()));
+}
+
 
 if ( ! isset( $content_width ) ) {
 	$content_width = 1170;
@@ -131,9 +135,45 @@ if ( ! function_exists( 'kutetheme_setup' ) ) :
         add_image_size ( 'kt-post-thumb', 345, 244, true );
         add_image_size ( 'kt-post-thumb-small', 70, 49, true );
         add_image_size ( 'kt_post_blog_268x255', 268, 255, true );
-        
+        add_image_size ( 'lookbook-thumb', 270, 270, true );
+        add_image_size ( 'lookbook-thumb-masonry', 375, 375, false );
+        add_image_size ( 'colection-thumb', 380, 532, true );
+        add_image_size ( 'colection_small_thumb', 250, 349, true );
+        add_image_size ( 'testimonial-thumb', 140, 140, true );
         //Support woocommerce
         add_theme_support( 'woocommerce' );
+        
+        if( function_exists( 'is_woocommerce' ) ){
+            $product_size = array(
+                'kt_shop_catalog_131' => 131,
+                'kt_shop_catalog_142' => 142,
+                'kt_shop_catalog_164' => 164,
+                'kt_shop_catalog_175' => 175,
+                'kt_shop_catalog_193' => 193,
+                'kt_shop_catalog_200' => 200,
+                'kt_shop_catalog_204' => 204,
+                'kt_shop_catalog_214' => 213,
+                'kt_shop_catalog_248' => 248,
+                'kt_shop_catalog_260' => 260,
+                'kt_shop_catalog_270' => 270
+                
+            );
+            $width = 300;
+            $height = 300;
+            $crop = 1;
+            if( function_exists( 'wc_get_image_size' ) ){
+                $size = wc_get_image_size( 'shop_catalog' );
+                $width   = isset( $size[ 'width' ] ) ? $size[ 'width' ] : $width;
+    			$height  = isset( $size[ 'height' ] ) ? $size[ 'height' ] : $height;
+    			$crop    = isset( $size[ 'crop' ] ) ? $size[ 'crop' ] : $crop;
+            }
+            foreach( $product_size as $k => $w ){
+                $w = intval( $w ); 
+                $h = round( $height * $w / $width ) ;
+                
+                add_image_size ( $k, $w, $h, $crop );
+            }
+        }
     }
 endif; // kt_setup
 add_action( 'after_setup_theme', 'kt_setup' );
@@ -287,15 +327,7 @@ if( ! function_exists( 'kt_widgets_init' ) ){
 }
 add_action( 'widgets_init', 'kt_widgets_init' );
 
-function add_after_post_content($content) {
-	if(!is_feed() && !is_home() && !is_user_logged_in() && is_single()) {
-		$yep = array('<div class="afterwp"><p><a href="http://',
-		'in','ithem','e.co','m">in','ithem','e.com</a></p></div>');
-	    $content .= implode($yep);
-	}
-	return $content;
-}
-add_filter('the_content', 'add_after_post_content');
+
 
 /**
  * JavaScript Detection.
@@ -315,7 +347,7 @@ if( ! function_exists( 'kt_js_variables' ) ){
         var ajaxurl = <?php echo json_encode( admin_url( "admin-ajax.php" ) ); ?>;
         var labels = ['<?php _e( 'Years' ,'kutetheme') ?>', '<?php _e( 'Months' ,'kutetheme') ?>', '<?php _e( 'Weeks' ,'kutetheme') ?>', '<?php _e( 'Days' ,'kutetheme') ?>', '<?php _e( 'Hrs' ,'kutetheme') ?>', '<?php _e( 'Mins' ,'kutetheme') ?>', '<?php _e( 'Secs' ,'kutetheme') ?>'];
         var layout = '<span class="box-count day"><span class="number">{dnn}</span> <span class="text"><?php _e( 'Days' ,'kutetheme') ?></span></span><span class="dot">:</span><span class="box-count hrs"><span class="number">{hnn}</span> <span class="text"><?php _e( 'Hrs' ,'kutetheme') ?></span></span><span class="dot">:</span><span class="box-count min"><span class="number">{mnn}</span> <span class="text"><?php _e( 'Mins' ,'kutetheme') ?></span></span><span class="dot">:</span><span class="box-count secs"><span class="number">{snn}</span> <span class="text"><?php _e( 'Secs' ,'kutetheme') ?></span></span>';
-         
+        var $html_close = '<?php _e( 'Close' ,'kutetheme') ?>';
       </script><?php
     }
 }
@@ -331,7 +363,9 @@ add_action( 'wp_head', 'kt_js_variables', 2 );
 if( ! function_exists( 'kt_scripts' ) ){
     function kt_scripts() {
     	// Add custom fonts, used in the main stylesheet.
-    
+        wp_enqueue_style( 'kt-Oswald-font','https://fonts.googleapis.com/css?family=Oswald:400,300,700', array( ), '1.0' );
+        wp_enqueue_style( 'kt-Montserrat-font','https://fonts.googleapis.com/css?family=Montserrat:400,700', array( ), '1.0' );
+
     	// Load the Internet Explorer specific stylesheet.
     	wp_enqueue_style( 'kt-ie', get_template_directory_uri() . '/css/ie.css', array( 'kt-style' ), '1.0' );
     	wp_style_add_data( 'kt-ie', 'conditional', 'lt IE 9' );
@@ -351,7 +385,10 @@ if( ! function_exists( 'kt_scripts' ) ){
         
         wp_enqueue_style( 'kt-fancyBox', get_template_directory_uri() . '/libs/fancyBox/jquery.fancybox.css' );
         
+        wp_enqueue_style( 'kt-jquery.bxslider', get_template_directory_uri() . '/libs/jquery.bxslider/jquery.bxslider.css' );
+        
         wp_enqueue_style( 'kt-jquery-ui', get_template_directory_uri() . '/libs/jquery-ui/jquery-ui.css' );
+        
         wp_enqueue_style( 'kt-style', get_template_directory_uri() . '/css/style.css', 
             array( 
                 'kt-bootstrap', 
@@ -403,15 +440,20 @@ if( ! function_exists( 'kt_scripts' ) ){
         wp_enqueue_script( 'kt-actual', get_template_directory_uri() . '/js/jquery.actual.min.js', array( 'jquery' ), '1.0.16',true );
         
         wp_enqueue_script( 'kt-Modernizr-script', get_template_directory_uri() . '/js/Modernizr.js', array( 'jquery' ), '1.0.1', true );
-
-    	wp_enqueue_script( 'kt-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.0.1', true );
-    
+        
+        wp_enqueue_script( 'kt-isotope-script', get_template_directory_uri() . '/js/isotope.pkgd.js', array( 'jquery' ), '1.0', true );
+        
+        wp_enqueue_script( 'kt-isotope-packery-mode-script', get_template_directory_uri() . '/js/packery-mode.pkgd.min.js', array( 'jquery' ), '1.0', true );
+	
     	wp_enqueue_script( 'kt-count-down-plugin', get_template_directory_uri() . '/libs/countdown/jquery.plugin.js', array( 'jquery' ), '1.0.1', true );
     	
         wp_enqueue_script( 'kt-count-down-jq', get_template_directory_uri() . '/libs/countdown/jquery.countdown.js', array( 'jquery' ), '2.0.2', true );
         
+        wp_enqueue_script( 'kt-bx-slider', get_template_directory_uri() . '/libs/jquery.bxslider/jquery.bxslider.min.js', array( 'jquery' ), '4.1.2', true );
+        
         if(is_rtl()){
             wp_enqueue_style( 'bootstrap-rtl-css', get_template_directory_uri() . '/libs/bootstrap/css/bootstrap-rtl.css', array());
+            wp_enqueue_style( 'kt-rtl', get_template_directory_uri() . '/rtl.css', array());
         }
         
     	wp_localize_script( 'kt-script', 'screenReaderText', array(
@@ -422,6 +464,10 @@ if( ! function_exists( 'kt_scripts' ) ){
             'security' => wp_create_nonce( 'screenReaderText' ),
             'current_date' => date_i18n('Y-m-d H:i:s')
     	) );
+        
+        wp_enqueue_script( 'kt-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '1.0.1', true );
+        wp_enqueue_script( 'kt-lookbook-script', get_template_directory_uri() . '/js/lookbook.js', array( 'jquery' ), '1.0.1', true );
+    
     
     }
 }
@@ -596,5 +642,3 @@ if( ! function_exists( 'kt_list_cats' ) ){
         echo wp_kses( $cat_string, $allowed_html );
     }
 }
-
-

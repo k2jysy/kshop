@@ -269,7 +269,7 @@ class KT_Product_Brand_Taxonomies {
 
 
 	 public function kt_product_brand_add_meta_box() {
-		 add_meta_box( 'mytaxonomy_id', '品牌',array( $this,'kt_product_brand_metabox'),'product' ,'side','core');
+		 add_meta_box( 'mytaxonomy_id', 'Brands',array( $this,'kt_product_brand_metabox'),'product' ,'side','core');
 	 }
 
 	//Callback to set up the metabox

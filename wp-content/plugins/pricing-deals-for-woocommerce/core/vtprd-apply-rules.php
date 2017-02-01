@@ -283,31 +283,87 @@ wp_die( __('<strong>Looks like</strong>', 'vtmin'), __('VT Minimum Purchase not 
 
       } //end cart-items 'for' loop
 
-/* no longer useful....
-     //mwn0402  => moved from outside the loop, inside!! 
-      //****************************************************
-      // ONLY FOR non- AUTO ADD - overwrite actionPop and discountAppliesWhere
-      //******************
-      //  - timing of this overwrite is different for auto adds...
-      //  - auto adds are done ABOVE
-      //****************************************************      
-      if ($vtprd_rules_set[$i]->rule_contains_auto_add_free_product != 'yes') {     
-        //****************************************************
-        //overwrite actionPop and discountAppliesWhere as appropriate 
-        //**************************************************** 
-        switch( $vtprd_rules_set[$i]->inPop ) {
-          case 'wholeStore':
-          case 'cart':        //in these cases, inpop/actionpop treated as 'sameAsInPop'                                                                               
-              if ( ($vtprd_rules_set[$i]->actionPop == 'sameAsInPop') ||              
-                   ($vtprd_rules_set[$i]->actionPop == 'wholeStore') ||
-                   ($vtprd_rules_set[$i]->actionPop == 'cart') ) {
-                $vtprd_rules_set[$i]->actionPop = 'sameAsInPop';
-                $vtprd_rules_set[$i]->discountAppliesWhere =  'nextInInPop' ;
-              }   
-            break; 
-        }  
-      }   
-*/    
+      
+      
+      //**************************************************************
+      //v1.1.6.7 BEGIN sort actionPop_exploded_found_list for cheapest
+      //**************************************************************
+/* replaced with on-screen switch!!!  
+       $sort_for_cheapest = apply_filters('vtprd_sort_for_cheapest',FALSE );
+
+       //***********************************************************
+       // OBJECT ATTRIBUTe MAY NOT  be used as a 'needle' in strpos - needle is simply NOT FOUND!!!!!!!!!!
+       //***********************************************************      
+       $ruleID = strval($vtprd_rules_set[$i]->post_id); 
+       //***********************************************************
+       
+       if (strpos($sort_for_cheapest , $ruleID) !== false)  {
+*/       
+       if ($vtprd_rules_set[$i]->apply_deal_to_cheapest_select == 'cheapest') {
+           
+         $sizeof_exploded_array = sizeof($vtprd_rules_set[$i]->actionPop_exploded_found_list);
+         //create candidate array
+         /*
+         for( $s=0; $s < $sizeof_exploded_array; $s++) {
+            $cheapest_array [] = $vtprd_rules_set[$i]->actionPop_exploded_found_list[$s];           
+         }
+         */
+         $cheapest_array = $vtprd_rules_set[$i]->actionPop_exploded_found_list;
+         //http://stackoverflow.com/questions/7839198/array-multisort-with-natural-sort
+         //http://isambard.com.au/blog/2009/07/03/sorting-a-php-multi-column-array/
+         //sort group by prod_unit_price (relative column3), cheapest 1stt
+         $prod_unit_price = array();
+         foreach ($cheapest_array as $key => $row) {
+            $prod_unit_price[$key] = $row['prod_unit_price'];
+         } 
+         array_multisort($prod_unit_price, SORT_ASC, SORT_NUMERIC, $cheapest_array); 
+
+         
+         //load sorted array back into rule
+         $vtprd_rules_set[$i]->actionPop_exploded_found_list = $cheapest_array;
+         
+         // walk the array and store occurrence
+         for( $s=0; $s < $sizeof_exploded_array; $s++) {
+            $vtprd_rules_set[$i]->actionPop_exploded_found_list[$s]['exploded_group_occurrence'] = $s;
+         } 
+              
+              
+      } else {
+       if ($vtprd_rules_set[$i]->apply_deal_to_cheapest_select == 'most-expensive') {
+           
+         $sizeof_exploded_array = sizeof($vtprd_rules_set[$i]->actionPop_exploded_found_list);
+         //create candidate array
+         /*
+         for( $s=0; $s < $sizeof_exploded_array; $s++) {
+            $cheapest_array [] = $vtprd_rules_set[$i]->actionPop_exploded_found_list[$s];           
+         }
+         */
+         $cheapest_array = $vtprd_rules_set[$i]->actionPop_exploded_found_list;
+         //http://stackoverflow.com/questions/7839198/array-multisort-with-natural-sort
+         //http://isambard.com.au/blog/2009/07/03/sorting-a-php-multi-column-array/
+         //sort group by prod_unit_price (relative column3), cheapest 1stt
+         $prod_unit_price = array();
+         foreach ($cheapest_array as $key => $row) {
+            $prod_unit_price[$key] = $row['prod_unit_price'];
+         } 
+         array_multisort($prod_unit_price, SORT_DESC, SORT_NUMERIC, $cheapest_array); 
+
+         
+         //load sorted array back into rule
+         $vtprd_rules_set[$i]->actionPop_exploded_found_list = $cheapest_array;
+         
+         // walk the array and store occurrence
+         for( $s=0; $s < $sizeof_exploded_array; $s++) {
+            $vtprd_rules_set[$i]->actionPop_exploded_found_list[$s]['exploded_group_occurrence'] = $s;
+         }
+       } 
+      }
+      //********************
+      //v1.1.6.7 end
+      //********************
+      
+      
+     
     
     }  //end rules 'for' loop
  

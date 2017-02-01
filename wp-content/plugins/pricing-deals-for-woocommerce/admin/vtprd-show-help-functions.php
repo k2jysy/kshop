@@ -2309,6 +2309,18 @@
   //*************************************************
    
   function vtprd_show_object_hover_help ($context, $type, $asterisk=null) {
+ 
+      //v1.1.6.7 begin
+      if ($context == 'apply_deal_to_cheapest') {
+        ?>                           
+         <div class="hoverHelp hideMe"> 
+            <?php vtprd_show_object_hover_small_text($context); ?>                    
+         </div>
+                 
+        <?php  
+        return;    
+      }
+       //v1.1.6.7 end
    
       if ($type == 'small') {
 
@@ -2573,6 +2585,31 @@
           <?php             
         break;
           
+      //v1.1.6.7
+      case 'apply_deal_to_cheapest':
+          ?>       
+          <!-- apply_deal_to_cheapest-->
+          <div class="section">
+            <a name="blueprint.apply_deal_to_cheapest" data-type="group"></a><h2>Apply Discount to Cheapest Item First</h2>
+            <p class="narrower-paragraph larger-strong">
+               <ul class="">
+                  <li><em>- CHEAPEST attribute for BOGO "Next" Deals!!</em></li>
+                  <li><b>Say you want to create: </b></li> 
+                  <li><b>&nbsp;&nbsp;"Buy 4, get the cheapest in the cart free"</b></li> 
+                  <li>&nbsp;&nbsp;1. create your rule using <strong>a BOGO "next" deal</strong>:</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'Buy 4 get the next one free'</b></li>    
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;You can use this example to guide you:</li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;<a  href="https://www.varktech.com/documentation/pricing-deals/examples/#bogo"  title="Bogo Deal Examples">Bogo Deal Examples</a>&nbsp;&nbsp;look for</li> 
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;"Buy a NZ Gala Apple, get the next One Free"</li> 
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;- Set   Buy Group Amount Applies To :  </li>
+                  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"All Products" or "Each", as appropriate  </li>    
+                  <li>&nbsp;&nbsp;2. Then select 'Apply to Cheapest Item First'  ! </li>                                                           
+               </ul>             
+            </p>
+          </div>  <!-- //apply_deal_to_cheapest --> 
+          <?php             
+        break;
+                    
       //v1.1.0.8
       case 'only_for_this_coupon_name':
           ?>       
